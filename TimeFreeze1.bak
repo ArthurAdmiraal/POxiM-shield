@@ -1,0 +1,377 @@
+EESchema Schematic File Version 4
+LIBS:POxiM-shield-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:LM324 U?
+U 2 1 5EC3B950
+P 6300 4450
+AR Path="/5EC3B950" Ref="U?"  Part="2" 
+AR Path="/5EBFF598/5EC3B950" Ref="U?"  Part="2" 
+AR Path="/5EC55EF3/5EC3B950" Ref="U?"  Part="2" 
+F 0 "U?" H 6300 4817 50  0000 C CNN
+F 1 "LM324" H 6300 4726 50  0000 C CNN
+F 2 "" H 6250 4550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 6350 4650 50  0001 C CNN
+	2    6300 4450
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:D_Photo D?
+U 1 1 5EC3B956
+P 4650 4500
+AR Path="/5EC3B956" Ref="D?"  Part="1" 
+AR Path="/5EBFF598/5EC3B956" Ref="D?"  Part="1" 
+AR Path="/5EC55EF3/5EC3B956" Ref="D?"  Part="1" 
+F 0 "D?" V 4554 4422 50  0000 R CNN
+F 1 "D_Photo" V 4645 4422 50  0000 R CNN
+F 2 "" H 4600 4500 50  0001 C CNN
+F 3 "~" H 4600 4500 50  0001 C CNN
+	1    4650 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EC3B95C
+P 4650 4750
+AR Path="/5EC3B95C" Ref="#PWR?"  Part="1" 
+AR Path="/5EBFF598/5EC3B95C" Ref="#PWR?"  Part="1" 
+AR Path="/5EC55EF3/5EC3B95C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4650 4500 50  0001 C CNN
+F 1 "GND" H 4655 4577 50  0000 C CNN
+F 2 "" H 4650 4750 50  0001 C CNN
+F 3 "" H 4650 4750 50  0001 C CNN
+	1    4650 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EC3B962
+P 5950 4600
+AR Path="/5EC3B962" Ref="#PWR?"  Part="1" 
+AR Path="/5EBFF598/5EC3B962" Ref="#PWR?"  Part="1" 
+AR Path="/5EC55EF3/5EC3B962" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5950 4350 50  0001 C CNN
+F 1 "GND" H 5955 4427 50  0000 C CNN
+F 2 "" H 5950 4600 50  0001 C CNN
+F 3 "" H 5950 4600 50  0001 C CNN
+	1    5950 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4550 5950 4550
+Wire Wire Line
+	5950 4550 5950 4600
+Wire Wire Line
+	4650 4350 4650 4400
+$Comp
+L Device:R_US R?
+U 1 1 5EC3B96B
+P 5750 4550
+AR Path="/5EC3B96B" Ref="R?"  Part="1" 
+AR Path="/5EBFF598/5EC3B96B" Ref="R?"  Part="1" 
+AR Path="/5EC55EF3/5EC3B96B" Ref="R?"  Part="1" 
+F 0 "R?" V 5650 4550 50  0000 C CNN
+F 1 "R_US" V 5850 4550 50  0000 C CNN
+F 2 "" V 5790 4540 50  0001 C CNN
+F 3 "~" H 5750 4550 50  0001 C CNN
+	1    5750 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 4550 5950 4550
+Connection ~ 5950 4550
+Wire Wire Line
+	5100 4350 5100 4550
+Wire Wire Line
+	5100 4550 5600 4550
+Wire Wire Line
+	5100 4350 4650 4350
+Wire Wire Line
+	4650 4750 4650 4700
+Wire Wire Line
+	5950 4350 5950 4150
+Wire Wire Line
+	5950 4150 6300 4150
+Wire Wire Line
+	5950 4350 6000 4350
+Wire Wire Line
+	6600 4150 6950 4150
+Wire Wire Line
+	6950 4150 6950 4450
+Wire Wire Line
+	6950 4450 6600 4450
+Wire Wire Line
+	6950 4450 7000 4450
+Connection ~ 6950 4450
+Text GLabel 7000 4450 2    50   Output ~ 0
+ToADC
+Connection ~ 5100 4350
+Wire Wire Line
+	6550 3800 6500 3800
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5EC3B992
+P 6300 3700
+AR Path="/5EC3B992" Ref="Q?"  Part="1" 
+AR Path="/5EBFF598/5EC3B992" Ref="Q?"  Part="1" 
+AR Path="/5EC55EF3/5EC3B992" Ref="Q?"  Part="1" 
+F 0 "Q?" V 6551 3700 50  0000 C CNN
+F 1 "Q_NMOS_DGS" V 6642 3700 50  0001 C CNN
+F 2 "" H 6500 3800 50  0001 C CNN
+F 3 "~" H 6300 3700 50  0001 C CNN
+	1    6300 3700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6950 4150 6950 3800
+Connection ~ 6950 4150
+Wire Wire Line
+	6850 3800 6950 3800
+Wire Wire Line
+	5950 3800 5950 4150
+Wire Wire Line
+	5950 3800 6100 3800
+Connection ~ 5950 4150
+$Comp
+L Device:R_US R?
+U 1 1 5EC3B9A4
+P 6450 4150
+AR Path="/5EC3B9A4" Ref="R?"  Part="1" 
+AR Path="/5EBFF598/5EC3B9A4" Ref="R?"  Part="1" 
+AR Path="/5EC55EF3/5EC3B9A4" Ref="R?"  Part="1" 
+F 0 "R?" V 6350 4150 50  0000 C CNN
+F 1 "R_US" V 6550 4150 50  0000 C CNN
+F 2 "" V 6490 4140 50  0001 C CNN
+F 3 "~" H 6450 4150 50  0001 C CNN
+	1    6450 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 4350 5100 3800
+Connection ~ 5950 3800
+Wire Wire Line
+	5550 2600 5950 2600
+Wire Wire Line
+	5100 2600 5150 2600
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5EC3B9AF
+P 5350 2500
+AR Path="/5EC3B9AF" Ref="Q?"  Part="1" 
+AR Path="/5EBFF598/5EC3B9AF" Ref="Q?"  Part="1" 
+AR Path="/5EC55EF3/5EC3B9AF" Ref="Q?"  Part="1" 
+F 0 "Q?" V 5601 2500 50  0000 C CNN
+F 1 "Q_NMOS_DGS" V 5692 2500 50  0001 C CNN
+F 2 "" H 5550 2600 50  0001 C CNN
+F 3 "~" H 5350 2500 50  0001 C CNN
+	1    5350 2500
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5EC3B9B5
+P 6750 2600
+AR Path="/5EC3B9B5" Ref="R?"  Part="1" 
+AR Path="/5EBFF598/5EC3B9B5" Ref="R?"  Part="1" 
+AR Path="/5EC55EF3/5EC3B9B5" Ref="R?"  Part="1" 
+F 0 "R?" V 6650 2600 50  0000 C CNN
+F 1 "R_US" V 6850 2600 50  0000 C CNN
+F 2 "" V 6790 2590 50  0001 C CNN
+F 3 "~" H 6750 2600 50  0001 C CNN
+	1    6750 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5EC3B9BB
+P 6300 2500
+AR Path="/5EC3B9BB" Ref="Q?"  Part="1" 
+AR Path="/5EBFF598/5EC3B9BB" Ref="Q?"  Part="1" 
+AR Path="/5EC55EF3/5EC3B9BB" Ref="Q?"  Part="1" 
+F 0 "Q?" V 6551 2500 50  0000 C CNN
+F 1 "Q_NMOS_DGS" V 6642 2500 50  0001 C CNN
+F 2 "" H 6500 2600 50  0001 C CNN
+F 3 "~" H 6300 2500 50  0001 C CNN
+	1    6300 2500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6900 2600 6950 2600
+Connection ~ 6950 3800
+Wire Wire Line
+	6600 2600 6550 2600
+$Comp
+L Device:C C?
+U 1 1 5EC3B9C7
+P 6750 2350
+AR Path="/5EC3B9C7" Ref="C?"  Part="1" 
+AR Path="/5EBFF598/5EC3B9C7" Ref="C?"  Part="1" 
+AR Path="/5EC55EF3/5EC3B9C7" Ref="C?"  Part="1" 
+F 0 "C?" H 6865 2396 50  0000 L CNN
+F 1 "470nF" H 6865 2305 50  0000 L CNN
+F 2 "" H 6788 2200 50  0001 C CNN
+F 3 "~" H 6750 2350 50  0001 C CNN
+	1    6750 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6550 2600 6550 2350
+Wire Wire Line
+	6550 2350 6600 2350
+Connection ~ 6550 2600
+Wire Wire Line
+	6550 2600 6500 2600
+Wire Wire Line
+	6900 2350 6950 2350
+Wire Wire Line
+	5900 3800 5950 3800
+Wire Wire Line
+	5600 3800 5550 3800
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5EC7CAED
+P 5350 3700
+AR Path="/5EC7CAED" Ref="Q?"  Part="1" 
+AR Path="/5EBFF598/5EC7CAED" Ref="Q?"  Part="1" 
+AR Path="/5EC55EF3/5EC7CAED" Ref="Q?"  Part="1" 
+F 0 "Q?" V 5601 3700 50  0000 C CNN
+F 1 "Q_NMOS_DGS" V 5692 3700 50  0001 C CNN
+F 2 "" H 5550 3800 50  0001 C CNN
+F 3 "~" H 5350 3700 50  0001 C CNN
+	1    5350 3700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5150 3800 5100 3800
+$Comp
+L Device:C C?
+U 1 1 5EC7CAF4
+P 5750 3800
+AR Path="/5EC7CAF4" Ref="C?"  Part="1" 
+AR Path="/5EBFF598/5EC7CAF4" Ref="C?"  Part="1" 
+AR Path="/5EC55EF3/5EC7CAF4" Ref="C?"  Part="1" 
+F 0 "C?" V 5900 3800 50  0000 C CNN
+F 1 "470nF" V 5600 3800 50  0000 C CNN
+F 2 "" H 5788 3650 50  0001 C CNN
+F 3 "~" H 5750 3800 50  0001 C CNN
+	1    5750 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6950 3200 6950 3800
+$Comp
+L Device:C C?
+U 1 1 5EC81DDF
+P 6700 3800
+AR Path="/5EC81DDF" Ref="C?"  Part="1" 
+AR Path="/5EBFF598/5EC81DDF" Ref="C?"  Part="1" 
+AR Path="/5EC55EF3/5EC81DDF" Ref="C?"  Part="1" 
+F 0 "C?" V 6850 3800 50  0000 C CNN
+F 1 "470nF" V 6550 3800 50  0000 C CNN
+F 2 "" H 6738 3650 50  0001 C CNN
+F 3 "~" H 6700 3800 50  0001 C CNN
+	1    6700 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5900 3200 5950 3200
+Wire Wire Line
+	5600 3200 5550 3200
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5EC86759
+P 5350 3100
+AR Path="/5EC86759" Ref="Q?"  Part="1" 
+AR Path="/5EBFF598/5EC86759" Ref="Q?"  Part="1" 
+AR Path="/5EC55EF3/5EC86759" Ref="Q?"  Part="1" 
+F 0 "Q?" V 5601 3100 50  0000 C CNN
+F 1 "Q_NMOS_DGS" V 5692 3100 50  0001 C CNN
+F 2 "" H 5550 3200 50  0001 C CNN
+F 3 "~" H 5350 3100 50  0001 C CNN
+	1    5350 3100
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5150 3200 5100 3200
+$Comp
+L Device:C C?
+U 1 1 5EC86760
+P 5750 3200
+AR Path="/5EC86760" Ref="C?"  Part="1" 
+AR Path="/5EBFF598/5EC86760" Ref="C?"  Part="1" 
+AR Path="/5EC55EF3/5EC86760" Ref="C?"  Part="1" 
+F 0 "C?" V 5900 3200 50  0000 C CNN
+F 1 "470nF" V 5600 3200 50  0000 C CNN
+F 2 "" H 5788 3050 50  0001 C CNN
+F 3 "~" H 5750 3200 50  0001 C CNN
+	1    5750 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6550 3200 6500 3200
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5EC8B22E
+P 6300 3100
+AR Path="/5EC8B22E" Ref="Q?"  Part="1" 
+AR Path="/5EBFF598/5EC8B22E" Ref="Q?"  Part="1" 
+AR Path="/5EC55EF3/5EC8B22E" Ref="Q?"  Part="1" 
+F 0 "Q?" V 6551 3100 50  0000 C CNN
+F 1 "Q_NMOS_DGS" V 6642 3100 50  0001 C CNN
+F 2 "" H 6500 3200 50  0001 C CNN
+F 3 "~" H 6300 3100 50  0001 C CNN
+	1    6300 3100
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6100 3200 5950 3200
+$Comp
+L Device:C C?
+U 1 1 5EC8B235
+P 6700 3200
+AR Path="/5EC8B235" Ref="C?"  Part="1" 
+AR Path="/5EBFF598/5EC8B235" Ref="C?"  Part="1" 
+AR Path="/5EC55EF3/5EC8B235" Ref="C?"  Part="1" 
+F 0 "C?" V 6850 3200 50  0000 C CNN
+F 1 "470nF" V 6550 3200 50  0000 C CNN
+F 2 "" H 6738 3050 50  0001 C CNN
+F 3 "~" H 6700 3200 50  0001 C CNN
+	1    6700 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6850 3200 6950 3200
+Wire Wire Line
+	5100 3200 5100 3800
+Connection ~ 5100 3800
+Wire Wire Line
+	5950 3800 5950 3200
+Connection ~ 5950 3200
+Wire Wire Line
+	5100 2600 5100 3200
+Connection ~ 5100 3200
+Wire Wire Line
+	5950 3200 5950 2600
+Wire Wire Line
+	6950 2350 6950 2600
+Connection ~ 6950 3200
+Connection ~ 6950 2600
+Wire Wire Line
+	6950 2600 6950 3200
+Wire Wire Line
+	6100 2600 5950 2600
+Connection ~ 5950 2600
+$EndSCHEMATC
