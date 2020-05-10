@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 2
 Title "POxiM test shield"
 Date "2020-04-24"
 Rev "A"
@@ -213,27 +213,9 @@ Wire Wire Line
 Wire Wire Line
 	7300 2200 7300 2300
 $Sheet
-S 850  4150 1850 1350
+S 3700 4300 1850 1350
 U 5EB36E07
 F0 "Delta sigma implementation" 50
 F1 "Delta sigma.sch" 50
-$EndSheet
-$Sheet
-S 2900 4150 2100 1350
-U 5EBF2A40
-F0 "Time freezing filter after TIA implementation" 50
-F1 "TimeFreeze2.sch" 50
-$EndSheet
-$Sheet
-S 850  5750 1850 1350
-U 5EBFF598
-F0 "Time freezing filter in TIA implementation" 50
-F1 "TimeFreeze1.sch" 50
-$EndSheet
-$Sheet
-S 2900 5750 2100 1350
-U 5EC55EF3
-F0 "Simplified sample and hold implementation" 50
-F1 "SampleHold1.sch" 50
 $EndSheet
 $EndSCHEMATC
