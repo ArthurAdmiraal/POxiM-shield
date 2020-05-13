@@ -18,11 +18,14 @@ L Device:R_US R?
 U 1 1 5EB6EB96
 P 5200 3750
 AR Path="/5EB6EB96" Ref="R?"  Part="1" 
-AR Path="/5EB36E07/5EB6EB96" Ref="R?"  Part="1" 
-F 0 "R?" V 5100 3750 50  0000 C CNN
+AR Path="/5EB36E07/5EB6EB96" Ref="R1"  Part="1" 
+F 0 "R1" V 5100 3750 50  0000 C CNN
 F 1 "3.3MΩ" V 5300 3750 50  0000 C CNN
-F 2 "" V 5240 3740 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5240 3740 50  0001 C CNN
 F 3 "~" H 5200 3750 50  0001 C CNN
+F 4 "Panasonic" V 5200 3750 50  0001 C CNN "Mfr."
+F 5 "ERJ-6GEYJ335V" V 5200 3750 50  0001 C CNN "Mfr. No."
+F 6 "667-ERJ-6GEYJ335V" V 5200 3750 50  0001 C CNN "Mouser No."
 	1    5200 3750
 	0    1    1    0   
 $EndComp
@@ -39,11 +42,14 @@ L Device:C C?
 U 1 1 5EB8EBED
 P 5700 4100
 AR Path="/5EB8EBED" Ref="C?"  Part="1" 
-AR Path="/5EB36E07/5EB8EBED" Ref="C?"  Part="1" 
-F 0 "C?" V 5550 4100 50  0000 C CNN
+AR Path="/5EB36E07/5EB8EBED" Ref="C2"  Part="1" 
+F 0 "C2" V 5550 4100 50  0000 C CNN
 F 1 "100pF" V 5850 4100 50  0000 C CNN
-F 2 "" H 5738 3950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5738 3950 50  0001 C CNN
 F 3 "~" H 5700 4100 50  0001 C CNN
+F 4 "Murata" V 5700 4100 50  0001 C CNN "Mfr."
+F 5 "GCM1885C2A101JA16D" V 5700 4100 50  0001 C CNN "Mfr. No."
+F 6 "81-GCM1885C2A101JA6D" V 5700 4100 50  0001 C CNN "Mouser No."
 	1    5700 4100
 	0    1    1    0   
 $EndComp
@@ -56,13 +62,16 @@ Text Notes 7250 5800 0    50   ~ 0
 Text Notes 4500 3550 2    50   ~ 0
 Wired to discharge
 $Comp
-L Amplifier_Operational:LM321 U?
+L Amplifier_Operational:LM321 U1
 U 1 1 5ECC24CB
 P 5750 3450
-F 0 "U?" H 5700 3750 50  0000 L CNN
+F 0 "U1" H 5700 3750 50  0000 L CNN
 F 1 "LM321" H 5700 3650 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5750 3450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm321.pdf" H 5750 3450 50  0001 C CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&gotoUrl=http://www.ti.com/lit/ds/symlink/lm321lv.pdf" H 5750 3450 50  0001 C CNN
+F 4 "Texas Instuments" H 5750 3450 50  0001 C CNN "Mfr."
+F 5 "LM321LVIDBVR" H 5750 3450 50  0001 C CNN "Mfr No."
+F 6 "595-LM321LVIDBVR" H 5750 3450 50  0001 C CNN "Mouser No."
 	1    5750 3450
 	1    0    0    -1  
 $EndComp
@@ -76,17 +85,6 @@ Wire Wire Line
 	5700 3800 5650 3800
 Wire Wire Line
 	5650 3800 5650 3750
-$Comp
-L Device:C_Small C?
-U 1 1 5ECC458D
-P 5450 3050
-F 0 "C?" H 5350 3100 50  0000 R CNN
-F 1 "0.1µF" H 5350 3000 50  0000 R CNN
-F 2 "" H 5450 3050 50  0001 C CNN
-F 3 "~" H 5450 3050 50  0001 C CNN
-	1    5450 3050
-	1    0    0    -1  
-$EndComp
 Text HLabel 5400 3200 0    50   Input ~ 0
 GND
 Wire Wire Line
@@ -149,4 +147,20 @@ Wire Wire Line
 	5850 4100 6100 4100
 Text HLabel 5400 2900 0    50   Input ~ 0
 +5V
+$Comp
+L Device:C_Small C?
+U 1 1 5EC1EC8F
+P 5450 3050
+AR Path="/5EBC558F/5EC1EC8F" Ref="C?"  Part="1" 
+AR Path="/5EB36E07/5EC1EC8F" Ref="C1"  Part="1" 
+F 0 "C1" H 5462 3125 50  0000 L CNN
+F 1 "100nF" H 5462 2978 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5450 3050 50  0001 C CNN
+F 3 "~" H 5450 3050 50  0001 C CNN
+F 4 "Murata Electronics" H 5450 3050 50  0001 C CNN "Mfr."
+F 5 "GCJ188R71E104KA12D" H 5450 3050 50  0001 C CNN "Mfr. No."
+F 6 "81-GCJ188R71E104KA2D" H 5450 3050 50  0001 C CNN "Mouser No."
+	1    5450 3050
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

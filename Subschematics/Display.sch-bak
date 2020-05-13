@@ -601,12 +601,6 @@ Wire Wire Line
 	5750 3150 5750 3600
 Wire Wire Line
 	5750 2950 5750 2850
-Wire Bus Line
-	2950 5650 9250 5650
-Wire Bus Line
-	2950 1750 9250 1750
-Wire Bus Line
-	2950 3700 8700 3700
 $Comp
 L Device:R_Small R?
 U 1 1 5EC535DD
@@ -629,4 +623,10 @@ F 3 "~" H 5750 4350 50  0001 C CNN
 	1    5750 4350
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	2950 3700 8700 3700
+Wire Bus Line
+	2950 5650 9250 5650
+Wire Bus Line
+	2950 1750 9250 1750
 $EndSCHEMATC

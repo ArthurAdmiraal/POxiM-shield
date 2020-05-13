@@ -1,4 +1,4 @@
-update=2020 April 24, Friday 23:29:55
+update=do 14 mei 2020 00:32:37 CEST
 version=1
 last_client=kicad
 [general]
@@ -37,7 +37,7 @@ PageLayoutDescrFile=Libraries/Sheets/POxiM_PageLayout_schematic.kicad_wks
 PlotDirectoryName=
 SubpartIdSeparator=0
 SubpartFirstId=65
-NetFmtName=
+NetFmtName=Pcbnew
 SpiceAjustPassiveValues=0
 LabSize=50
 ERC_TestSimilarLabels=1
