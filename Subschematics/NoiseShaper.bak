@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:POxiM-wristcomputer-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -19,11 +19,14 @@ L Device:R_US R?
 U 1 1 5EB6EB96
 P 5200 3750
 AR Path="/5EB6EB96" Ref="R?"  Part="1" 
-AR Path="/5EB36E07/5EB6EB96" Ref="R?"  Part="1" 
-F 0 "R?" V 5100 3750 50  0000 C CNN
+AR Path="/5EB36E07/5EB6EB96" Ref="R1"  Part="1" 
+F 0 "R1" V 5100 3750 50  0000 C CNN
 F 1 "3.3MΩ" V 5300 3750 50  0000 C CNN
-F 2 "" V 5240 3740 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5240 3740 50  0001 C CNN
 F 3 "~" H 5200 3750 50  0001 C CNN
+F 4 "Panasonic" V 5200 3750 50  0001 C CNN "Mfr."
+F 5 "ERJ-6GEYJ335V" V 5200 3750 50  0001 C CNN "Mfr. No."
+F 6 "667-ERJ-6GEYJ335V" V 5200 3750 50  0001 C CNN "Mouser No."
 	1    5200 3750
 	0    1    1    0   
 $EndComp
@@ -40,11 +43,14 @@ L Device:C C?
 U 1 1 5EB8EBED
 P 5700 4100
 AR Path="/5EB8EBED" Ref="C?"  Part="1" 
-AR Path="/5EB36E07/5EB8EBED" Ref="C?"  Part="1" 
-F 0 "C?" V 5550 4100 50  0000 C CNN
+AR Path="/5EB36E07/5EB8EBED" Ref="C2"  Part="1" 
+F 0 "C2" V 5550 4100 50  0000 C CNN
 F 1 "100pF" V 5850 4100 50  0000 C CNN
-F 2 "" H 5738 3950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5738 3950 50  0001 C CNN
 F 3 "~" H 5700 4100 50  0001 C CNN
+F 4 "Murata" V 5700 4100 50  0001 C CNN "Mfr."
+F 5 "GCM1885C2A101JA16D" V 5700 4100 50  0001 C CNN "Mfr. No."
+F 6 "81-GCM1885C2A101JA6D" V 5700 4100 50  0001 C CNN "Mouser No."
 	1    5700 4100
 	0    1    1    0   
 $EndComp
@@ -57,13 +63,16 @@ Text Notes 7250 5800 0    50   ~ 0
 Text Notes 4500 3550 2    50   ~ 0
 Wired to discharge
 $Comp
-L Amplifier_Operational:LM321 U?
+L Amplifier_Operational:LM321 U1
 U 1 1 5ECC24CB
 P 5750 3450
-F 0 "U?" H 5700 3750 50  0000 L CNN
+F 0 "U1" H 5700 3750 50  0000 L CNN
 F 1 "LM321" H 5700 3650 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5750 3450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm321.pdf" H 5750 3450 50  0001 C CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&gotoUrl=http://www.ti.com/lit/ds/symlink/lm321lv.pdf" H 5750 3450 50  0001 C CNN
+F 4 "Texas Instuments" H 5750 3450 50  0001 C CNN "Mfr."
+F 5 "LM321LVIDBVR" H 5750 3450 50  0001 C CNN "Mfr No."
+F 6 "595-LM321LVIDBVR" H 5750 3450 50  0001 C CNN "Mouser No."
 	1    5750 3450
 	1    0    0    -1  
 $EndComp
@@ -77,19 +86,6 @@ Wire Wire Line
 	5700 3800 5650 3800
 Wire Wire Line
 	5650 3800 5650 3750
-Text HLabel 5400 2900 0    50   Input ~ 0
-+3.3V
-$Comp
-L Device:C_Small C?
-U 1 1 5ECC458D
-P 5450 3050
-F 0 "C?" H 5350 3100 50  0000 R CNN
-F 1 "0.1µF" H 5350 3000 50  0000 R CNN
-F 2 "" H 5450 3050 50  0001 C CNN
-F 3 "~" H 5450 3050 50  0001 C CNN
-	1    5450 3050
-	1    0    0    -1  
-$EndComp
 Text HLabel 5400 3200 0    50   Input ~ 0
 GND
 Wire Wire Line
@@ -150,4 +146,22 @@ Text Notes 7800 3200 0    50   ~ 0
 # Input noise\nFeedback resistor noise and input referred controller current noise directly \nimpact the input SNR. The resistor noise can be made arbitraily small by \nusing a voltage divider and lower resistor value. The controller voltage noise \nonly adds to the ADC noise since it isn’t integrated as the current noise, and\nis thus noise shaped away.\n\n# MOSFET threshold voltage\nMaximum output voltage is Vo = Vcc - (Vth + 2 · Vi). At startup, the \ncapacitors have Vc=0V, so the MOSFETs nicely conduct. When the input \nclips, the capacitors are charged to the maximum output voltage. As soon as \nthe input current drops within the minimum range, the feedback resistor will\ndischarge them.\n\n# Aliasing\nNoise before the integrator is integrated and then sampled at the ADC \nsample frequency. Noise after the integrator is directly sampled at the ADC \nsample frequency. Hence, noise will be aliased down at all points in the \nsystem by the ADC sample frequency. However, the limited bandwidth of the \nintegrator will act as an anti-aliasing filter for noise before the integrator. In \nabsence of a dedicated anti-aliasing filter after the integrator, the only limit \nto aliasing will be the bandwidth of the ADC itself.\n\n# Channel bleeding\n
 Wire Wire Line
 	5850 4100 6100 4100
+Text HLabel 5400 2900 0    50   Input ~ 0
++5V
+$Comp
+L Device:C_Small C?
+U 1 1 5EC1EC8F
+P 5450 3050
+AR Path="/5EBC558F/5EC1EC8F" Ref="C?"  Part="1" 
+AR Path="/5EB36E07/5EC1EC8F" Ref="C1"  Part="1" 
+F 0 "C1" H 5462 3125 50  0000 L CNN
+F 1 "100nF" H 5462 2978 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5450 3050 50  0001 C CNN
+F 3 "~" H 5450 3050 50  0001 C CNN
+F 4 "Murata Electronics" H 5450 3050 50  0001 C CNN "Mfr."
+F 5 "GCJ188R71E104KA12D" H 5450 3050 50  0001 C CNN "Mfr. No."
+F 6 "81-GCJ188R71E104KA2D" H 5450 3050 50  0001 C CNN "Mouser No."
+	1    5450 3050
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

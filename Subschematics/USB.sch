@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:POxiM-wristcomputer-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -134,4 +135,14 @@ F 6 "726-BAS3010A03WE632" V 4850 2550 50  0001 C CNN "Mouser No."
 	1    4850 2550
 	0    1    1    0   
 $EndComp
+Text Notes 2000 2550 0    50   ~ 0
+Can be shorted for debugging a development\nunit whilst in enclosure.
+Wire Notes Line
+	2950 2600 3700 2600
+Wire Notes Line
+	3700 2600 3700 3450
+Wire Notes Line
+	3700 3450 2950 3450
+Wire Notes Line
+	2950 3450 2950 2600
 $EndSCHEMATC
