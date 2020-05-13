@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:POxiM-wristcomputer-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -52,7 +53,7 @@ Ideas:\n - 2 MOSFETs could be replaced with single JFET\n - Look into using 10-b
 Text Notes 600  4650 0    50   ~ 0
 Nonidealities which may mess up measurement:\n - Capacitor leakage\n - Multiplexer charge injection\n - Multiplexer leakage current\n - Controller noise (voltage & current)\n - Resistor noise (voltage & current)\n - Mosfet threshold voltage\n - Stability?\n - Bandwidth?\n - Aliasing?
 Text Notes 7250 5800 0    50   ~ 0
-# Capacitor leakage\nAccording to https://www.murata.com/en-eu/support/faqs/products/capacitor/mlcc/char/0039,\nceramic capacitors generally have an isolation resistance of >10GΩ, so for\nvoltages <3.3V, this gives currents of I = 3.3V / 10 = 0.33nA
+# Capacitor leakage\nAccording to https://www.murata.com/en-eu/support/faqs/products/\ncapacitor/mlcc/char/0039, capacitor leakage is best modeled with a parallel \n‘isolation resistance’, usually >10GΩ for small capacitors. This effectively\nlimits the DC gain, which is already an inherent limitation of op amps. Hence,\ninvestigating capacitor leakage effects amounts to investigation the effects \nof limited DC gain.
 Text Notes 4500 3550 2    50   ~ 0
 Wired to discharge
 $Comp
@@ -141,8 +142,8 @@ Text Notes 5125 3525 0    50   ~ 0
 Current
 Wire Bus Line
 	5100 3500 5000 3500
-Text Notes 600  7250 0    50   ~ 0
-Things to analyse:\n ! Input noise\n   ! Find out difference between input referred noise and ADC noise\n   ! Find input referred current noise\n   ! Find ADC referred noise\n ! MOSFET threshold voltage\n   ! Find maximum output voltage from MOSFET threshold voltage\n   ! Find whether MOSFET threshold voltage hinders startup\n ! Aliasing?\n   ! Find out the effects of aliasing at input\n   ! Find out the effects of aliasing at ADC\n - Channel bleeding\n   - Linear addition or noise?\n - Capacitor leakage\n   - Linear scaling or additional noise?\n   - Does parallel capacitor reduce it?\n - Multiplexer charge injection\n    - Where to\n    - What magnitude\n    - Does parallel capacitor reduce it?\n - Multiplexer leakage current\n    - Where to\n    - Output signal sensitvity\n    - Does parallel capacitor reduce effect?\n - Linearity\n   - Effect of ADC nonlinearity on overall linearity?\n - Stability\n   - Small-signal model at operating point\n   - Find bandwidth\n   - Find gain and phase margin\n   - Possible stability mitigations
+Text Notes 600  6350 0    50   ~ 0
+Things to analyse:\n ! Input noise\n   ! Find out difference between input referred noise and ADC noise\n   ! Find input referred current noise\n   ! Find ADC referred noise\n ! MOSFET threshold voltage\n   ! Find maximum output voltage from MOSFET threshold voltage\n   ! Find whether MOSFET threshold voltage hinders startup\n ! Aliasing?\n   ! Find out the effects of aliasing at input\n   ! Find out the effects of aliasing at ADC\n - Linearity\n   - Effect of ADC nonlinearity on overall linearity?\n - Capacitor leakage \n   - Investigate effect of limited DC gain\n - Bandwidth\n  - Investigate effect of limited analog bandwidth\n - Stability\n   - Small-signal model at operating point\n   - Find bandwidth\n   - Find gain and phase margin\n   - Possible stability mitigations
 Text Notes 7800 3200 0    50   ~ 0
 # Input noise\nFeedback resistor noise and input referred controller current noise directly \nimpact the input SNR. The resistor noise can be made arbitraily small by \nusing a voltage divider and lower resistor value. The controller voltage noise \nonly adds to the ADC noise since it isn’t integrated as the current noise, and\nis thus noise shaped away.\n\n# MOSFET threshold voltage\nMaximum output voltage is Vo = Vcc - (Vth + 2 · Vi). At startup, the \ncapacitors have Vc=0V, so the MOSFETs nicely conduct. When the input \nclips, the capacitors are charged to the maximum output voltage. As soon as \nthe input current drops within the minimum range, the feedback resistor will\ndischarge them.\n\n# Aliasing\nNoise before the integrator is integrated and then sampled at the ADC \nsample frequency. Noise after the integrator is directly sampled at the ADC \nsample frequency. Hence, noise will be aliased down at all points in the \nsystem by the ADC sample frequency. However, the limited bandwidth of the \nintegrator will act as an anti-aliasing filter for noise before the integrator. In \nabsence of a dedicated anti-aliasing filter after the integrator, the only limit \nto aliasing will be the bandwidth of the ADC itself.\n\n# Channel bleeding\n
 Wire Wire Line

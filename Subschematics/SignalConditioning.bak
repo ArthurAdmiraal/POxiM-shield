@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:POxiM-wristcomputer-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -25,7 +25,7 @@ LEDOut.Red
 Text HLabel 4600 2900 0    50   Input ~ 0
 GND
 Text HLabel 4600 2450 0    50   Input ~ 0
-+3.3V
++5V
 Text HLabel 4600 2600 0    50   Output ~ 0
 PhotoDiodeInternal
 Text HLabel 5450 2600 2    50   Input ~ 0
