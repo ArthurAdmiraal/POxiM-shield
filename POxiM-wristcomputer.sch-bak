@@ -74,7 +74,7 @@ F2 "Segment[0..6]" I L 6200 2350 50
 F3 "Common[0..1]" I L 6200 2550 50 
 $EndSheet
 $Sheet
-S 2150 3100 1650 1450
+S 2200 3100 1650 1450
 U 5EBC5C8E
 F0 "USB interface" 50
 F1 "Subschematics/USB.sch" 50
