@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:POxiM-wristcomputer-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -181,34 +180,6 @@ Wire Notes Line
 	7400 2450 7550 2450
 Wire Notes Line
 	7550 2300 7400 2300
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 5EDAD0C3
-P 1750 7400
-F 0 "H4" H 1850 7446 50  0000 L CNN
-F 1 "MountingHole" H 1850 7355 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 1750 7400 50  0001 C CNN
-F 3 "~" H 1750 7400 50  0001 C CNN
-F 4 "~" H 1750 7400 50  0001 C CNN "Mfr."
-F 5 "~" H 1750 7400 50  0001 C CNN "Mfr. No."
-F 6 "~" H 1750 7400 50  0001 C CNN "Mouser No."
-	1    1750 7400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 5EDAD9CE
-P 1750 7100
-F 0 "H3" H 1850 7146 50  0000 L CNN
-F 1 "MountingHole" H 1850 7055 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 1750 7100 50  0001 C CNN
-F 3 "~" H 1750 7100 50  0001 C CNN
-F 4 "~" H 1750 7100 50  0001 C CNN "Mfr."
-F 5 "~" H 1750 7100 50  0001 C CNN "Mfr. No."
-F 6 "~" H 1750 7100 50  0001 C CNN "Mouser No."
-	1    1750 7100
-	1    0    0    -1  
-$EndComp
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5EDAE2DB

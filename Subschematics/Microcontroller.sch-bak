@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:POxiM-wristcomputer-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_ST_STM8:STM8S003F3P U?
+L MCU_ST_STM8:STM8S003F3P U2
 U 1 1 5EBBDDDF
 P 6000 3850
-F 0 "U?" H 6350 2950 50  0000 C CNN
+F 0 "U2" H 6350 2950 50  0000 C CNN
 F 1 "STM8S003F3P" H 6300 4750 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 6050 4950 50  0001 L CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00024550.pdf" H 5950 3450 50  0001 C CNN
@@ -77,10 +78,10 @@ Wire Wire Line
 	5550 2650 5350 2650
 Connection ~ 5250 2650
 $Comp
-L Device:Ferrite_Bead_Small FB?
+L Device:Ferrite_Bead_Small FB1
 U 1 1 5EBC4A36
 P 4600 2250
-F 0 "FB?" V 4363 2250 50  0000 C CNN
+F 0 "FB1" V 4363 2250 50  0000 C CNN
 F 1 "Ferrite_Bead_Small" V 4454 2250 50  0000 C CNN
 F 2 "Inductor_SMD:L_0805_2012Metric" V 4530 2250 50  0001 C CNN
 F 3 "~" H 4600 2250 50  0001 C CNN
@@ -88,10 +89,10 @@ F 3 "~" H 4600 2250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C8
 U 1 1 5EBC882D
 P 5250 2450
-F 0 "C?" H 5262 2525 50  0000 L CNN
+F 0 "C8" H 5262 2525 50  0000 L CNN
 F 1 "100nF" H 5262 2378 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5250 2450 50  0001 C CNN
 F 3 "~" H 5250 2450 50  0001 C CNN
@@ -102,10 +103,10 @@ F 6 "81-GCJ188R71E104KA2D" H 5250 2450 50  0001 C CNN "Mouser No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C6
 U 1 1 5EBC898E
 P 4950 2450
-F 0 "C?" H 4962 2525 50  0000 L CNN
+F 0 "C6" H 4962 2525 50  0000 L CNN
 F 1 "2.2uF" H 4962 2378 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4950 2450 50  0001 C CNN
 F 3 "~" H 4950 2450 50  0001 C CNN
@@ -116,10 +117,10 @@ F 6 "81-GCM21BR71E225KA3L" H 4950 2450 50  0001 C CNN "Mouser No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C7
 U 1 1 5EBCB357
 P 5000 4900
-F 0 "C?" H 5012 4975 50  0000 L CNN
+F 0 "C7" H 5012 4975 50  0000 L CNN
 F 1 "470nF" H 5012 4828 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5000 4900 50  0001 C CNN
 F 3 "~" H 5000 4900 50  0001 C CNN
@@ -201,10 +202,10 @@ Entry Wire Line
 Entry Wire Line
 	4350 3250 4450 3150
 $Comp
-L Device:C_Small C?
+L Device:C_Small C9
 U 1 1 5EC2C4C9
 P 5550 2450
-F 0 "C?" H 5562 2525 50  0000 L CNN
+F 0 "C9" H 5562 2525 50  0000 L CNN
 F 1 "100nF" H 5562 2378 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5550 2450 50  0001 C CNN
 F 3 "~" H 5550 2450 50  0001 C CNN
@@ -215,10 +216,10 @@ F 6 "81-GCJ188R71E104KA2D" H 5550 2450 50  0001 C CNN "Mouser No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C5
 U 1 1 5EC2C862
 P 4700 4900
-F 0 "C?" H 4712 4975 50  0000 L CNN
+F 0 "C5" H 4712 4975 50  0000 L CNN
 F 1 "100nF" H 4712 4828 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4700 4900 50  0001 C CNN
 F 3 "~" H 4700 4900 50  0001 C CNN
