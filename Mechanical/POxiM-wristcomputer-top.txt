@@ -1,0 +1,30 @@
+### Module positions - created on 2020 May 15, Friday 16:42:07 ###
+### Printed by Pcbnew version kicad (5.1.0-0)
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val       Package                               PosX       PosY       Rot  Side
+D7        LED       LED_0805_2012Metric_Castellated   101.7500  -125.2500  180.0000  top
+D8        LED       LED_0805_2012Metric_Castellated    78.2500  -125.2500  180.0000  top
+D9        LED       LED_0805_2012Metric_Castellated   105.7500  -129.2500   90.0000  top
+D10       LED       LED_0805_2012Metric_Castellated    82.2500  -129.2500   90.0000  top
+D11       LED       LED_0805_2012Metric_Castellated   105.7500  -137.2500   90.0000  top
+D12       LED       LED_0805_2012Metric_Castellated    82.2500  -137.2500   90.0000  top
+D13       LED       LED_0805_2012Metric_Castellated   101.7500  -141.2500  180.0000  top
+D14       LED       LED_0805_2012Metric_Castellated    78.2500  -141.2500  180.0000  top
+D15       LED       LED_0805_2012Metric_Castellated    97.7500  -137.2500   90.0000  top
+D16       LED       LED_0805_2012Metric_Castellated    74.5000  -137.5000  180.0000  top
+D17       LED       LED_0805_2012Metric_Castellated    97.7500  -129.2500   90.0000  top
+D18       LED       LED_0805_2012Metric_Castellated    74.5000  -129.0000  180.0000  top
+D19       LED       LED_0805_2012Metric_Castellated   101.7500  -133.2500  180.0000  top
+D20       LED       LED_0805_2012Metric_Castellated    78.2500  -133.2500  180.0000  top
+D21       LED       LED_0805_2012Metric_Castellated    90.0000  -125.2500  180.0000  top
+D22       LED       LED_0805_2012Metric_Castellated    72.2500  -127.0000  180.0000  top
+D23       LED       LED_0805_2012Metric_Castellated    94.0000  -129.2500   90.0000  top
+D24       LED       LED_0805_2012Metric_Castellated   108.2500  -130.7500   90.0000  top
+D25       LED       LED_0805_2012Metric_Castellated    94.0000  -137.2500   90.0000  top
+D26       LED       LED_0805_2012Metric_Castellated   108.2500  -135.7500   90.0000  top
+D27       LED       LED_0805_2012Metric_Castellated    90.0000  -141.2500  180.0000  top
+D28       LED       LED_0805_2012Metric_Castellated    86.0000  -137.2500   90.0000  top
+D29       LED       LED_0805_2012Metric_Castellated    86.0000  -129.2500   90.0000  top
+D30       LED       LED_0805_2012Metric_Castellated    90.0000  -133.2500  180.0000  top
+## End
