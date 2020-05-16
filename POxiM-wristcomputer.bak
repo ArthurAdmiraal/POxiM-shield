@@ -1477,10 +1477,10 @@ F 3 "~" H 8400 2050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Jumper_NO_Small JP21
+L Device:Jumper_NO_Small JP27
 U 1 1 5EFDA485
 P 7200 4750
-F 0 "JP21" V 7200 4798 50  0000 L CNN
+F 0 "JP27" V 7200 4798 50  0000 L CNN
 F 1 "Jumper_NO_Small" H 7200 4844 50  0001 C CNN
 F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7200 4750 50  0001 C CNN
 F 3 "~" H 7200 4750 50  0001 C CNN
