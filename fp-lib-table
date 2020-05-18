@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name POxiM-uncategorised)(type KiCad)(uri ${KIPRJMOD}/Libraries/Footprints/POxiM-uncategorised.pretty)(options "")(descr ""))
   (lib (name POxiM-logos)(type KiCad)(uri ${KIPRJMOD}/Libraries/Footprints/POxiM-logos.pretty)(options "")(descr ""))
+  (lib (name Panelization)(type KiCad)(uri ${KIPRJMOD}/Libraries/Footprints/Panelization.pretty)(options "")(descr ""))
 )

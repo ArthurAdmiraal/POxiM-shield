@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name POxiM-uncategorised)(type Legacy)(uri ${KIPRJMOD}/Libraries/Symbols/POxiM-uncategorised.lib)(options "")(descr ""))
+  (lib (name POxiM-mechanical)(type Legacy)(uri ${KIPRJMOD}/Libraries/Symbols/POxiM-mechanical.lib)(options "")(descr ""))
+)

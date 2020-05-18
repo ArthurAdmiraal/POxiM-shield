@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 2 9
 Title "Noise shaping"
 Date "2020-05-06"
 Rev "A"
@@ -71,7 +71,7 @@ F 1 "LM321" H 5700 3650 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5750 3450 50  0001 C CNN
 F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&gotoUrl=http://www.ti.com/lit/ds/symlink/lm321lv.pdf" H 5750 3450 50  0001 C CNN
 F 4 "Texas Instuments" H 5750 3450 50  0001 C CNN "Mfr."
-F 5 "LM321LVIDBVR" H 5750 3450 50  0001 C CNN "Mfr No."
+F 5 "LM321LVIDBVR" H 5750 3450 50  0001 C CNN "Mfr. No."
 F 6 "595-LM321LVIDBVR" H 5750 3450 50  0001 C CNN "Mouser No."
 	1    5750 3450
 	1    0    0    -1  

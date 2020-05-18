@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 3 9
 Title ""
 Date ""
 Rev ""
@@ -73,8 +73,6 @@ Wire Wire Line
 Wire Wire Line
 	6600 4700 6600 3450
 Connection ~ 6400 4700
-Wire Wire Line
-	7150 3050 7400 3050
 Wire Wire Line
 	6950 3050 6600 3050
 Wire Wire Line
@@ -222,8 +220,6 @@ Wire Wire Line
 Connection ~ 6050 4700
 Wire Wire Line
 	6050 4700 6400 4700
-Wire Wire Line
-	5650 3050 4400 3050
 Connection ~ 5650 3050
 $Comp
 L Device:D_Schottky D?
@@ -305,4 +301,8 @@ F 6 "78-MMSZ5231C-E3-08" V 6400 3300 50  0001 C CNN "Mouser No."
 	1    6400 3300
 	0    -1   1    0   
 $EndComp
+Wire Wire Line
+	4400 3050 5650 3050
+Wire Wire Line
+	7150 3050 7400 3050
 $EndSCHEMATC

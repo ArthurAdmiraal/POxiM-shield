@@ -4,1487 +4,851 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
-Title "POxiM wrist computer display mockup"
+Sheet 1 9
+Title "POxiM wrist computer"
 Date "2020-05-13"
 Rev "A"
 Comp "POxiM"
 Comment1 "By Arthur Admiraal"
-Comment2 "For testing diffuser"
+Comment2 "Pulse/Oximeter measurement unit"
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Sheet
+S 6150 2500 1500 600 
+U 5EB36E07
+F0 "Noise shaper" 50
+F1 "Subschematics/NoiseShaper.sch" 50
+F2 "Control.~Prediction" I L 6150 2850 50 
+F3 "ToADC" O L 6150 2750 50 
+F4 "GND" I L 6150 3000 50 
+F5 "Photodiode" I R 7650 2800 50 
+F6 "+5V" I L 6150 2600 50 
+$EndSheet
+$Sheet
+S 8100 1700 1650 1450
+U 5EBC342A
+F0 "Signal conditioning" 50
+F1 "Subschematics/SignalConditioning.sch" 50
+F2 "LEDDrive.IR" I L 8100 2300 50 
+F3 "LEDOut.IR" O R 9750 2400 50 
+F4 "LEDDrive.Red" I L 8100 2200 50 
+F5 "LEDOut.Red" O R 9750 2500 50 
+F6 "GND" I L 8100 3000 50 
+F7 "PhotoDiodeInternal" O L 8100 2800 50 
+F8 "PhotoDiode" I R 9750 2200 50 
+$EndSheet
+$Comp
+L Connector:AudioJack4_Ground J2
+U 1 1 5EBC41F5
+P 10400 2300
+F 0 "J2" H 10070 2218 50  0000 R CNN
+F 1 "AudioJack4_Ground" H 10070 2127 50  0000 R CNN
+F 2 "POxiM-uncategorised:CUI_SJ-43514-SMT" H 10400 2300 50  0001 C CNN
+F 3 "https://nl.mouser.com/datasheet/2/670/sj-4351x-smt-1779337.pdf" H 10400 2300 50  0001 C CNN
+F 4 "CUI Devices" H 10400 2300 50  0001 C CNN "Mfr."
+F 5 "SJ-43514-SMT-TR" H 10400 2300 50  0001 C CNN "Mfr. No."
+F 6 "490-SJ-43514-SMT-TR" H 10400 2300 50  0001 C CNN "Mouser No."
+	1    10400 2300
+	-1   0    0    -1  
+$EndComp
+$Sheet
+S 4000 1700 1650 1450
+U 5EBC558F
+F0 "Microcontroller" 50
+F1 "Subschematics/Microcontroller.sch" 50
+F2 "GND" I L 4000 3050 50 
+F3 "5V" I L 4000 1850 50 
+F4 "Segment[0..6]" O R 5650 1850 50 
+F5 "Common[0..1]" O R 5650 2050 50 
+F6 "ADC_feedback" O R 5650 2850 50 
+F7 "ADC_input" I R 5650 2750 50 
+F8 "SWIM" O L 4000 2250 50 
+F9 "LED_R" O R 5650 2200 50 
+F10 "LED_IR" O R 5650 2300 50 
+F11 "UART1_TX" O L 4000 2400 50 
+$EndSheet
+$Sheet
+S 6100 750  1850 600 
+U 5EBC562E
+F0 "Display" 50
+F1 "Subschematics/Display.sch" 50
+F2 "Segment[0..6]" I L 6100 950 50 
+F3 "Common[0..1]" I L 6100 1150 50 
+$EndSheet
+$Sheet
+S 2050 1700 1650 1450
+U 5EBC5C8E
+F0 "USB interface" 50
+F1 "Subschematics/USB.sch" 50
+F2 "5V_input" I L 2050 2100 50 
+F3 "5V_protected" O R 3700 1850 50 
+F4 "Data+" O L 2050 2300 50 
+F5 "Data-" O L 2050 2400 50 
+F6 "GND" I L 2050 3050 50 
+F7 "SWIM" I R 3700 2250 50 
+F8 "DataTX" I R 3700 2400 50 
+$EndSheet
 $Comp
 L Connector:USB_B_Micro J1
 U 1 1 5EBC5F66
-P 950 3700
-F 0 "J1" H 1007 4167 50  0000 C CNN
-F 1 "USB_B_Micro" H 1007 4076 50  0000 C CNN
-F 2 "POxiM-uncategorised:Micro-B_Molex_105017-0001" H 1100 3650 50  0001 C CNN
-F 3 "~" H 1100 3650 50  0001 C CNN
-F 4 "Molex" H 950 3700 50  0001 C CNN "Mfr."
-F 5 "105017-0001" H 950 3700 50  0001 C CNN "Mfr. No."
-F 6 "538-105017-0001" H 950 3700 50  0001 C CNN "Mouser No."
-	1    950  3700
+P 850 2300
+F 0 "J1" H 907 2767 50  0000 C CNN
+F 1 "USB_B_Micro" H 907 2676 50  0000 C CNN
+F 2 "POxiM-uncategorised:Micro-B_Molex_105017-0001" H 1000 2250 50  0001 C CNN
+F 3 "~" H 1000 2250 50  0001 C CNN
+F 4 "Molex" H 850 2300 50  0001 C CNN "Mfr."
+F 5 "105017-0001" H 850 2300 50  0001 C CNN "Mfr. No."
+F 6 "538-105017-0001" H 850 2300 50  0001 C CNN "Mouser No."
+	1    850  2300
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	6100 950  5850 950 
+Wire Bus Line
+	5850 950  5850 1850
+Wire Bus Line
+	5850 1850 5650 1850
+Wire Bus Line
+	6100 1150 5950 1150
+Wire Bus Line
+	5950 1150 5950 2050
+Wire Bus Line
+	5950 2050 5650 2050
+Wire Wire Line
+	5650 2750 6150 2750
+Wire Wire Line
+	6150 2850 5650 2850
+Wire Notes Line
+	6850 850  6850 1250
+Wire Notes Line
+	6850 1250 7800 1250
+Wire Notes Line
+	7800 1250 7800 850 
+Wire Notes Line
+	6900 900  6900 950 
+Wire Notes Line
+	6900 950  6950 950 
+Wire Notes Line
+	6950 950  6950 900 
+Wire Notes Line
+	6950 900  6900 900 
+Wire Notes Line
+	6900 1050 6900 1100
+Wire Notes Line
+	6900 1100 6950 1100
+Wire Notes Line
+	6950 1100 6950 1050
+Wire Notes Line
+	6950 1050 6900 1050
+Wire Notes Line
+	6900 1150 6900 1200
+Wire Notes Line
+	6900 1200 6950 1200
+Wire Notes Line
+	6950 1200 6950 1150
+Wire Notes Line
+	6950 1150 6900 1150
+Wire Notes Line
+	7200 900  7050 900 
+Wire Notes Line
+	7050 1050 7200 1050
+Wire Notes Line
+	7050 1200 7200 1200
+Wire Notes Line
+	7050 900  7050 1200
+Wire Notes Line
+	7200 900  7200 1200
+Wire Notes Line
+	6850 850  7800 850 
+Wire Notes Line
+	7700 900  7700 1200
+Wire Notes Line
+	7550 900  7550 1200
+Wire Notes Line
+	7550 1200 7700 1200
+Wire Notes Line
+	7550 1050 7700 1050
+Wire Notes Line
+	7700 900  7550 900 
+Wire Notes Line
+	7450 900  7450 1200
+Wire Notes Line
+	7300 900  7300 1200
+Wire Notes Line
+	7300 1200 7450 1200
+Wire Notes Line
+	7300 1050 7450 1050
+Wire Notes Line
+	7450 900  7300 900 
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5EDAE2DB
-P 900 7100
-F 0 "H1" H 1000 7146 50  0000 L CNN
-F 1 "MountingHole" H 1000 7055 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 900 7100 50  0001 C CNN
-F 3 "~" H 900 7100 50  0001 C CNN
-F 4 "~" H 900 7100 50  0001 C CNN "Mfr."
-F 5 "~" H 900 7100 50  0001 C CNN "Mfr. No."
-F 6 "~" H 900 7100 50  0001 C CNN "Mouser No."
-	1    900  7100
+P 700 7250
+F 0 "H1" H 800 7296 50  0000 L CNN
+F 1 "MountingHole" H 800 7205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 700 7250 50  0001 C CNN
+F 3 "~" H 700 7250 50  0001 C CNN
+F 4 "~" H 700 7250 50  0001 C CNN "Mfr."
+F 5 "~" H 700 7250 50  0001 C CNN "Mfr. No."
+F 6 "~" H 700 7250 50  0001 C CNN "Mouser No."
+	1    700  7250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5EDAE92A
-P 900 7400
-F 0 "H2" H 1000 7446 50  0000 L CNN
-F 1 "MountingHole" H 1000 7355 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 900 7400 50  0001 C CNN
-F 3 "~" H 900 7400 50  0001 C CNN
-F 4 "~" H 900 7400 50  0001 C CNN "Mfr."
-F 5 "~" H 900 7400 50  0001 C CNN "Mfr. No."
-F 6 "~" H 900 7400 50  0001 C CNN "Mouser No."
-	1    900  7400
+P 700 7550
+F 0 "H2" H 800 7596 50  0000 L CNN
+F 1 "MountingHole" H 800 7505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 700 7550 50  0001 C CNN
+F 3 "~" H 700 7550 50  0001 C CNN
+F 4 "~" H 700 7550 50  0001 C CNN "Mfr."
+F 5 "~" H 700 7550 50  0001 C CNN "Mfr. No."
+F 6 "~" H 700 7550 50  0001 C CNN "Mouser No."
+	1    700  7550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	850  4100 850  4200
+	750  2700 750  2800
 Wire Wire Line
-	850  4200 950  4200
+	750  2800 850  2800
 Wire Wire Line
-	950  4200 950  4100
+	850  2800 850  2700
 Wire Wire Line
-	950  4200 950  4300
-Connection ~ 950  4200
+	850  2800 850  2900
+Connection ~ 850  2800
+$Comp
+L power:GND #PWR01
+U 1 1 5EDB1CEA
+P 850 2900
+F 0 "#PWR01" H 850 2650 50  0001 C CNN
+F 1 "GND" H 855 2727 50  0000 C CNN
+F 2 "" H 850 2900 50  0001 C CNN
+F 3 "" H 850 2900 50  0001 C CNN
+	1    850  2900
+	1    0    0    -1  
+$EndComp
+Text Label 1800 2100 2    50   ~ 0
+5V_power_input
+NoConn ~ 1150 2500
+Wire Wire Line
+	10200 2400 9750 2400
+Wire Wire Line
+	10200 2300 10150 2300
+Wire Wire Line
+	9750 2200 10200 2200
+Wire Wire Line
+	10400 2700 10400 2800
+Wire Wire Line
+	10400 2800 10150 2800
+Wire Wire Line
+	10150 2800 10150 3350
+Wire Wire Line
+	8100 3000 8000 3000
+Wire Wire Line
+	8000 3000 8000 3400
 $Comp
 L power:GND #PWR07
-U 1 1 5EDB1CEA
-P 950 4300
-F 0 "#PWR07" H 950 4050 50  0001 C CNN
-F 1 "GND" H 955 4127 50  0000 C CNN
-F 2 "" H 950 4300 50  0001 C CNN
-F 3 "" H 950 4300 50  0001 C CNN
-	1    950  4300
+U 1 1 5EDBAF1B
+P 8000 3400
+F 0 "#PWR07" H 8000 3150 50  0001 C CNN
+F 1 "GND" H 8005 3227 50  0000 C CNN
+F 2 "" H 8000 3400 50  0001 C CNN
+F 3 "" H 8000 3400 50  0001 C CNN
+	1    8000 3400
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1250 3900
-Text Notes 9800 3450 0    50   ~ 0
+$Comp
+L power:GND #PWR08
+U 1 1 5EDBAF6C
+P 10150 3350
+F 0 "#PWR08" H 10150 3100 50  0001 C CNN
+F 1 "GND" H 10155 3177 50  0000 C CNN
+F 2 "" H 10150 3350 50  0001 C CNN
+F 3 "" H 10150 3350 50  0001 C CNN
+	1    10150 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2800 7650 2800
+Wire Wire Line
+	5650 2200 8100 2200
+Wire Wire Line
+	5650 2300 8100 2300
+Wire Wire Line
+	6150 2600 6050 2600
+Wire Wire Line
+	6050 2600 6050 2550
+Wire Wire Line
+	6150 3000 6050 3000
+Wire Wire Line
+	6050 3000 6050 3150
+$Comp
+L power:+5V #PWR05
+U 1 1 5EDBFF74
+P 6050 2550
+F 0 "#PWR05" H 6050 2400 50  0001 C CNN
+F 1 "+5V" H 6065 2723 50  0000 C CNN
+F 2 "" H 6050 2550 50  0001 C CNN
+F 3 "" H 6050 2550 50  0001 C CNN
+	1    6050 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5EDC0E1F
+P 6050 3150
+F 0 "#PWR06" H 6050 2900 50  0001 C CNN
+F 1 "GND" H 6055 2977 50  0000 C CNN
+F 2 "" H 6050 3150 50  0001 C CNN
+F 3 "" H 6050 3150 50  0001 C CNN
+	1    6050 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2250 3700 2250
+Wire Wire Line
+	4000 2400 3700 2400
+Wire Wire Line
+	3700 1850 3850 1850
+Wire Wire Line
+	3850 1850 3850 1300
+Connection ~ 3850 1850
+Wire Wire Line
+	3850 1850 4000 1850
+$Comp
+L power:+5V #PWR04
+U 1 1 5EBC7CAA
+P 3850 1300
+F 0 "#PWR04" H 3850 1150 50  0001 C CNN
+F 1 "+5V" H 3865 1473 50  0000 C CNN
+F 2 "" H 3850 1300 50  0001 C CNN
+F 3 "" H 3850 1300 50  0001 C CNN
+	1    3850 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5EBC7E84
+P 1850 3200
+F 0 "#PWR02" H 1850 2950 50  0001 C CNN
+F 1 "GND" H 1855 3027 50  0000 C CNN
+F 2 "" H 1850 3200 50  0001 C CNN
+F 3 "" H 1850 3200 50  0001 C CNN
+	1    1850 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 3050 1850 3050
+Wire Wire Line
+	1850 3050 1850 3200
+Wire Wire Line
+	1150 2100 2050 2100
+Wire Wire Line
+	1150 2400 2050 2400
+Wire Wire Line
+	1150 2300 2050 2300
+$Comp
+L power:GND #PWR03
+U 1 1 5EBE7B4C
+P 3800 3200
+F 0 "#PWR03" H 3800 2950 50  0001 C CNN
+F 1 "GND" H 3805 3027 50  0000 C CNN
+F 2 "" H 3800 3200 50  0001 C CNN
+F 3 "" H 3800 3200 50  0001 C CNN
+	1    3800 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3050 3800 3050
+Wire Wire Line
+	3800 3050 3800 3200
+Wire Wire Line
+	10150 2300 10150 2800
+Connection ~ 10150 2800
+Wire Wire Line
+	10200 2500 9750 2500
+Text Notes 10300 2000 0    50   ~ 0
 for audio:\nmic\ngnd\nright\nleft\n
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5EBE9DDE
-P 1750 7100
-F 0 "H3" H 1850 7146 50  0000 L CNN
-F 1 "MountingHole" H 1850 7055 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 1750 7100 50  0001 C CNN
-F 3 "~" H 1750 7100 50  0001 C CNN
-F 4 "~" H 1750 7100 50  0001 C CNN "Mfr."
-F 5 "~" H 1750 7100 50  0001 C CNN "Mfr. No."
-F 6 "~" H 1750 7100 50  0001 C CNN "Mouser No."
-	1    1750 7100
+P 1550 7250
+F 0 "H3" H 1650 7296 50  0000 L CNN
+F 1 "MountingHole" H 1650 7205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 1550 7250 50  0001 C CNN
+F 3 "~" H 1550 7250 50  0001 C CNN
+F 4 "~" H 1550 7250 50  0001 C CNN "Mfr."
+F 5 "~" H 1550 7250 50  0001 C CNN "Mfr. No."
+F 6 "~" H 1550 7250 50  0001 C CNN "Mouser No."
+	1    1550 7250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5EBE9DE7
-P 1750 7400
-F 0 "H4" H 1850 7446 50  0000 L CNN
-F 1 "MountingHole" H 1850 7355 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 1750 7400 50  0001 C CNN
-F 3 "~" H 1750 7400 50  0001 C CNN
-F 4 "~" H 1750 7400 50  0001 C CNN "Mfr."
-F 5 "~" H 1750 7400 50  0001 C CNN "Mfr. No."
-F 6 "~" H 1750 7400 50  0001 C CNN "Mouser No."
-	1    1750 7400
+P 1550 7550
+F 0 "H4" H 1650 7596 50  0000 L CNN
+F 1 "MountingHole" H 1650 7505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 1550 7550 50  0001 C CNN
+F 3 "~" H 1550 7550 50  0001 C CNN
+F 4 "~" H 1550 7550 50  0001 C CNN "Mfr."
+F 5 "~" H 1550 7550 50  0001 C CNN "Mfr. No."
+F 6 "~" H 1550 7550 50  0001 C CNN "Mouser No."
+	1    1550 7550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H5
 U 1 1 5EC0DFF9
-P 2600 7100
-F 0 "H5" H 2700 7146 50  0000 L CNN
-F 1 "AlignmentHole" H 2700 7055 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 2600 7100 50  0001 C CNN
-F 3 "~" H 2600 7100 50  0001 C CNN
-F 4 "~" H 2600 7100 50  0001 C CNN "Mfr."
-F 5 "~" H 2600 7100 50  0001 C CNN "Mfr. No."
-F 6 "~" H 2600 7100 50  0001 C CNN "Mouser No."
-	1    2600 7100
+P 2400 7250
+F 0 "H5" H 2500 7296 50  0000 L CNN
+F 1 "AlignmentHole" H 2500 7205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 2400 7250 50  0001 C CNN
+F 3 "~" H 2400 7250 50  0001 C CNN
+F 4 "~" H 2400 7250 50  0001 C CNN "Mfr."
+F 5 "~" H 2400 7250 50  0001 C CNN "Mfr. No."
+F 6 "~" H 2400 7250 50  0001 C CNN "Mouser No."
+	1    2400 7250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H6
 U 1 1 5EC0E002
-P 2600 7400
-F 0 "H6" H 2700 7446 50  0000 L CNN
-F 1 "AlignmentHole" H 2700 7355 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 2600 7400 50  0001 C CNN
-F 3 "~" H 2600 7400 50  0001 C CNN
-F 4 "~" H 2600 7400 50  0001 C CNN "Mfr."
-F 5 "~" H 2600 7400 50  0001 C CNN "Mfr. No."
-F 6 "~" H 2600 7400 50  0001 C CNN "Mouser No."
-	1    2600 7400
+P 2400 7550
+F 0 "H6" H 2500 7596 50  0000 L CNN
+F 1 "AlignmentHole" H 2500 7505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 2400 7550 50  0001 C CNN
+F 3 "~" H 2400 7550 50  0001 C CNN
+F 4 "~" H 2400 7550 50  0001 C CNN "Mfr."
+F 5 "~" H 2400 7550 50  0001 C CNN "Mfr. No."
+F 6 "~" H 2400 7550 50  0001 C CNN "Mouser No."
+	1    2400 7550
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR08
-U 1 1 5EC4BB0B
-P 1350 3400
-F 0 "#PWR08" H 1350 3250 50  0001 C CNN
-F 1 "+5V" H 1365 3573 50  0000 C CNN
-F 2 "" H 1350 3400 50  0001 C CNN
-F 3 "" H 1350 3400 50  0001 C CNN
-	1    1350 3400
+L Connector:AudioJack4_Ground J11
+U 1 1 5EC02081
+P 9950 5100
+F 0 "J11" H 9620 5018 50  0000 R CNN
+F 1 "AudioJack4_Ground" H 9620 4927 50  0000 R CNN
+F 2 "POxiM-uncategorised:CUI_SJ-43514-SMT" H 9950 5100 50  0001 C CNN
+F 3 "https://nl.mouser.com/datasheet/2/670/sj-4351x-smt-1779337.pdf" H 9950 5100 50  0001 C CNN
+F 4 "CUI Devices" H 9950 5100 50  0001 C CNN "Mfr."
+F 5 "SJ-43514-SMT-TR" H 9950 5100 50  0001 C CNN "Mfr. No."
+F 6 "490-SJ-43514-SMT-TR" H 9950 5100 50  0001 C CNN "Mouser No."
+	1    9950 5100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 5200 9300 5200
+Wire Wire Line
+	9750 5100 9700 5100
+Wire Wire Line
+	9300 5000 9750 5000
+Wire Wire Line
+	9950 5500 9950 5600
+Wire Wire Line
+	9950 5600 9700 5600
+Wire Wire Line
+	9700 5100 9700 5600
+Wire Wire Line
+	9750 5300 9300 5300
+Connection ~ 9700 5600
+$Sheet
+S 7800 4800 1500 1050
+U 5EC045BC
+F0 "Testing finger board" 50
+F1 "fake_finger.sch" 50
+F2 "LED_R" I R 9300 5300 50 
+F3 "LED_IR" I R 9300 5200 50 
+F4 "GND" I R 9300 5600 50 
+F5 "Photodiode" O R 9300 5000 50 
+F6 "5V" I L 7800 4950 50 
+F7 "Heartbeat" I L 7800 5700 50 
+F8 "Mains_noise" I L 7800 5300 50 
+$EndSheet
+Wire Wire Line
+	9300 5600 9700 5600
+Wire Wire Line
+	9950 5600 9950 6250
+Wire Wire Line
+	7450 6250 9950 6250
+Connection ~ 9950 5600
+Connection ~ 7450 6250
+Wire Wire Line
+	7450 6250 7450 5900
+Wire Wire Line
+	7800 4950 6650 4950
+Wire Wire Line
+	6350 6250 7100 6250
+Connection ~ 6350 6250
+Wire Wire Line
+	6350 5550 6350 6250
+Wire Wire Line
+	6250 6250 6350 6250
+Wire Wire Line
+	6250 5550 6250 6250
+$Comp
+L Connector:USB_B_Micro J8
+U 1 1 5EC67706
+P 6350 5150
+F 0 "J8" H 6407 5617 50  0000 C CNN
+F 1 "USB_B_Micro" H 6407 5526 50  0000 C CNN
+F 2 "POxiM-uncategorised:Micro-B_Molex_105017-0001" H 6500 5100 50  0001 C CNN
+F 3 "~" H 6500 5100 50  0001 C CNN
+F 4 "Molex" H 6350 5150 50  0001 C CNN "Mfr."
+F 5 "105017-0001" H 6350 5150 50  0001 C CNN "Mfr. No."
+F 6 "538-105017-0001" H 6350 5150 50  0001 C CNN "Mouser No."
+	1    6350 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 3500 1350 3500
-Wire Wire Line
-	1350 3500 1350 3400
-NoConn ~ 1250 3700
-NoConn ~ 1250 3800
+	7650 5700 7800 5700
 $Comp
-L power:GND #PWR017
-U 1 1 5EDBAF6C
-P 9650 4250
-F 0 "#PWR017" H 9650 4000 50  0001 C CNN
-F 1 "GND" H 9655 4077 50  0000 C CNN
-F 2 "" H 9650 4250 50  0001 C CNN
-F 3 "" H 9650 4250 50  0001 C CNN
-	1    9650 4250
-	1    0    0    -1  
+L Connector:Conn_Coaxial J9
+U 1 1 5EC5060A
+P 7100 5300
+F 0 "J9" H 7028 5538 50  0000 C CNN
+F 1 "Mains_noise_conn" H 7028 5447 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-2200_Horizontal" H 7100 5300 50  0001 C CNN
+F 3 " ~" H 7100 5300 50  0001 C CNN
+F 4 "Molex" H 7100 5300 50  0001 C CNN "Mfr."
+F 5 "73251-2200" H 7100 5300 50  0001 C CNN "Mfr. No."
+F 6 "538-73251-2200" H 7100 5300 50  0001 C CNN "Mouser No."
+	1    7100 5300
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	9650 3750 9650 4200
+	7300 5300 7800 5300
 Wire Wire Line
-	9650 4200 9650 4250
-Connection ~ 9650 4200
+	7100 5500 7100 6250
+Connection ~ 7100 6250
 Wire Wire Line
-	9900 4200 9650 4200
-Wire Wire Line
-	9900 4150 9900 4200
-Wire Wire Line
-	9700 3750 9650 3750
-NoConn ~ 9700 3650
-NoConn ~ 9700 3850
-NoConn ~ 9700 3950
+	7100 6250 7450 6250
 $Comp
-L Device:LED D?
-U 1 1 5EC5AD0D
-P 3650 5300
-AR Path="/5EBC562E/5EC5AD0D" Ref="D?"  Part="1" 
-AR Path="/5EC5AD0D" Ref="D8"  Part="1" 
-F 0 "D8" V 3597 5380 50  0000 L CNN
-F 1 "LED" V 3688 5380 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3650 5300 50  0001 C CNN
-F 3 "~" H 3650 5300 50  0001 C CNN
-	1    3650 5300
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5EC5AD14
-P 3950 5300
-AR Path="/5EBC562E/5EC5AD14" Ref="D?"  Part="1" 
-AR Path="/5EC5AD14" Ref="D10"  Part="1" 
-F 0 "D10" V 3897 5380 50  0000 L CNN
-F 1 "LED" V 3988 5380 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3950 5300 50  0001 C CNN
-F 3 "~" H 3950 5300 50  0001 C CNN
-	1    3950 5300
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5EC5AD1A
-P 4250 5300
-AR Path="/5EBC562E/5EC5AD1A" Ref="D?"  Part="1" 
-AR Path="/5EC5AD1A" Ref="D12"  Part="1" 
-F 0 "D12" V 4197 5380 50  0000 L CNN
-F 1 "LED" V 4288 5380 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4250 5300 50  0001 C CNN
-F 3 "~" H 4250 5300 50  0001 C CNN
-	1    4250 5300
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5EC5AD20
-P 4550 5300
-AR Path="/5EBC562E/5EC5AD20" Ref="D?"  Part="1" 
-AR Path="/5EC5AD20" Ref="D14"  Part="1" 
-F 0 "D14" V 4497 5380 50  0000 L CNN
-F 1 "LED" V 4588 5380 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4550 5300 50  0001 C CNN
-F 3 "~" H 4550 5300 50  0001 C CNN
-	1    4550 5300
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5EC5AD26
-P 4850 5300
-AR Path="/5EBC562E/5EC5AD26" Ref="D?"  Part="1" 
-AR Path="/5EC5AD26" Ref="D16"  Part="1" 
-F 0 "D16" V 4797 5380 50  0000 L CNN
-F 1 "LED" V 4888 5380 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4850 5300 50  0001 C CNN
-F 3 "~" H 4850 5300 50  0001 C CNN
-	1    4850 5300
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5EC5AD2C
-P 5150 5300
-AR Path="/5EBC562E/5EC5AD2C" Ref="D?"  Part="1" 
-AR Path="/5EC5AD2C" Ref="D18"  Part="1" 
-F 0 "D18" V 5097 5380 50  0000 L CNN
-F 1 "LED" V 5188 5380 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5150 5300 50  0001 C CNN
-F 3 "~" H 5150 5300 50  0001 C CNN
-	1    5150 5300
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5EC5AD32
-P 5450 5300
-AR Path="/5EBC562E/5EC5AD32" Ref="D?"  Part="1" 
-AR Path="/5EC5AD32" Ref="D20"  Part="1" 
-F 0 "D20" V 5397 5380 50  0000 L CNN
-F 1 "LED" V 5488 5380 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5450 5300 50  0001 C CNN
-F 3 "~" H 5450 5300 50  0001 C CNN
-	1    5450 5300
-	0    1    -1   0   
-$EndComp
-Wire Notes Line
-	3350 1600 5700 1600
-Wire Notes Line
-	5700 1600 5700 3350
-Wire Notes Line
-	5700 3350 3350 3350
-Wire Notes Line
-	3350 3350 3350 1600
-Text Notes 3400 3300 0    118  ~ 0
-Digit 0
-Wire Notes Line
-	8550 3350 6200 3350
-Wire Notes Line
-	6200 3350 6200 1600
-Text Notes 6250 3300 0    118  ~ 0
-Digit 1
-Wire Notes Line
-	5650 4100 3300 4100
-Wire Notes Line
-	3300 4100 3300 5850
-Text Notes 3350 4300 0    118  ~ 0
-Digit 2
-Wire Notes Line
-	8550 4100 6200 4100
-Wire Notes Line
-	6200 4100 6200 5850
-Text Notes 6250 4300 0    118  ~ 0
-Digit AUX
-Wire Notes Line
-	6200 1600 8550 1600
-Wire Notes Line
-	8550 1600 8550 3350
-Wire Notes Line
-	3300 5850 5650 5850
-Wire Notes Line
-	5650 5850 5650 4100
-Wire Notes Line
-	6200 5850 8550 5850
-Wire Notes Line
-	8550 5850 8550 4100
-Wire Wire Line
-	3650 4850 3650 4900
-Wire Wire Line
-	3650 4650 3650 4600
-$Comp
-L power:+5V #PWR011
-U 1 1 5EC98032
-P 3650 4550
-F 0 "#PWR011" H 3650 4400 50  0001 C CNN
-F 1 "+5V" H 3665 4723 50  0000 C CNN
-F 2 "" H 3650 4550 50  0001 C CNN
-F 3 "" H 3650 4550 50  0001 C CNN
-	1    3650 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 4850 3950 4900
-Wire Wire Line
-	3950 4650 3950 4600
-Wire Wire Line
-	4250 4850 4250 4900
-Wire Wire Line
-	4250 4650 4250 4600
-Wire Wire Line
-	4550 4850 4550 4900
-Wire Wire Line
-	4550 4650 4550 4600
-Wire Wire Line
-	4850 4850 4850 4900
-Wire Wire Line
-	4850 4650 4850 4600
-Wire Wire Line
-	5150 4850 5150 4900
-Wire Wire Line
-	5150 4650 5150 4600
-Wire Wire Line
-	5450 4850 5450 4900
-Wire Wire Line
-	5450 4650 5450 4600
-Wire Wire Line
-	3650 4600 3950 4600
-Connection ~ 3650 4600
-Wire Wire Line
-	3650 4600 3650 4550
-Connection ~ 3950 4600
-Wire Wire Line
-	3950 4600 4250 4600
-Connection ~ 4250 4600
-Wire Wire Line
-	4250 4600 4550 4600
-Connection ~ 4550 4600
-Wire Wire Line
-	4550 4600 4850 4600
-Connection ~ 4850 4600
-Wire Wire Line
-	4850 4600 5150 4600
-Connection ~ 5150 4600
-Wire Wire Line
-	5150 4600 5450 4600
-Wire Wire Line
-	3650 5450 3650 5500
-Wire Wire Line
-	3650 5500 3950 5500
-Wire Wire Line
-	5450 5500 5450 5450
-Wire Wire Line
-	5150 5450 5150 5500
-Connection ~ 5150 5500
-Wire Wire Line
-	5150 5500 5450 5500
-Wire Wire Line
-	4850 5450 4850 5500
-Connection ~ 4850 5500
-Wire Wire Line
-	4850 5500 5150 5500
-Wire Wire Line
-	4550 5450 4550 5500
-Connection ~ 4550 5500
-Wire Wire Line
-	4550 5500 4850 5500
-Wire Wire Line
-	4250 5450 4250 5500
-Connection ~ 4250 5500
-Wire Wire Line
-	4250 5500 4550 5500
-Wire Wire Line
-	3950 5450 3950 5500
-Connection ~ 3950 5500
-Wire Wire Line
-	3950 5500 4250 5500
-$Comp
-L power:GND #PWR012
-U 1 1 5ECB0193
-P 3650 5550
-F 0 "#PWR012" H 3650 5300 50  0001 C CNN
-F 1 "GND" H 3655 5377 50  0000 C CNN
-F 2 "" H 3650 5550 50  0001 C CNN
-F 3 "" H 3650 5550 50  0001 C CNN
-	1    3650 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 5550 3650 5500
-Connection ~ 3650 5500
-$Comp
-L Device:LED D?
-U 1 1 5ECD45BE
-P 3650 2600
-AR Path="/5EBC562E/5ECD45BE" Ref="D?"  Part="1" 
-AR Path="/5ECD45BE" Ref="D7"  Part="1" 
-F 0 "D7" V 3597 2680 50  0000 L CNN
-F 1 "LED" V 3688 2680 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3650 2600 50  0001 C CNN
-F 3 "~" H 3650 2600 50  0001 C CNN
-	1    3650 2600
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5ECD45C4
-P 3950 2600
-AR Path="/5EBC562E/5ECD45C4" Ref="D?"  Part="1" 
-AR Path="/5ECD45C4" Ref="D9"  Part="1" 
-F 0 "D9" V 3897 2680 50  0000 L CNN
-F 1 "LED" V 3988 2680 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3950 2600 50  0001 C CNN
-F 3 "~" H 3950 2600 50  0001 C CNN
-	1    3950 2600
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5ECD45CA
-P 4250 2600
-AR Path="/5EBC562E/5ECD45CA" Ref="D?"  Part="1" 
-AR Path="/5ECD45CA" Ref="D11"  Part="1" 
-F 0 "D11" V 4197 2680 50  0000 L CNN
-F 1 "LED" V 4288 2680 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4250 2600 50  0001 C CNN
-F 3 "~" H 4250 2600 50  0001 C CNN
-	1    4250 2600
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5ECD45D0
-P 4550 2600
-AR Path="/5EBC562E/5ECD45D0" Ref="D?"  Part="1" 
-AR Path="/5ECD45D0" Ref="D13"  Part="1" 
-F 0 "D13" V 4497 2680 50  0000 L CNN
-F 1 "LED" V 4588 2680 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4550 2600 50  0001 C CNN
-F 3 "~" H 4550 2600 50  0001 C CNN
-	1    4550 2600
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5ECD45D6
-P 4850 2600
-AR Path="/5EBC562E/5ECD45D6" Ref="D?"  Part="1" 
-AR Path="/5ECD45D6" Ref="D15"  Part="1" 
-F 0 "D15" V 4797 2680 50  0000 L CNN
-F 1 "LED" V 4888 2680 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4850 2600 50  0001 C CNN
-F 3 "~" H 4850 2600 50  0001 C CNN
-	1    4850 2600
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5ECD45DC
-P 5150 2600
-AR Path="/5EBC562E/5ECD45DC" Ref="D?"  Part="1" 
-AR Path="/5ECD45DC" Ref="D17"  Part="1" 
-F 0 "D17" V 5097 2680 50  0000 L CNN
-F 1 "LED" V 5188 2680 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5150 2600 50  0001 C CNN
-F 3 "~" H 5150 2600 50  0001 C CNN
-	1    5150 2600
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5ECD45E2
-P 5450 2600
-AR Path="/5EBC562E/5ECD45E2" Ref="D?"  Part="1" 
-AR Path="/5ECD45E2" Ref="D19"  Part="1" 
-F 0 "D19" V 5397 2680 50  0000 L CNN
-F 1 "LED" V 5488 2680 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5450 2600 50  0001 C CNN
-F 3 "~" H 5450 2600 50  0001 C CNN
-	1    5450 2600
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:R_Small R7
-U 1 1 5ECD45EE
-P 3650 2300
-F 0 "R7" H 3700 2300 50  0000 L CNN
-F 1 "4.7kΩ" V 3650 2300 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3650 2300 50  0001 C CNN
-F 3 "~" H 3650 2300 50  0001 C CNN
-	1    3650 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 2400 3650 2450
-Wire Wire Line
-	3650 1950 3650 1900
-$Comp
-L power:+5V #PWR09
-U 1 1 5ECD45F6
-P 3650 1850
-F 0 "#PWR09" H 3650 1700 50  0001 C CNN
-F 1 "+5V" H 3665 2023 50  0000 C CNN
-F 2 "" H 3650 1850 50  0001 C CNN
-F 3 "" H 3650 1850 50  0001 C CNN
-	1    3650 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R9
-U 1 1 5ECD45FC
-P 3950 2300
-F 0 "R9" H 4000 2300 50  0000 L CNN
-F 1 "4.7kΩ" V 3950 2300 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3950 2300 50  0001 C CNN
-F 3 "~" H 3950 2300 50  0001 C CNN
-	1    3950 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 2400 3950 2450
-Wire Wire Line
-	3950 1950 3950 1900
-$Comp
-L Device:R_Small R11
-U 1 1 5ECD4604
-P 4250 2300
-F 0 "R11" H 4300 2300 50  0000 L CNN
-F 1 "4.7kΩ" V 4250 2300 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4250 2300 50  0001 C CNN
-F 3 "~" H 4250 2300 50  0001 C CNN
-	1    4250 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 2400 4250 2450
-Wire Wire Line
-	4250 1950 4250 1900
-$Comp
-L Device:R_Small R13
-U 1 1 5ECD460C
-P 4550 2300
-F 0 "R13" H 4600 2300 50  0000 L CNN
-F 1 "4.7kΩ" V 4550 2300 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4550 2300 50  0001 C CNN
-F 3 "~" H 4550 2300 50  0001 C CNN
-	1    4550 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 2400 4550 2450
-Wire Wire Line
-	4550 1950 4550 1900
-$Comp
-L Device:R_Small R15
-U 1 1 5ECD4614
-P 4850 2300
-F 0 "R15" H 4900 2300 50  0000 L CNN
-F 1 "4.7kΩ" V 4850 2300 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4850 2300 50  0001 C CNN
-F 3 "~" H 4850 2300 50  0001 C CNN
-	1    4850 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4850 2400 4850 2450
-Wire Wire Line
-	4850 1950 4850 1900
-$Comp
-L Device:R_Small R17
-U 1 1 5ECD461C
-P 5150 2300
-F 0 "R17" H 5200 2300 50  0000 L CNN
-F 1 "4.7kΩ" V 5150 2300 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5150 2300 50  0001 C CNN
-F 3 "~" H 5150 2300 50  0001 C CNN
-	1    5150 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 2400 5150 2450
-Wire Wire Line
-	5150 1950 5150 1900
-$Comp
-L Device:R_Small R19
-U 1 1 5ECD4624
-P 5450 2300
-F 0 "R19" H 5500 2300 50  0000 L CNN
-F 1 "4.7kΩ" V 5450 2300 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5450 2300 50  0001 C CNN
-F 3 "~" H 5450 2300 50  0001 C CNN
-	1    5450 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5450 2400 5450 2450
-Wire Wire Line
-	5450 1950 5450 1900
-Wire Wire Line
-	3650 1900 3950 1900
-Connection ~ 3650 1900
-Wire Wire Line
-	3650 1900 3650 1850
-Connection ~ 3950 1900
-Wire Wire Line
-	3950 1900 4250 1900
-Connection ~ 4250 1900
-Wire Wire Line
-	4250 1900 4550 1900
-Connection ~ 4550 1900
-Wire Wire Line
-	4550 1900 4850 1900
-Connection ~ 4850 1900
-Wire Wire Line
-	4850 1900 5150 1900
-Connection ~ 5150 1900
-Wire Wire Line
-	5150 1900 5450 1900
-$Comp
-L Device:Jumper_NC_Small JP10
-U 1 1 5ECD4639
-P 3950 2050
-F 0 "JP10" V 3950 2125 50  0000 L CNN
-F 1 "Jumper_NC_Small" H 3950 2171 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_SolderBridged_RoundedPad1.0x1.5mm" H 3950 2050 50  0001 C CNN
-F 3 "~" H 3950 2050 50  0001 C CNN
-	1    3950 2050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Jumper_NC_Small JP12
-U 1 1 5ECD463F
-P 4250 2050
-F 0 "JP12" V 4250 2125 50  0000 L CNN
-F 1 "Jumper_NC_Small" H 4250 2171 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_SolderBridged_RoundedPad1.0x1.5mm" H 4250 2050 50  0001 C CNN
-F 3 "~" H 4250 2050 50  0001 C CNN
-	1    4250 2050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3650 2800 3650 2750
-Wire Wire Line
-	3950 2750 3950 2800
-Wire Wire Line
-	4250 2800 4250 2750
-Wire Wire Line
-	4550 2750 4550 2800
-Wire Wire Line
-	4850 2800 4850 2750
-Wire Wire Line
-	5150 2750 5150 2800
-Wire Wire Line
-	5450 2800 5450 2750
-Wire Wire Line
-	3650 2150 3650 2200
-Wire Wire Line
-	5450 2200 5450 2150
-Wire Wire Line
-	5150 2150 5150 2200
-Wire Wire Line
-	4850 2150 4850 2200
-Wire Wire Line
-	4550 2150 4550 2200
-Wire Wire Line
-	4250 2150 4250 2200
-Wire Wire Line
-	3950 2150 3950 2200
-$Comp
-L power:GND #PWR010
-U 1 1 5ECD4676
-P 3650 2850
-F 0 "#PWR010" H 3650 2600 50  0001 C CNN
-F 1 "GND" H 3655 2677 50  0000 C CNN
-F 2 "" H 3650 2850 50  0001 C CNN
-F 3 "" H 3650 2850 50  0001 C CNN
-	1    3650 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 2850 3650 2800
-$Comp
-L Device:LED D?
-U 1 1 5ED11F92
-P 6600 2600
-AR Path="/5EBC562E/5ED11F92" Ref="D?"  Part="1" 
-AR Path="/5ED11F92" Ref="D21"  Part="1" 
-F 0 "D21" V 6547 2680 50  0000 L CNN
-F 1 "LED" V 6638 2680 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 6600 2600 50  0001 C CNN
-F 3 "~" H 6600 2600 50  0001 C CNN
-	1    6600 2600
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5ED11F98
-P 6900 2600
-AR Path="/5EBC562E/5ED11F98" Ref="D?"  Part="1" 
-AR Path="/5ED11F98" Ref="D23"  Part="1" 
-F 0 "D23" V 6847 2680 50  0000 L CNN
-F 1 "LED" V 6938 2680 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 6900 2600 50  0001 C CNN
-F 3 "~" H 6900 2600 50  0001 C CNN
-	1    6900 2600
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5ED11F9E
-P 7200 2600
-AR Path="/5EBC562E/5ED11F9E" Ref="D?"  Part="1" 
-AR Path="/5ED11F9E" Ref="D25"  Part="1" 
-F 0 "D25" V 7147 2680 50  0000 L CNN
-F 1 "LED" V 7238 2680 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7200 2600 50  0001 C CNN
-F 3 "~" H 7200 2600 50  0001 C CNN
-	1    7200 2600
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5ED11FA4
-P 7500 2600
-AR Path="/5EBC562E/5ED11FA4" Ref="D?"  Part="1" 
-AR Path="/5ED11FA4" Ref="D27"  Part="1" 
-F 0 "D27" V 7447 2680 50  0000 L CNN
-F 1 "LED" V 7538 2680 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7500 2600 50  0001 C CNN
-F 3 "~" H 7500 2600 50  0001 C CNN
-	1    7500 2600
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5ED11FAA
-P 7800 2600
-AR Path="/5EBC562E/5ED11FAA" Ref="D?"  Part="1" 
-AR Path="/5ED11FAA" Ref="D28"  Part="1" 
-F 0 "D28" V 7747 2680 50  0000 L CNN
-F 1 "LED" V 7838 2680 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7800 2600 50  0001 C CNN
-F 3 "~" H 7800 2600 50  0001 C CNN
-	1    7800 2600
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5ED11FB0
-P 8100 2600
-AR Path="/5EBC562E/5ED11FB0" Ref="D?"  Part="1" 
-AR Path="/5ED11FB0" Ref="D29"  Part="1" 
-F 0 "D29" V 8047 2680 50  0000 L CNN
-F 1 "LED" V 8138 2680 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 8100 2600 50  0001 C CNN
-F 3 "~" H 8100 2600 50  0001 C CNN
-	1    8100 2600
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5ED11FB6
-P 8400 2600
-AR Path="/5EBC562E/5ED11FB6" Ref="D?"  Part="1" 
-AR Path="/5ED11FB6" Ref="D30"  Part="1" 
-F 0 "D30" V 8347 2680 50  0000 L CNN
-F 1 "LED" V 8438 2680 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 8400 2600 50  0001 C CNN
-F 3 "~" H 8400 2600 50  0001 C CNN
-	1    8400 2600
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:R_Small R21
-U 1 1 5ED11FC2
-P 6600 2300
-F 0 "R21" H 6650 2300 50  0000 L CNN
-F 1 "4.7kΩ" V 6600 2300 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6600 2300 50  0001 C CNN
-F 3 "~" H 6600 2300 50  0001 C CNN
-	1    6600 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6600 1950 6600 1900
-$Comp
-L power:+5V #PWR013
-U 1 1 5ED11FCA
-P 6600 1850
-F 0 "#PWR013" H 6600 1700 50  0001 C CNN
-F 1 "+5V" H 6615 2023 50  0000 C CNN
-F 2 "" H 6600 1850 50  0001 C CNN
-F 3 "" H 6600 1850 50  0001 C CNN
-	1    6600 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R23
-U 1 1 5ED11FD0
-P 6900 2300
-F 0 "R23" H 6950 2300 50  0000 L CNN
-F 1 "4.7kΩ" V 6900 2300 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6900 2300 50  0001 C CNN
-F 3 "~" H 6900 2300 50  0001 C CNN
-	1    6900 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6900 1950 6900 1900
-$Comp
-L Device:R_Small R25
-U 1 1 5ED11FD8
-P 7200 2300
-F 0 "R25" H 7250 2300 50  0000 L CNN
-F 1 "4.7kΩ" V 7200 2300 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7200 2300 50  0001 C CNN
-F 3 "~" H 7200 2300 50  0001 C CNN
-	1    7200 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7200 1950 7200 1900
-$Comp
-L Device:R_Small R27
-U 1 1 5ED11FE0
-P 7500 2300
-F 0 "R27" H 7550 2300 50  0000 L CNN
-F 1 "4.7kΩ" V 7500 2300 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7500 2300 50  0001 C CNN
-F 3 "~" H 7500 2300 50  0001 C CNN
-	1    7500 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7500 1950 7500 1900
-$Comp
-L Device:R_Small R28
-U 1 1 5ED11FE8
-P 7800 2300
-F 0 "R28" H 7850 2300 50  0000 L CNN
-F 1 "4.7kΩ" V 7800 2300 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7800 2300 50  0001 C CNN
-F 3 "~" H 7800 2300 50  0001 C CNN
-	1    7800 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 1950 7800 1900
-$Comp
-L Device:R_Small R29
-U 1 1 5ED11FF0
-P 8100 2300
-F 0 "R29" H 8150 2300 50  0000 L CNN
-F 1 "4.7kΩ" V 8100 2300 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8100 2300 50  0001 C CNN
-F 3 "~" H 8100 2300 50  0001 C CNN
-	1    8100 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8100 1950 8100 1900
-$Comp
-L Device:R_Small R30
-U 1 1 5ED11FF8
-P 8400 2300
-F 0 "R30" H 8450 2300 50  0000 L CNN
-F 1 "4.7kΩ" V 8400 2300 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8400 2300 50  0001 C CNN
-F 3 "~" H 8400 2300 50  0001 C CNN
-	1    8400 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8400 1950 8400 1900
-Wire Wire Line
-	6600 1900 6900 1900
-Connection ~ 6600 1900
-Wire Wire Line
-	6600 1900 6600 1850
-Connection ~ 6900 1900
-Wire Wire Line
-	6900 1900 7200 1900
-Connection ~ 7200 1900
-Wire Wire Line
-	7200 1900 7500 1900
-Connection ~ 7500 1900
-Wire Wire Line
-	7500 1900 7800 1900
-Connection ~ 7800 1900
-Wire Wire Line
-	7800 1900 8100 1900
-Connection ~ 8100 1900
-Wire Wire Line
-	8100 1900 8400 1900
-Wire Wire Line
-	6600 2450 6600 2400
-Wire Wire Line
-	6900 2400 6900 2450
-Wire Wire Line
-	7200 2450 7200 2400
-Wire Wire Line
-	7500 2400 7500 2450
-Wire Wire Line
-	7800 2450 7800 2400
-Wire Wire Line
-	8100 2400 8100 2450
-Wire Wire Line
-	8400 2450 8400 2400
-Wire Wire Line
-	6600 2750 6600 2800
-Wire Wire Line
-	6600 2800 6900 2800
-Wire Wire Line
-	8400 2800 8400 2750
-Wire Wire Line
-	8100 2750 8100 2800
-Connection ~ 8100 2800
-Wire Wire Line
-	8100 2800 8400 2800
-Wire Wire Line
-	7800 2750 7800 2800
-Connection ~ 7800 2800
-Wire Wire Line
-	7800 2800 8100 2800
-Wire Wire Line
-	7500 2750 7500 2800
-Connection ~ 7500 2800
-Wire Wire Line
-	7500 2800 7800 2800
-Wire Wire Line
-	7200 2750 7200 2800
-Connection ~ 7200 2800
-Wire Wire Line
-	7200 2800 7500 2800
-Wire Wire Line
-	6900 2750 6900 2800
-Connection ~ 6900 2800
-Wire Wire Line
-	6900 2800 7200 2800
-$Comp
-L power:GND #PWR014
-U 1 1 5ED1204A
-P 6600 2850
-F 0 "#PWR014" H 6600 2600 50  0001 C CNN
-F 1 "GND" H 6605 2677 50  0000 C CNN
-F 2 "" H 6600 2850 50  0001 C CNN
-F 3 "" H 6600 2850 50  0001 C CNN
-	1    6600 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6600 2850 6600 2800
-Connection ~ 6600 2800
-$Comp
-L Connector:AudioJack4_Ground J2
-U 1 1 5EBC41F5
-P 9900 3750
-F 0 "J2" H 9570 3668 50  0000 R CNN
-F 1 "AudioJack4_Ground" H 9570 3577 50  0000 R CNN
-F 2 "POxiM-uncategorised:CUI_SJ-43514-SMT" H 9900 3750 50  0001 C CNN
-F 3 "https://nl.mouser.com/datasheet/2/670/sj-4351x-smt-1779337.pdf" H 9900 3750 50  0001 C CNN
-F 4 "CUI Devices" H 9900 3750 50  0001 C CNN "Mfr."
-F 5 "SJ-43514-SMT-TR" H 9900 3750 50  0001 C CNN "Mfr. No."
-F 6 "490-SJ-43514-SMT-TR" H 9900 3750 50  0001 C CNN "Mouser No."
-	1    9900 3750
+L Connector:Conn_Coaxial J10
+U 1 1 5EC8ECFB
+P 7450 5700
+F 0 "J10" H 7378 5938 50  0000 C CNN
+F 1 "Mains_noise_conn" H 7378 5847 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-2200_Horizontal" H 7450 5700 50  0001 C CNN
+F 3 " ~" H 7450 5700 50  0001 C CNN
+F 4 "Molex" H 7450 5700 50  0001 C CNN "Mfr."
+F 5 "73251-2200" H 7450 5700 50  0001 C CNN "Mfr. No."
+F 6 "538-73251-2200" H 7450 5700 50  0001 C CNN "Mouser No."
+	1    7450 5700
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:LED D?
-U 1 1 5ED8E468
-P 6600 5300
-AR Path="/5EBC562E/5ED8E468" Ref="D?"  Part="1" 
-AR Path="/5ED8E468" Ref="D22"  Part="1" 
-F 0 "D22" V 6547 5380 50  0000 L CNN
-F 1 "LED" V 6638 5380 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 6600 5300 50  0001 C CNN
-F 3 "~" H 6600 5300 50  0001 C CNN
-	1    6600 5300
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5ED8E46E
-P 6900 5300
-AR Path="/5EBC562E/5ED8E46E" Ref="D?"  Part="1" 
-AR Path="/5ED8E46E" Ref="D24"  Part="1" 
-F 0 "D24" V 6847 5380 50  0000 L CNN
-F 1 "LED" V 6938 5380 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 6900 5300 50  0001 C CNN
-F 3 "~" H 6900 5300 50  0001 C CNN
-	1    6900 5300
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5ED8E474
-P 7200 5300
-AR Path="/5EBC562E/5ED8E474" Ref="D?"  Part="1" 
-AR Path="/5ED8E474" Ref="D26"  Part="1" 
-F 0 "D26" V 7147 5380 50  0000 L CNN
-F 1 "LED" V 7238 5380 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7200 5300 50  0001 C CNN
-F 3 "~" H 7200 5300 50  0001 C CNN
-	1    7200 5300
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:Jumper_NC_Small JP23
-U 1 1 5ED8E492
-P 6600 4750
-F 0 "JP23" V 6600 4825 50  0000 L CNN
-F 1 "Jumper_NC_Small" H 6600 4871 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_SolderBridged_RoundedPad1.0x1.5mm" H 6600 4750 50  0001 C CNN
-F 3 "~" H 6600 4750 50  0001 C CNN
-	1    6600 4750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6600 4650 6600 4600
-$Comp
-L power:+5V #PWR015
-U 1 1 5ED8E4A0
-P 6600 4550
-F 0 "#PWR015" H 6600 4400 50  0001 C CNN
-F 1 "+5V" H 6615 4723 50  0000 C CNN
-F 2 "" H 6600 4550 50  0001 C CNN
-F 3 "" H 6600 4550 50  0001 C CNN
-	1    6600 4550
+L Connector:USB_B_Micro J3
+U 1 1 5EC1CCCD
+P 1300 4800
+F 0 "J3" H 1357 5267 50  0000 C CNN
+F 1 "USB_B_Micro" H 1357 5176 50  0000 C CNN
+F 2 "POxiM-uncategorised:Micro-B_Molex_105017-0001" H 1450 4750 50  0001 C CNN
+F 3 "~" H 1450 4750 50  0001 C CNN
+F 4 "Molex" H 1300 4800 50  0001 C CNN "Mfr."
+F 5 "105017-0001" H 1300 4800 50  0001 C CNN "Mfr. No."
+F 6 "538-105017-0001" H 1300 4800 50  0001 C CNN "Mouser No."
+	1    1300 4800
 	1    0    0    -1  
 $EndComp
+NoConn ~ 6650 5150
+NoConn ~ 6650 5250
+NoConn ~ 6650 5350
 Wire Wire Line
-	6900 4650 6900 4600
+	1300 5200 1300 5300
 Wire Wire Line
-	7200 4650 7200 4600
+	1300 5300 2100 5300
 Wire Wire Line
-	6600 4600 6900 4600
-Connection ~ 6600 4600
+	2200 5300 2200 5200
 Wire Wire Line
-	6600 4600 6600 4550
-Connection ~ 6900 4600
+	2100 5200 2100 5300
+Connection ~ 2100 5300
 Wire Wire Line
-	6900 4600 7200 4600
+	2100 5300 2200 5300
+Wire Wire Line
+	1200 5200 1200 5300
+Wire Wire Line
+	1200 5300 1300 5300
+Connection ~ 1300 5300
+Wire Wire Line
+	1200 5300 1200 6350
+Wire Wire Line
+	1200 6350 2100 6350
+Wire Wire Line
+	2200 6350 2200 6200
+Connection ~ 1200 5300
+Wire Wire Line
+	2100 6200 2100 6350
+Connection ~ 2100 6350
+Wire Wire Line
+	2100 6350 2200 6350
+Wire Wire Line
+	1600 4600 1800 4600
+Wire Wire Line
+	1800 4600 1800 4250
+Wire Wire Line
+	1800 4250 2650 4250
+Wire Wire Line
+	2650 4250 2650 4600
+Wire Wire Line
+	2650 5600 2500 5600
+Wire Wire Line
+	2500 4600 2650 4600
+Connection ~ 2650 4600
+Wire Wire Line
+	2650 4600 2650 5600
+Wire Wire Line
+	2500 4900 2850 4900
+Wire Wire Line
+	2850 4900 2850 5450
+Wire Wire Line
+	2500 5900 2850 5900
+Wire Wire Line
+	2500 4800 2600 4800
+Wire Wire Line
+	2600 4800 2600 5800
+Wire Wire Line
+	2600 5800 2500 5800
+Wire Wire Line
+	2600 5800 2600 6250
+Connection ~ 2600 5800
+Connection ~ 2200 6350
 $Comp
-L Device:Jumper_NC_Small JP25
-U 1 1 5ED8E4E3
-P 6900 4750
-F 0 "JP25" V 6900 4825 50  0000 L CNN
-F 1 "Jumper_NC_Small" H 6900 4871 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_SolderBridged_RoundedPad1.0x1.5mm" H 6900 4750 50  0001 C CNN
-F 3 "~" H 6900 4750 50  0001 C CNN
-	1    6900 4750
-	0    1    1    0   
+L Connector:Conn_01x10_Male J7
+U 1 1 5EC419A9
+P 4000 6250
+F 0 "J7" H 3972 6224 50  0000 R CNN
+F 1 "Programming Header" H 4748 5667 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 4000 6250 50  0001 C CNN
+F 3 "~" H 4000 6250 50  0001 C CNN
+F 4 "TE Connectivity" H 4000 6250 50  0001 C CNN "Mfr."
+F 5 "1761681-3" H 4000 6250 50  0001 C CNN "Mfr. No."
+F 6 "571-1761681-3" H 4000 6250 50  0001 C CNN "Mouser No."
+	1    4000 6250
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6600 5500 6600 5450
+	2200 6350 3450 6350
 Wire Wire Line
-	6900 5450 6900 5500
+	2600 6250 3800 6250
 Wire Wire Line
-	7200 5500 7200 5450
+	3650 6350 3650 6150
 Wire Wire Line
-	6600 4850 6600 4900
+	3650 6050 3800 6050
 Wire Wire Line
-	7200 4850 7200 4900
+	3800 6150 3650 6150
+Connection ~ 3650 6150
 Wire Wire Line
-	6900 4850 6900 4900
+	3650 6150 3650 6050
+NoConn ~ 3800 5850
+NoConn ~ 3800 5950
+NoConn ~ 3800 6350
+NoConn ~ 3800 6450
+NoConn ~ 3800 6550
+NoConn ~ 3800 6650
+NoConn ~ 3800 6750
 $Comp
-L power:GND #PWR016
-U 1 1 5ED8E520
-P 6600 5550
-F 0 "#PWR016" H 6600 5300 50  0001 C CNN
-F 1 "GND" H 6605 5377 50  0000 C CNN
-F 2 "" H 6600 5550 50  0001 C CNN
-F 3 "" H 6600 5550 50  0001 C CNN
-	1    6600 5550
-	1    0    0    -1  
+L Connector:Conn_01x02_Male J6
+U 1 1 5EC76482
+P 4000 5450
+F 0 "J6" H 3972 5424 50  0000 R CNN
+F 1 "Uart Out" H 4300 5550 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4000 5450 50  0001 C CNN
+F 3 "~" H 4000 5450 50  0001 C CNN
+F 4 "In stock RV" H 4000 5450 50  0001 C CNN "Note"
+	1    4000 5450
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6600 5550 6600 5500
+	3800 5550 3450 5550
 Wire Wire Line
-	6600 5500 6900 5500
-Connection ~ 6600 5500
-Connection ~ 6900 5500
+	3450 5550 3450 6350
+Connection ~ 3450 6350
 Wire Wire Line
-	6900 5500 7200 5500
+	3450 6350 3650 6350
 Wire Wire Line
-	3650 2800 3950 2800
-Connection ~ 3650 2800
-Connection ~ 3950 2800
+	3800 5450 2850 5450
+Connection ~ 2850 5450
 Wire Wire Line
-	3950 2800 4250 2800
-Connection ~ 4250 2800
-Wire Wire Line
-	4250 2800 4550 2800
-Connection ~ 4550 2800
-Wire Wire Line
-	4550 2800 4850 2800
-Connection ~ 4850 2800
-Wire Wire Line
-	4850 2800 5150 2800
-Connection ~ 5150 2800
-Wire Wire Line
-	5150 2800 5450 2800
+	2850 5450 2850 5900
 $Comp
-L Device:Jumper_NC_Small JP21
-U 1 1 5ECA266A
-P 5450 4750
-F 0 "JP21" V 5450 4825 50  0000 L CNN
-F 1 "Jumper_NC_Small" H 5450 4871 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_SolderBridged_RoundedPad1.0x1.5mm" H 5450 4750 50  0001 C CNN
-F 3 "~" H 5450 4750 50  0001 C CNN
-	1    5450 4750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Jumper_NC_Small JP19
-U 1 1 5ECA22AE
-P 5150 4750
-F 0 "JP19" V 5150 4825 50  0000 L CNN
-F 1 "Jumper_NC_Small" H 5150 4871 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_SolderBridged_RoundedPad1.0x1.5mm" H 5150 4750 50  0001 C CNN
-F 3 "~" H 5150 4750 50  0001 C CNN
-	1    5150 4750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Jumper_NC_Small JP17
-U 1 1 5ECA20CD
-P 4850 4750
-F 0 "JP17" V 4850 4825 50  0000 L CNN
-F 1 "Jumper_NC_Small" H 4850 4871 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_SolderBridged_RoundedPad1.0x1.5mm" H 4850 4750 50  0001 C CNN
-F 3 "~" H 4850 4750 50  0001 C CNN
-	1    4850 4750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Jumper_NC_Small JP15
-U 1 1 5ECA1E24
-P 4550 4750
-F 0 "JP15" V 4550 4825 50  0000 L CNN
-F 1 "Jumper_NC_Small" H 4550 4871 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_SolderBridged_RoundedPad1.0x1.5mm" H 4550 4750 50  0001 C CNN
-F 3 "~" H 4550 4750 50  0001 C CNN
-	1    4550 4750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Jumper_NC_Small JP13
-U 1 1 5ECA1ACC
-P 4250 4750
-F 0 "JP13" V 4250 4825 50  0000 L CNN
-F 1 "Jumper_NC_Small" H 4250 4871 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_SolderBridged_RoundedPad1.0x1.5mm" H 4250 4750 50  0001 C CNN
-F 3 "~" H 4250 4750 50  0001 C CNN
-	1    4250 4750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Jumper_NC_Small JP11
-U 1 1 5ECA16DE
-P 3950 4750
-F 0 "JP11" V 3950 4825 50  0000 L CNN
-F 1 "Jumper_NC_Small" H 3950 4871 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_SolderBridged_RoundedPad1.0x1.5mm" H 3950 4750 50  0001 C CNN
-F 3 "~" H 3950 4750 50  0001 C CNN
-	1    3950 4750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5450 5150 5450 5100
-Wire Wire Line
-	5150 5100 5150 5150
-Wire Wire Line
-	4850 5150 4850 5100
-Wire Wire Line
-	4550 5100 4550 5150
-Wire Wire Line
-	4250 5150 4250 5100
-Wire Wire Line
-	3950 5100 3950 5150
-Wire Wire Line
-	3650 5150 3650 5100
-$Comp
-L Device:R_Small R20
-U 1 1 5EC9E5AA
-P 5450 5000
-F 0 "R20" H 5500 5000 50  0000 L CNN
-F 1 "4.7kΩ" V 5450 5000 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5450 5000 50  0001 C CNN
-F 3 "~" H 5450 5000 50  0001 C CNN
-	1    5450 5000
+L Connector:USB_A J4
+U 1 1 5EC1DFC7
+P 2200 4800
+F 0 "J4" H 2257 5267 50  0000 C CNN
+F 1 "USB_A" H 2257 5176 50  0000 C CNN
+F 2 "POxiM-uncategorised:USBA_87583-2010RLF" H 2350 4750 50  0001 C CNN
+F 3 " ~" H 2350 4750 50  0001 C CNN
+F 4 "Amphenol FCI" H 2200 4800 50  0001 C CNN "Mfr."
+F 5 "87583-2010RLF" H 2200 4800 50  0001 C CNN "Mfr. No."
+F 6 "649-87583-2010RLF" H 2200 4800 50  0001 C CNN "Mouser No."
+	1    2200 4800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R18
-U 1 1 5EC9D75C
-P 5150 5000
-F 0 "R18" H 5200 5000 50  0000 L CNN
-F 1 "4.7kΩ" V 5150 5000 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5150 5000 50  0001 C CNN
-F 3 "~" H 5150 5000 50  0001 C CNN
-	1    5150 5000
+L Connector:USB_A J5
+U 1 1 5EC15A15
+P 2200 5800
+F 0 "J5" H 2257 6267 50  0000 C CNN
+F 1 "USB_A" H 2257 6176 50  0000 C CNN
+F 2 "POxiM-uncategorised:USBA_87583-2010RLF" H 2350 5750 50  0001 C CNN
+F 3 " ~" H 2350 5750 50  0001 C CNN
+F 4 "Amphenol FCI" H 2200 5800 50  0001 C CNN "Mfr."
+F 5 "87583-2010RLF" H 2200 5800 50  0001 C CNN "Mfr. No."
+F 6 "649-87583-2010RLF" H 2200 5800 50  0001 C CNN "Mouser No."
+	1    2200 5800
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	1000 4050 4250 4050
+Wire Notes Line
+	4250 4050 4250 6900
+Wire Notes Line
+	4250 6900 1000 6900
+Wire Notes Line
+	1000 6900 1000 4050
+Text Notes 2900 4300 0    79   ~ 0
+Programming board
+Wire Notes Line
+	5650 4100 5650 6450
+Wire Notes Line
+	5650 6450 11150 6450
+Wire Notes Line
+	11150 6450 11150 4100
+Wire Notes Line
+	11150 4100 5650 4100
+Text Notes 5750 4300 0    79   ~ 0
+Finger pretender board
+$Comp
+L POxiM-mechanical:Bumpon MB1
+U 1 1 5EC80F89
+P 1150 6500
+F 0 "MB1" H 1278 6536 50  0000 L CNN
+F 1 "Bumpon" H 1278 6445 50  0000 L CNN
+F 2 "POxiM-uncategorised:Bumpon-SJ-5007BK" H 1450 6550 50  0001 C CNN
+F 3 "" H 1450 6550 50  0001 C CNN
+F 4 "SJ-5007 (BLACK)" H 1150 6500 50  0001 C CNN "Part number"
+F 5 "517-SJ-5007BK" H 1150 6500 50  0001 C CNN "Order number"
+F 6 "Mouser" H 1150 6500 50  0001 C CNN "Supplier"
+F 7 "" H 1150 6500 50  0001 C CNN "Notes"
+F 8 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 1150 6500 50  0001 C CNN "Link"
+	1    1150 6500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R16
-U 1 1 5EC9C9FE
-P 4850 5000
-F 0 "R16" H 4900 5000 50  0000 L CNN
-F 1 "4.7kΩ" V 4850 5000 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4850 5000 50  0001 C CNN
-F 3 "~" H 4850 5000 50  0001 C CNN
-	1    4850 5000
+L POxiM-mechanical:Bumpon MB2
+U 1 1 5EC99A3B
+P 1150 6750
+F 0 "MB2" H 1278 6786 50  0000 L CNN
+F 1 "Bumpon" H 1278 6695 50  0000 L CNN
+F 2 "POxiM-uncategorised:Bumpon-SJ-5007BK" H 1450 6800 50  0001 C CNN
+F 3 "" H 1450 6800 50  0001 C CNN
+F 4 "SJ-5007 (BLACK)" H 1150 6750 50  0001 C CNN "Part number"
+F 5 "517-SJ-5007BK" H 1150 6750 50  0001 C CNN "Order number"
+F 6 "Mouser" H 1150 6750 50  0001 C CNN "Supplier"
+F 7 "" H 1150 6750 50  0001 C CNN "Notes"
+F 8 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 1150 6750 50  0001 C CNN "Link"
+	1    1150 6750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R14
-U 1 1 5EC9B46E
-P 4550 5000
-F 0 "R14" H 4600 5000 50  0000 L CNN
-F 1 "4.7kΩ" V 4550 5000 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4550 5000 50  0001 C CNN
-F 3 "~" H 4550 5000 50  0001 C CNN
-	1    4550 5000
+L POxiM-mechanical:Bumpon MB3
+U 1 1 5ECA0FD1
+P 1800 6500
+F 0 "MB3" H 1928 6536 50  0000 L CNN
+F 1 "Bumpon" H 1928 6445 50  0000 L CNN
+F 2 "POxiM-uncategorised:Bumpon-SJ-5007BK" H 2100 6550 50  0001 C CNN
+F 3 "" H 2100 6550 50  0001 C CNN
+F 4 "SJ-5007 (BLACK)" H 1800 6500 50  0001 C CNN "Part number"
+F 5 "517-SJ-5007BK" H 1800 6500 50  0001 C CNN "Order number"
+F 6 "Mouser" H 1800 6500 50  0001 C CNN "Supplier"
+F 7 "" H 1800 6500 50  0001 C CNN "Notes"
+F 8 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 1800 6500 50  0001 C CNN "Link"
+	1    1800 6500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R12
-U 1 1 5EC9A878
-P 4250 5000
-F 0 "R12" H 4300 5000 50  0000 L CNN
-F 1 "4.7kΩ" V 4250 5000 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4250 5000 50  0001 C CNN
-F 3 "~" H 4250 5000 50  0001 C CNN
-	1    4250 5000
+L POxiM-mechanical:Bumpon MB4
+U 1 1 5ECA0FDC
+P 1800 6750
+F 0 "MB4" H 1928 6786 50  0000 L CNN
+F 1 "Bumpon" H 1928 6695 50  0000 L CNN
+F 2 "POxiM-uncategorised:Bumpon-SJ-5007BK" H 2100 6800 50  0001 C CNN
+F 3 "" H 2100 6800 50  0001 C CNN
+F 4 "SJ-5007 (BLACK)" H 1800 6750 50  0001 C CNN "Part number"
+F 5 "517-SJ-5007BK" H 1800 6750 50  0001 C CNN "Order number"
+F 6 "Mouser" H 1800 6750 50  0001 C CNN "Supplier"
+F 7 "" H 1800 6750 50  0001 C CNN "Notes"
+F 8 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 1800 6750 50  0001 C CNN "Link"
+	1    1800 6750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R10
-U 1 1 5EC99DF6
-P 3950 5000
-F 0 "R10" H 4000 5000 50  0000 L CNN
-F 1 "4.7kΩ" V 3950 5000 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3950 5000 50  0001 C CNN
-F 3 "~" H 3950 5000 50  0001 C CNN
-	1    3950 5000
+L POxiM-mechanical:Bumpon MB5
+U 1 1 5EC2370E
+P 3350 7250
+F 0 "MB5" H 3478 7286 50  0000 L CNN
+F 1 "Bumpon" H 3478 7195 50  0000 L CNN
+F 2 "POxiM-uncategorised:Bumpon-SJ-5007BK" H 3650 7300 50  0001 C CNN
+F 3 "" H 3650 7300 50  0001 C CNN
+F 4 "SJ-5007 (BLACK)" H 3350 7250 50  0001 C CNN "Part number"
+F 5 "517-SJ-5007BK" H 3350 7250 50  0001 C CNN "Order number"
+F 6 "Mouser" H 3350 7250 50  0001 C CNN "Supplier"
+F 7 "" H 3350 7250 50  0001 C CNN "Notes"
+F 8 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 3350 7250 50  0001 C CNN "Link"
+	1    3350 7250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R8
-U 1 1 5EC81DE7
-P 3650 5000
-F 0 "R8" H 3700 5000 50  0000 L CNN
-F 1 "4.7kΩ" V 3650 5000 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3650 5000 50  0001 C CNN
-F 3 "~" H 3650 5000 50  0001 C CNN
-	1    3650 5000
+L POxiM-mechanical:Bumpon MB6
+U 1 1 5EC23719
+P 3350 7550
+F 0 "MB6" H 3478 7586 50  0000 L CNN
+F 1 "Bumpon" H 3478 7495 50  0000 L CNN
+F 2 "POxiM-uncategorised:Bumpon-SJ-5007BK" H 3650 7600 50  0001 C CNN
+F 3 "" H 3650 7600 50  0001 C CNN
+F 4 "SJ-5007 (BLACK)" H 3350 7550 50  0001 C CNN "Part number"
+F 5 "517-SJ-5007BK" H 3350 7550 50  0001 C CNN "Order number"
+F 6 "Mouser" H 3350 7550 50  0001 C CNN "Supplier"
+F 7 "" H 3350 7550 50  0001 C CNN "Notes"
+F 8 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 3350 7550 50  0001 C CNN "Link"
+	1    3350 7550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small JP26
-U 1 1 5ED12013
-P 7200 2050
-F 0 "JP26" V 7200 2125 50  0000 L CNN
-F 1 "Jumper_NC_Small" H 7200 2171 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_SolderBridged_RoundedPad1.0x1.5mm" H 7200 2050 50  0001 C CNN
-F 3 "~" H 7200 2050 50  0001 C CNN
-	1    7200 2050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Jumper_NC_Small JP24
-U 1 1 5ED1200D
-P 6900 2050
-F 0 "JP24" V 6900 2125 50  0000 L CNN
-F 1 "Jumper_NC_Small" H 6900 2171 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_SolderBridged_RoundedPad1.0x1.5mm" H 6900 2050 50  0001 C CNN
-F 3 "~" H 6900 2050 50  0001 C CNN
-	1    6900 2050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8400 2150 8400 2200
-Wire Wire Line
-	8100 2150 8100 2200
-Wire Wire Line
-	7800 2150 7800 2200
-Wire Wire Line
-	7500 2150 7500 2200
-Wire Wire Line
-	7200 2150 7200 2200
-Wire Wire Line
-	6900 2150 6900 2200
-Wire Wire Line
-	6600 2150 6600 2200
-$Comp
-L Device:Jumper_NC_Small JP22
-U 1 1 5ED11FBC
-P 6600 2050
-F 0 "JP22" V 6600 2125 50  0000 L CNN
-F 1 "Jumper_NC_Small" H 6600 2171 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_SolderBridged_RoundedPad1.0x1.5mm" H 6600 2050 50  0001 C CNN
-F 3 "~" H 6600 2050 50  0001 C CNN
-	1    6600 2050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7200 5100 7200 5150
-$Comp
-L Device:R_Small R26
-U 1 1 5ED8E4AE
-P 7200 5000
-F 0 "R26" H 7250 5000 50  0000 L CNN
-F 1 "4.7kΩ" V 7200 5000 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7200 5000 50  0001 C CNN
-F 3 "~" H 7200 5000 50  0001 C CNN
-	1    7200 5000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6900 5100 6900 5150
-$Comp
-L Device:R_Small R24
-U 1 1 5ED8E4A6
-P 6900 5000
-F 0 "R24" H 6950 5000 50  0000 L CNN
-F 1 "4.7kΩ" V 6900 5000 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6900 5000 50  0001 C CNN
-F 3 "~" H 6900 5000 50  0001 C CNN
-	1    6900 5000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6600 5100 6600 5150
-$Comp
-L Device:R_Small R22
-U 1 1 5ED8E498
-P 6600 5000
-F 0 "R22" H 6650 5000 50  0000 L CNN
-F 1 "4.7kΩ" V 6600 5000 25  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6600 5000 50  0001 C CNN
-F 3 "~" H 6600 5000 50  0001 C CNN
-	1    6600 5000
+L POxiM-mechanical:Bumpon MB7
+U 1 1 5EC23724
+P 4000 7250
+F 0 "MB7" H 4128 7286 50  0000 L CNN
+F 1 "Bumpon" H 4128 7195 50  0000 L CNN
+F 2 "POxiM-uncategorised:Bumpon-SJ-5007BK" H 4300 7300 50  0001 C CNN
+F 3 "" H 4300 7300 50  0001 C CNN
+F 4 "SJ-5007 (BLACK)" H 4000 7250 50  0001 C CNN "Part number"
+F 5 "517-SJ-5007BK" H 4000 7250 50  0001 C CNN "Order number"
+F 6 "Mouser" H 4000 7250 50  0001 C CNN "Supplier"
+F 7 "" H 4000 7250 50  0001 C CNN "Notes"
+F 8 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 4000 7250 50  0001 C CNN "Link"
+	1    4000 7250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small JP9
-U 1 1 5EC776E2
-P 3650 4750
-F 0 "JP9" V 3650 4825 50  0000 L CNN
-F 1 "Jumper_NC_Small" H 3650 4871 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_SolderBridged_RoundedPad1.0x1.5mm" H 3650 4750 50  0001 C CNN
-F 3 "~" H 3650 4750 50  0001 C CNN
-	1    3650 4750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Jumper_NO_Small J14
-U 1 1 5EF9AC36
-P 4550 2050
-F 0 "J14" V 4550 2098 50  0000 L CNN
-F 1 "Jumper_NO_Small" H 4550 2144 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4550 2050 50  0001 C CNN
-F 3 "~" H 4550 2050 50  0001 C CNN
-	1    4550 2050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Jumper_NO_Small JP16
-U 1 1 5EFA1B51
-P 4850 2050
-F 0 "JP16" V 4850 2098 50  0000 L CNN
-F 1 "Jumper_NO_Small" H 4850 2144 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4850 2050 50  0001 C CNN
-F 3 "~" H 4850 2050 50  0001 C CNN
-	1    4850 2050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Jumper_NO_Small JP18
-U 1 1 5EFA8D35
-P 5150 2050
-F 0 "JP18" V 5150 2098 50  0000 L CNN
-F 1 "Jumper_NO_Small" H 5150 2144 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5150 2050 50  0001 C CNN
-F 3 "~" H 5150 2050 50  0001 C CNN
-	1    5150 2050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Jumper_NO_Small JP20
-U 1 1 5EFAFCC3
-P 5450 2050
-F 0 "JP20" V 5450 2098 50  0000 L CNN
-F 1 "Jumper_NO_Small" H 5450 2144 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5450 2050 50  0001 C CNN
-F 3 "~" H 5450 2050 50  0001 C CNN
-	1    5450 2050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Jumper_NO_Small JP28
-U 1 1 5EFBE311
-P 7500 2050
-F 0 "JP28" V 7500 2098 50  0000 L CNN
-F 1 "Jumper_NO_Small" H 7500 2144 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7500 2050 50  0001 C CNN
-F 3 "~" H 7500 2050 50  0001 C CNN
-	1    7500 2050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Jumper_NO_Small JP29
-U 1 1 5EFC54B0
-P 7800 2050
-F 0 "JP29" V 7800 2098 50  0000 L CNN
-F 1 "Jumper_NO_Small" H 7800 2144 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7800 2050 50  0001 C CNN
-F 3 "~" H 7800 2050 50  0001 C CNN
-	1    7800 2050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Jumper_NO_Small JP8
-U 1 1 5EF93B4F
-P 3650 2050
-F 0 "JP8" V 3650 2098 50  0000 L CNN
-F 1 "Jumper_NO_Small" H 3650 2144 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3650 2050 50  0001 C CNN
-F 3 "~" H 3650 2050 50  0001 C CNN
-	1    3650 2050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Jumper_NO_Small JP30
-U 1 1 5EFCC3E2
-P 8100 2050
-F 0 "JP30" V 8100 2098 50  0000 L CNN
-F 1 "Jumper_NO_Small" H 8100 2144 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8100 2050 50  0001 C CNN
-F 3 "~" H 8100 2050 50  0001 C CNN
-	1    8100 2050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Jumper_NO_Small JP31
-U 1 1 5EFD32CF
-P 8400 2050
-F 0 "JP31" V 8400 2098 50  0000 L CNN
-F 1 "Jumper_NO_Small" H 8400 2144 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8400 2050 50  0001 C CNN
-F 3 "~" H 8400 2050 50  0001 C CNN
-	1    8400 2050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Jumper_NO_Small JP27
-U 1 1 5EFDA485
-P 7200 4750
-F 0 "JP27" V 7200 4798 50  0000 L CNN
-F 1 "Jumper_NO_Small" H 7200 4844 50  0001 C CNN
-F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7200 4750 50  0001 C CNN
-F 3 "~" H 7200 4750 50  0001 C CNN
-	1    7200 4750
-	0    1    1    0   
+L POxiM-mechanical:Bumpon MB8
+U 1 1 5EC2372F
+P 4000 7550
+F 0 "MB8" H 4128 7586 50  0000 L CNN
+F 1 "Bumpon" H 4128 7495 50  0000 L CNN
+F 2 "POxiM-uncategorised:Bumpon-SJ-5007BK" H 4300 7600 50  0001 C CNN
+F 3 "" H 4300 7600 50  0001 C CNN
+F 4 "SJ-5007 (BLACK)" H 4000 7550 50  0001 C CNN "Part number"
+F 5 "517-SJ-5007BK" H 4000 7550 50  0001 C CNN "Order number"
+F 6 "Mouser" H 4000 7550 50  0001 C CNN "Supplier"
+F 7 "" H 4000 7550 50  0001 C CNN "Notes"
+F 8 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 4000 7550 50  0001 C CNN "Link"
+	1    4000 7550
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

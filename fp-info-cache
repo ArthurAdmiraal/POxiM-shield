@@ -1,4 +1,4 @@
-15718325643599743
+15722771039718005
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -61256,6 +61256,34 @@ TO-264-5 Vertical RM 3.81mm
 0
 5
 5
+Panelization
+mouse-bite-1mm-slot
+
+
+0
+0
+0
+Panelization
+mouse-bite-2.5mm-slot
+
+
+0
+0
+0
+Panelization
+mouse-bite-2.54mm-slot
+
+
+0
+0
+0
+Panelization
+mouse-bite-2mm-slot
+
+
+0
+0
+0
 Potentiometer_SMD
 Potentiometer_ACP_CA6-VSMD_Vertical
 Potentiometer, vertical, ACP CA6-VSMD, http://www.acptechnologies.com/wp-content/uploads/2017/06/01-ACP-CA6.pdf
@@ -62370,19 +62398,12 @@ connector Molex  top entry
 6
 5
 POxiM-uncategorised
-SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm
-SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, open
-solder jumper open
+Tab_MouseBites_2.5mm
+
+
 0
-2
-2
-POxiM-uncategorised
-SolderJumper-2_P1.3mm_SolderBridged_RoundedPad1.0x1.5mm
-SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, open
-solder jumper open
 0
-2
-2
+0
 POxiM-uncategorised
 VSMD66694
 VSMD66694-3
