@@ -22,6 +22,10 @@ F 0 "D7" V 3547 2630 50  0000 L CNN
 F 1 "LED" V 3638 2630 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3600 2550 50  0001 C CNN
 F 3 "~" H 3600 2550 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    3600 2550
 	0    1    1    0   
 $EndComp
@@ -39,6 +43,10 @@ F 0 "D9" V 3847 2630 50  0000 L CNN
 F 1 "LED" V 3938 2630 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3900 2550 50  0001 C CNN
 F 3 "~" H 3900 2550 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    3900 2550
 	0    1    1    0   
 $EndComp
@@ -50,6 +58,10 @@ F 0 "D11" V 4147 2630 50  0000 L CNN
 F 1 "LED" V 4238 2630 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4200 2550 50  0001 C CNN
 F 3 "~" H 4200 2550 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    4200 2550
 	0    1    1    0   
 $EndComp
@@ -61,6 +73,10 @@ F 0 "D13" V 4447 2630 50  0000 L CNN
 F 1 "LED" V 4538 2630 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4500 2550 50  0001 C CNN
 F 3 "~" H 4500 2550 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    4500 2550
 	0    1    1    0   
 $EndComp
@@ -72,6 +88,10 @@ F 0 "D15" V 4747 2630 50  0000 L CNN
 F 1 "LED" V 4838 2630 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4800 2550 50  0001 C CNN
 F 3 "~" H 4800 2550 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    4800 2550
 	0    1    1    0   
 $EndComp
@@ -83,6 +103,10 @@ F 0 "D17" V 5047 2630 50  0000 L CNN
 F 1 "LED" V 5138 2630 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5100 2550 50  0001 C CNN
 F 3 "~" H 5100 2550 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    5100 2550
 	0    1    1    0   
 $EndComp
@@ -94,6 +118,10 @@ F 0 "D19" V 5347 2630 50  0000 L CNN
 F 1 "LED" V 5438 2630 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5400 2550 50  0001 C CNN
 F 3 "~" H 5400 2550 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    5400 2550
 	0    1    1    0   
 $EndComp
@@ -105,6 +133,10 @@ F 0 "D30" V 8297 2630 50  0000 L CNN
 F 1 "LED" V 8388 2630 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 8350 2550 50  0001 C CNN
 F 3 "~" H 8350 2550 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    8350 2550
 	0    -1   -1   0   
 $EndComp
@@ -116,6 +148,10 @@ F 0 "D29" V 7997 2630 50  0000 L CNN
 F 1 "LED" V 8088 2630 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 8050 2550 50  0001 C CNN
 F 3 "~" H 8050 2550 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    8050 2550
 	0    -1   -1   0   
 $EndComp
@@ -127,6 +163,10 @@ F 0 "D28" V 7697 2630 50  0000 L CNN
 F 1 "LED" V 7788 2630 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7750 2550 50  0001 C CNN
 F 3 "~" H 7750 2550 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    7750 2550
 	0    -1   -1   0   
 $EndComp
@@ -138,6 +178,10 @@ F 0 "D27" V 7397 2630 50  0000 L CNN
 F 1 "LED" V 7488 2630 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7450 2550 50  0001 C CNN
 F 3 "~" H 7450 2550 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    7450 2550
 	0    -1   -1   0   
 $EndComp
@@ -149,6 +193,10 @@ F 0 "D25" V 7097 2630 50  0000 L CNN
 F 1 "LED" V 7188 2630 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7150 2550 50  0001 C CNN
 F 3 "~" H 7150 2550 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    7150 2550
 	0    -1   -1   0   
 $EndComp
@@ -160,6 +208,10 @@ F 0 "D23" V 6797 2630 50  0000 L CNN
 F 1 "LED" V 6888 2630 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 6850 2550 50  0001 C CNN
 F 3 "~" H 6850 2550 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    6850 2550
 	0    -1   -1   0   
 $EndComp
@@ -171,6 +223,10 @@ F 0 "D21" V 6497 2630 50  0000 L CNN
 F 1 "LED" V 6588 2630 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 6550 2550 50  0001 C CNN
 F 3 "~" H 6550 2550 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    6550 2550
 	0    -1   -1   0   
 $EndComp
@@ -332,6 +388,10 @@ F 0 "D8" V 3547 4930 50  0000 L CNN
 F 1 "LED" V 3638 4930 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3600 4850 50  0001 C CNN
 F 3 "~" H 3600 4850 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    3600 4850
 	0    1    -1   0   
 $EndComp
@@ -345,6 +405,10 @@ F 0 "D10" V 3847 4930 50  0000 L CNN
 F 1 "LED" V 3938 4930 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 3900 4850 50  0001 C CNN
 F 3 "~" H 3900 4850 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    3900 4850
 	0    1    -1   0   
 $EndComp
@@ -356,6 +420,10 @@ F 0 "D12" V 4147 4930 50  0000 L CNN
 F 1 "LED" V 4238 4930 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4200 4850 50  0001 C CNN
 F 3 "~" H 4200 4850 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    4200 4850
 	0    1    -1   0   
 $EndComp
@@ -367,6 +435,10 @@ F 0 "D14" V 4447 4930 50  0000 L CNN
 F 1 "LED" V 4538 4930 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4500 4850 50  0001 C CNN
 F 3 "~" H 4500 4850 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    4500 4850
 	0    1    -1   0   
 $EndComp
@@ -378,6 +450,10 @@ F 0 "D16" V 4747 4930 50  0000 L CNN
 F 1 "LED" V 4838 4930 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 4800 4850 50  0001 C CNN
 F 3 "~" H 4800 4850 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    4800 4850
 	0    1    -1   0   
 $EndComp
@@ -389,6 +465,10 @@ F 0 "D18" V 5047 4930 50  0000 L CNN
 F 1 "LED" V 5138 4930 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5100 4850 50  0001 C CNN
 F 3 "~" H 5100 4850 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    5100 4850
 	0    1    -1   0   
 $EndComp
@@ -400,6 +480,10 @@ F 0 "D20" V 5347 4930 50  0000 L CNN
 F 1 "LED" V 5438 4930 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 5400 4850 50  0001 C CNN
 F 3 "~" H 5400 4850 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    5400 4850
 	0    1    -1   0   
 $EndComp
@@ -411,6 +495,10 @@ F 0 "D26" V 7097 4930 50  0000 L CNN
 F 1 "LED" V 7188 4930 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7150 4850 50  0001 C CNN
 F 3 "~" H 7150 4850 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    7150 4850
 	0    -1   1    0   
 $EndComp
@@ -422,6 +510,10 @@ F 0 "D24" V 6797 4930 50  0000 L CNN
 F 1 "LED" V 6888 4930 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 6850 4850 50  0001 C CNN
 F 3 "~" H 6850 4850 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    6850 4850
 	0    -1   1    0   
 $EndComp
@@ -433,6 +525,10 @@ F 0 "D22" V 6497 4930 50  0000 L CNN
 F 1 "LED" V 6588 4930 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 6550 4850 50  0001 C CNN
 F 3 "~" H 6550 4850 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 0   0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    6550 4850
 	0    -1   1    0   
 $EndComp
@@ -607,9 +703,13 @@ L Device:R_Small R6
 U 1 1 5EC535DD
 P 5750 3050
 F 0 "R6" H 5809 3096 50  0000 L CNN
-F 1 "R_Small" H 5809 3005 50  0000 L CNN
+F 1 "130Ω" H 5809 3005 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 5750 3050 50  0001 C CNN
 F 3 "~" H 5750 3050 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF1300V?qs=sGAEpiMZZMtlubZbdhIBIHcx2Q2RnT7KBXBUisW6Uow%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "667-ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Order number"
+F 6 "ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    5750 3050
 	1    0    0    -1  
 $EndComp
@@ -618,9 +718,13 @@ L Device:R_Small R7
 U 1 1 5ED65AF3
 P 5750 4350
 F 0 "R7" H 5809 4396 50  0000 L CNN
-F 1 "R_Small" H 5809 4305 50  0000 L CNN
+F 1 "130Ω" H 5809 4305 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 5750 4350 50  0001 C CNN
 F 3 "~" H 5750 4350 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF1300V?qs=sGAEpiMZZMtlubZbdhIBIHcx2Q2RnT7KBXBUisW6Uow%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "667-ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Order number"
+F 6 "ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    5750 4350
 	1    0    0    -1  
 $EndComp

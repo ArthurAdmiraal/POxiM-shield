@@ -49,12 +49,13 @@ L Device:R_Small R3
 U 1 1 5EBF7108
 P 7050 3050
 F 0 "R3" V 6854 3050 50  0000 C CNN
-F 1 "100" V 6945 3050 50  0000 C CNN
+F 1 "130Ω" V 6945 3050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 7050 3050 50  0001 C CNN
 F 3 "~" H 7050 3050 50  0001 C CNN
-F 4 "Panasonic" V 7050 3050 50  0001 C CNN "Mfr."
-F 5 "ERJ-6ENF1000V" V 7050 3050 50  0001 C CNN "Mfr. No."
-F 6 "667-ERJ-6ENF1000V" V 7050 3050 50  0001 C CNN "Mouser No."
+F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF1300V?qs=sGAEpiMZZMtlubZbdhIBIHcx2Q2RnT7KBXBUisW6Uow%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "667-ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Order number"
+F 6 "ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    7050 3050
 	0    -1   1    0   
 $EndComp
@@ -166,12 +167,13 @@ L Device:R_Small R4
 U 1 1 5EC050E8
 P 7050 3650
 F 0 "R4" V 6854 3650 50  0000 C CNN
-F 1 "100" V 6945 3650 50  0000 C CNN
+F 1 "130Ω" V 6945 3650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 7050 3650 50  0001 C CNN
 F 3 "~" H 7050 3650 50  0001 C CNN
-F 4 "Panasonic" V 7050 3650 50  0001 C CNN "Mfr."
-F 5 "ERJ-6ENF1000V" V 7050 3650 50  0001 C CNN "Mfr. No."
-F 6 "667-ERJ-6ENF1000V" V 7050 3650 50  0001 C CNN "Mouser No."
+F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF1300V?qs=sGAEpiMZZMtlubZbdhIBIHcx2Q2RnT7KBXBUisW6Uow%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "667-ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Order number"
+F 6 "ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    7050 3650
 	0    -1   1    0   
 $EndComp
@@ -180,12 +182,13 @@ L Device:R_Small R5
 U 1 1 5EC05401
 P 7050 4250
 F 0 "R5" V 6854 4250 50  0000 C CNN
-F 1 "100" V 6945 4250 50  0000 C CNN
+F 1 "130Ω" V 6945 4250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 7050 4250 50  0001 C CNN
 F 3 "~" H 7050 4250 50  0001 C CNN
-F 4 "Panasonic" V 7050 4250 50  0001 C CNN "Mfr."
-F 5 "ERJ-6ENF1000V" V 7050 4250 50  0001 C CNN "Mfr. No."
-F 6 "667-ERJ-6ENF1000V" V 7050 4250 50  0001 C CNN "Mouser No."
+F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF1300V?qs=sGAEpiMZZMtlubZbdhIBIHcx2Q2RnT7KBXBUisW6Uow%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "667-ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Order number"
+F 6 "ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    7050 4250
 	0    -1   1    0   
 $EndComp

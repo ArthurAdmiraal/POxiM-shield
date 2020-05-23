@@ -102,22 +102,6 @@ Wire Wire Line
 Text HLabel 2700 3200 0    50   Input ~ 0
 5V
 $Comp
-L Device:R_Small R10
-U 1 1 5EC54C55
-P 7800 5800
-AR Path="/5EC045BC/5EC54C55" Ref="R10"  Part="1" 
-AR Path="/5EC1A85F/5EC54C55" Ref="R?"  Part="1" 
-F 0 "R10" V 7604 5800 50  0000 C CNN
-F 1 "27kΩ" V 7695 5800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7800 5800 50  0001 C CNN
-F 3 "~" H 7800 5800 50  0001 C CNN
-F 4 "" V 7800 5800 50  0001 C CNN "Mfr."
-F 5 "" V 7800 5800 50  0001 C CNN "Mfr. No."
-F 6 "" V 7800 5800 50  0001 C CNN "Mouser No."
-	1    7800 5800
-	0    1    1    0   
-$EndComp
-$Comp
 L POxiM-uncategorised:NLAS4053 U4
 U 1 1 5EC19F3F
 P 6450 4000
@@ -517,22 +501,6 @@ F 6 "Keystone Electronics" H 7500 4950 50  0001 C CNN "Mfr."
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R9
-U 1 1 5EC45DBE
-P 7700 4000
-AR Path="/5EC045BC/5EC45DBE" Ref="R9"  Part="1" 
-AR Path="/5EC1A85F/5EC45DBE" Ref="R?"  Part="1" 
-F 0 "R9" V 7800 4000 50  0000 C CNN
-F 1 "27kΩ" V 7900 4000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7700 4000 50  0001 C CNN
-F 3 "~" H 7700 4000 50  0001 C CNN
-F 4 "" V 7700 4000 50  0001 C CNN "Mfr."
-F 5 "" V 7700 4000 50  0001 C CNN "Mfr. No."
-F 6 "" V 7700 4000 50  0001 C CNN "Mouser No."
-	1    7700 4000
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R_Small R8
 U 1 1 5EC4637F
 P 7700 3850
@@ -542,9 +510,10 @@ F 0 "R8" V 7504 3850 50  0000 C CNN
 F 1 "27kΩ" V 7595 3850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 7700 3850 50  0001 C CNN
 F 3 "~" H 7700 3850 50  0001 C CNN
-F 4 "" V 7700 3850 50  0001 C CNN "Mfr."
-F 5 "" V 7700 3850 50  0001 C CNN "Mfr. No."
-F 6 "" V 7700 3850 50  0001 C CNN "Mouser No."
+F 4 "ERJ-3EKF2702V" V 7700 3850 50  0001 C CNN "Part number"
+F 5 "667-ERJ-3EKF2702V" V 7700 3850 50  0001 C CNN "Order number"
+F 6 "Mouser" V 7700 3850 50  0001 C CNN "Supplier"
+F 7 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF2702V?qs=sGAEpiMZZMtlubZbdhIBIEpCgapuOP%252BoRX3dVKa8fFk%3D" V 7700 3850 50  0001 C CNN "Link"
 	1    7700 3850
 	0    1    1    0   
 $EndComp
@@ -558,9 +527,10 @@ F 0 "R11" V 8104 5950 50  0000 C CNN
 F 1 "1kΩ" V 8195 5950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 8300 5950 50  0001 C CNN
 F 3 "~" H 8300 5950 50  0001 C CNN
-F 4 "" V 8300 5950 50  0001 C CNN "Mfr."
-F 5 "" V 8300 5950 50  0001 C CNN "Mfr. No."
-F 6 "" V 8300 5950 50  0001 C CNN "Mouser No."
+F 4 "ERJ-3EKF1001V" V 8300 5950 50  0001 C CNN "Part number"
+F 5 "667-ERJ-3EKF1001V" V 8300 5950 50  0001 C CNN "Order number"
+F 6 "Mouser" V 8300 5950 50  0001 C CNN "Supplier"
+F 7 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF1001V?qs=sGAEpiMZZMtlubZbdhIBIHcx2Q2RnT7KlVgQLdRivFY%3D" V 8300 5950 50  0001 C CNN "Link"
 	1    8300 5950
 	-1   0    0    1   
 $EndComp
@@ -590,8 +560,7 @@ F 3 "" H 8650 4300 50  0001 C CNN
 F 4 "KC14A10.001NPS" H 8750 4050 50  0001 C CNN "Part number"
 F 5 "612-KC14A10.001NPS" H 8750 4050 50  0001 C CNN "Order number"
 F 6 "Mouser" H 8750 4050 50  0001 C CNN "Supplier"
-F 7 "" H 8750 4050 50  0001 C CNN "Notes"
-F 8 "https://nl.mouser.com/ProductDetail/E-Switch/KC14A10001NPS?qs=%2Fha2pyFaduhcUIaisad475crhP5hQqjr9EJy5y4s37Gc1Q%2FCujsJgQ%3D%3D" H 8750 4050 50  0001 C CNN "Link"
+F 7 "https://nl.mouser.com/ProductDetail/E-Switch/KC14A10001NPS?qs=%2Fha2pyFaduhcUIaisad475crhP5hQqjr9EJy5y4s37Gc1Q%2FCujsJgQ%3D%3D" H 8750 4050 50  0001 C CNN "Link"
 	1    8750 4050
 	1    0    0    1   
 $EndComp
@@ -605,9 +574,10 @@ F 0 "R15" V 9400 4350 50  0000 L BNN
 F 1 "4.7kΩ" V 9400 4250 25  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9400 4250 50  0001 C CNN
 F 3 "~" H 9400 4250 50  0001 C CNN
-F 4 "" V 9400 4250 50  0001 C CNN "Mfr."
-F 5 "" V 9400 4250 50  0001 C CNN "Mfr. No."
-F 6 "" V 9400 4250 50  0001 C CNN "Mouser No."
+F 4 "ERJ-3EKF4701V" V 9400 4250 50  0001 C CNN "Part number"
+F 5 "667-ERJ-3EKF4701V" V 9400 4250 50  0001 C CNN "Order number"
+F 6 "Mouser" V 9400 4250 50  0001 C CNN "Supplier"
+F 7 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF4701V?qs=sGAEpiMZZMtlubZbdhIBILWcrV%252BWBYJCkuV5S%252BdjAWg%3D" V 9400 4250 50  0001 C CNN "Link"
 	1    9400 4250
 	0    1    1    0   
 $EndComp
@@ -623,9 +593,10 @@ F 0 "R14" V 9400 4250 50  0000 L BNN
 F 1 "47kΩ" V 9400 4150 25  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9400 4150 50  0001 C CNN
 F 3 "~" H 9400 4150 50  0001 C CNN
-F 4 "" V 9400 4150 50  0001 C CNN "Mfr."
-F 5 "" V 9400 4150 50  0001 C CNN "Mfr. No."
-F 6 "" V 9400 4150 50  0001 C CNN "Mouser No."
+F 4 "ERJ-3EKF4702V" V 9400 4150 50  0001 C CNN "Part number"
+F 5 "667-ERJ-3EKF4702V" V 9400 4150 50  0001 C CNN "Order number"
+F 6 "Mouser" V 9400 4150 50  0001 C CNN "Supplier"
+F 7 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF4702V?qs=sGAEpiMZZMtlubZbdhIBILWcrV%252BWBYJCoIp6vbC1C4w%3D" V 9400 4150 50  0001 C CNN "Link"
 	1    9400 4150
 	0    1    1    0   
 $EndComp
@@ -643,9 +614,10 @@ F 0 "R13" V 9400 4150 50  0000 L BNN
 F 1 "470kΩ" V 9400 4050 25  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9400 4050 50  0001 C CNN
 F 3 "~" H 9400 4050 50  0001 C CNN
-F 4 "" V 9400 4050 50  0001 C CNN "Mfr."
-F 5 "" V 9400 4050 50  0001 C CNN "Mfr. No."
-F 6 "" V 9400 4050 50  0001 C CNN "Mouser No."
+F 4 "ERJ-3EKF4703V" V 9400 4050 50  0001 C CNN "Part number"
+F 5 "667-ERJ-3EKF4703V" V 9400 4050 50  0001 C CNN "Order number"
+F 6 "Mouser" V 9400 4050 50  0001 C CNN "Supplier"
+F 7 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF4703V?qs=sGAEpiMZZMtlubZbdhIBILWcrV%252BWBYJC0KiVYtg%2FMjg%3D" V 9400 4050 50  0001 C CNN "Link"
 	1    9400 4050
 	0    1    1    0   
 $EndComp
@@ -663,9 +635,10 @@ F 0 "R12" V 9400 4050 50  0000 L BNN
 F 1 "4.7MΩ" V 9400 3950 25  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9400 3950 50  0001 C CNN
 F 3 "~" H 9400 3950 50  0001 C CNN
-F 4 "" V 9400 3950 50  0001 C CNN "Mfr."
-F 5 "" V 9400 3950 50  0001 C CNN "Mfr. No."
-F 6 "" V 9400 3950 50  0001 C CNN "Mouser No."
+F 4 "CRCW06034M70FKEAC" V 9400 3950 50  0001 C CNN "Part number"
+F 5 "71-CRCW06034M70FKEAC" V 9400 3950 50  0001 C CNN "Order number"
+F 6 "Mouser" V 9400 3950 50  0001 C CNN "Supplier"
+F 7 "https://nl.mouser.com/ProductDetail/Vishay-Dale/CRCW06034M70FKEAC?qs=sGAEpiMZZMtlubZbdhIBIIZe04wfiaJWC9cr1vZT8XU%3D" V 9400 3950 50  0001 C CNN "Link"
 	1    9400 3950
 	0    1    1    0   
 $EndComp
@@ -731,8 +704,7 @@ F 3 "" H 1050 7300 50  0001 C CNN
 F 4 "SJ-5007 (BLACK)" H 750 7250 50  0001 C CNN "Part number"
 F 5 "517-SJ-5007BK" H 750 7250 50  0001 C CNN "Order number"
 F 6 "Mouser" H 750 7250 50  0001 C CNN "Supplier"
-F 7 "" H 750 7250 50  0001 C CNN "Notes"
-F 8 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 750 7250 50  0001 C CNN "Link"
+F 7 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 750 7250 50  0001 C CNN "Link"
 	1    750  7250
 	1    0    0    -1  
 $EndComp
@@ -747,8 +719,7 @@ F 3 "" H 1050 7600 50  0001 C CNN
 F 4 "SJ-5007 (BLACK)" H 750 7550 50  0001 C CNN "Part number"
 F 5 "517-SJ-5007BK" H 750 7550 50  0001 C CNN "Order number"
 F 6 "Mouser" H 750 7550 50  0001 C CNN "Supplier"
-F 7 "" H 750 7550 50  0001 C CNN "Notes"
-F 8 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 750 7550 50  0001 C CNN "Link"
+F 7 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 750 7550 50  0001 C CNN "Link"
 	1    750  7550
 	1    0    0    -1  
 $EndComp
@@ -763,8 +734,7 @@ F 3 "" H 1700 7300 50  0001 C CNN
 F 4 "SJ-5007 (BLACK)" H 1400 7250 50  0001 C CNN "Part number"
 F 5 "517-SJ-5007BK" H 1400 7250 50  0001 C CNN "Order number"
 F 6 "Mouser" H 1400 7250 50  0001 C CNN "Supplier"
-F 7 "" H 1400 7250 50  0001 C CNN "Notes"
-F 8 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 1400 7250 50  0001 C CNN "Link"
+F 7 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 1400 7250 50  0001 C CNN "Link"
 	1    1400 7250
 	1    0    0    -1  
 $EndComp
@@ -779,8 +749,7 @@ F 3 "" H 1700 7600 50  0001 C CNN
 F 4 "SJ-5007 (BLACK)" H 1400 7550 50  0001 C CNN "Part number"
 F 5 "517-SJ-5007BK" H 1400 7550 50  0001 C CNN "Order number"
 F 6 "Mouser" H 1400 7550 50  0001 C CNN "Supplier"
-F 7 "" H 1400 7550 50  0001 C CNN "Notes"
-F 8 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 1400 7550 50  0001 C CNN "Link"
+F 7 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 1400 7550 50  0001 C CNN "Link"
 	1    1400 7550
 	1    0    0    -1  
 $EndComp
@@ -823,4 +792,72 @@ Wire Wire Line
 	1500 4550 6050 4550
 Wire Wire Line
 	1500 4650 6050 4650
+$Comp
+L POxiM-uncategorised:Accesory KN?
+U 1 1 5EC38A62
+P 4700 5800
+F 0 "KN?" H 4700 5850 50  0000 C CNN
+F 1 "Knob" H 4700 5750 50  0000 C CNN
+F 2 "POxiM-uncategorised:Accesory" H 4700 5800 50  0001 C CNN
+F 3 "" H 4700 5800 50  0001 C CNN
+F 4 "450-4667" H 4700 5800 50  0001 C CNN "Part number"
+F 5 "450-4667" H 4700 5800 50  0001 C CNN "Order number"
+F 6 "Mouser" H 4700 5800 50  0001 C CNN "Supplier"
+F 7 "White stripe for scaling" H 4700 5800 50  0001 C CNN "Notes"
+F 8 "https://nl.mouser.com/ProductDetail/Eagle-Plastic-Devices/450-4667?qs=Xb8IjHhkxj4zRi1%2FrHcamA%3D%3D" H 4700 5800 50  0001 C CNN "Link"
+	1    4700 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L POxiM-uncategorised:Accesory KN?
+U 1 1 5EC407D2
+P 8800 4800
+AR Path="/5EC045BC/5EC407D2" Ref="KN?"  Part="1" 
+AR Path="/5EC045BC/5EC50BF3/5EC407D2" Ref="KN?"  Part="1" 
+F 0 "KN?" H 8800 4850 50  0000 C CNN
+F 1 "Knob" H 8800 4750 50  0000 C CNN
+F 2 "POxiM-uncategorised:Accesory" H 8800 4800 50  0001 C CNN
+F 3 "" H 8800 4800 50  0001 C CNN
+F 4 "450-4662" H 8800 4800 50  0001 C CNN "Part number"
+F 5 "450-4662" H 8800 4800 50  0001 C CNN "Order number"
+F 6 "Mouser" H 8800 4800 50  0001 C CNN "Supplier"
+F 7 "Green stripe for current range" H 8800 4800 50  0001 C CNN "Notes"
+F 8 "https://nl.mouser.com/ProductDetail/Eagle-Plastic-Devices/450-4662?qs=Xb8IjHhkxj6YqnPlt%2FYVmw%3D%3D" H 8800 4800 50  0001 C CNN "Link"
+	1    8800 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 5EC4EE84
+P 7700 4000
+AR Path="/5EC045BC/5EC4EE84" Ref="R9"  Part="1" 
+AR Path="/5EC1A85F/5EC4EE84" Ref="R?"  Part="1" 
+F 0 "R9" V 7900 4000 50  0000 C CNN
+F 1 "27kΩ" V 7800 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7700 4000 50  0001 C CNN
+F 3 "~" H 7700 4000 50  0001 C CNN
+F 4 "ERJ-3EKF2702V" V 7700 4000 50  0001 C CNN "Part number"
+F 5 "667-ERJ-3EKF2702V" V 7700 4000 50  0001 C CNN "Order number"
+F 6 "Mouser" V 7700 4000 50  0001 C CNN "Supplier"
+F 7 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF2702V?qs=sGAEpiMZZMtlubZbdhIBIEpCgapuOP%252BoRX3dVKa8fFk%3D" V 7700 4000 50  0001 C CNN "Link"
+	1    7700 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R10
+U 1 1 5EC4F119
+P 7800 5800
+AR Path="/5EC045BC/5EC4F119" Ref="R10"  Part="1" 
+AR Path="/5EC1A85F/5EC4F119" Ref="R?"  Part="1" 
+F 0 "R10" V 7604 5800 50  0000 C CNN
+F 1 "27kΩ" V 7695 5800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7800 5800 50  0001 C CNN
+F 3 "~" H 7800 5800 50  0001 C CNN
+F 4 "ERJ-3EKF2702V" V 7800 5800 50  0001 C CNN "Part number"
+F 5 "667-ERJ-3EKF2702V" V 7800 5800 50  0001 C CNN "Order number"
+F 6 "Mouser" V 7800 5800 50  0001 C CNN "Supplier"
+F 7 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF2702V?qs=sGAEpiMZZMtlubZbdhIBIEpCgapuOP%252BoRX3dVKa8fFk%3D" V 7800 5800 50  0001 C CNN "Link"
+	1    7800 5800
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

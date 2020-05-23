@@ -49,12 +49,13 @@ L Device:R_Small R3
 U 1 1 5EBF7108
 P 7050 3050
 F 0 "R3" V 6854 3050 50  0000 C CNN
-F 1 "100" V 6945 3050 50  0000 C CNN
+F 1 "130Ω" V 6945 3050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 7050 3050 50  0001 C CNN
 F 3 "~" H 7050 3050 50  0001 C CNN
-F 4 "Panasonic" V 7050 3050 50  0001 C CNN "Mfr."
-F 5 "ERJ-6ENF1000V" V 7050 3050 50  0001 C CNN "Mfr. No."
-F 6 "667-ERJ-6ENF1000V" V 7050 3050 50  0001 C CNN "Mouser No."
+F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF1300V?qs=sGAEpiMZZMtlubZbdhIBIHcx2Q2RnT7KBXBUisW6Uow%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "667-ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Order number"
+F 6 "ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    7050 3050
 	0    -1   1    0   
 $EndComp
@@ -166,12 +167,13 @@ L Device:R_Small R4
 U 1 1 5EC050E8
 P 7050 3650
 F 0 "R4" V 6854 3650 50  0000 C CNN
-F 1 "100" V 6945 3650 50  0000 C CNN
+F 1 "130Ω" V 6945 3650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 7050 3650 50  0001 C CNN
 F 3 "~" H 7050 3650 50  0001 C CNN
-F 4 "Panasonic" V 7050 3650 50  0001 C CNN "Mfr."
-F 5 "ERJ-6ENF1000V" V 7050 3650 50  0001 C CNN "Mfr. No."
-F 6 "667-ERJ-6ENF1000V" V 7050 3650 50  0001 C CNN "Mouser No."
+F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF1300V?qs=sGAEpiMZZMtlubZbdhIBIHcx2Q2RnT7KBXBUisW6Uow%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "667-ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Order number"
+F 6 "ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    7050 3650
 	0    -1   1    0   
 $EndComp
@@ -180,12 +182,13 @@ L Device:R_Small R5
 U 1 1 5EC05401
 P 7050 4250
 F 0 "R5" V 6854 4250 50  0000 C CNN
-F 1 "100" V 6945 4250 50  0000 C CNN
+F 1 "130Ω" V 6945 4250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 7050 4250 50  0001 C CNN
 F 3 "~" H 7050 4250 50  0001 C CNN
-F 4 "Panasonic" V 7050 4250 50  0001 C CNN "Mfr."
-F 5 "ERJ-6ENF1000V" V 7050 4250 50  0001 C CNN "Mfr. No."
-F 6 "667-ERJ-6ENF1000V" V 7050 4250 50  0001 C CNN "Mouser No."
+F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF1300V?qs=sGAEpiMZZMtlubZbdhIBIHcx2Q2RnT7KBXBUisW6Uow%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "667-ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Order number"
+F 6 "ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    7050 4250
 	0    -1   1    0   
 $EndComp
@@ -301,28 +304,6 @@ F 6 "78-MMSZ5231C-E3-08" V 6400 3300 50  0001 C CNN "Mouser No."
 	1    6400 3300
 	0    -1   1    0   
 $EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5EC22A67
-P 3950 2550
-AR Path="/5EBC558F/5EC22A67" Ref="TP?"  Part="1" 
-AR Path="/5EBC342A/5EC22A67" Ref="TP18"  Part="1" 
-F 0 "TP18" H 4008 2668 50  0000 L CNN
-F 1 "GND" H 4008 2577 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.4mm_Beaded" H 4150 2550 50  0001 C CNN
-F 3 "~" H 4150 2550 50  0001 C CNN
-F 4 "5005" H 3950 2550 50  0001 C CNN "Mfr. No."
-F 5 "534-5005" H 3950 2550 50  0001 C CNN "Mouser No."
-F 6 "Keystone Electronics" H 3950 2550 50  0001 C CNN "Mfr."
-	1    3950 2550
-	1    0    0    -1  
-$EndComp
-Text HLabel 3900 2600 0    50   Input ~ 0
-GND
-Wire Wire Line
-	3900 2600 3950 2600
-Wire Wire Line
-	3950 2600 3950 2550
 Wire Wire Line
 	4400 3050 5650 3050
 Wire Wire Line

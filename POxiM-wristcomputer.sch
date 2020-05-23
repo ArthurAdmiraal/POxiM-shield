@@ -511,7 +511,7 @@ L Connector:Conn_Coaxial J9
 U 1 1 5EC5060A
 P 7100 5300
 F 0 "J9" H 7028 5538 50  0000 C CNN
-F 1 "Mains_noise_conn" H 7028 5447 50  0000 C CNN
+F 1 "Interference in" H 7028 5447 50  0000 C CNN
 F 2 "Connector_Coaxial:SMA_Molex_73251-2200_Horizontal" H 7100 5300 50  0001 C CNN
 F 3 " ~" H 7100 5300 50  0001 C CNN
 F 4 "Molex" H 7100 5300 50  0001 C CNN "Mfr."
@@ -532,7 +532,7 @@ L Connector:Conn_Coaxial J10
 U 1 1 5EC8ECFB
 P 7450 5700
 F 0 "J10" H 7378 5938 50  0000 C CNN
-F 1 "Mains_noise_conn" H 7378 5847 50  0000 C CNN
+F 1 "Transmissivity in" H 7378 5847 50  0000 C CNN
 F 2 "Connector_Coaxial:SMA_Molex_73251-2200_Horizontal" H 7450 5700 50  0001 C CNN
 F 3 " ~" H 7450 5700 50  0001 C CNN
 F 4 "Molex" H 7450 5700 50  0001 C CNN "Mfr."
@@ -734,8 +734,7 @@ F 3 "" H 1450 6550 50  0001 C CNN
 F 4 "SJ-5007 (BLACK)" H 1150 6500 50  0001 C CNN "Part number"
 F 5 "517-SJ-5007BK" H 1150 6500 50  0001 C CNN "Order number"
 F 6 "Mouser" H 1150 6500 50  0001 C CNN "Supplier"
-F 7 "" H 1150 6500 50  0001 C CNN "Notes"
-F 8 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 1150 6500 50  0001 C CNN "Link"
+F 7 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 1150 6500 50  0001 C CNN "Link"
 	1    1150 6500
 	1    0    0    -1  
 $EndComp
@@ -750,8 +749,7 @@ F 3 "" H 1450 6800 50  0001 C CNN
 F 4 "SJ-5007 (BLACK)" H 1150 6750 50  0001 C CNN "Part number"
 F 5 "517-SJ-5007BK" H 1150 6750 50  0001 C CNN "Order number"
 F 6 "Mouser" H 1150 6750 50  0001 C CNN "Supplier"
-F 7 "" H 1150 6750 50  0001 C CNN "Notes"
-F 8 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 1150 6750 50  0001 C CNN "Link"
+F 7 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 1150 6750 50  0001 C CNN "Link"
 	1    1150 6750
 	1    0    0    -1  
 $EndComp
@@ -766,8 +764,7 @@ F 3 "" H 2100 6550 50  0001 C CNN
 F 4 "SJ-5007 (BLACK)" H 1800 6500 50  0001 C CNN "Part number"
 F 5 "517-SJ-5007BK" H 1800 6500 50  0001 C CNN "Order number"
 F 6 "Mouser" H 1800 6500 50  0001 C CNN "Supplier"
-F 7 "" H 1800 6500 50  0001 C CNN "Notes"
-F 8 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 1800 6500 50  0001 C CNN "Link"
+F 7 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 1800 6500 50  0001 C CNN "Link"
 	1    1800 6500
 	1    0    0    -1  
 $EndComp
@@ -782,8 +779,7 @@ F 3 "" H 2100 6800 50  0001 C CNN
 F 4 "SJ-5007 (BLACK)" H 1800 6750 50  0001 C CNN "Part number"
 F 5 "517-SJ-5007BK" H 1800 6750 50  0001 C CNN "Order number"
 F 6 "Mouser" H 1800 6750 50  0001 C CNN "Supplier"
-F 7 "" H 1800 6750 50  0001 C CNN "Notes"
-F 8 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 1800 6750 50  0001 C CNN "Link"
+F 7 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 1800 6750 50  0001 C CNN "Link"
 	1    1800 6750
 	1    0    0    -1  
 $EndComp
@@ -798,8 +794,7 @@ F 3 "" H 3650 7300 50  0001 C CNN
 F 4 "SJ-5007 (BLACK)" H 3350 7250 50  0001 C CNN "Part number"
 F 5 "517-SJ-5007BK" H 3350 7250 50  0001 C CNN "Order number"
 F 6 "Mouser" H 3350 7250 50  0001 C CNN "Supplier"
-F 7 "" H 3350 7250 50  0001 C CNN "Notes"
-F 8 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 3350 7250 50  0001 C CNN "Link"
+F 7 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 3350 7250 50  0001 C CNN "Link"
 	1    3350 7250
 	1    0    0    -1  
 $EndComp
@@ -814,8 +809,7 @@ F 3 "" H 3650 7600 50  0001 C CNN
 F 4 "SJ-5007 (BLACK)" H 3350 7550 50  0001 C CNN "Part number"
 F 5 "517-SJ-5007BK" H 3350 7550 50  0001 C CNN "Order number"
 F 6 "Mouser" H 3350 7550 50  0001 C CNN "Supplier"
-F 7 "" H 3350 7550 50  0001 C CNN "Notes"
-F 8 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 3350 7550 50  0001 C CNN "Link"
+F 7 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 3350 7550 50  0001 C CNN "Link"
 	1    3350 7550
 	1    0    0    -1  
 $EndComp
@@ -830,8 +824,7 @@ F 3 "" H 4300 7300 50  0001 C CNN
 F 4 "SJ-5007 (BLACK)" H 4000 7250 50  0001 C CNN "Part number"
 F 5 "517-SJ-5007BK" H 4000 7250 50  0001 C CNN "Order number"
 F 6 "Mouser" H 4000 7250 50  0001 C CNN "Supplier"
-F 7 "" H 4000 7250 50  0001 C CNN "Notes"
-F 8 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 4000 7250 50  0001 C CNN "Link"
+F 7 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 4000 7250 50  0001 C CNN "Link"
 	1    4000 7250
 	1    0    0    -1  
 $EndComp
@@ -846,8 +839,7 @@ F 3 "" H 4300 7600 50  0001 C CNN
 F 4 "SJ-5007 (BLACK)" H 4000 7550 50  0001 C CNN "Part number"
 F 5 "517-SJ-5007BK" H 4000 7550 50  0001 C CNN "Order number"
 F 6 "Mouser" H 4000 7550 50  0001 C CNN "Supplier"
-F 7 "" H 4000 7550 50  0001 C CNN "Notes"
-F 8 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 4000 7550 50  0001 C CNN "Link"
+F 7 "https://nl.mouser.com/ProductDetail/3M-Electronic-Specialty/SJ-5007-BLACK?qs=%2Fha2pyFaduiRSYeXVuKtDcQs2AhnnhqqvSF0CPtQzOY%3D" H 4000 7550 50  0001 C CNN "Link"
 	1    4000 7550
 	1    0    0    -1  
 $EndComp

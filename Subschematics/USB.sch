@@ -79,28 +79,15 @@ F 0 "JP1" H 3300 3185 50  0000 C CNN
 F 1 "Jumper_2_Open" H 3300 3094 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3300 2950 50  0001 C CNN
 F 3 "~" H 3300 2950 50  0001 C CNN
-F 4 "~" H 3300 2950 50  0001 C CNN "Mfr."
-F 5 "~" H 3300 2950 50  0001 C CNN "Mfr. No."
-F 6 "~" H 3300 2950 50  0001 C CNN "Mouser No."
+F 4 "CRCW06030000Z0EAC" H 3300 2950 50  0001 C CNN "Part number"
+F 5 "71-CRCW06030000Z0EAC" H 3300 2950 50  0001 C CNN "Order number"
+F 6 "Mouser" H 3300 2950 50  0001 C CNN "Supplier"
+F 7 "https://nl.mouser.com/ProductDetail/Vishay-Dale/CRCW06030000Z0EAC?qs=sGAEpiMZZMtlubZbdhIBIIZe04wfiaJWEAUMew4TANc%3D" H 3300 2950 50  0001 C CNN "Link"
 	1    3300 2950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3500 2950 6500 2950
-$Comp
-L Jumper:Jumper_2_Open JP2
-U 1 1 5EBDFA51
-P 3300 3300
-F 0 "JP2" H 3300 3075 50  0000 C CNN
-F 1 "Jumper_2_Open" H 3300 3166 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3300 3300 50  0001 C CNN
-F 3 "~" H 3300 3300 50  0001 C CNN
-F 4 "~" H 3300 3300 50  0001 C CNN "Mfr."
-F 5 "~" H 3300 3300 50  0001 C CNN "Mfr. No."
-F 6 "~" H 3300 3300 50  0001 C CNN "Mouser No."
-	1    3300 3300
-	-1   0    0    1   
-$EndComp
 Text HLabel 6500 3300 2    50   Input ~ 0
 DataTX
 Wire Wire Line
@@ -145,4 +132,19 @@ Wire Notes Line
 	3700 3450 2950 3450
 Wire Notes Line
 	2950 3450 2950 2600
+$Comp
+L Jumper:Jumper_2_Open JP2
+U 1 1 5EC5B0EB
+P 3300 3300
+F 0 "JP2" H 3300 3100 50  0000 C CNN
+F 1 "Jumper_2_Open" H 3300 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3300 3300 50  0001 C CNN
+F 3 "~" H 3300 3300 50  0001 C CNN
+F 4 "CRCW06030000Z0EAC" H 3300 3300 50  0001 C CNN "Part number"
+F 5 "71-CRCW06030000Z0EAC" H 3300 3300 50  0001 C CNN "Order number"
+F 6 "Mouser" H 3300 3300 50  0001 C CNN "Supplier"
+F 7 "https://nl.mouser.com/ProductDetail/Vishay-Dale/CRCW06030000Z0EAC?qs=sGAEpiMZZMtlubZbdhIBIIZe04wfiaJWEAUMew4TANc%3D" H 3300 3300 50  0001 C CNN "Link"
+	1    3300 3300
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC

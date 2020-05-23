@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 9 9
 Title ""
 Date ""
 Rev ""
@@ -129,24 +129,6 @@ Wire Wire Line
 Wire Wire Line
 	5100 3400 6750 3400
 $Comp
-L Device:R_Small R?
-U 1 1 5EC87271
-P 5850 3750
-AR Path="/5EC045BC/5EC87271" Ref="R?"  Part="1" 
-AR Path="/5EC1A85F/5EC87271" Ref="R?"  Part="1" 
-AR Path="/5EC045BC/5EC1B89F/5EC87271" Ref="R18"  Part="1" 
-AR Path="/5EC045BC/5EC50BF3/5EC87271" Ref="R19"  Part="1" 
-F 0 "R19" V 5654 3750 50  0000 C CNN
-F 1 "27kΩ" V 5745 3750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5850 3750 50  0001 C CNN
-F 3 "~" H 5850 3750 50  0001 C CNN
-F 4 "" V 5850 3750 50  0001 C CNN "Mfr."
-F 5 "" V 5850 3750 50  0001 C CNN "Mfr. No."
-F 6 "" V 5850 3750 50  0001 C CNN "Mouser No."
-	1    5850 3750
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:C_Small C?
 U 1 1 5EC8727A
 P 6000 3900
@@ -177,4 +159,61 @@ Wire Wire Line
 Wire Wire Line
 	6000 4050 6000 4000
 Connection ~ 5500 4050
+$Comp
+L POxiM-uncategorised:Accesory KN?
+U 1 1 5EC3EF4A
+P 3900 3400
+AR Path="/5EC045BC/5EC3EF4A" Ref="KN?"  Part="1" 
+AR Path="/5EC045BC/5EC1B89F/5EC3EF4A" Ref="KN3"  Part="1" 
+AR Path="/5EC045BC/5EC50BF3/5EC3EF4A" Ref="KN5"  Part="1" 
+F 0 "KN5" H 3900 3450 50  0000 C CNN
+F 1 "Knob" H 3900 3350 50  0000 C CNN
+F 2 "POxiM-uncategorised:Accesory" H 3900 3400 50  0001 C CNN
+F 3 "" H 3900 3400 50  0001 C CNN
+F 4 "450-4667" H 3900 3400 50  0001 C CNN "Part number"
+F 5 "450-4667" H 3900 3400 50  0001 C CNN "Order number"
+F 6 "Mouser" H 3900 3400 50  0001 C CNN "Supplier"
+F 7 "White stripe for scaling" H 3900 3400 50  0001 C CNN "Notes"
+F 8 "https://nl.mouser.com/ProductDetail/Eagle-Plastic-Devices/450-4667?qs=Xb8IjHhkxj4zRi1%2FrHcamA%3D%3D" H 3900 3400 50  0001 C CNN "Link"
+	1    3900 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L POxiM-uncategorised:Accesory KN?
+U 1 1 5EC3F595
+P 5500 4450
+AR Path="/5EC045BC/5EC3F595" Ref="KN?"  Part="1" 
+AR Path="/5EC045BC/5EC50BF3/5EC3F595" Ref="KN6"  Part="1" 
+AR Path="/5EC045BC/5EC1B89F/5EC3F595" Ref="KN4"  Part="1" 
+F 0 "KN6" H 5500 4500 50  0000 C CNN
+F 1 "Knob" H 5500 4400 50  0000 C CNN
+F 2 "POxiM-uncategorised:Accesory" H 5500 4450 50  0001 C CNN
+F 3 "" H 5500 4450 50  0001 C CNN
+F 4 "450-4663" H 5500 4450 50  0001 C CNN "Part number"
+F 5 "450-4663" H 5500 4450 50  0001 C CNN "Order number"
+F 6 "Mouser" H 5500 4450 50  0001 C CNN "Supplier"
+F 7 "Blue stripe for bias" H 5500 4450 50  0001 C CNN "Notes"
+F 8 "https://nl.mouser.com/ProductDetail/Eagle-Plastic-Devices/450-4663?qs=Xb8IjHhkxj6SQkXH9JdaUw%3D%3D" H 5500 4450 50  0001 C CNN "Link"
+	1    5500 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EC52608
+P 5850 3750
+AR Path="/5EC045BC/5EC52608" Ref="R?"  Part="1" 
+AR Path="/5EC1A85F/5EC52608" Ref="R?"  Part="1" 
+AR Path="/5EC045BC/5EC50BF3/5EC52608" Ref="R19"  Part="1" 
+AR Path="/5EC045BC/5EC1B89F/5EC52608" Ref="R18"  Part="1" 
+F 0 "R19" V 5654 3750 50  0000 C CNN
+F 1 "27kΩ" V 5745 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5850 3750 50  0001 C CNN
+F 3 "~" H 5850 3750 50  0001 C CNN
+F 4 "ERJ-3EKF2702V" V 5850 3750 50  0001 C CNN "Part number"
+F 5 "667-ERJ-3EKF2702V" V 5850 3750 50  0001 C CNN "Order number"
+F 6 "Mouser" V 5850 3750 50  0001 C CNN "Supplier"
+F 7 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF2702V?qs=sGAEpiMZZMtlubZbdhIBIEpCgapuOP%252BoRX3dVKa8fFk%3D" V 5850 3750 50  0001 C CNN "Link"
+	1    5850 3750
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

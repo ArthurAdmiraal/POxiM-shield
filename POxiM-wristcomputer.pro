@@ -1,4 +1,4 @@
-update=2020 May 15, Friday 17:47:28
+update=2020 May 18, Monday 03:42:34
 version=1
 last_client=kicad
 [general]
@@ -26,7 +26,7 @@ ERC_TestSimilarLabels=1
 version=1
 PageLayoutDescrFile=
 LastNetListRead=
-CopperLayerCount=4
+CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -44,6 +44,9 @@ TrackWidth3=0.2
 TrackWidth4=0.25
 TrackWidth5=0.5
 TrackWidth6=1
+TrackWidth7=2
+TrackWidth8=2.5
+TrackWidth9=5
 ViaDiameter1=0.4
 ViaDrill1=0.2
 ViaDiameter2=0.4
@@ -52,6 +55,8 @@ ViaDiameter3=0.45
 ViaDrill3=0.2
 ViaDiameter4=0.6
 ViaDrill4=0.3
+ViaDiameter5=0.8
+ViaDrill5=0.4
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -79,12 +84,6 @@ SolderMaskClearance=0.05
 SolderMaskMinWidth=0
 SolderPasteClearance=0
 SolderPasteRatio=-0
-[pcbnew/Layer.In1.Cu]
-Name=In1.Cu
-Type=1
-[pcbnew/Layer.In2.Cu]
-Name=In2.Cu
-Type=2
 [pcbnew/Layer.B.Cu]
 Name=B.Cu
 Type=2
