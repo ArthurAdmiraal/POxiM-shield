@@ -1487,4 +1487,151 @@ F 3 "~" H 7200 4750 50  0001 C CNN
 	1    7200 4750
 	0    1    1    0   
 $EndComp
+$Comp
+L Device:LED D?
+U 1 1 5ED075DC
+P 7500 5300
+AR Path="/5EBC562E/5ED075DC" Ref="D?"  Part="1" 
+AR Path="/5ED075DC" Ref="D?"  Part="1" 
+F 0 "D?" V 7447 5380 50  0000 L CNN
+F 1 "LED" V 7538 5380 50  0000 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7500 5300 50  0001 C CNN
+F 3 "~" H 7500 5300 50  0001 C CNN
+	1    7500 5300
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7500 4650 7500 4600
+Wire Wire Line
+	7500 5500 7500 5450
+Wire Wire Line
+	7500 4850 7500 4900
+Wire Wire Line
+	7500 5100 7500 5150
+$Comp
+L Device:R_Small R?
+U 1 1 5ED075E6
+P 7500 5000
+F 0 "R?" H 7550 5000 50  0000 L CNN
+F 1 "4.7kΩ" V 7500 5000 25  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7500 5000 50  0001 C CNN
+F 3 "~" H 7500 5000 50  0001 C CNN
+	1    7500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 5ED075EC
+P 7500 4750
+F 0 "JP?" V 7500 4798 50  0000 L CNN
+F 1 "Jumper_NO_Small" H 7500 4844 50  0001 C CNN
+F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7500 4750 50  0001 C CNN
+F 3 "~" H 7500 4750 50  0001 C CNN
+	1    7500 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5ED119FB
+P 7800 5300
+AR Path="/5EBC562E/5ED119FB" Ref="D?"  Part="1" 
+AR Path="/5ED119FB" Ref="D?"  Part="1" 
+F 0 "D?" V 7747 5380 50  0000 L CNN
+F 1 "LED" V 7838 5380 50  0000 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7800 5300 50  0001 C CNN
+F 3 "~" H 7800 5300 50  0001 C CNN
+	1    7800 5300
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7800 4650 7800 4600
+Wire Wire Line
+	7800 5500 7800 5450
+Wire Wire Line
+	7800 4850 7800 4900
+Wire Wire Line
+	7800 5100 7800 5150
+$Comp
+L Device:R_Small R?
+U 1 1 5ED11A05
+P 7800 5000
+F 0 "R?" H 7850 5000 50  0000 L CNN
+F 1 "4.7kΩ" V 7800 5000 25  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7800 5000 50  0001 C CNN
+F 3 "~" H 7800 5000 50  0001 C CNN
+	1    7800 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 5ED11A0B
+P 7800 4750
+F 0 "JP?" V 7800 4798 50  0000 L CNN
+F 1 "Jumper_NO_Small" H 7800 4844 50  0001 C CNN
+F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7800 4750 50  0001 C CNN
+F 3 "~" H 7800 4750 50  0001 C CNN
+	1    7800 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5ED1AC6F
+P 8100 5300
+AR Path="/5EBC562E/5ED1AC6F" Ref="D?"  Part="1" 
+AR Path="/5ED1AC6F" Ref="D?"  Part="1" 
+F 0 "D?" V 8047 5380 50  0000 L CNN
+F 1 "LED" V 8138 5380 50  0000 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 8100 5300 50  0001 C CNN
+F 3 "~" H 8100 5300 50  0001 C CNN
+	1    8100 5300
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8100 4650 8100 4600
+Wire Wire Line
+	8100 5500 8100 5450
+Wire Wire Line
+	8100 4850 8100 4900
+Wire Wire Line
+	8100 5100 8100 5150
+$Comp
+L Device:R_Small R?
+U 1 1 5ED1AC79
+P 8100 5000
+F 0 "R?" H 8150 5000 50  0000 L CNN
+F 1 "4.7kΩ" V 8100 5000 25  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8100 5000 50  0001 C CNN
+F 3 "~" H 8100 5000 50  0001 C CNN
+	1    8100 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 5ED1AC7F
+P 8100 4750
+F 0 "JP?" V 8100 4798 50  0000 L CNN
+F 1 "Jumper_NO_Small" H 8100 4844 50  0001 C CNN
+F 2 "POxiM-uncategorised:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8100 4750 50  0001 C CNN
+F 3 "~" H 8100 4750 50  0001 C CNN
+	1    8100 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 4600 7500 4600
+Connection ~ 7200 4600
+Connection ~ 7500 4600
+Wire Wire Line
+	7500 4600 7800 4600
+Connection ~ 7800 4600
+Wire Wire Line
+	7800 4600 8100 4600
+Wire Wire Line
+	8100 5500 7800 5500
+Connection ~ 7200 5500
+Connection ~ 7500 5500
+Wire Wire Line
+	7500 5500 7200 5500
+Connection ~ 7800 5500
+Wire Wire Line
+	7800 5500 7500 5500
 $EndSCHEMATC
