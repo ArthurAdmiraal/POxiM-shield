@@ -5,12 +5,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 9 9
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "Transmissivity scaling & bias"
+Date "2020-05-28"
+Rev "A"
+Comp "POxiM"
+Comment1 "By Arthur Admiraal & Daan de Groot"
+Comment2 "Scale and bias transmissivity signal"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -164,9 +164,9 @@ L POxiM-uncategorised:Accesory KN?
 U 1 1 5EC3EF4A
 P 3900 3400
 AR Path="/5EC045BC/5EC3EF4A" Ref="KN?"  Part="1" 
-AR Path="/5EC045BC/5EC1B89F/5EC3EF4A" Ref="KN?"  Part="1" 
-AR Path="/5EC045BC/5EC50BF3/5EC3EF4A" Ref="KN?"  Part="1" 
-F 0 "KN?" H 3900 3450 50  0000 C CNN
+AR Path="/5EC045BC/5EC1B89F/5EC3EF4A" Ref="KN3"  Part="1" 
+AR Path="/5EC045BC/5EC50BF3/5EC3EF4A" Ref="KN5"  Part="1" 
+F 0 "KN5" H 3900 3450 50  0000 C CNN
 F 1 "Knob" H 3900 3350 50  0000 C CNN
 F 2 "POxiM-uncategorised:Accesory" H 3900 3400 50  0001 C CNN
 F 3 "" H 3900 3400 50  0001 C CNN
@@ -183,9 +183,9 @@ L POxiM-uncategorised:Accesory KN?
 U 1 1 5EC3F595
 P 5500 4450
 AR Path="/5EC045BC/5EC3F595" Ref="KN?"  Part="1" 
-AR Path="/5EC045BC/5EC50BF3/5EC3F595" Ref="KN?"  Part="1" 
-AR Path="/5EC045BC/5EC1B89F/5EC3F595" Ref="KN?"  Part="1" 
-F 0 "KN?" H 5500 4500 50  0000 C CNN
+AR Path="/5EC045BC/5EC50BF3/5EC3F595" Ref="KN6"  Part="1" 
+AR Path="/5EC045BC/5EC1B89F/5EC3F595" Ref="KN4"  Part="1" 
+F 0 "KN6" H 5500 4500 50  0000 C CNN
 F 1 "Knob" H 5500 4400 50  0000 C CNN
 F 2 "POxiM-uncategorised:Accesory" H 5500 4450 50  0001 C CNN
 F 3 "" H 5500 4450 50  0001 C CNN

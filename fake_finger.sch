@@ -5,12 +5,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 9
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "Finger simulator"
+Date "2020-05-28"
+Rev "A"
+Comp "POxiM"
+Comment1 "By Arthur Admiraal & Daan de Groot"
+Comment2 "Emulates finger transmissivity"
 Comment3 ""
 Comment4 ""
 $EndDescr

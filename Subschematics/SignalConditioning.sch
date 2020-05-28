@@ -5,18 +5,18 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 9
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "Audio jack signal conditioning"
+Date "2020-05-29"
+Rev "A"
+Comp "POxiM"
+Comment1 "By Arthur Admiraal & Daan de Groot"
+Comment2 "Performs filtering, prevents ESD damage"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 7400 4250 2    50   Output ~ 0
+Text HLabel 7850 4250 2    50   Output ~ 0
 LEDOut.IR
-Text HLabel 7400 3650 2    50   Output ~ 0
+Text HLabel 7850 3650 2    50   Output ~ 0
 LEDOut.Red
 Text HLabel 7400 3050 2    50   Input ~ 0
 PhotoDiode
@@ -41,22 +41,22 @@ Wire Wire Line
 Wire Wire Line
 	4700 4650 4700 4700
 Wire Wire Line
-	7150 4250 7400 4250
+	7600 4250 7850 4250
 Wire Wire Line
-	7150 3650 7400 3650
+	7600 3650 7850 3650
 $Comp
 L Device:R_Small R3
 U 1 1 5EBF7108
-P 7050 3050
-F 0 "R3" V 6854 3050 50  0000 C CNN
-F 1 "130Ω" V 6945 3050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 7050 3050 50  0001 C CNN
-F 3 "~" H 7050 3050 50  0001 C CNN
-F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF1300V?qs=sGAEpiMZZMtlubZbdhIBIHcx2Q2RnT7KBXBUisW6Uow%3D" H 0   0   50  0001 C CNN "Link"
-F 5 "667-ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Order number"
-F 6 "ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Part number"
-F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
-	1    7050 3050
+P 5900 3050
+F 0 "R3" V 5704 3050 50  0000 C CNN
+F 1 "130Ω" V 5795 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5900 3050 50  0001 C CNN
+F 3 "~" H 5900 3050 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF1300V?qs=sGAEpiMZZMtlubZbdhIBIHcx2Q2RnT7KBXBUisW6Uow%3D" H -1150 0   50  0001 C CNN "Link"
+F 5 "667-ERJ-3EKF1300V" H -1150 0   50  0001 C CNN "Order number"
+F 6 "ERJ-3EKF1300V" H -1150 0   50  0001 C CNN "Part number"
+F 7 "Mouser" H -1150 0   50  0001 C CNN "Supplier"
+	1    5900 3050
 	0    -1   1    0   
 $EndComp
 Text HLabel 4400 4700 0    50   Input ~ 0
@@ -75,45 +75,33 @@ Wire Wire Line
 	6600 4700 6600 3450
 Connection ~ 6400 4700
 Wire Wire Line
-	6950 3050 6600 3050
-Wire Wire Line
 	6400 3050 6400 3150
 Wire Wire Line
 	6600 3150 6600 3050
-Connection ~ 6600 3050
 Wire Wire Line
 	6600 3050 6400 3050
 $Comp
 L Device:C_Small C?
 U 1 1 5EBFD2AF
-P 5650 3350
+P 6900 3300
 AR Path="/5EBC558F/5EBFD2AF" Ref="C?"  Part="1" 
 AR Path="/5EBC342A/5EBFD2AF" Ref="C3"  Part="1" 
-F 0 "C3" H 5662 3425 50  0000 L CNN
-F 1 "100nF" H 5662 3278 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5650 3350 50  0001 C CNN
-F 3 "~" H 5650 3350 50  0001 C CNN
-F 4 "Murata Electronics" H 5650 3350 50  0001 C CNN "Mfr."
-F 5 "GCJ188R71E104KA12D" H 5650 3350 50  0001 C CNN "Mfr. No."
-F 6 "81-GCJ188R71E104KA2D" H 5650 3350 50  0001 C CNN "Mouser No."
-	1    5650 3350
+F 0 "C3" H 6800 3350 50  0000 R CNN
+F 1 "100nF" H 6800 3250 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6900 3300 50  0001 C CNN
+F 3 "~" H 6900 3300 50  0001 C CNN
+F 4 "Murata Electronics" H 6900 3300 50  0001 C CNN "Mfr."
+F 5 "GCJ188R71E104KA12D" H 6900 3300 50  0001 C CNN "Mfr. No."
+F 6 "81-GCJ188R71E104KA2D" H 6900 3300 50  0001 C CNN "Mouser No."
+	1    6900 3300
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	6400 3050 6050 3050
-Connection ~ 6400 3050
-Wire Wire Line
-	5750 3050 5650 3050
-Wire Wire Line
-	5650 3050 5650 3250
 Wire Wire Line
 	4400 4250 4700 4250
 Connection ~ 5200 4700
 Wire Wire Line
 	5200 4700 5400 4700
 Connection ~ 5400 4700
-Wire Wire Line
-	5400 4700 5650 4700
 Wire Wire Line
 	4400 4700 4700 4700
 Connection ~ 5200 3650
@@ -132,7 +120,7 @@ Wire Wire Line
 	4900 4350 4900 4250
 Connection ~ 4900 4250
 Wire Wire Line
-	4900 4250 6950 4250
+	4900 4250 7400 4250
 Wire Wire Line
 	4700 4350 4700 4250
 Connection ~ 4700 4250
@@ -149,81 +137,74 @@ Wire Wire Line
 $Comp
 L Device:R_Small R2
 U 1 1 5EC04548
-P 5850 3050
-F 0 "R2" V 5654 3050 50  0000 C CNN
-F 1 "1k" V 5745 3050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 5850 3050 50  0001 C CNN
-F 3 "~" H 5850 3050 50  0001 C CNN
-F 4 "Panasonic" V 5850 3050 50  0001 C CNN "Mfr."
-F 5 "ERJ-6GEYJ102V" V 5850 3050 50  0001 C CNN "Mfr. No."
-F 6 "667-ERJ-6GEYJ102V" V 5850 3050 50  0001 C CNN "Mouser No."
-	1    5850 3050
+P 6750 3050
+F 0 "R2" V 6554 3050 50  0000 C CNN
+F 1 "1kΩ" V 6645 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6750 3050 50  0001 C CNN
+F 3 "~" H 6750 3050 50  0001 C CNN
+F 4 "Panasonic" V 6750 3050 50  0001 C CNN "Mfr."
+F 5 "ERJ-6GEYJ102V" V 6750 3050 50  0001 C CNN "Mfr. No."
+F 6 "667-ERJ-6GEYJ102V" V 6750 3050 50  0001 C CNN "Mouser No."
+	1    6750 3050
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	5400 3650 6950 3650
+	5400 3650 7400 3650
 $Comp
 L Device:R_Small R4
 U 1 1 5EC050E8
-P 7050 3650
-F 0 "R4" V 6854 3650 50  0000 C CNN
-F 1 "130Ω" V 6945 3650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 7050 3650 50  0001 C CNN
-F 3 "~" H 7050 3650 50  0001 C CNN
-F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF1300V?qs=sGAEpiMZZMtlubZbdhIBIHcx2Q2RnT7KBXBUisW6Uow%3D" H 0   0   50  0001 C CNN "Link"
-F 5 "667-ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Order number"
-F 6 "ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Part number"
-F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
-	1    7050 3650
+P 7500 3650
+F 0 "R4" V 7304 3650 50  0000 C CNN
+F 1 "130Ω" V 7395 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7500 3650 50  0001 C CNN
+F 3 "~" H 7500 3650 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF1300V?qs=sGAEpiMZZMtlubZbdhIBIHcx2Q2RnT7KBXBUisW6Uow%3D" H 450 0   50  0001 C CNN "Link"
+F 5 "667-ERJ-3EKF1300V" H 450 0   50  0001 C CNN "Order number"
+F 6 "ERJ-3EKF1300V" H 450 0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 450 0   50  0001 C CNN "Supplier"
+	1    7500 3650
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Small R5
 U 1 1 5EC05401
-P 7050 4250
-F 0 "R5" V 6854 4250 50  0000 C CNN
-F 1 "130Ω" V 6945 4250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 7050 4250 50  0001 C CNN
-F 3 "~" H 7050 4250 50  0001 C CNN
-F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF1300V?qs=sGAEpiMZZMtlubZbdhIBIHcx2Q2RnT7KBXBUisW6Uow%3D" H 0   0   50  0001 C CNN "Link"
-F 5 "667-ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Order number"
-F 6 "ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Part number"
-F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
-	1    7050 4250
+P 7500 4250
+F 0 "R5" V 7304 4250 50  0000 C CNN
+F 1 "130Ω" V 7395 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7500 4250 50  0001 C CNN
+F 3 "~" H 7500 4250 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF1300V?qs=sGAEpiMZZMtlubZbdhIBIHcx2Q2RnT7KBXBUisW6Uow%3D" H 450 0   50  0001 C CNN "Link"
+F 5 "667-ERJ-3EKF1300V" H 450 0   50  0001 C CNN "Order number"
+F 6 "ERJ-3EKF1300V" H 450 0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 450 0   50  0001 C CNN "Supplier"
+	1    7500 4250
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 5EC061D5
-P 6050 3350
+P 6050 3300
 AR Path="/5EBC558F/5EC061D5" Ref="C?"  Part="1" 
 AR Path="/5EBC342A/5EC061D5" Ref="C4"  Part="1" 
-F 0 "C4" H 6062 3425 50  0000 L CNN
-F 1 "2.2uF" H 6062 3278 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6050 3350 50  0001 C CNN
-F 3 "~" H 6050 3350 50  0001 C CNN
-F 4 "Murata Electronics" H 6050 3350 50  0001 C CNN "Mfr."
-F 5 "GCM21BR71E225KA73L" H 6050 3350 50  0001 C CNN "Mfr. No."
-F 6 "81-GCM21BR71E225KA3L" H 6050 3350 50  0001 C CNN "Mouser No."
-	1    6050 3350
+F 0 "C4" H 6150 3350 50  0000 L CNN
+F 1 "2.2µF" H 6150 3250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6050 3300 50  0001 C CNN
+F 3 "~" H 6050 3300 50  0001 C CNN
+F 4 "Murata Electronics" H 6050 3300 50  0001 C CNN "Mfr."
+F 5 "GCM21BR71E225KA73L" H 6050 3300 50  0001 C CNN "Mfr. No."
+F 6 "81-GCM21BR71E225KA3L" H 6050 3300 50  0001 C CNN "Mouser No."
+	1    6050 3300
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6050 3250 6050 3050
-Connection ~ 6050 3050
+	6050 3200 6050 3050
 Wire Wire Line
-	6050 3050 5950 3050
+	6050 3050 6000 3050
 Wire Wire Line
-	5650 3450 5650 4700
-Connection ~ 5650 4700
-Wire Wire Line
-	5650 4700 6050 4700
-Wire Wire Line
-	6050 3450 6050 4700
+	6050 3400 6050 4700
 Connection ~ 6050 4700
 Wire Wire Line
 	6050 4700 6400 4700
-Connection ~ 5650 3050
 $Comp
 L Device:D_Schottky D?
 U 1 1 5EC1C653
@@ -304,8 +285,29 @@ F 6 "78-MMSZ5231C-E3-08" V 6400 3300 50  0001 C CNN "Mouser No."
 	1    6400 3300
 	0    -1   1    0   
 $EndComp
+Text Notes 6200 2650 0    50   ~ 0
+Second order filter for currents. Increases input impedance, but is \ninsignificant compared to source impedance whilst allowing for a\nsimple implementation.
 Wire Wire Line
-	4400 3050 5650 3050
+	6900 3200 6900 3050
 Wire Wire Line
-	7150 3050 7400 3050
+	6900 3050 7400 3050
+Wire Wire Line
+	6900 3400 6900 4700
+Wire Wire Line
+	6900 4700 6600 4700
+Connection ~ 6600 4700
+Connection ~ 6400 3050
+Connection ~ 6050 3050
+Wire Wire Line
+	5400 4700 6050 4700
+Wire Wire Line
+	5800 3050 4400 3050
+Wire Wire Line
+	6850 3050 6900 3050
+Connection ~ 6900 3050
+Wire Wire Line
+	6650 3050 6600 3050
+Connection ~ 6600 3050
+Wire Wire Line
+	6050 3050 6400 3050
 $EndSCHEMATC
