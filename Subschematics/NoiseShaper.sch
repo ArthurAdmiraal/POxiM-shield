@@ -4,9 +4,9 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 9
+Sheet 2 6
 Title "Noise shaping"
-Date "2020-05-06"
+Date "2020-06-10"
 Rev "A"
 Comp "POxiM"
 Comment1 "By Arthur Admiraal & Daan de Groot"
@@ -21,12 +21,12 @@ P 5200 3750
 AR Path="/5EB6EB96" Ref="R?"  Part="1" 
 AR Path="/5EB36E07/5EB6EB96" Ref="R1"  Part="1" 
 F 0 "R1" V 5100 3750 50  0000 C CNN
-F 1 "3.3MΩ" V 5300 3750 50  0000 C CNN
+F 1 "4.7MΩ" V 5300 3750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 5240 3740 50  0001 C CNN
 F 3 "~" H 5200 3750 50  0001 C CNN
-F 4 "Panasonic" V 5200 3750 50  0001 C CNN "Mfr."
-F 5 "ERJ-6GEYJ335V" V 5200 3750 50  0001 C CNN "Mfr. No."
-F 6 "667-ERJ-6GEYJ335V" V 5200 3750 50  0001 C CNN "Mouser No."
+F 4 "" V 5200 3750 50  0001 C CNN "Mfr."
+F 5 "" V 5200 3750 50  0001 C CNN "Mfr. No."
+F 6 "" V 5200 3750 50  0001 C CNN "Mouser No."
 	1    5200 3750
 	0    1    1    0   
 $EndComp
@@ -45,12 +45,12 @@ P 5700 4100
 AR Path="/5EB8EBED" Ref="C?"  Part="1" 
 AR Path="/5EB36E07/5EB8EBED" Ref="C2"  Part="1" 
 F 0 "C2" V 5550 4100 50  0000 C CNN
-F 1 "100pF" V 5850 4100 50  0000 C CNN
+F 1 "39pF" V 5850 4100 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5738 3950 50  0001 C CNN
 F 3 "~" H 5700 4100 50  0001 C CNN
-F 4 "Murata" V 5700 4100 50  0001 C CNN "Mfr."
-F 5 "GCM1885C2A101JA16D" V 5700 4100 50  0001 C CNN "Mfr. No."
-F 6 "81-GCM1885C2A101JA6D" V 5700 4100 50  0001 C CNN "Mouser No."
+F 4 "" V 5700 4100 50  0001 C CNN "Mfr."
+F 5 "" V 5700 4100 50  0001 C CNN "Mfr. No."
+F 6 "" V 5700 4100 50  0001 C CNN "Mouser No."
 	1    5700 4100
 	0    1    1    0   
 $EndComp
@@ -61,7 +61,7 @@ Nonidealities which may mess up measurement:\n - Capacitor leakage\n - Multiplex
 Text Notes 7250 5800 0    50   ~ 0
 # Capacitor leakage\nAccording to https://www.murata.com/en-eu/support/faqs/products/capacitor/mlcc/char/0039,\nceramic capacitors generally have an isolation resistance of >10GΩ, so for\nvoltages <3.3V, this gives currents of I = 3.3V / 10 = 0.33nA
 Text Notes 4500 3550 2    50   ~ 0
-Wired to discharge
+Wired to charge
 $Comp
 L Amplifier_Operational:LM321 U1
 U 1 1 5ECC24CB
@@ -76,8 +76,6 @@ F 6 "595-LM321LVIDBVR" H 5750 3450 50  0001 C CNN "Mouser No."
 	1    5750 3450
 	1    0    0    -1  
 $EndComp
-Text HLabel 5400 3350 0    50   Input ~ 0
-GND
 Wire Wire Line
 	5400 3350 5450 3350
 Text HLabel 5700 3800 2    50   Input ~ 0
@@ -132,14 +130,6 @@ Wire Wire Line
 Wire Wire Line
 	6150 3450 6100 3450
 Connection ~ 6100 3450
-Wire Bus Line
-	5000 3500 5025 3475
-Wire Bus Line
-	5000 3500 5025 3525
-Text Notes 5125 3525 0    50   ~ 0
-Current
-Wire Bus Line
-	5100 3500 5000 3500
 Text Notes 600  7250 0    50   ~ 0
 Things to analyse:\n ! Input noise\n   ! Find out difference between input referred noise and ADC noise\n   ! Find input referred current noise\n   ! Find ADC referred noise\n ! MOSFET threshold voltage\n   ! Find maximum output voltage from MOSFET threshold voltage\n   ! Find whether MOSFET threshold voltage hinders startup\n ! Aliasing?\n   ! Find out the effects of aliasing at input\n   ! Find out the effects of aliasing at ADC\n - Channel bleeding\n   - Linear addition or noise?\n - Capacitor leakage\n   - Linear scaling or additional noise?\n   - Does parallel capacitor reduce it?\n - Multiplexer charge injection\n    - Where to\n    - What magnitude\n    - Does parallel capacitor reduce it?\n - Multiplexer leakage current\n    - Where to\n    - Output signal sensitvity\n    - Does parallel capacitor reduce effect?\n - Linearity\n   - Effect of ADC nonlinearity on overall linearity?\n - Stability\n   - Small-signal model at operating point\n   - Find bandwidth\n   - Find gain and phase margin\n   - Possible stability mitigations
 Text Notes 7800 3200 0    50   ~ 0
@@ -154,8 +144,8 @@ U 1 1 5EC1EC8F
 P 5450 3050
 AR Path="/5EBC558F/5EC1EC8F" Ref="C?"  Part="1" 
 AR Path="/5EB36E07/5EC1EC8F" Ref="C1"  Part="1" 
-F 0 "C1" H 5462 3125 50  0000 L CNN
-F 1 "100nF" H 5462 2978 50  0000 L CNN
+F 0 "C1" H 5550 3100 50  0000 L CNN
+F 1 "100nF" H 5550 3000 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5450 3050 50  0001 C CNN
 F 3 "~" H 5450 3050 50  0001 C CNN
 F 4 "Murata Electronics" H 5450 3050 50  0001 C CNN "Mfr."
@@ -164,4 +154,14 @@ F 6 "81-GCJ188R71E104KA2D" H 5450 3050 50  0001 C CNN "Mouser No."
 	1    5450 3050
 	-1   0    0    -1  
 $EndComp
+Text HLabel 5400 3350 0    50   Input ~ 0
++5V
+Text Notes 5125 3525 0    50   ~ 0
+Current
+Wire Bus Line
+	5000 3500 5100 3500
+Wire Bus Line
+	5100 3500 5075 3475
+Wire Bus Line
+	5100 3500 5075 3525
 $EndSCHEMATC

@@ -4,13 +4,13 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 9
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Sheet 4 6
+Title "Discrete LED display"
+Date "2020-06-10"
+Rev "A"
+Comp "POxiM"
+Comment1 "By Arthur Admiraal & Daan de Groot"
+Comment2 "3 7-segment digits and indicator LEDs"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -688,50 +688,352 @@ Wire Notes Line
 	6150 5800 8500 5800
 Wire Notes Line
 	8500 5800 8500 4050
-Text HLabel 2950 1750 0    50   Input ~ 0
+Text HLabel 2050 1750 0    50   Input ~ 0
 Segment[0..6]
-Wire Wire Line
-	5750 4250 5750 3800
-Wire Wire Line
-	5750 4450 5750 4550
-Wire Wire Line
-	5750 3150 5750 3600
-Wire Wire Line
-	5750 2950 5750 2850
 $Comp
-L Device:R_Small R6
-U 1 1 5EC535DD
-P 5750 3050
-F 0 "R6" H 5809 3096 50  0000 L CNN
-F 1 "130Ω" H 5809 3005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 5750 3050 50  0001 C CNN
-F 3 "~" H 5750 3050 50  0001 C CNN
-F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF1300V?qs=sGAEpiMZZMtlubZbdhIBIHcx2Q2RnT7KBXBUisW6Uow%3D" H 0   0   50  0001 C CNN "Link"
-F 5 "667-ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Order number"
-F 6 "ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Part number"
-F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
-	1    5750 3050
+L Device:LED D?
+U 1 1 5EE5A646
+P 8050 4850
+F 0 "D?" V 7997 4930 50  0000 L CNN
+F 1 "LED" V 8088 4930 50  0000 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 8050 4850 50  0001 C CNN
+F 3 "~" H 8050 4850 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 900 0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 900 0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 900 0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 900 0   50  0001 C CNN "Supplier"
+	1    8050 4850
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5EE5A650
+P 7750 4850
+F 0 "D?" V 7697 4930 50  0000 L CNN
+F 1 "LED" V 7788 4930 50  0000 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7750 4850 50  0001 C CNN
+F 3 "~" H 7750 4850 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 900 0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 900 0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 900 0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 900 0   50  0001 C CNN "Supplier"
+	1    7750 4850
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5EE5A65A
+P 7450 4850
+F 0 "D?" V 7397 4930 50  0000 L CNN
+F 1 "LED" V 7488 4930 50  0000 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 7450 4850 50  0001 C CNN
+F 3 "~" H 7450 4850 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Stanley-Electric/VCDB1112H-5AY3B-TR?qs=byeeYqUIh0NdrgXR4WHsww%3D%3D" H 900 0   50  0001 C CNN "Link"
+F 5 "327-VCDB1112H5AY3BTR" H 900 0   50  0001 C CNN "Order number"
+F 6 "VCDB1112H-5AY3B-TR" H 900 0   50  0001 C CNN "Part number"
+F 7 "Mouser" H 900 0   50  0001 C CNN "Supplier"
+	1    7450 4850
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8050 4550 8050 4700
+Wire Wire Line
+	7750 4550 7750 4700
+Wire Wire Line
+	7450 4550 7450 4700
+Wire Wire Line
+	8050 5000 8050 5550
+Wire Wire Line
+	7750 5000 7750 5550
+Wire Wire Line
+	7450 5000 7450 5550
+Text Label 7450 5450 1    50   ~ 0
+Segment3
+Text Label 7750 5450 1    50   ~ 0
+Segment4
+Text Label 8050 5450 1    50   ~ 0
+Segment5
+Entry Wire Line
+	7450 5550 7350 5650
+Entry Wire Line
+	7750 5550 7650 5650
+Entry Wire Line
+	8050 5550 7950 5650
+Wire Wire Line
+	7150 4550 7450 4550
+Connection ~ 7150 4550
+Connection ~ 7450 4550
+Wire Wire Line
+	7450 4550 7750 4550
+Connection ~ 7750 4550
+Wire Wire Line
+	7750 4550 8050 4550
+Wire Wire Line
+	5750 3800 5750 4550
+Wire Wire Line
+	5750 2850 5750 3600
+$Comp
+L Device:R_Small R?
+U 1 1 5EF51B7B
+P 2500 1750
+AR Path="/5EBC562E/5EF51B7B" Ref="R?"  Part="1" 
+AR Path="/5EBC558F/5EF51B7B" Ref="R?"  Part="1" 
+F 0 "R?" V 2450 1850 50  0000 L CNN
+F 1 "180Ω" V 2500 1750 30  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2500 1750 50  0001 C CNN
+F 3 "~" H 2500 1750 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-6ENF1800V?qs=JjxTDIFmKPSUkzf5BFENvA%3D%3D" H -3250 -1300 50  0001 C CNN "Link"
+F 5 "667-ERJ-6ENF1800V" H -3250 -1300 50  0001 C CNN "Order number"
+F 6 "ERJ-6ENF1800V" H -3250 -1300 50  0001 C CNN "Part number"
+F 7 "Mouser" H -3250 -1300 50  0001 C CNN "Supplier"
+	1    2500 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EF51B85
+P 2500 1850
+AR Path="/5EBC562E/5EF51B85" Ref="R?"  Part="1" 
+AR Path="/5EBC558F/5EF51B85" Ref="R?"  Part="1" 
+F 0 "R?" V 2450 1950 50  0000 L CNN
+F 1 "180Ω" V 2500 1850 30  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2500 1850 50  0001 C CNN
+F 3 "~" H 2500 1850 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-6ENF1800V?qs=JjxTDIFmKPSUkzf5BFENvA%3D%3D" H -3250 -1200 50  0001 C CNN "Link"
+F 5 "667-ERJ-6ENF1800V" H -3250 -1200 50  0001 C CNN "Order number"
+F 6 "ERJ-6ENF1800V" H -3250 -1200 50  0001 C CNN "Part number"
+F 7 "Mouser" H -3250 -1200 50  0001 C CNN "Supplier"
+	1    2500 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EF83655
+P 2500 1950
+AR Path="/5EBC562E/5EF83655" Ref="R?"  Part="1" 
+AR Path="/5EBC558F/5EF83655" Ref="R?"  Part="1" 
+F 0 "R?" V 2450 2050 50  0000 L CNN
+F 1 "180Ω" V 2500 1950 30  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2500 1950 50  0001 C CNN
+F 3 "~" H 2500 1950 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-6ENF1800V?qs=JjxTDIFmKPSUkzf5BFENvA%3D%3D" H -3250 -1100 50  0001 C CNN "Link"
+F 5 "667-ERJ-6ENF1800V" H -3250 -1100 50  0001 C CNN "Order number"
+F 6 "ERJ-6ENF1800V" H -3250 -1100 50  0001 C CNN "Part number"
+F 7 "Mouser" H -3250 -1100 50  0001 C CNN "Supplier"
+	1    2500 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EF8365F
+P 2500 2050
+AR Path="/5EBC562E/5EF8365F" Ref="R?"  Part="1" 
+AR Path="/5EBC558F/5EF8365F" Ref="R?"  Part="1" 
+F 0 "R?" V 2450 2150 50  0000 L CNN
+F 1 "180Ω" V 2500 2050 30  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2500 2050 50  0001 C CNN
+F 3 "~" H 2500 2050 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-6ENF1800V?qs=JjxTDIFmKPSUkzf5BFENvA%3D%3D" H -3250 -1000 50  0001 C CNN "Link"
+F 5 "667-ERJ-6ENF1800V" H -3250 -1000 50  0001 C CNN "Order number"
+F 6 "ERJ-6ENF1800V" H -3250 -1000 50  0001 C CNN "Part number"
+F 7 "Mouser" H -3250 -1000 50  0001 C CNN "Supplier"
+	1    2500 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EF8A732
+P 2500 2150
+AR Path="/5EBC562E/5EF8A732" Ref="R?"  Part="1" 
+AR Path="/5EBC558F/5EF8A732" Ref="R?"  Part="1" 
+F 0 "R?" V 2450 2250 50  0000 L CNN
+F 1 "180Ω" V 2500 2150 30  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2500 2150 50  0001 C CNN
+F 3 "~" H 2500 2150 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-6ENF1800V?qs=JjxTDIFmKPSUkzf5BFENvA%3D%3D" H -3250 -900 50  0001 C CNN "Link"
+F 5 "667-ERJ-6ENF1800V" H -3250 -900 50  0001 C CNN "Order number"
+F 6 "ERJ-6ENF1800V" H -3250 -900 50  0001 C CNN "Part number"
+F 7 "Mouser" H -3250 -900 50  0001 C CNN "Supplier"
+	1    2500 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EF8A73C
+P 2500 2250
+AR Path="/5EBC562E/5EF8A73C" Ref="R?"  Part="1" 
+AR Path="/5EBC558F/5EF8A73C" Ref="R?"  Part="1" 
+F 0 "R?" V 2450 2350 50  0000 L CNN
+F 1 "180Ω" V 2500 2250 30  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2500 2250 50  0001 C CNN
+F 3 "~" H 2500 2250 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-6ENF1800V?qs=JjxTDIFmKPSUkzf5BFENvA%3D%3D" H -3250 -800 50  0001 C CNN "Link"
+F 5 "667-ERJ-6ENF1800V" H -3250 -800 50  0001 C CNN "Order number"
+F 6 "ERJ-6ENF1800V" H -3250 -800 50  0001 C CNN "Part number"
+F 7 "Mouser" H -3250 -800 50  0001 C CNN "Supplier"
+	1    2500 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EF8A746
+P 2500 2350
+AR Path="/5EBC562E/5EF8A746" Ref="R?"  Part="1" 
+AR Path="/5EBC558F/5EF8A746" Ref="R?"  Part="1" 
+F 0 "R?" V 2450 2450 50  0000 L CNN
+F 1 "180Ω" V 2500 2350 30  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2500 2350 50  0001 C CNN
+F 3 "~" H 2500 2350 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-6ENF1800V?qs=JjxTDIFmKPSUkzf5BFENvA%3D%3D" H -3250 -700 50  0001 C CNN "Link"
+F 5 "667-ERJ-6ENF1800V" H -3250 -700 50  0001 C CNN "Order number"
+F 6 "ERJ-6ENF1800V" H -3250 -700 50  0001 C CNN "Part number"
+F 7 "Mouser" H -3250 -700 50  0001 C CNN "Supplier"
+	1    2500 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 5EF8FFAC
+P 1600 6950
+F 0 "Q?" H 1791 6996 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 1791 6905 50  0000 L CNN
+F 2 "" H 1800 7050 50  0001 C CNN
+F 3 "~" H 1600 6950 50  0001 C CNN
+	1    1600 6950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R7
-U 1 1 5ED65AF3
-P 5750 4350
-F 0 "R7" H 5809 4396 50  0000 L CNN
-F 1 "130Ω" H 5809 4305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 5750 4350 50  0001 C CNN
-F 3 "~" H 5750 4350 50  0001 C CNN
-F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF1300V?qs=sGAEpiMZZMtlubZbdhIBIHcx2Q2RnT7KBXBUisW6Uow%3D" H 0   0   50  0001 C CNN "Link"
-F 5 "667-ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Order number"
-F 6 "ERJ-3EKF1300V" H 0   0   50  0001 C CNN "Part number"
-F 7 "Mouser" H 0   0   50  0001 C CNN "Supplier"
-	1    5750 4350
+L Device:Q_NPN_BCE Q?
+U 1 1 5EF9091D
+P 2550 6950
+F 0 "Q?" H 2741 6996 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 2741 6905 50  0000 L CNN
+F 2 "" H 2750 7050 50  0001 C CNN
+F 3 "~" H 2550 6950 50  0001 C CNN
+	1    2550 6950
 	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 5EF90F12
+P 1650 6100
+F 0 "Q?" H 1841 6146 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 1841 6055 50  0000 L CNN
+F 2 "" H 1850 6200 50  0001 C CNN
+F 3 "~" H 1650 6100 50  0001 C CNN
+	1    1650 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PNP_BCE Q?
+U 1 1 5EF97398
+P 5550 6650
+F 0 "Q?" H 5740 6696 50  0000 L CNN
+F 1 "Q_PNP_BCE" H 5740 6605 50  0000 L CNN
+F 2 "" H 5750 6750 50  0001 C CNN
+F 3 "~" H 5550 6650 50  0001 C CNN
+	1    5550 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 5EFBD37D
+P 5250 6450
+AR Path="/5EBC5C8E/5EFBD37D" Ref="D?"  Part="1" 
+AR Path="/5EBC342A/5EFBD37D" Ref="D?"  Part="1" 
+AR Path="/5EBC562E/5EFBD37D" Ref="D?"  Part="1" 
+F 0 "D?" V 5250 6530 50  0000 L CNN
+F 1 "~" V 5295 6530 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 5250 6450 50  0001 C CNN
+F 3 "~" H 5250 6450 50  0001 C CNN
+F 4 "Infineon Technologies" V 5250 6450 50  0001 C CNN "Mfr."
+F 5 "BAS3010A03WE6327XT" V 5250 6450 50  0001 C CNN "Mfr. No."
+F 6 "726-BAS3010A03WE632" V 5250 6450 50  0001 C CNN "Mouser No."
+	1    5250 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 5EFBF916
+P 4950 6450
+AR Path="/5EBC5C8E/5EFBF916" Ref="D?"  Part="1" 
+AR Path="/5EBC342A/5EFBF916" Ref="D?"  Part="1" 
+AR Path="/5EBC562E/5EFBF916" Ref="D?"  Part="1" 
+F 0 "D?" V 4950 6530 50  0000 L CNN
+F 1 "~" V 4995 6530 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 4950 6450 50  0001 C CNN
+F 3 "~" H 4950 6450 50  0001 C CNN
+F 4 "Infineon Technologies" V 4950 6450 50  0001 C CNN "Mfr."
+F 5 "BAS3010A03WE6327XT" V 4950 6450 50  0001 C CNN "Mfr. No."
+F 6 "726-BAS3010A03WE632" V 4950 6450 50  0001 C CNN "Mouser No."
+	1    4950 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 5EFC21A3
+P 4650 6450
+AR Path="/5EBC5C8E/5EFC21A3" Ref="D?"  Part="1" 
+AR Path="/5EBC342A/5EFC21A3" Ref="D?"  Part="1" 
+AR Path="/5EBC562E/5EFC21A3" Ref="D?"  Part="1" 
+F 0 "D?" V 4650 6530 50  0000 L CNN
+F 1 "~" V 4695 6530 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 4650 6450 50  0001 C CNN
+F 3 "~" H 4650 6450 50  0001 C CNN
+F 4 "Infineon Technologies" V 4650 6450 50  0001 C CNN "Mfr."
+F 5 "BAS3010A03WE6327XT" V 4650 6450 50  0001 C CNN "Mfr. No."
+F 6 "726-BAS3010A03WE632" V 4650 6450 50  0001 C CNN "Mouser No."
+	1    4650 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EFC4C90
+P 1300 6750
+F 0 "R?" H 1370 6796 50  0000 L CNN
+F 1 "R" H 1370 6705 50  0000 L CNN
+F 2 "" V 1230 6750 50  0001 C CNN
+F 3 "~" H 1300 6750 50  0001 C CNN
+	1    1300 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EFC5352
+P 2300 6750
+F 0 "R?" H 2370 6796 50  0000 L CNN
+F 1 "R" H 2370 6705 50  0000 L CNN
+F 2 "" V 2230 6750 50  0001 C CNN
+F 3 "~" H 2300 6750 50  0001 C CNN
+	1    2300 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EFC5B30
+P 5250 6850
+F 0 "R?" H 5320 6896 50  0000 L CNN
+F 1 "R" H 5320 6805 50  0000 L CNN
+F 2 "" V 5180 6850 50  0001 C CNN
+F 3 "~" H 5250 6850 50  0001 C CNN
+	1    5250 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EFC61DB
+P 1250 6100
+F 0 "R?" V 1043 6100 50  0000 C CNN
+F 1 "R" V 1134 6100 50  0000 C CNN
+F 2 "" V 1180 6100 50  0001 C CNN
+F 3 "~" H 1250 6100 50  0001 C CNN
+	1    1250 6100
+	0    1    1    0   
 $EndComp
 Wire Bus Line
 	2950 3700 8700 3700
 Wire Bus Line
-	2950 5650 9250 5650
-Wire Bus Line
 	2950 1750 9250 1750
+Wire Bus Line
+	2950 5650 9250 5650
 $EndSCHEMATC
