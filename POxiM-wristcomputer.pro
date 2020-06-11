@@ -1,4 +1,4 @@
-update=2020 May 15, Friday 17:47:28
+update=2020 June 11, Thursday 23:50:19
 version=1
 last_client=kicad
 [general]
@@ -24,7 +24,7 @@ LabSize=50
 ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
-PageLayoutDescrFile=
+PageLayoutDescrFile=Libraries/Sheets/POxiM_PageLayout_PCB.kicad_wks
 LastNetListRead=
 CopperLayerCount=4
 BoardThickness=1.6
@@ -78,7 +78,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.05
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
 Type=1
