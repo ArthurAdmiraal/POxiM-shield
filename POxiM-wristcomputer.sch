@@ -44,7 +44,7 @@ U 5EBC562E
 F0 "Display" 50
 F1 "Subschematics/Display.sch" 50
 F2 "Segment[0..6]" I L 5750 2400 50 
-F3 "Common[0..1]" I L 5750 2600 50 
+F3 "Common[0..2]" I L 5750 2600 50 
 $EndSheet
 $Sheet
 S 1700 3150 1650 1450
@@ -365,13 +365,13 @@ F1 "Subschematics/Microcontroller.sch" 50
 F2 "GND" I L 3650 4500 50 
 F3 "5V" I L 3650 3300 50 
 F4 "Segment[0..6]" O R 5300 3300 50 
-F5 "Common[0..1]" O R 5300 3400 50 
-F6 "ADC.feedback" O R 5300 4350 50 
-F7 "ADC.input" I R 5300 4250 50 
-F8 "LED.IR" O R 5300 3750 50 
-F9 "LED.Red" O R 5300 3650 50 
-F10 "UART1.TX" O L 3650 3850 50 
-F11 "SWIM" B L 3650 3700 50 
+F5 "ADC.feedback" O R 5300 4350 50 
+F6 "ADC.input" I R 5300 4250 50 
+F7 "LED.IR" O R 5300 3750 50 
+F8 "LED.Red" O R 5300 3650 50 
+F9 "UART1.TX" O L 3650 3850 50 
+F10 "SWIM" B L 3650 3700 50 
+F11 "Common[0..2]" O R 5300 3400 50 
 $EndSheet
 Wire Wire Line
 	1450 3550 1700 3550
