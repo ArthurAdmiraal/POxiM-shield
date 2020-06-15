@@ -190,15 +190,15 @@ Wire Wire Line
 	6600 3550 7600 3550
 Text HLabel 7600 3550 2    50   BiDi ~ 0
 SWIM
-Text HLabel 4450 3950 0    50   Output ~ 0
+Text HLabel 4250 3950 0    50   Output ~ 0
 LED.Red
-Text HLabel 4450 3850 0    50   Output ~ 0
+Text HLabel 4250 3850 0    50   Output ~ 0
 LED.IR
 Text HLabel 7600 3950 2    50   Output ~ 0
 UART1.TX
-Text Notes 4000 4000 2    50   ~ 0
+Text Notes 3800 4000 2    50   ~ 0
 TIM1_CH4
-Text Notes 4000 3900 2    50   ~ 0
+Text Notes 3800 3900 2    50   ~ 0
 TIM1_CH3
 $Comp
 L MCU_ST_STM8:STM8S003F3P U2
@@ -304,33 +304,33 @@ Wire Bus Line
 Wire Bus Line
 	8950 3500 9000 3450
 Wire Wire Line
-	4450 3850 5400 3850
+	4250 3850 5400 3850
 Wire Wire Line
-	4450 3950 5400 3950
-Text Notes 1350 3550 0    50   ~ 0
+	4250 3950 5400 3950
+Text Notes 900  3600 0    50   ~ 0
 Two-level 6.4KHz PWM modulated by 16-level sine with 166 levels of brightness\nscaling. The frequencies are chosen such that the harmonics lay outside the\nband of interest. The 16-levels ensure harmonics are 60dB down for reduced\nEMI concerns. The red LED has the highest modulation frequency to reduce \nthe perception of flicker, since it is at a visible wavelength.
-Text Notes 3500 3900 2    50   ~ 0
+Text Notes 3300 3900 2    50   ~ 0
 80Hz
-Text Notes 3500 4000 2    50   ~ 0
+Text Notes 3300 4000 2    50   ~ 0
 128Hz
 Wire Notes Line
-	3200 4050 3200 3750
+	3000 4050 3000 3750
 Wire Notes Line
-	3200 3750 4500 3750
+	3000 3750 4300 3750
 Wire Notes Line
-	4500 4050 3200 4050
+	4300 4050 3000 4050
 Wire Notes Line
-	4500 3750 4500 4050
+	4300 3750 4300 4050
 Wire Bus Line
-	1300 3100 4550 3100
+	850  3150 4100 3150
 Wire Bus Line
-	4550 3100 4550 3600
+	4100 3150 4100 3650
 Wire Bus Line
-	4550 3600 1300 3600
+	4100 3650 850  3650
 Wire Bus Line
-	1300 3600 1300 3100
+	850  3650 850  3150
 Wire Notes Line
-	4550 3600 4500 3750
+	4100 3650 4300 3750
 Wire Bus Line
 	4600 5200 7700 5200
 Wire Bus Line
@@ -351,6 +351,26 @@ Wire Notes Line
 	4600 5200 4800 4800
 Wire Bus Line
 	4600 5700 4600 5200
+Text Notes 2700 2950 0    50   ~ 0
+PB4 and PB5 are open-drain only.\nThis is taken into account in the\nLED display sheet.
+Wire Notes Line
+	4650 3450 5300 3450
+Wire Notes Line
+	5300 3450 5300 3700
+Wire Notes Line
+	5300 3700 4650 3700
+Wire Notes Line
+	4650 3700 4650 3450
+Wire Notes Line
+	4100 3000 4650 3450
+Wire Bus Line
+	2650 3000 2650 2650
+Wire Bus Line
+	2650 2650 4100 2650
+Wire Bus Line
+	4100 2650 4100 3000
+Wire Bus Line
+	4100 3000 2650 3000
 Wire Bus Line
 	8950 3500 8950 3750
 Wire Bus Line

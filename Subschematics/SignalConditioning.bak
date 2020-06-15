@@ -36,8 +36,6 @@ Wire Wire Line
 	4250 4800 4250 4850
 Wire Wire Line
 	4050 4800 4050 4850
-Wire Wire Line
-	5850 4400 5950 4400
 Text HLabel 3750 4850 0    50   Input ~ 0
 GND
 Text HLabel 3750 3800 0    50   Input ~ 0
@@ -64,9 +62,6 @@ Wire Wire Line
 Connection ~ 4250 4850
 Wire Wire Line
 	4250 4500 4250 4400
-Connection ~ 4250 4400
-Wire Wire Line
-	4250 4400 5650 4400
 Wire Wire Line
 	4050 4500 4050 4400
 Connection ~ 4050 4400
@@ -81,11 +76,11 @@ Wire Wire Line
 Wire Wire Line
 	4650 3800 4650 3950
 $Comp
-L Device:R_Small R2
+L Device:R_US R2
 U 1 1 5EC04548
 P 5750 3200
 F 0 "R2" V 5554 3200 50  0000 C CNN
-F 1 "10kΩ" V 5645 3200 50  0000 C CNN
+F 1 "33kΩ" V 5645 3200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 5750 3200 50  0001 C CNN
 F 3 "~" H 5750 3200 50  0001 C CNN
 F 4 "" V 5750 3200 50  0001 C CNN "Mfr."
@@ -175,7 +170,7 @@ F 6 "78-MMSZ5231C-E3-08" V 5250 3450 50  0001 C CNN "Mouser No."
 	0    -1   1    0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_US R?
 U 1 1 5EF2F590
 P 5750 3800
 AR Path="/5EBC562E/5EF2F590" Ref="R?"  Part="1" 
@@ -192,13 +187,8 @@ F 7 "" H 0   750 50  0001 C CNN "Supplier"
 	1    5750 3800
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5850 3200 6800 3200
 Connection ~ 4650 3800
 Connection ~ 4650 4850
-Connection ~ 4850 3800
-Wire Wire Line
-	4850 3800 5650 3800
 Connection ~ 4850 4850
 Wire Wire Line
 	4250 4850 4650 4850
@@ -214,15 +204,12 @@ Wire Wire Line
 	5250 4850 5450 4850
 Wire Wire Line
 	5250 3200 5450 3200
-Connection ~ 5450 3200
-Wire Wire Line
-	5450 3200 5650 3200
 Wire Wire Line
 	4850 4850 5250 4850
 Wire Wire Line
 	3750 3200 5250 3200
 $Comp
-L Device:R_Small R?
+L Device:R_US R?
 U 1 1 5EF36BF0
 P 5750 4400
 AR Path="/5EBC562E/5EF36BF0" Ref="R?"  Part="1" 
@@ -258,7 +245,6 @@ F 6 "81-GCJ188R71E104KA2D" H 5950 4650 50  0001 C CNN "Mouser No."
 $EndComp
 Wire Wire Line
 	5950 4550 5950 4400
-Connection ~ 5950 4400
 Wire Wire Line
 	5450 4850 5950 4850
 Wire Wire Line
@@ -291,11 +277,11 @@ $EndComp
 Wire Wire Line
 	6550 4850 6550 4200
 $Comp
-L Device:R_Small R?
+L Device:R_US R?
 U 1 1 5F027158
 P 6750 4100
 F 0 "R?" H 6800 4050 50  0000 L CNN
-F 1 "10kΩ" H 6800 4150 50  0000 L CNN
+F 1 "33kΩ" H 6800 4150 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 6750 4100 50  0001 C CNN
 F 3 "~" H 6750 4100 50  0001 C CNN
 F 4 "" V 6750 4100 50  0001 C CNN "Mfr."
@@ -305,11 +291,11 @@ F 6 "" V 6750 4100 50  0001 C CNN "Mouser No."
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_US R?
 U 1 1 5F027A71
 P 6150 4650
 F 0 "R?" H 6200 4600 50  0000 L CNN
-F 1 "10kΩ" H 6200 4700 50  0000 L CNN
+F 1 "33kΩ" H 6200 4700 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 6150 4650 50  0001 C CNN
 F 3 "~" H 6150 4650 50  0001 C CNN
 F 4 "" V 6150 4650 50  0001 C CNN "Mfr."
@@ -322,34 +308,18 @@ Text Notes 3150 3800 2    50   ~ 0
 Configure as open collector
 Text Notes 3150 4400 2    50   ~ 0
 Configure as open collector
-Text Notes 4700 5300 0    50   ~ 0
-Filter LED PWM harmonics above:\nf = 1 / (2π · R · C) =\n  = 1 / (2π · 220Ω · 100nF) = 7.2kHz
+Text Notes 4700 5500 0    50   ~ 0
+Filter LED PWM harmonics above:\nf = 1 / (2π · R · C) =\n  = 1 / (2π · 390Ω · 100nF) = 4.1kHz\nPrevents sourcing significant power\nat frequencies where the cable is a\ngood antenna.
 Wire Bus Line
 	4650 5000 6350 5000
 Wire Bus Line
-	6350 5000 6350 5350
+	6350 5000 6350 5550
 Wire Bus Line
-	6350 5350 4650 5350
+	6350 5550 4650 5550
 Wire Bus Line
-	4650 5350 4650 5000
+	4650 5550 4650 5000
 Wire Notes Line
 	4650 5000 5600 4750
-Wire Wire Line
-	5950 4400 6150 4400
-Wire Wire Line
-	5950 4850 6150 4850
-Wire Wire Line
-	6150 4550 6150 4400
-Connection ~ 6150 4400
-Wire Wire Line
-	6150 4400 6800 4400
-Wire Wire Line
-	6150 4750 6150 4850
-Connection ~ 6150 4850
-Wire Wire Line
-	6750 4000 6750 3800
-Wire Wire Line
-	6750 4200 6750 4850
 Wire Notes Line
 	5600 4750 6050 4750
 Wire Notes Line
@@ -376,19 +346,9 @@ Wire Notes Line
 	7050 4200 6700 4200
 Wire Notes Line
 	6700 4200 6700 4000
-Connection ~ 6550 3800
 Connection ~ 6550 4850
 Wire Wire Line
 	6550 4850 6750 4850
-Connection ~ 6750 3800
-Wire Wire Line
-	6750 3800 6800 3800
-Wire Wire Line
-	5850 3800 6550 3800
-Wire Wire Line
-	6150 4850 6550 4850
-Wire Wire Line
-	6550 3800 6750 3800
 Wire Notes Line
 	6100 4550 6450 4550
 Wire Notes Line
@@ -564,4 +524,44 @@ Wire Bus Line
 	8050 4350 8050 4450
 Wire Bus Line
 	7950 4350 7950 4450
+Wire Wire Line
+	5950 4400 6150 4400
+Wire Wire Line
+	5950 4850 6150 4850
+Wire Wire Line
+	6150 4800 6150 4850
+Connection ~ 6150 4850
+Wire Wire Line
+	6150 4850 6550 4850
+Wire Wire Line
+	6150 4500 6150 4400
+Connection ~ 6150 4400
+Wire Wire Line
+	6150 4400 6800 4400
+Wire Wire Line
+	5900 4400 5950 4400
+Connection ~ 5950 4400
+Wire Wire Line
+	5600 4400 4250 4400
+Connection ~ 4250 4400
+Wire Wire Line
+	5600 3200 5450 3200
+Connection ~ 5450 3200
+Wire Wire Line
+	5900 3200 6800 3200
+Wire Wire Line
+	5900 3800 6550 3800
+Connection ~ 6550 3800
+Wire Wire Line
+	5600 3800 4850 3800
+Connection ~ 4850 3800
+Wire Wire Line
+	6550 3800 6750 3800
+Wire Wire Line
+	6750 3950 6750 3800
+Connection ~ 6750 3800
+Wire Wire Line
+	6750 3800 6800 3800
+Wire Wire Line
+	6750 4250 6750 4850
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-15713544050044743
+15718325643599743
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -62321,12 +62321,19 @@ Accesory
 0
 0
 POxiM-uncategorised
-Finger-CableConnection
+CUI_SJ-43514-SMT
 
 
 0
 4
 4
+POxiM-uncategorised
+Micro-B_Molex_105017-0001
+
+
+0
+13
+6
 POxiM-uncategorised
 Molex-Nanofit-2
 
@@ -62362,6 +62369,20 @@ connector Molex  top entry
 0
 6
 5
+POxiM-uncategorised
+SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm
+SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, open
+solder jumper open
+0
+2
+2
+POxiM-uncategorised
+SolderJumper-2_P1.3mm_SolderBridged_RoundedPad1.0x1.5mm
+SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, open
+solder jumper open
+0
+2
+2
 POxiM-uncategorised
 VSMD66694
 VSMD66694-3

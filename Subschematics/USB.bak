@@ -59,8 +59,6 @@ Wire Wire Line
 	5700 4850 3850 4850
 Wire Wire Line
 	5700 3900 5700 4850
-Text Notes 3800 2750 0    50   ~ 0
-Current cutoff at one unit load (maxium power without negotiation).\nUSB full spec, usb_20.pdf, page 171 (/https://usb.org/sites/default/files/usb_20_20190524.zip)
 Wire Wire Line
 	5700 3250 6200 3250
 Text HLabel 7850 3250 2    50   Output ~ 0
@@ -164,12 +162,6 @@ Wire Notes Line
 Wire Notes Line
 	3750 2800 4750 2950
 Wire Bus Line
-	3750 2800 3750 2550
-Wire Bus Line
-	3750 2550 7650 2550
-Wire Bus Line
-	7650 2550 7650 2800
-Wire Bus Line
 	7650 2800 3750 2800
 Wire Bus Line
 	3750 3500 3750 3750
@@ -193,4 +185,12 @@ Wire Bus Line
 	7650 3400 6700 3400
 Wire Notes Line
 	6700 3400 6500 3550
+Wire Bus Line
+	3750 2800 3750 2550
+Wire Bus Line
+	7650 2550 7650 2800
+Wire Bus Line
+	3750 2550 7650 2550
+Text Notes 3800 2750 0    50   ~ 0
+Current cutoff at one unit load (maxium power without negotiation).\nUSB full spec, usb_20.pdf, page 171 (/https://usb.org/sites/default/files/usb_20_20190524.zip)
 $EndSCHEMATC
