@@ -23,28 +23,17 @@ F2 "Control.~Prediction" I L 5800 6000 50
 F3 "ToADC" O L 5800 5900 50 
 F4 "GND" I L 5800 6150 50 
 F5 "Photodiode" I R 7300 5950 50 
-F6 "+5V" I L 5800 5750 50 
-$EndSheet
-$Sheet
-S 7750 4800 1650 1450
-U 5EBC342A
-F0 "Signal conditioning" 50
-F1 "Subschematics/SignalConditioning.sch" 50
-F2 "LEDDrive.IR" I L 7750 5400 50 
-F3 "LEDOut.IR" O R 9400 5500 50 
-F4 "LEDDrive.Red" I L 7750 5300 50 
-F5 "LEDOut.Red" O R 9400 5600 50 
-F6 "GND" I L 7750 6150 50 
-F7 "PhotoDiodeInternal" O L 7750 5950 50 
-F8 "PhotoDiode" I R 9400 5300 50 
+F6 "+3.3V" I L 5800 5750 50 
 $EndSheet
 $Sheet
 S 5750 3850 1850 600 
 U 5EBC562E
 F0 "Display" 50
 F1 "Subschematics/Display.sch" 50
-F2 "Segment[0..6]" I L 5750 4050 50 
-F3 "Common[0..2]" I L 5750 4250 50 
+F2 "Segment[0..6]" I L 5750 4100 50 
+F3 "Common[0..2]" I L 5750 4200 50 
+F4 "GND" I L 5750 4350 50 
+F5 "5V" I L 5750 3950 50 
 $EndSheet
 $Sheet
 S 1700 4800 1650 1450
@@ -58,6 +47,7 @@ F5 "Data-" O L 1700 5500 50
 F6 "GND" I L 1700 6150 50 
 F7 "DataTX" I R 3350 5500 50 
 F8 "SWIM" B R 3350 5350 50 
+F9 "3.3V" O R 3350 5050 50 
 $EndSheet
 $Comp
 L Connector:USB_B_Micro J1
@@ -66,25 +56,26 @@ P 1150 5400
 F 0 "J1" H 900 5450 50  0000 R CNN
 F 1 "Power in" H 900 5350 50  0000 R CNN
 F 2 "POxiM-uncategorised:Micro-B_Molex_105017-0001" H 1300 5350 50  0001 C CNN
-F 3 "~" H 1300 5350 50  0001 C CNN
-F 4 "Molex" H 1150 5400 50  0001 C CNN "Mfr."
-F 5 "105017-0001" H 1150 5400 50  0001 C CNN "Mfr. No."
-F 6 "538-105017-0001" H 1150 5400 50  0001 C CNN "Mouser No."
+F 3 "${KIPRJMOD}/Datasheets/1050170001_IO_CONNECTORS-230168.pdf" H 1300 5350 50  0001 C CNN
+F 4 "538-105017-0001" H 0   0   50  0001 C CNN "Order number"
+F 5 "105017-0001" H 0   0   50  0001 C CNN "Part number"
+F 6 "Mouser" H 0   0   50  0001 C CNN "Supplier"
+F 7 "https://nl.mouser.com/ProductDetail/Molex/105017-0001?qs=%2Fha2pyFaduhvDLOjS9XzZ4crgeKFuUaHKVdcSlHkDT7%2FTTSYPzG3eA%3D%3D" H 0   0   50  0001 C CNN "Link"
 	1    1150 5400
 	1    0    0    -1  
 $EndComp
 Wire Bus Line
-	5750 4050 5500 4050
+	5750 4100 5400 4100
 Wire Bus Line
-	5500 4050 5500 4950
+	5400 4100 5400 4950
 Wire Bus Line
-	5500 4950 5300 4950
+	5400 4950 5300 4950
 Wire Bus Line
-	5750 4250 5600 4250
+	5750 4200 5500 4200
 Wire Bus Line
-	5600 4250 5600 5050
+	5500 4200 5500 5050
 Wire Bus Line
-	5600 5050 5300 5050
+	5500 5050 5300 5050
 Wire Wire Line
 	5300 5900 5800 5900
 Wire Wire Line
@@ -154,29 +145,33 @@ Wire Notes Line
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5EDAE2DB
-P 850 7050
-F 0 "H1" H 950 7096 50  0000 L CNN
-F 1 "MountingHole" H 950 7005 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 850 7050 50  0001 C CNN
-F 3 "~" H 850 7050 50  0001 C CNN
-F 4 "~" H 850 7050 50  0001 C CNN "Mfr."
-F 5 "~" H 850 7050 50  0001 C CNN "Mfr. No."
-F 6 "~" H 850 7050 50  0001 C CNN "Mouser No."
-	1    850  7050
+P 850 6950
+F 0 "H1" H 950 6996 50  0000 L CNN
+F 1 "MountingHole" H 950 6905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 850 6950 50  0001 C CNN
+F 3 "~" H 850 6950 50  0001 C CNN
+F 4 "SHOULD NOT BE ON BOM" H 0   -100 50  0001 C CNN "Notes"
+F 5 "~" H 0   -100 50  0001 C CNN "Link"
+F 6 "~" H 0   -100 50  0001 C CNN "Order number"
+F 7 "~" H 0   -100 50  0001 C CNN "Part number"
+F 8 "~" H 0   -100 50  0001 C CNN "Supplier"
+	1    850  6950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5EDAE92A
-P 850 7350
-F 0 "H2" H 950 7396 50  0000 L CNN
-F 1 "MountingHole" H 950 7305 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 850 7350 50  0001 C CNN
-F 3 "~" H 850 7350 50  0001 C CNN
-F 4 "~" H 850 7350 50  0001 C CNN "Mfr."
-F 5 "~" H 850 7350 50  0001 C CNN "Mfr. No."
-F 6 "~" H 850 7350 50  0001 C CNN "Mouser No."
-	1    850  7350
+P 850 7250
+F 0 "H2" H 950 7296 50  0000 L CNN
+F 1 "MountingHole" H 950 7205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 850 7250 50  0001 C CNN
+F 3 "~" H 850 7250 50  0001 C CNN
+F 4 "SHOULD NOT BE ON BOM" H 0   -100 50  0001 C CNN "Notes"
+F 5 "~" H 0   -100 50  0001 C CNN "Link"
+F 6 "~" H 0   -100 50  0001 C CNN "Order number"
+F 7 "~" H 0   -100 50  0001 C CNN "Part number"
+F 8 "~" H 0   -100 50  0001 C CNN "Supplier"
+	1    850  7250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -216,17 +211,6 @@ Wire Wire Line
 Wire Wire Line
 	5700 6150 5700 6200
 $Comp
-L power:+5V #PWR05
-U 1 1 5EDBFF74
-P 5700 5700
-F 0 "#PWR05" H 5700 5550 50  0001 C CNN
-F 1 "+5V" H 5715 5873 50  0000 C CNN
-F 2 "" H 5700 5700 50  0001 C CNN
-F 3 "" H 5700 5700 50  0001 C CNN
-	1    5700 5700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR06
 U 1 1 5EDC0E1F
 P 5700 6200
@@ -242,21 +226,18 @@ Wire Wire Line
 Wire Wire Line
 	3650 5500 3350 5500
 Wire Wire Line
-	3350 4950 3500 4950
+	3350 4950 3450 4950
 Wire Wire Line
-	3500 4950 3500 4900
-Connection ~ 3500 4950
-Wire Wire Line
-	3500 4950 3650 4950
+	3450 4950 3450 4900
 $Comp
-L power:+5V #PWR04
+L power:+5V #PWR03
 U 1 1 5EBC7CAA
-P 3500 4900
-F 0 "#PWR04" H 3500 4750 50  0001 C CNN
-F 1 "+5V" H 3515 5073 50  0000 C CNN
-F 2 "" H 3500 4900 50  0001 C CNN
-F 3 "" H 3500 4900 50  0001 C CNN
-	1    3500 4900
+P 3450 4900
+F 0 "#PWR03" H 3450 4750 50  0001 C CNN
+F 1 "+5V" V 3450 5050 50  0000 L CNN
+F 2 "" H 3450 4900 50  0001 C CNN
+F 3 "" H 3450 4900 50  0001 C CNN
+	1    3450 4900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -275,10 +256,10 @@ Wire Wire Line
 Wire Wire Line
 	1550 6150 1550 6200
 $Comp
-L power:GND #PWR03
+L power:GND #PWR04
 U 1 1 5EBE7B4C
 P 3500 6200
-F 0 "#PWR03" H 3500 5950 50  0001 C CNN
+F 0 "#PWR04" H 3500 5950 50  0001 C CNN
 F 1 "GND" H 3505 6027 50  0000 C CNN
 F 2 "" H 3500 6200 50  0001 C CNN
 F 3 "" H 3500 6200 50  0001 C CNN
@@ -294,57 +275,65 @@ Audio\npinout:
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5EBE9DDE
-P 1700 7050
-F 0 "H3" H 1800 7096 50  0000 L CNN
-F 1 "MountingHole" H 1800 7005 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 1700 7050 50  0001 C CNN
-F 3 "~" H 1700 7050 50  0001 C CNN
-F 4 "~" H 1700 7050 50  0001 C CNN "Mfr."
-F 5 "~" H 1700 7050 50  0001 C CNN "Mfr. No."
-F 6 "~" H 1700 7050 50  0001 C CNN "Mouser No."
-	1    1700 7050
+P 1700 6950
+F 0 "H3" H 1800 6996 50  0000 L CNN
+F 1 "MountingHole" H 1800 6905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 1700 6950 50  0001 C CNN
+F 3 "~" H 1700 6950 50  0001 C CNN
+F 4 "SHOULD NOT BE ON BOM" H 0   -100 50  0001 C CNN "Notes"
+F 5 "~" H 0   -100 50  0001 C CNN "Link"
+F 6 "~" H 0   -100 50  0001 C CNN "Order number"
+F 7 "~" H 0   -100 50  0001 C CNN "Part number"
+F 8 "~" H 0   -100 50  0001 C CNN "Supplier"
+	1    1700 6950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5EBE9DE7
-P 1700 7350
-F 0 "H4" H 1800 7396 50  0000 L CNN
-F 1 "MountingHole" H 1800 7305 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 1700 7350 50  0001 C CNN
-F 3 "~" H 1700 7350 50  0001 C CNN
-F 4 "~" H 1700 7350 50  0001 C CNN "Mfr."
-F 5 "~" H 1700 7350 50  0001 C CNN "Mfr. No."
-F 6 "~" H 1700 7350 50  0001 C CNN "Mouser No."
-	1    1700 7350
+P 1700 7250
+F 0 "H4" H 1800 7296 50  0000 L CNN
+F 1 "MountingHole" H 1800 7205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 1700 7250 50  0001 C CNN
+F 3 "~" H 1700 7250 50  0001 C CNN
+F 4 "SHOULD NOT BE ON BOM" H 0   -100 50  0001 C CNN "Notes"
+F 5 "~" H 0   -100 50  0001 C CNN "Link"
+F 6 "~" H 0   -100 50  0001 C CNN "Order number"
+F 7 "~" H 0   -100 50  0001 C CNN "Part number"
+F 8 "~" H 0   -100 50  0001 C CNN "Supplier"
+	1    1700 7250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H5
 U 1 1 5EC0DFF9
-P 2550 7050
-F 0 "H5" H 2650 7096 50  0000 L CNN
-F 1 "AlignmentHole" H 2650 7005 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 2550 7050 50  0001 C CNN
-F 3 "~" H 2550 7050 50  0001 C CNN
-F 4 "~" H 2550 7050 50  0001 C CNN "Mfr."
-F 5 "~" H 2550 7050 50  0001 C CNN "Mfr. No."
-F 6 "~" H 2550 7050 50  0001 C CNN "Mouser No."
-	1    2550 7050
+P 2550 6950
+F 0 "H5" H 2650 6996 50  0000 L CNN
+F 1 "AlignmentHole" H 2650 6905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 2550 6950 50  0001 C CNN
+F 3 "~" H 2550 6950 50  0001 C CNN
+F 4 "SHOULD NOT BE ON BOM" H 0   -100 50  0001 C CNN "Notes"
+F 5 "~" H 0   -100 50  0001 C CNN "Link"
+F 6 "~" H 0   -100 50  0001 C CNN "Order number"
+F 7 "~" H 0   -100 50  0001 C CNN "Part number"
+F 8 "~" H 0   -100 50  0001 C CNN "Supplier"
+	1    2550 6950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H6
 U 1 1 5EC0E002
-P 2550 7350
-F 0 "H6" H 2650 7396 50  0000 L CNN
-F 1 "AlignmentHole" H 2650 7305 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 2550 7350 50  0001 C CNN
-F 3 "~" H 2550 7350 50  0001 C CNN
-F 4 "~" H 2550 7350 50  0001 C CNN "Mfr."
-F 5 "~" H 2550 7350 50  0001 C CNN "Mfr. No."
-F 6 "~" H 2550 7350 50  0001 C CNN "Mouser No."
-	1    2550 7350
+P 2550 7250
+F 0 "H6" H 2650 7296 50  0000 L CNN
+F 1 "AlignmentHole" H 2650 7205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 2550 7250 50  0001 C CNN
+F 3 "~" H 2550 7250 50  0001 C CNN
+F 4 "SHOULD NOT BE ON BOM" H 0   -100 50  0001 C CNN "Notes"
+F 5 "~" H 0   -100 50  0001 C CNN "Link"
+F 6 "~" H 0   -100 50  0001 C CNN "Order number"
+F 7 "~" H 0   -100 50  0001 C CNN "Part number"
+F 8 "~" H 0   -100 50  0001 C CNN "Supplier"
+	1    2550 7250
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -359,15 +348,15 @@ U 5EBC558F
 F0 "Microcontroller" 50
 F1 "Subschematics/Microcontroller.sch" 50
 F2 "GND" I L 3650 6150 50 
-F3 "5V" I L 3650 4950 50 
-F4 "Segment[0..6]" O R 5300 4950 50 
-F5 "ADC.feedback" O R 5300 6000 50 
-F6 "ADC.input" I R 5300 5900 50 
-F7 "LED.IR" O R 5300 5400 50 
-F8 "LED.Red" O R 5300 5300 50 
-F9 "UART1.TX" O L 3650 5500 50 
-F10 "SWIM" B L 3650 5350 50 
-F11 "Common[0..2]" O R 5300 5050 50 
+F3 "Segment[0..6]" O R 5300 4950 50 
+F4 "ADC.feedback" O R 5300 6000 50 
+F5 "ADC.input" I R 5300 5900 50 
+F6 "LED.IR" O R 5300 5400 50 
+F7 "LED.Red" O R 5300 5300 50 
+F8 "UART1.TX" O L 3650 5500 50 
+F9 "SWIM" B L 3650 5350 50 
+F10 "Common[0..2]" O R 5300 5050 50 
+F11 "3.3V" I L 3650 5050 50 
 $EndSheet
 Wire Wire Line
 	1450 5200 1700 5200
@@ -376,18 +365,17 @@ Wire Wire Line
 Wire Wire Line
 	1450 5500 1700 5500
 $Comp
-L Connector:AudioJack4 J?
+L Connector:AudioJack4 J2
 U 1 1 5EF1457C
 P 10150 5400
-F 0 "J?" H 9820 5375 50  0000 R CNN
+F 0 "J2" H 9820 5375 50  0000 R CNN
 F 1 "To finger probe" H 9820 5284 50  0000 R CNN
 F 2 "POxiM-uncategorised:CUI_SJ-43514-SMT" H 10150 5400 50  0001 C CNN
-F 3 "https://nl.mouser.com/datasheet/2/670/sj-4351x-smt-1779337.pdf" H 10150 5400 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/sj-4351x-smt-1779337.pdf" H 10150 5400 50  0001 C CNN
 F 4 "SJ-43514-SMT-TR" H 10150 5400 50  0001 C CNN "Part number"
 F 5 "490-SJ-43514-SMT-TR" H 10150 5400 50  0001 C CNN "Order number"
 F 6 "Mouser" H 10150 5400 50  0001 C CNN "Supplier"
-F 7 "" H 10150 5400 50  0001 C CNN "Notes"
-F 8 "https://nl.mouser.com/ProductDetail/CUI-Devices/SJ-43514-SMT-TR?qs=%2Fha2pyFadugB3LQZLBGHToeh9KYouWGyT2rTxqNwUuAVYgKKLtJx9w%3D%3D" H 10150 5400 50  0001 C CNN "Link"
+F 7 "https://nl.mouser.com/ProductDetail/CUI-Devices/SJ-43514-SMT-TR?qs=%2Fha2pyFadugB3LQZLBGHToeh9KYouWGyT2rTxqNwUuAVYgKKLtJx9w%3D%3D" H 10150 5400 50  0001 C CNN "Link"
 	1    10150 5400
 	-1   0    0    -1  
 $EndComp
@@ -419,19 +407,8 @@ F 3 "" H 1150 5900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1150 5850 1150 5900
-$Comp
-L power:+5V #PWR?
-U 1 1 5F0323F6
-P 9900 5250
-F 0 "#PWR?" H 9900 5100 50  0001 C CNN
-F 1 "+5V" H 9915 5423 50  0000 C CNN
-F 2 "" H 9900 5250 50  0001 C CNN
-F 3 "" H 9900 5250 50  0001 C CNN
-	1    9900 5250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	9900 5250 9900 5400
+	9900 5650 9900 5400
 Wire Wire Line
 	9900 5400 9950 5400
 Text Notes 3400 7450 0    50   ~ 0
@@ -7418,4 +7395,157 @@ A6 58 AD 00 00 00 00 00 00 00 00 9C 59 BB 77 EF DE B2 65 CB CE 9D 3B 77 ED DA 75
 20 F6 FE 0F AE 27 82 DD 76 3E 8C 64 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+Text Notes -3100 5000 0    50   ~ 0
+# ToDo\n### Schematic\n - [x] Rework display LEDs to open drain\n - [x] Add LDO\n - [x] Feed noise shaper from LDO, so it cannot damage microcontroller\n - [x] Add DAC buffer\n - [ ] Add IR/red LED supply current isolation\n - [ ] Check if Zener voltage needs to change to incorporate lower supply voltage\n - [ ]  Change noise shaper + in to ground\n - [ ] Update prediction inversion\n - [ ] Change Zener diodes to >5.5V & verify leakage\n - [ ] Incorporate suggested changes Faber\n   - [ ] Try out USB connector\n   - [x] Add fiducials\n   - [ ] Change BOM to 0603\n   - [ ] LED footprint may be wrong\n   - [ ] Export placement file\n   - [ ] Change footprints to 0603 or 0603 / 0805 compatible footprints?\n - [x] Verify everything working down to 4.3V\n   - Display LEDs will be approx 7 times less bright than at 5.5V\n   - Measurements LEDs should be current-controlled, so that they aren’t affected.\n   - LDO needs to work down to 4.3V\n - [x] Add debug crystal\n   - Is mapped to PA1/PA2, so not possible.\n - [ ] Add debug ESD/EMI protection\n - [ ] Change polyfuse to <1Ω model\n - [x] Add debug LED driver RC delay\n - [x] Better testplan / add testpoints\n\n### PCB\n - [ ] Put all LEDs in middle of segments.
+Text Notes 450  9600 0    50   ~ 0
+Microcontroller needs 3.3V LDO, since required 40dB PSRR @ 5mA cannot \nbe easily achieved with capacitance multiplier at low frequencies and small \ncapacitors, whereas a voltage reference PSRR gets better at lower \nfrequencies.\n\nLED currents should be passed through ground so that only ground bond \nwire resistance is a factor, and the 1Ω output impedance of the LDO isn’t a \nproblem.\n\nLED crosstalk can either be removed by using a multi-channel buffer, or \nfiltered by using a buffer for the DAC. Since the multi-channel buffer \nrequires a single-channel NPN buffer in addition to a hex 74 series gate, it\nhas requires only the additional 74 series hex gate. It has an estimated \nmaximum 6dB reduction in noise at 0.5Hz. This subtle improvement is not\nworth the dependence on another IC.
+Text Notes -6300 3350 0    50   ~ 0
+De USB-connectoren die wij hier momenteel op voorraad hebben liggen:\n - ZX62D-B-5PA8 Hirose\n - 10104110-0001LF FCI (Geheel SMD, dus het liefste vastklemmen)\n - 629105136821 WUERTH (Geheel SMD, dus het liefste vastklemmen)\n - 10118194-0001L FCI
+Text Notes -6300 2800 0    50   ~ 0
+Change stereo connector?\nIk zal even rondkijken voor 3,5m stereo jack connectoren. De CUI SJ-43514 \nis een connector die ik gisteren ook tegen kwam. Dit is zeker een optie.
+$Comp
+L Mechanical:Fiducial FID?
+U 1 1 5F197F67
+P 750 7550
+F 0 "FID?" H 835 7596 50  0000 L CNN
+F 1 "Fiducial" H 835 7505 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 750 7550 50  0001 C CNN
+F 3 "~" H 750 7550 50  0001 C CNN
+	1    750  7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID?
+U 1 1 5F198375
+P 1400 7550
+F 0 "FID?" H 1485 7596 50  0000 L CNN
+F 1 "Fiducial" H 1485 7505 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 1400 7550 50  0001 C CNN
+F 3 "~" H 1400 7550 50  0001 C CNN
+	1    1400 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID?
+U 1 1 5F19C717
+P 2050 7550
+F 0 "FID?" H 2135 7596 50  0000 L CNN
+F 1 "Fiducial" H 2135 7505 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 2050 7550 50  0001 C CNN
+F 3 "~" H 2050 7550 50  0001 C CNN
+	1    2050 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID?
+U 1 1 5F19C71D
+P 2700 7550
+F 0 "FID?" H 2785 7596 50  0000 L CNN
+F 1 "Fiducial" H 2785 7505 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 2700 7550 50  0001 C CNN
+F 3 "~" H 2700 7550 50  0001 C CNN
+	1    2700 7550
+	1    0    0    -1  
+$EndComp
+Text Notes -2950 2600 0    50   ~ 0
+To muntz:\n - Test whether LED driver RC delay is really necessary.
+Wire Wire Line
+	3350 5050 3550 5050
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F71FDE4
+P 3550 4900
+F 0 "#PWR?" H 3550 4750 50  0001 C CNN
+F 1 "+3.3V" V 3550 5050 50  0000 L CNN
+F 2 "" H 3550 4900 50  0001 C CNN
+F 3 "" H 3550 4900 50  0001 C CNN
+	1    3550 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4900 3550 5050
+Connection ~ 3550 5050
+Wire Wire Line
+	3550 5050 3650 5050
+$Sheet
+S 7750 4800 1650 1450
+U 5EBC342A
+F0 "Signal conditioning" 50
+F1 "Subschematics/SignalConditioning.sch" 50
+F2 "LEDDrive.IR" I L 7750 5400 50 
+F3 "LEDOut.IR" O R 9400 5500 50 
+F4 "LEDDrive.Red" I L 7750 5300 50 
+F5 "LEDOut.Red" O R 9400 5600 50 
+F6 "GND" I L 7750 6150 50 
+F7 "PhotoDiodeInternal" O L 7750 5950 50 
+F8 "PhotoDiode" I R 9400 5300 50 
+F9 "5V" I L 7750 4900 50 
+$EndSheet
+Wire Wire Line
+	7750 4900 7650 4900
+Wire Wire Line
+	7650 4900 7650 4850
+$Comp
+L power:+5V #PWR?
+U 1 1 5F72BE5B
+P 7650 4850
+F 0 "#PWR?" H 7650 4700 50  0001 C CNN
+F 1 "+5V" H 7665 5023 50  0000 C CNN
+F 2 "" H 7650 4850 50  0001 C CNN
+F 3 "" H 7650 4850 50  0001 C CNN
+	1    7650 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F72ED18
+P 5700 5700
+F 0 "#PWR?" H 5700 5550 50  0001 C CNN
+F 1 "+3.3V" H 5715 5873 50  0000 C CNN
+F 2 "" H 5700 5700 50  0001 C CNN
+F 3 "" H 5700 5700 50  0001 C CNN
+	1    5700 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3950 5650 3950
+Wire Wire Line
+	5650 3950 5650 3900
+$Comp
+L power:+5V #PWR?
+U 1 1 5F732AB3
+P 5650 3900
+F 0 "#PWR?" H 5650 3750 50  0001 C CNN
+F 1 "+5V" H 5665 4073 50  0000 C CNN
+F 2 "" H 5650 3900 50  0001 C CNN
+F 3 "" H 5650 3900 50  0001 C CNN
+	1    5650 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F73816E
+P 5650 4400
+F 0 "#PWR?" H 5650 4150 50  0001 C CNN
+F 1 "GND" H 5655 4227 50  0000 C CNN
+F 2 "" H 5650 4400 50  0001 C CNN
+F 3 "" H 5650 4400 50  0001 C CNN
+	1    5650 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4350 5650 4350
+Wire Wire Line
+	5650 4350 5650 4400
+$Comp
+L power:GND #PWR?
+U 1 1 5F822B24
+P 9900 5650
+F 0 "#PWR?" H 9900 5400 50  0001 C CNN
+F 1 "GND" H 9905 5477 50  0000 C CNN
+F 2 "" H 9900 5650 50  0001 C CNN
+F 3 "" H 9900 5650 50  0001 C CNN
+	1    9900 5650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

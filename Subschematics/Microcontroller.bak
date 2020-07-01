@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 5 6
 Title "Microcontroller"
 Date "2020-06-10"
 Rev "A"
@@ -48,58 +48,50 @@ Wire Wire Line
 Wire Wire Line
 	5600 2750 5600 2850
 $Comp
-L Device:Ferrite_Bead_Small FB1
-U 1 1 5EBC4A36
-P 4550 2450
-F 0 "FB1" V 4313 2450 50  0000 C CNN
-F 1 "220Ω @ 100MHz" V 4404 2450 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 4480 2450 50  0001 C CNN
-F 3 "~" H 4550 2450 50  0001 C CNN
-F 4 "Murata Electronics" V 4550 2450 50  0001 C CNN "Mfr."
-F 5 "BLM18KG221BH1D" V 4550 2450 50  0001 C CNN "Mfr. No."
-F 6 "81-BLM18KG221BH1D" V 4550 2450 50  0001 C CNN "Mouser No."
-	1    4550 2450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C8
+L Device:C_Small C9
 U 1 1 5EBC882D
 P 5150 2650
-F 0 "C8" H 5250 2700 50  0000 L CNN
+F 0 "C9" H 5250 2700 50  0000 L CNN
 F 1 "100nF" H 5250 2600 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5150 2650 50  0001 C CNN
-F 3 "~" H 5150 2650 50  0001 C CNN
-F 4 "Murata Electronics" H 5150 2650 50  0001 C CNN "Mfr."
-F 5 "GCJ188R71E104KA12D" H 5150 2650 50  0001 C CNN "Mfr. No."
-F 6 "81-GCJ188R71E104KA2D" H 5150 2650 50  0001 C CNN "Mouser No."
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5150 2650 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/GCD21BR72A104KA01-01-1668138.pdf" H 5150 2650 50  0001 C CNN
+F 4 "Decoupling capacitance. Value non-critical. X7R, >10V, AEC-Q200." H 0   0   50  0001 C CNN "Notes"
+F 5 "https://nl.mouser.com/ProductDetail/Murata-Electronics/GCD21BR72A104KA01L?qs=QzBtWTOodeUgjSVpOGt6MA%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 6 "81-GCD21BR72A104KA1L" H 0   0   50  0001 C CNN "Order number"
+F 7 "GCD21BR72A104KA01L" H 0   0   50  0001 C CNN "Part number"
+F 8 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    5150 2650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C6
+L Device:C_Small C8
 U 1 1 5EBC898E
 P 4700 2650
-F 0 "C6" H 4800 2700 50  0000 L CNN
+F 0 "C8" H 4800 2700 50  0000 L CNN
 F 1 "2.2µF" H 4800 2600 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4700 2650 50  0001 C CNN
-F 3 "~" H 4700 2650 50  0001 C CNN
-F 4 "Murata Electronics" H 4700 2650 50  0001 C CNN "Mfr."
-F 5 "GCM21BR71E225KA73L" H 4700 2650 50  0001 C CNN "Mfr. No."
-F 6 "81-GCM21BR71E225KA3L" H 4700 2650 50  0001 C CNN "Mouser No."
+F 3 "${KIPRJMOD}/Datasheets/murata_03122018_GCM_Series-1310150.pdf" H 4700 2650 50  0001 C CNN
+F 4 "81-GCM21BR71E225KA3L" H 0   0   50  0001 C CNN "Order number"
+F 5 "GCM21BR71E225KA73L" H 0   0   50  0001 C CNN "Part number"
+F 6 "Mouser" H 0   0   50  0001 C CNN "Supplier"
+F 7 "5V bulk decoupling capacitance. Value non-critical. X7R, >6.3V, AEC-Q200" H 0   0   50  0001 C CNN "Notes"
+F 8 "https://nl.mouser.com/ProductDetail/Murata-Electronics/GCM21BR71E225KA73L?qs=aEuGZpxfbxXYW28lkhxT3w%3D%3D" H 0   0   50  0001 C CNN "Link"
 	1    4700 2650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C7
+L Device:C_Small C10
 U 1 1 5EBCB357
 P 5150 4700
-F 0 "C7" H 5050 4750 50  0000 R CNN
+F 0 "C10" H 5050 4750 50  0000 R CNN
 F 1 "470nF" H 5050 4650 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5150 4700 50  0001 C CNN
-F 3 "~" H 5150 4700 50  0001 C CNN
-F 4 "Murata Electronics" H 5150 4700 50  0001 C CNN "Mfr."
-F 5 "GCM188R71E474KA64D" H 5150 4700 50  0001 C CNN "Mfr. No."
-F 6 "81-GCM188R71E474KA4D" H 5150 4700 50  0001 C CNN "Mouser No."
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5150 4700 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/c03e-516224.pdf" H 5150 4700 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Murata-Electronics/GCJ21BR71C474KA01K?qs=QzBtWTOodeWDVp9hlILgDg%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 5 "Microcontroller regulator stabilisation capacitance. Value critical. X7R, >6.3V, AEC-Q200, series inductance <15nH" H 0   0   50  0001 C CNN "Notes"
+F 6 "81-GCJ21BR71C474KA1K" H 0   0   50  0001 C CNN "Order number"
+F 7 "GCJ21BR71C474KA01K " H 0   0   50  0001 C CNN "Part number"
+F 8 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    5150 4700
 	1    0    0    -1  
 $EndComp
@@ -123,10 +115,8 @@ Text Label 5150 4550 0    50   ~ 0
 VCAP
 Text HLabel 4600 4950 0    50   Input ~ 0
 GND
-Text HLabel 4400 2450 0    50   Input ~ 0
-5V
-Wire Wire Line
-	4650 2450 4700 2450
+Text HLabel 4650 2450 0    50   Input ~ 0
+3.3V
 Connection ~ 4700 2450
 Entry Wire Line
 	4700 3750 4800 3650
@@ -139,16 +129,18 @@ Entry Wire Line
 Entry Wire Line
 	4700 3250 4800 3150
 $Comp
-L Device:C_Small C9
+L Device:C_Small C11
 U 1 1 5EC2C4C9
 P 5600 2650
-F 0 "C9" H 5700 2700 50  0000 L CNN
+F 0 "C11" H 5700 2700 50  0000 L CNN
 F 1 "100nF" H 5700 2600 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5600 2650 50  0001 C CNN
-F 3 "~" H 5600 2650 50  0001 C CNN
-F 4 "Murata Electronics" H 5600 2650 50  0001 C CNN "Mfr."
-F 5 "GCJ188R71E104KA12D" H 5600 2650 50  0001 C CNN "Mfr. No."
-F 6 "81-GCJ188R71E104KA2D" H 5600 2650 50  0001 C CNN "Mouser No."
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5600 2650 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/GCD21BR72A104KA01-01-1668138.pdf" H 5600 2650 50  0001 C CNN
+F 4 "Decoupling capacitance. Value non-critical. X7R, >10V, AEC-Q200." H 0   0   50  0001 C CNN "Notes"
+F 5 "https://nl.mouser.com/ProductDetail/Murata-Electronics/GCD21BR72A104KA01L?qs=QzBtWTOodeUgjSVpOGt6MA%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 6 "81-GCD21BR72A104KA1L" H 0   0   50  0001 C CNN "Order number"
+F 7 "GCD21BR72A104KA01L" H 0   0   50  0001 C CNN "Part number"
+F 8 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    5600 2650
 	1    0    0    -1  
 $EndComp
@@ -186,8 +178,6 @@ Text HLabel 7600 4050 2    50   Input ~ 0
 ADC.input
 Wire Wire Line
 	6600 3950 7600 3950
-Wire Wire Line
-	6600 3550 7600 3550
 Text HLabel 7600 3550 2    50   BiDi ~ 0
 SWIM
 Text HLabel 4250 3950 0    50   Output ~ 0
@@ -207,10 +197,11 @@ P 6000 3850
 F 0 "U2" H 6050 4900 50  0000 L CNN
 F 1 "STM8S003F3P" H 6050 4800 50  0000 L CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 6050 4950 50  0001 L CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00024550.pdf" H 5950 3450 50  0001 C CNN
-F 4 "STMicroelectronics" H 6000 3850 50  0001 C CNN "Mfr."
-F 5 "STM8S003F3P6" H 6000 3850 50  0001 C CNN "Mfr. No."
-F 6 "511-STM8S003F3P6" H 6000 3850 50  0001 C CNN "Mouser No."
+F 3 "${KIPRJMOD}/Datasheets/dm00024550-1797235.pdf" H 5950 3450 50  0001 C CNN
+F 4 "511-STM8S003F3P6" H 0   0   50  0001 C CNN "Order number"
+F 5 "STM8S003F3P6" H 0   0   50  0001 C CNN "Part number"
+F 6 "Mouser" H 0   0   50  0001 C CNN "Supplier"
+F 7 "https://nl.mouser.com/ProductDetail/STMicroelectronics/STM8S003F3P6?qs=vV0pr1uq7fD%252BGii5YhjnYw%3D%3D" H 0   0   50  0001 C CNN "Link"
 	1    6000 3850
 	1    0    0    -1  
 $EndComp
@@ -218,12 +209,10 @@ Entry Wire Line
 	8850 3750 8950 3650
 Entry Wire Line
 	8850 3650 8950 3550
-Text HLabel 4400 2850 0    50   Input ~ 0
+Text HLabel 4650 2850 0    50   Input ~ 0
 GND
 Wire Wire Line
 	5150 2850 5600 2850
-Wire Wire Line
-	4400 2850 4700 2850
 Connection ~ 4700 2850
 Wire Wire Line
 	5150 4950 6000 4950
@@ -232,22 +221,22 @@ Connection ~ 5150 2450
 Wire Wire Line
 	6000 2850 6000 2450
 Wire Wire Line
-	4400 2450 4450 2450
-Wire Wire Line
 	4650 4800 4650 4950
 Wire Wire Line
 	4650 4450 4650 4600
 $Comp
-L Device:C_Small C5
+L Device:C_Small C7
 U 1 1 5EC2C862
 P 4650 4700
-F 0 "C5" H 4550 4750 50  0000 R CNN
+F 0 "C7" H 4550 4750 50  0000 R CNN
 F 1 "100nF" H 4550 4650 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4650 4700 50  0001 C CNN
-F 3 "~" H 4650 4700 50  0001 C CNN
-F 4 "Murata Electronics" H 4650 4700 50  0001 C CNN "Mfr."
-F 5 "GCJ188R71E104KA12D" H 4650 4700 50  0001 C CNN "Mfr. No."
-F 6 "81-GCJ188R71E104KA2D" H 4650 4700 50  0001 C CNN "Mouser No."
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4650 4700 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/GCD21BR72A104KA01-01-1668138.pdf" H 4650 4700 50  0001 C CNN
+F 4 "Decoupling capacitance. Value non-critical. X7R, >10V, AEC-Q200." H 0   0   50  0001 C CNN "Notes"
+F 5 "https://nl.mouser.com/ProductDetail/Murata-Electronics/GCD21BR72A104KA01L?qs=QzBtWTOodeUgjSVpOGt6MA%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 6 "81-GCD21BR72A104KA1L" H 0   0   50  0001 C CNN "Order number"
+F 7 "GCD21BR72A104KA01L" H 0   0   50  0001 C CNN "Part number"
+F 8 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    4650 4700
 	1    0    0    -1  
 $EndComp
@@ -351,7 +340,7 @@ Wire Notes Line
 	4600 5200 4800 4800
 Wire Bus Line
 	4600 5700 4600 5200
-Text Notes 2700 2950 0    50   ~ 0
+Text Notes 2700 2900 0    50   ~ 0
 PB4 and PB5 are open-drain only.\nThis is taken into account in the\nLED display sheet.
 Wire Notes Line
 	4650 3450 5300 3450
@@ -362,15 +351,25 @@ Wire Notes Line
 Wire Notes Line
 	4650 3700 4650 3450
 Wire Notes Line
-	4100 3000 4650 3450
+	4100 2950 4650 3450
 Wire Bus Line
-	2650 3000 2650 2650
+	2650 2950 2650 2600
 Wire Bus Line
-	2650 2650 4100 2650
+	2650 2600 4100 2600
 Wire Bus Line
-	4100 2650 4100 3000
+	4100 2600 4100 2950
 Wire Bus Line
-	4100 3000 2650 3000
+	4100 2950 2650 2950
+Text Notes 550  7700 0    50   ~ 0
+High speed internal RC oscillator (HSI) should be user-trimmed with CLK_HSITRIMR register at given TA and VDD conditions to attain 1.0% accuracy.
+Text Notes 550  7600 0    100  ~ 0
+Important
+Wire Wire Line
+	4650 2850 4700 2850
+Wire Wire Line
+	4650 2450 4700 2450
+Wire Wire Line
+	6600 3550 7600 3550
 Wire Bus Line
 	8950 3500 8950 3750
 Wire Bus Line
