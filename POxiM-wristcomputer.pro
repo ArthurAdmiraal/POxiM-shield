@@ -1,4 +1,4 @@
-update=2020 June 15, Monday 00:46:52
+update=2020 July 02, Thursday 11:50:11
 version=1
 last_client=kicad
 [general]
@@ -12,11 +12,21 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=Libraries/Sheets/POxiM_PageLayout_schematic.kicad_wks
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
-PageLayoutDescrFile=
+PageLayoutDescrFile=Libraries/Sheets/POxiM_PageLayout_PCB.kicad_wks
 LastNetListRead=
-CopperLayerCount=2
+CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -34,9 +44,6 @@ TrackWidth3=0.2
 TrackWidth4=0.25
 TrackWidth5=0.5
 TrackWidth6=1
-TrackWidth7=2
-TrackWidth8=2.5
-TrackWidth9=5
 ViaDiameter1=0.4
 ViaDrill1=0.2
 ViaDiameter2=0.4
@@ -45,8 +52,6 @@ ViaDiameter3=0.45
 ViaDrill3=0.2
 ViaDiameter4=0.6
 ViaDrill4=0.3
-ViaDiameter5=0.8
-ViaDrill5=0.4
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -74,16 +79,12 @@ SolderMaskClearance=0.05
 SolderMaskMinWidth=0
 SolderPasteClearance=0
 SolderPasteRatio=-0
+[pcbnew/Layer.In1.Cu]
+Name=In1.Cu
+Type=1
+[pcbnew/Layer.In2.Cu]
+Name=In2.Cu
+Type=2
 [pcbnew/Layer.B.Cu]
 Name=B.Cu
 Type=2
-[schematic_editor]
-version=1
-PageLayoutDescrFile=Libraries/Sheets/POxiM_PageLayout_schematic.kicad_wks
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1

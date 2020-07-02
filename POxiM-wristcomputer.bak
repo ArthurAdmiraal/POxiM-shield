@@ -55,12 +55,12 @@ U 1 1 5EBC5F66
 P 1150 5400
 F 0 "J1" H 900 5450 50  0000 R CNN
 F 1 "Power in" H 900 5350 50  0000 R CNN
-F 2 "POxiM-uncategorised:Micro-B_Molex_105017-0001" H 1300 5350 50  0001 C CNN
-F 3 "${KIPRJMOD}/Datasheets/1050170001_IO_CONNECTORS-230168.pdf" H 1300 5350 50  0001 C CNN
-F 4 "538-105017-0001" H 0   0   50  0001 C CNN "Order number"
-F 5 "105017-0001" H 0   0   50  0001 C CNN "Part number"
+F 2 "POxiM-uncategorised:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 1300 5350 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/io_usb_micro.pdf" H 1300 5350 50  0001 C CNN
+F 4 "649-10103594-0001LF" H 0   0   50  0001 C CNN "Order number"
+F 5 "10103594-0001LF" H 0   0   50  0001 C CNN "Part number"
 F 6 "Mouser" H 0   0   50  0001 C CNN "Supplier"
-F 7 "https://nl.mouser.com/ProductDetail/Molex/105017-0001?qs=%2Fha2pyFaduhvDLOjS9XzZ4crgeKFuUaHKVdcSlHkDT7%2FTTSYPzG3eA%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "https://nl.mouser.com/ProductDetail/Amphenol-FCI/10103594-0001LF?qs=%2Fha2pyFaduh9LfJ5c8RGkP3KMqjBl%2FfM2Rrm3kCipSeRZ%252B9Kqi1Hvw%3D%3D" H 0   0   50  0001 C CNN "Link"
 	1    1150 5400
 	1    0    0    -1  
 $EndComp
@@ -148,7 +148,7 @@ U 1 1 5EDAE2DB
 P 850 6950
 F 0 "H1" H 950 6996 50  0000 L CNN
 F 1 "MountingHole" H 950 6905 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 850 6950 50  0001 C CNN
+F 2 "POxiM-uncategorised:MountingHole_2.2mm_M2" H 850 6950 50  0001 C CNN
 F 3 "~" H 850 6950 50  0001 C CNN
 F 4 "SHOULD NOT BE ON BOM" H 0   -100 50  0001 C CNN "Notes"
 F 5 "~" H 0   -100 50  0001 C CNN "Link"
@@ -164,7 +164,7 @@ U 1 1 5EDAE92A
 P 850 7250
 F 0 "H2" H 950 7296 50  0000 L CNN
 F 1 "MountingHole" H 950 7205 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 850 7250 50  0001 C CNN
+F 2 "POxiM-uncategorised:MountingHole_2.2mm_M2" H 850 7250 50  0001 C CNN
 F 3 "~" H 850 7250 50  0001 C CNN
 F 4 "SHOULD NOT BE ON BOM" H 0   -100 50  0001 C CNN "Notes"
 F 5 "~" H 0   -100 50  0001 C CNN "Link"
@@ -278,7 +278,7 @@ U 1 1 5EBE9DDE
 P 1700 6950
 F 0 "H3" H 1800 6996 50  0000 L CNN
 F 1 "MountingHole" H 1800 6905 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 1700 6950 50  0001 C CNN
+F 2 "POxiM-uncategorised:MountingHole_2.2mm_M2" H 1700 6950 50  0001 C CNN
 F 3 "~" H 1700 6950 50  0001 C CNN
 F 4 "SHOULD NOT BE ON BOM" H 0   -100 50  0001 C CNN "Notes"
 F 5 "~" H 0   -100 50  0001 C CNN "Link"
@@ -294,7 +294,7 @@ U 1 1 5EBE9DE7
 P 1700 7250
 F 0 "H4" H 1800 7296 50  0000 L CNN
 F 1 "MountingHole" H 1800 7205 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 1700 7250 50  0001 C CNN
+F 2 "POxiM-uncategorised:MountingHole_2.2mm_M2" H 1700 7250 50  0001 C CNN
 F 3 "~" H 1700 7250 50  0001 C CNN
 F 4 "SHOULD NOT BE ON BOM" H 0   -100 50  0001 C CNN "Notes"
 F 5 "~" H 0   -100 50  0001 C CNN "Link"
@@ -310,7 +310,7 @@ U 1 1 5EC0DFF9
 P 2550 6950
 F 0 "H5" H 2650 6996 50  0000 L CNN
 F 1 "AlignmentHole" H 2650 6905 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 2550 6950 50  0001 C CNN
+F 2 "POxiM-uncategorised:AlignmentHole_2.2mm_M2" H 2550 6950 50  0001 C CNN
 F 3 "~" H 2550 6950 50  0001 C CNN
 F 4 "SHOULD NOT BE ON BOM" H 0   -100 50  0001 C CNN "Notes"
 F 5 "~" H 0   -100 50  0001 C CNN "Link"
@@ -326,7 +326,7 @@ U 1 1 5EC0E002
 P 2550 7250
 F 0 "H6" H 2650 7296 50  0000 L CNN
 F 1 "AlignmentHole" H 2650 7205 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 2550 7250 50  0001 C CNN
+F 2 "POxiM-uncategorised:AlignmentHole_2.2mm_M2" H 2550 7250 50  0001 C CNN
 F 3 "~" H 2550 7250 50  0001 C CNN
 F 4 "SHOULD NOT BE ON BOM" H 0   -100 50  0001 C CNN "Notes"
 F 5 "~" H 0   -100 50  0001 C CNN "Link"
@@ -437,8 +437,6 @@ Wire Notes Line
 	7300 4375 7300 4325
 Wire Notes Line
 	7300 4325 7250 4325
-Text Notes 450  -150 0    50   ~ 0
-ToDo:\n - Add top-level descriptions to each sheet.\n - Improve noise shaper description.\n - Update component values for Vin ∈ [4.5, 5.5]V\n - Check PWM output harmonics actually have 60dB down, and consider adding image\n - Explain microcontroller choice
 Text Notes 3400 6700 0    100  ~ 0
 Power budget
 Wire Notes Line
@@ -7395,67 +7393,85 @@ A6 58 AD 00 00 00 00 00 00 00 00 9C 59 BB 77 EF DE B2 65 CB CE 9D 3B 77 ED DA 75
 20 F6 FE 0F AE 27 82 DD 76 3E 8C 64 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Text Notes -3100 5000 0    50   ~ 0
-# ToDo\n### Schematic\n - [x] Rework display LEDs to open drain\n - [x] Add LDO\n - [x] Feed noise shaper from LDO, so it cannot damage microcontroller\n - [x] Add DAC buffer\n - [ ] Add IR/red LED supply current isolation\n - [ ] Check if Zener voltage needs to change to incorporate lower supply voltage\n - [ ]  Change noise shaper + in to ground\n - [ ] Update prediction inversion\n - [ ] Change Zener diodes to >5.5V & verify leakage\n - [ ] Incorporate suggested changes Faber\n   - [ ] Try out USB connector\n   - [x] Add fiducials\n   - [ ] Change BOM to 0603\n   - [ ] LED footprint may be wrong\n   - [ ] Export placement file\n   - [ ] Change footprints to 0603 or 0603 / 0805 compatible footprints?\n - [x] Verify everything working down to 4.3V\n   - Display LEDs will be approx 7 times less bright than at 5.5V\n   - Measurements LEDs should be current-controlled, so that they aren’t affected.\n   - LDO needs to work down to 4.3V\n - [x] Add debug crystal\n   - Is mapped to PA1/PA2, so not possible.\n - [ ] Add debug ESD/EMI protection\n - [ ] Change polyfuse to <1Ω model\n - [x] Add debug LED driver RC delay\n - [x] Better testplan / add testpoints\n\n### PCB\n - [ ] Put all LEDs in middle of segments.
-Text Notes 450  9600 0    50   ~ 0
-Microcontroller needs 3.3V LDO, since required 40dB PSRR @ 5mA cannot \nbe easily achieved with capacitance multiplier at low frequencies and small \ncapacitors, whereas a voltage reference PSRR gets better at lower \nfrequencies.\n\nLED currents should be passed through ground so that only ground bond \nwire resistance is a factor, and the 1Ω output impedance of the LDO isn’t a \nproblem.\n\nLED crosstalk can either be removed by using a multi-channel buffer, or \nfiltered by using a buffer for the DAC. Since the multi-channel buffer \nrequires a single-channel NPN buffer in addition to a hex 74 series gate, it\nhas requires only the additional 74 series hex gate. It has an estimated \nmaximum 6dB reduction in noise at 0.5Hz. This subtle improvement is not\nworth the dependence on another IC.
+Text Notes -3650 7800 0    50   ~ 0
+# ToDo\n### Schematic\n - [x] Rework display LEDs to open drain\n - [x] Add LDO\n - [x] Feed noise shaper from LDO, so it cannot damage microcontroller\n - [x] Add DAC buffer\n - [x] Add IR/red LED supply current isolation\n - [x] Change noise shaper + in to ground\n - [x] Update prediction inversion\n - [x] Check if Zener voltage needs to change to incorporate lower supply voltage\n - [x] Change Zener diodes to >5.5V & verify leakage\n - [x] Update debugging jumpers to safe resistance for USB\n - [ ] Incorporate suggested changes Faber\n   - [ ] Try out USB connector\n   - [x] Add fiducials\n   - [ ] Change BOM to 0603\n   - [x] Fix LED footprint\n   - [x] Change footprints to 0603 or 0603 / 0805 compatible footprints?\n - [x] Verify everything working down to 4.3V\n   - Display LEDs will be approx 7 times less bright than at 5.5V\n   - Measurements LEDs should be current-controlled, so that they aren’t affected.\n   - LDO needs to work down to 4.3V\n - [x] Add debug crystal\n   - Is mapped to PA1/PA2, so not possible.\n - [x] Change polyfuse to <1Ω model\n - [x] Add debug LED driver RC delay\n - [x] Better testplan / add testpoints\n\n### Documentation\n - [ ] Remove superfluous datasheets\n - [ ] Update signal processing with orthogonal 80Hz\n - [ ] Add top-level descriptions to each sheet.\n - [ ] Improve noise shaper description.\n - [ ] Check PWM output harmonics actually have 60dB down, and consider adding image\n - [ ] Explain microcontroller choice\n - [ ] Fix remapped microcontroller pins\n\n### PCB\n - [x] Put all LEDs in middle of segments.\n - [ ] Manual cleanup of ground connections.\n - [ ] Add silk, fabrication and courtyard layers to usb connector.\n - [ ] Adjust placement for 1mm distance between components.\n - [ ] Add debug ESD/EMI protection\n - [ ] Export placement file\n\n### Embedded updates\n - [ ] Common 0 to 2 and segment 0 to 2 exchanged\n - [ ] LED IR and LED Red exchanged
 Text Notes -6300 3350 0    50   ~ 0
 De USB-connectoren die wij hier momenteel op voorraad hebben liggen:\n - ZX62D-B-5PA8 Hirose\n - 10104110-0001LF FCI (Geheel SMD, dus het liefste vastklemmen)\n - 629105136821 WUERTH (Geheel SMD, dus het liefste vastklemmen)\n - 10118194-0001L FCI
 Text Notes -6300 2800 0    50   ~ 0
 Change stereo connector?\nIk zal even rondkijken voor 3,5m stereo jack connectoren. De CUI SJ-43514 \nis een connector die ik gisteren ook tegen kwam. Dit is zeker een optie.
 $Comp
-L Mechanical:Fiducial FID?
+L Mechanical:Fiducial FID1
 U 1 1 5F197F67
 P 750 7550
-F 0 "FID?" H 835 7596 50  0000 L CNN
+F 0 "FID1" H 835 7596 50  0000 L CNN
 F 1 "Fiducial" H 835 7505 50  0000 L CNN
 F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 750 7550 50  0001 C CNN
 F 3 "~" H 750 7550 50  0001 C CNN
+F 4 "~" H 0   0   50  0001 C CNN "Link"
+F 5 "SHOULD NOT BE ON BOM" H 0   0   50  0001 C CNN "Notes"
+F 6 "~" H 0   0   50  0001 C CNN "Order number"
+F 7 "~" H 0   0   50  0001 C CNN "Part number"
+F 8 "~" H 0   0   50  0001 C CNN "Supplier"
 	1    750  7550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Fiducial FID?
+L Mechanical:Fiducial FID2
 U 1 1 5F198375
 P 1400 7550
-F 0 "FID?" H 1485 7596 50  0000 L CNN
+F 0 "FID2" H 1485 7596 50  0000 L CNN
 F 1 "Fiducial" H 1485 7505 50  0000 L CNN
 F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 1400 7550 50  0001 C CNN
 F 3 "~" H 1400 7550 50  0001 C CNN
+F 4 "~" H 0   0   50  0001 C CNN "Link"
+F 5 "SHOULD NOT BE ON BOM" H 0   0   50  0001 C CNN "Notes"
+F 6 "~" H 0   0   50  0001 C CNN "Order number"
+F 7 "~" H 0   0   50  0001 C CNN "Part number"
+F 8 "~" H 0   0   50  0001 C CNN "Supplier"
 	1    1400 7550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Fiducial FID?
+L Mechanical:Fiducial FID3
 U 1 1 5F19C717
 P 2050 7550
-F 0 "FID?" H 2135 7596 50  0000 L CNN
+F 0 "FID3" H 2135 7596 50  0000 L CNN
 F 1 "Fiducial" H 2135 7505 50  0000 L CNN
 F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 2050 7550 50  0001 C CNN
 F 3 "~" H 2050 7550 50  0001 C CNN
+F 4 "~" H 0   0   50  0001 C CNN "Link"
+F 5 "SHOULD NOT BE ON BOM" H 0   0   50  0001 C CNN "Notes"
+F 6 "~" H 0   0   50  0001 C CNN "Order number"
+F 7 "~" H 0   0   50  0001 C CNN "Part number"
+F 8 "~" H 0   0   50  0001 C CNN "Supplier"
 	1    2050 7550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Fiducial FID?
+L Mechanical:Fiducial FID4
 U 1 1 5F19C71D
 P 2700 7550
-F 0 "FID?" H 2785 7596 50  0000 L CNN
+F 0 "FID4" H 2785 7596 50  0000 L CNN
 F 1 "Fiducial" H 2785 7505 50  0000 L CNN
 F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 2700 7550 50  0001 C CNN
 F 3 "~" H 2700 7550 50  0001 C CNN
+F 4 "~" H 0   0   50  0001 C CNN "Link"
+F 5 "SHOULD NOT BE ON BOM" H 0   0   50  0001 C CNN "Notes"
+F 6 "~" H 0   0   50  0001 C CNN "Order number"
+F 7 "~" H 0   0   50  0001 C CNN "Part number"
+F 8 "~" H 0   0   50  0001 C CNN "Supplier"
 	1    2700 7550
 	1    0    0    -1  
 $EndComp
 Text Notes -2950 2600 0    50   ~ 0
-To muntz:\n - Test whether LED driver RC delay is really necessary.
+To muntz:\n - Test whether LED driver RC delay is really necessary.\n - LED display decoupling
 Wire Wire Line
 	3350 5050 3550 5050
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR05
 U 1 1 5F71FDE4
 P 3550 4900
-F 0 "#PWR?" H 3550 4750 50  0001 C CNN
+F 0 "#PWR05" H 3550 4750 50  0001 C CNN
 F 1 "+3.3V" V 3550 5050 50  0000 L CNN
 F 2 "" H 3550 4900 50  0001 C CNN
 F 3 "" H 3550 4900 50  0001 C CNN
@@ -7479,28 +7495,17 @@ F5 "LEDOut.Red" O R 9400 5600 50
 F6 "GND" I L 7750 6150 50 
 F7 "PhotoDiodeInternal" O L 7750 5950 50 
 F8 "PhotoDiode" I R 9400 5300 50 
-F9 "5V" I L 7750 4900 50 
+F9 "3.3V" I L 7750 4900 50 
 $EndSheet
 Wire Wire Line
 	7750 4900 7650 4900
 Wire Wire Line
 	7650 4900 7650 4850
 $Comp
-L power:+5V #PWR?
-U 1 1 5F72BE5B
-P 7650 4850
-F 0 "#PWR?" H 7650 4700 50  0001 C CNN
-F 1 "+5V" H 7665 5023 50  0000 C CNN
-F 2 "" H 7650 4850 50  0001 C CNN
-F 3 "" H 7650 4850 50  0001 C CNN
-	1    7650 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR010
 U 1 1 5F72ED18
 P 5700 5700
-F 0 "#PWR?" H 5700 5550 50  0001 C CNN
+F 0 "#PWR010" H 5700 5550 50  0001 C CNN
 F 1 "+3.3V" H 5715 5873 50  0000 C CNN
 F 2 "" H 5700 5700 50  0001 C CNN
 F 3 "" H 5700 5700 50  0001 C CNN
@@ -7512,10 +7517,10 @@ Wire Wire Line
 Wire Wire Line
 	5650 3950 5650 3900
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR08
 U 1 1 5F732AB3
 P 5650 3900
-F 0 "#PWR?" H 5650 3750 50  0001 C CNN
+F 0 "#PWR08" H 5650 3750 50  0001 C CNN
 F 1 "+5V" H 5665 4073 50  0000 C CNN
 F 2 "" H 5650 3900 50  0001 C CNN
 F 3 "" H 5650 3900 50  0001 C CNN
@@ -7523,10 +7528,10 @@ F 3 "" H 5650 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR09
 U 1 1 5F73816E
 P 5650 4400
-F 0 "#PWR?" H 5650 4150 50  0001 C CNN
+F 0 "#PWR09" H 5650 4150 50  0001 C CNN
 F 1 "GND" H 5655 4227 50  0000 C CNN
 F 2 "" H 5650 4400 50  0001 C CNN
 F 3 "" H 5650 4400 50  0001 C CNN
@@ -7538,14 +7543,25 @@ Wire Wire Line
 Wire Wire Line
 	5650 4350 5650 4400
 $Comp
-L power:GND #PWR?
+L power:GND #PWR012
 U 1 1 5F822B24
 P 9900 5650
-F 0 "#PWR?" H 9900 5400 50  0001 C CNN
+F 0 "#PWR012" H 9900 5400 50  0001 C CNN
 F 1 "GND" H 9905 5477 50  0000 C CNN
 F 2 "" H 9900 5650 50  0001 C CNN
 F 3 "" H 9900 5650 50  0001 C CNN
 	1    9900 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EFF6819
+P 7650 4850
+F 0 "#PWR?" H 7650 4700 50  0001 C CNN
+F 1 "+3.3V" H 7665 5023 50  0000 C CNN
+F 2 "" H 7650 4850 50  0001 C CNN
+F 3 "" H 7650 4850 50  0001 C CNN
+	1    7650 4850
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

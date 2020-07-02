@@ -22,13 +22,10 @@ AR Path="/5EB6EB96" Ref="R?"  Part="1"
 AR Path="/5EB36E07/5EB6EB96" Ref="R1"  Part="1" 
 F 0 "R1" V 5800 4150 50  0000 C CNN
 F 1 "4.7MΩ" V 6000 4150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5940 4140 50  0001 C CNN
-F 3 "${KIPRJMOD}/Datasheets/AOA0000C301-1488782.pdf" H 5900 4150 50  0001 C CNN
-F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-6GEYJ475V?qs=YMBIwoNQYdVQTr400ocnrw%3D%3D" H 850 400 50  0001 C CNN "Link"
-F 5 "Sets sensitivity. Value critical. <5%, AEC-Q200" H 850 400 50  0001 C CNN "Notes"
-F 6 "667-ERJ-6GEYJ475V" H 850 400 50  0001 C CNN "Order number"
-F 7 "ERJ-6GEYJ475V" H 850 400 50  0001 C CNN "Part number"
-F 8 "Mouser" H 850 400 50  0001 C CNN "Supplier"
+F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" V 5940 4140 50  0001 C CNN
+F 3 "~" H 5900 4150 50  0001 C CNN
+F 4 "Sets sensitivity. Value critical. <5%, AEC-Q200" H 850 400 50  0001 C CNN "Notes"
+F 5 "Mouser" H 850 400 50  0001 C CNN "Supplier"
 	1    5900 4150
 	0    1    1    0   
 $EndComp
@@ -44,13 +41,10 @@ AR Path="/5EB8EBED" Ref="C?"  Part="1"
 AR Path="/5EB36E07/5EB8EBED" Ref="C2"  Part="1" 
 F 0 "C2" V 6300 4150 50  0000 C CNN
 F 1 "39pF" V 6600 4150 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6488 4000 50  0001 C CNN
-F 3 "${KIPRJMOD}/Datasheets/KEM_C1022_C0G_AUTO_SMD-1093282.pdf" H 6450 4150 50  0001 C CNN
+F 2 "POxiM-uncategorised:C_0805_2012Metric_0603_1608Metric" H 6488 4000 50  0001 C CNN
+F 3 "~" H 6450 4150 50  0001 C CNN
 F 4 "Σδ integrator capacitance. Value should be >39pF and <180pF. C0G, 10%, >6.3V, AEC-Q200." H 0   0   50  0001 C CNN "Notes"
-F 5 "https://nl.mouser.com/ProductDetail/KEMET/C0805C101J5GACAUTO?qs=TJyCevD4CUHiQl2Rbe69SQ%3D%3D" H 0   0   50  0001 C CNN "Link"
-F 6 "80-C0805C101J5GAUTO" H 0   0   50  0001 C CNN "Order number"
-F 7 "C0805C101J5GACAUTO" H 0   0   50  0001 C CNN "Part number"
-F 8 "Mouser" H 0   0   50  0001 C CNN "Supplier"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    6450 4150
 	0    1    1    0   
 $EndComp
@@ -136,26 +130,15 @@ AR Path="/5EBC558F/5EC1EC8F" Ref="C?"  Part="1"
 AR Path="/5EB36E07/5EC1EC8F" Ref="C1"  Part="1" 
 F 0 "C1" H 6250 3150 50  0000 L CNN
 F 1 "100nF" H 6250 3050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6150 3100 50  0001 C CNN
-F 3 "${KIPRJMOD}/Datasheets/GCD21BR72A104KA01-01-1668138.pdf" H 6150 3100 50  0001 C CNN
+F 2 "POxiM-uncategorised:C_0805_2012Metric_0603_1608Metric" H 6150 3100 50  0001 C CNN
+F 3 "~" H 6150 3100 50  0001 C CNN
 F 4 "Decoupling capacitance. Value non-critical. X7R, >10V, AEC-Q200." H 0   0   50  0001 C CNN "Notes"
-F 5 "https://nl.mouser.com/ProductDetail/Murata-Electronics/GCD21BR72A104KA01L?qs=QzBtWTOodeUgjSVpOGt6MA%3D%3D" H 0   0   50  0001 C CNN "Link"
-F 6 "81-GCD21BR72A104KA1L" H 0   0   50  0001 C CNN "Order number"
-F 7 "GCD21BR72A104KA01L" H 0   0   50  0001 C CNN "Part number"
-F 8 "Mouser" H 0   0   50  0001 C CNN "Supplier"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Supplier"
 	1    6150 3100
 	-1   0    0    -1  
 $EndComp
-Text HLabel 6100 3400 0    50   Input ~ 0
-+3.3V
 Text Notes 5075 3575 0    50   ~ 0
 Current
-Wire Bus Line
-	4950 3550 5050 3550
-Wire Bus Line
-	5050 3550 5025 3525
-Wire Bus Line
-	5050 3550 5025 3575
 Text Notes 3750 6450 0    50   ~ 0
 This filter decreases the effect of the jitter in the prediction PWM as a noise\nsource. Furthermore, it limits the amplitude of the fundamental frequency of\nthe PWM fed into the opamp, which decreases nonlinearities in the opamp\ncreating intermodulation distortion and mixing down crosstalk at high\nfrequencies to the band of interest.\n\nAs long as the cutoff lies outside the band of interest, the noise shaping \nthere isn’t significantly affected. However, the more aggresive the filter, the \nlonger it takes for the filtered prediction to catch up to the photodiode \nsignal. As a result, the gain of the integrator must be reduced to prevent \nclipping. This does increase the noise in the band of interest.
 Wire Wire Line
@@ -175,108 +158,90 @@ Wire Bus Line
 Text Notes 3750 6700 0    50   ~ 0
 Filter makes nonlinearities worse because of decreased loopgain. There is\nno advantage to noise, since supply noise is -100dB.
 $Comp
-L Device:Q_NPN_BEC Q?
-U 1 1 5F740B1B
-P 5550 4500
-AR Path="/5EBC562E/5F740B1B" Ref="Q?"  Part="1" 
-AR Path="/5EB36E07/5F740B1B" Ref="Q?"  Part="1" 
-F 0 "Q?" H 5741 4546 50  0000 L CNN
-F 1 "MMBT3904,215" H 5741 4455 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5750 4600 50  0001 C CNN
-F 3 "${KIPRJMOD}/Datasheets/MMBT3904-1599187.pdf" H 5550 4500 50  0001 C CNN
-F 4 "https://nl.mouser.com/ProductDetail/Nexperia/MMBT3904215?qs=LOCUfHb8d9s%2FW6hzAJGDbw%3D%3D" H 2050 -1450 50  0001 C CNN "Link"
-F 5 "Any general purpose NPN transistor will do, but check gain at 100mA" H 2050 -1450 50  0001 C CNN "Notes"
-F 6 "771-MMBT3904T/R" H 2050 -1450 50  0001 C CNN "Order number"
-F 7 "MMBT3904,215" H 2050 -1450 50  0001 C CNN "Part number"
-F 8 "Mouser" H 2050 -1450 50  0001 C CNN "Supplier"
-	1    5550 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5300 4500 5350 4500
-$Comp
 L Device:R_US R?
 U 1 1 5F743D52
-P 5150 4500
+P 4850 4500
 AR Path="/5EBC342A/5F743D52" Ref="R?"  Part="1" 
-AR Path="/5EB36E07/5F743D52" Ref="R?"  Part="1" 
-F 0 "R?" V 4954 4500 50  0000 C CNN
-F 1 "100kΩ" V 5045 4500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 5150 4500 50  0001 C CNN
-F 3 "" H 5150 4500 50  0001 C CNN
-F 4 "" H -600 1300 50  0001 C CNN "Link"
-F 5 "" H -600 1300 50  0001 C CNN "Notes"
-F 6 "" H -600 1300 50  0001 C CNN "Order number"
-F 7 "" H -600 1300 50  0001 C CNN "Part number"
-F 8 "" H -600 1300 50  0001 C CNN "Supplier"
-	1    5150 4500
-	0    -1   -1   0   
+AR Path="/5EB36E07/5F743D52" Ref="R3"  Part="1" 
+F 0 "R3" V 4654 4500 50  0000 C CNN
+F 1 "100kΩ" V 4745 4500 50  0000 C CNN
+F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 4850 4500 50  0001 C CNN
+F 3 "~" H 4850 4500 50  0001 C CNN
+F 4 "DAC buffer bias control resistor. Value critical. <5%, AEC-Q200" H 0   0   50  0001 C CNN "Notes"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Supplier"
+	1    4850 4500
+	0    -1   1    0   
 $EndComp
-Text HLabel 4950 4500 0    50   Input ~ 0
+Text HLabel 4650 4500 0    50   Input ~ 0
 Control.~Prediction
 Wire Wire Line
-	4950 4500 5000 4500
-Wire Wire Line
-	5650 4700 5650 4750
-Text HLabel 5600 4750 0    50   Input ~ 0
+	4650 4500 4700 4500
+Text HLabel 5350 4650 0    50   Input ~ 0
 GND
 Wire Wire Line
-	5650 4750 5600 4750
-Text HLabel 4950 4150 0    50   Input ~ 0
-+3.3V
-Wire Wire Line
-	5650 4150 5650 4300
-Wire Wire Line
-	5000 4150 4950 4150
+	5400 4650 5350 4650
 $Comp
 L Device:R_US R?
 U 1 1 5F74C543
-P 5150 4150
+P 5400 4400
 AR Path="/5EBC342A/5F74C543" Ref="R?"  Part="1" 
-AR Path="/5EB36E07/5F74C543" Ref="R?"  Part="1" 
-F 0 "R?" V 4954 4150 50  0000 C CNN
-F 1 "100kΩ" V 5045 4150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 5150 4150 50  0001 C CNN
-F 3 "" H 5150 4150 50  0001 C CNN
-F 4 "" H -600 950 50  0001 C CNN "Link"
-F 5 "" H -600 950 50  0001 C CNN "Notes"
-F 6 "" H -600 950 50  0001 C CNN "Order number"
-F 7 "" H -600 950 50  0001 C CNN "Part number"
-F 8 "" H -600 950 50  0001 C CNN "Supplier"
-	1    5150 4150
-	0    -1   -1   0   
+AR Path="/5EB36E07/5F74C543" Ref="R4"  Part="1" 
+F 0 "R4" H 5450 4450 50  0000 L CNN
+F 1 "100kΩ" H 5450 4350 50  0000 L CNN
+F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 5400 4400 50  0001 C CNN
+F 3 "~" H 5400 4400 50  0001 C CNN
+F 4 "DAC buffer bias control resistor. Value critical. <5%, AEC-Q200" H 0   0   50  0001 C CNN "Notes"
+F 5 "Mouser" H 0   0   50  0001 C CNN "Supplier"
+	1    5400 4400
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5300 4150 5650 4150
-Connection ~ 5650 4150
-Wire Wire Line
-	5650 4150 5750 4150
 Connection ~ 6100 4150
 Connection ~ 6100 3600
-Text Notes 5075 4175 0    50   ~ 10
-DNP
-Text Notes 4700 3950 0    50   ~ 0
-For debugging\nrisetime issues
-Wire Notes Line
-	5000 4050 5000 4400
-Wire Notes Line
-	5000 4400 5350 4400
-Wire Notes Line
-	5350 4400 5350 4050
-Wire Notes Line
-	5350 4050 5000 4050
-Wire Bus Line
-	4650 4000 5300 4000
-Wire Bus Line
-	5300 4000 5300 3750
-Wire Bus Line
-	5300 3750 4650 3750
-Wire Bus Line
-	4650 3750 4650 4000
-Wire Notes Line
-	5300 4000 5350 4050
-Text Notes 5650 4950 0    50   ~ 0
-ToDo: rise time of ~~0.5µs confirmed by\nsimulation, give theoretical guarantees.
-Text Notes 4450 4950 0    50   ~ 0
+Text Notes 5150 4900 0    50   ~ 0
+ToDo: rise time of ~~0.5µs, fall time of 2µs confirmed by\nsimulation, give theoretical guarantees.
+Text Notes 3950 4750 0    50   ~ 0
 Resistor dimensioned for\n-100dB voltage ripple
+Text HLabel 6100 3400 0    50   Input ~ 0
+GND
+Wire Bus Line
+	4950 3550 4975 3525
+Wire Bus Line
+	4950 3550 4975 3575
+Wire Bus Line
+	5050 3550 4950 3550
+$Comp
+L Device:Q_PNP_BEC Q?
+U 1 1 5FA8D1B6
+P 5050 4250
+AR Path="/5EBC562E/5FA8D1B6" Ref="Q?"  Part="1" 
+AR Path="/5EB36E07/5FA8D1B6" Ref="Q7"  Part="1" 
+F 0 "Q7" V 5400 4250 50  0000 C CNN
+F 1 "PMBT3906,215" V 5300 4250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5250 4350 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/PMBT3906-1320436.pdf" H 5050 4250 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Nexperia/PMBT3906215?qs=LOCUfHb8d9s%252BlCdaN%2FFG0g%3D%3D" H -5050 2200 50  0001 C CNN "Link"
+F 5 "Any general purpose PNP transistor will do, but check gain at 100mA" H -5050 2200 50  0001 C CNN "Notes"
+F 6 "771-PMBT3906-T/R" H -5050 2200 50  0001 C CNN "Order number"
+F 7 "PMBT3906,215" H -5050 2200 50  0001 C CNN "Part number"
+F 8 "Mouser" H -5050 2200 50  0001 C CNN "Supplier"
+	1    5050 4250
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5000 4500 5050 4500
+Wire Wire Line
+	5050 4500 5050 4450
+Text HLabel 4800 4150 0    50   Input ~ 0
++3.3V
+Wire Wire Line
+	4800 4150 4850 4150
+Wire Wire Line
+	5400 4250 5400 4150
+Wire Wire Line
+	5400 4550 5400 4650
+Connection ~ 5400 4150
+Wire Wire Line
+	5400 4150 5750 4150
+Wire Wire Line
+	5250 4150 5400 4150
 $EndSCHEMATC
