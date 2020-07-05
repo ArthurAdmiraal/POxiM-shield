@@ -39,7 +39,7 @@ AR Path="/5EBC5C8E/5EC1D126" Ref="D?"  Part="1"
 AR Path="/5EBC342A/5EC1D126" Ref="D6"  Part="1" 
 F 0 "D6" V 6250 1650 50  0000 R CNN
 F 1 "Schottky" V 6295 1830 50  0001 L CNN
-F 2 "Diode_SMD:D_SOD-323" H 6250 1750 50  0001 C CNN
+F 2 "POxiM-uncategorised:D_SOD-323" H 6250 1750 50  0001 C CNN
 F 3 "${KIPRJMOD}/Datasheets/Infineon-BAS3010ASERIES-DS-v01_01-en-1226012.pdf" H 6250 1750 50  0001 C CNN
 F 4 "726-BAS3010A03WE632" H 800 -1700 50  0001 C CNN "Order number"
 F 5 "BAS3010A03WE6327XT" H 800 -1700 50  0001 C CNN "Part number"
@@ -220,22 +220,6 @@ Wire Wire Line
 Text HLabel 7400 3400 2    50   Output ~ 0
 LEDOut.Red
 $Comp
-L Device:C_Small C?
-U 1 1 5F00667D
-P 6800 3600
-AR Path="/5EBC558F/5F00667D" Ref="C?"  Part="1" 
-AR Path="/5EB36E07/5F00667D" Ref="C?"  Part="1" 
-AR Path="/5EBC342A/5F00667D" Ref="C6"  Part="1" 
-F 0 "C6" H 6700 3650 50  0000 R CNN
-F 1 "100nF" H 6700 3550 50  0000 R CNN
-F 2 "POxiM-uncategorised:C_0805_2012Metric_0603_1608Metric" H 6800 3600 50  0001 C CNN
-F 3 "~" H 6800 3600 50  0001 C CNN
-F 4 "Decoupling capacitance. Value non-critical. X7R, >10V, AEC-Q200." H 850 -1050 50  0001 C CNN "Notes"
-F 5 "Mouser" H 850 -1050 50  0001 C CNN "Supplier"
-	1    6800 3600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_US R24
 U 1 1 5F006688
 P 6800 3150
@@ -268,7 +252,7 @@ AR Path="/5EBC5C8E/5F033FBE" Ref="D?"  Part="1"
 AR Path="/5EBC342A/5F033FBE" Ref="D3"  Part="1" 
 F 0 "D3" H 6400 3500 50  0000 C CNN
 F 1 "Schottky" V 6445 3480 50  0001 L CNN
-F 2 "Diode_SMD:D_SOD-323" H 6400 3400 50  0001 C CNN
+F 2 "POxiM-uncategorised:D_SOD-323" H 6400 3400 50  0001 C CNN
 F 3 "${KIPRJMOD}/Datasheets/Infineon-BAS3010ASERIES-DS-v01_01-en-1226012.pdf" H 6400 3400 50  0001 C CNN
 F 4 "726-BAS3010A03WE632" H 1550 -700 50  0001 C CNN "Order number"
 F 5 "BAS3010A03WE6327XT" H 1550 -700 50  0001 C CNN "Part number"
@@ -295,7 +279,7 @@ AR Path="/5EBC5C8E/5F6BB73D" Ref="TP?"  Part="1"
 AR Path="/5EBC342A/5F6BB73D" Ref="TP5"  Part="1" 
 F 0 "TP5" H 7258 1568 50  0000 L CNN
 F 1 "PhotoDiode" H 7258 1477 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7400 1450 50  0001 C CNN
+F 2 "POxiM-uncategorised:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7400 1450 50  0001 C CNN
 F 3 "~" H 7400 1450 50  0001 C CNN
 F 4 "~" H 0   0   50  0001 C CNN "Link"
 F 5 "SHOULD NOT BE ON BOM" H 0   0   50  0001 C CNN "Notes"
@@ -324,7 +308,7 @@ AR Path="/5EBC5C8E/5F78D93A" Ref="D?"  Part="1"
 AR Path="/5EBC342A/5F78D93A" Ref="D5"  Part="1" 
 F 0 "D5" V 6450 1800 50  0000 L CNN
 F 1 "Schottky" V 6495 1830 50  0001 L CNN
-F 2 "Diode_SMD:D_SOD-323" H 6450 1750 50  0001 C CNN
+F 2 "POxiM-uncategorised:D_SOD-323" H 6450 1750 50  0001 C CNN
 F 3 "${KIPRJMOD}/Datasheets/Infineon-BAS3010ASERIES-DS-v01_01-en-1226012.pdf" H 6450 1750 50  0001 C CNN
 F 4 "726-BAS3010A03WE632" H 1000 -1700 50  0001 C CNN "Order number"
 F 5 "BAS3010A03WE6327XT" H 1000 -1700 50  0001 C CNN "Part number"
@@ -334,15 +318,13 @@ F 8 "https://nl.mouser.com/ProductDetail/Infineon-Technologies/BAS3010A03WE6327X
 	1    6450 1750
 	0    1    -1   0   
 $EndComp
-Text HLabel 6200 1950 0    50   Input ~ 0
-GND
 Wire Wire Line
 	6450 1950 6450 1900
 Wire Wire Line
 	6450 1600 6450 1550
 Wire Wire Line
 	6250 1600 6250 1550
-Text Notes 4300 2000 0    50   ~ 0
+Text Notes 4100 2000 0    50   ~ 0
 Over- and undervoltage protection.\nThis topology prevents leakage, since\nopamp will keep voltage over the diodes\nto 0V during regular operation.
 Wire Notes Line
 	6650 1100 6750 1300
@@ -365,7 +347,7 @@ AR Path="/5EBC5C8E/5F7D3AD8" Ref="TP?"  Part="1"
 AR Path="/5EBC342A/5F7D3AD8" Ref="TP6"  Part="1" 
 F 0 "TP6" H 7258 3418 50  0000 L CNN
 F 1 "LED.Red" H 7258 3327 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7400 3300 50  0001 C CNN
+F 2 "POxiM-uncategorised:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7400 3300 50  0001 C CNN
 F 3 "~" H 7400 3300 50  0001 C CNN
 F 4 "~" H 0   0   50  0001 C CNN "Link"
 F 5 "SHOULD NOT BE ON BOM" H 0   0   50  0001 C CNN "Notes"
@@ -393,7 +375,7 @@ AR Path="/5EBC5C8E/5F807DA2" Ref="TP?"  Part="1"
 AR Path="/5EBC342A/5F807DA2" Ref="TP8"  Part="1" 
 F 0 "TP8" H 7258 4968 50  0000 L CNN
 F 1 "LED.IR" H 7258 4877 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7400 4850 50  0001 C CNN
+F 2 "POxiM-uncategorised:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7400 4850 50  0001 C CNN
 F 3 "~" H 7400 4850 50  0001 C CNN
 F 4 "~" H 0   0   50  0001 C CNN "Link"
 F 5 "SHOULD NOT BE ON BOM" H 0   0   50  0001 C CNN "Notes"
@@ -479,7 +461,7 @@ AR Path="/5EBC5C8E/5F93FF9F" Ref="D?"  Part="1"
 AR Path="/5EBC342A/5F93FF9F" Ref="D1"  Part="1" 
 F 0 "D1" V 6000 3550 50  0000 R CNN
 F 1 "Schottky" V 6045 3680 50  0001 L CNN
-F 2 "Diode_SMD:D_SOD-323" H 6000 3600 50  0001 C CNN
+F 2 "POxiM-uncategorised:D_SOD-323" H 6000 3600 50  0001 C CNN
 F 3 "${KIPRJMOD}/Datasheets/Infineon-BAS3010ASERIES-DS-v01_01-en-1226012.pdf" H 6000 3600 50  0001 C CNN
 F 4 "726-BAS3010A03WE632" H 1150 -500 50  0001 C CNN "Order number"
 F 5 "BAS3010A03WE6327XT" H 1150 -500 50  0001 C CNN "Part number"
@@ -553,22 +535,6 @@ GND
 Wire Wire Line
 	7400 4950 7200 4950
 $Comp
-L Device:C_Small C?
-U 1 1 5F95DC9A
-P 6800 5200
-AR Path="/5EBC558F/5F95DC9A" Ref="C?"  Part="1" 
-AR Path="/5EB36E07/5F95DC9A" Ref="C?"  Part="1" 
-AR Path="/5EBC342A/5F95DC9A" Ref="C12"  Part="1" 
-F 0 "C12" H 6700 5250 50  0000 R CNN
-F 1 "100nF" H 6700 5150 50  0000 R CNN
-F 2 "POxiM-uncategorised:C_0805_2012Metric_0603_1608Metric" H 6800 5200 50  0001 C CNN
-F 3 "~" H 6800 5200 50  0001 C CNN
-F 4 "Decoupling capacitance. Value non-critical. X7R, >10V, AEC-Q200." H 850 550 50  0001 C CNN "Notes"
-F 5 "Mouser" H 850 550 50  0001 C CNN "Supplier"
-	1    6800 5200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_US R25
 U 1 1 5F95DCA5
 P 6800 4700
@@ -601,7 +567,7 @@ AR Path="/5EBC5C8E/5F95DCB7" Ref="D?"  Part="1"
 AR Path="/5EBC342A/5F95DCB7" Ref="D4"  Part="1" 
 F 0 "D4" H 6400 5050 50  0000 C CNN
 F 1 "Schottky" V 6445 5030 50  0001 L CNN
-F 2 "Diode_SMD:D_SOD-323" H 6400 4950 50  0001 C CNN
+F 2 "POxiM-uncategorised:D_SOD-323" H 6400 4950 50  0001 C CNN
 F 3 "${KIPRJMOD}/Datasheets/Infineon-BAS3010ASERIES-DS-v01_01-en-1226012.pdf" H 6400 4950 50  0001 C CNN
 F 4 "726-BAS3010A03WE632" H 1550 850 50  0001 C CNN "Order number"
 F 5 "BAS3010A03WE6327XT" H 1550 850 50  0001 C CNN "Part number"
@@ -687,7 +653,7 @@ AR Path="/5EBC5C8E/5F95DCF2" Ref="D?"  Part="1"
 AR Path="/5EBC342A/5F95DCF2" Ref="D2"  Part="1" 
 F 0 "D2" V 6000 5100 50  0000 R CNN
 F 1 "Schottky" V 6045 5230 50  0001 L CNN
-F 2 "Diode_SMD:D_SOD-323" H 6000 5150 50  0001 C CNN
+F 2 "POxiM-uncategorised:D_SOD-323" H 6000 5150 50  0001 C CNN
 F 3 "${KIPRJMOD}/Datasheets/Infineon-BAS3010ASERIES-DS-v01_01-en-1226012.pdf" H 6000 5150 50  0001 C CNN
 F 4 "726-BAS3010A03WE632" H 1150 1050 50  0001 C CNN "Order number"
 F 5 "BAS3010A03WE6327XT" H 1150 1050 50  0001 C CNN "Part number"
@@ -729,15 +695,15 @@ Wire Notes Line
 Wire Notes Line
 	6700 1850 6700 1650
 Wire Bus Line
-	4250 1650 5900 1650
+	4050 1650 5700 1650
 Wire Bus Line
-	5900 1650 5900 2050
+	5700 1650 5700 2050
 Wire Bus Line
-	5900 2050 4250 2050
+	5700 2050 4050 2050
 Wire Bus Line
-	4250 2050 4250 1650
+	4050 2050 4050 1650
 Wire Notes Line
-	5900 1650 6700 1650
+	5700 1650 6700 1650
 Wire Notes Line
 	7100 4850 7100 4550
 Wire Notes Line
@@ -800,8 +766,8 @@ AR Path="/5EBC558F/5FAAC1CB" Ref="TP?"  Part="1"
 AR Path="/5EBC5C8E/5FAAC1CB" Ref="TP?"  Part="1" 
 AR Path="/5EBC342A/5FAAC1CB" Ref="TP7"  Part="1" 
 F 0 "TP7" H 7142 4068 50  0000 R CNN
-F 1 "GND" H 7142 3977 50  0000 R CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7400 3950 50  0001 C CNN
+F 1 "GNDA" H 7142 3977 50  0000 R CNN
+F 2 "POxiM-uncategorised:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7400 3950 50  0001 C CNN
 F 3 "~" H 7400 3950 50  0001 C CNN
 F 4 "~" H 0   0   50  0001 C CNN "Link"
 F 5 "SHOULD NOT BE ON BOM" H 0   0   50  0001 C CNN "Notes"
@@ -823,4 +789,36 @@ Text HLabel 5600 2700 0    50   Input ~ 0
 3.3V
 Text HLabel 5950 2500 0    50   Input ~ 0
 3.3V
+$Comp
+L Device:C_Small C?
+U 1 1 5F0B45F4
+P 6800 3600
+AR Path="/5EBC558F/5F0B45F4" Ref="C?"  Part="1" 
+AR Path="/5EBC342A/5F0B45F4" Ref="C6"  Part="1" 
+F 0 "C6" H 6900 3650 50  0000 L CNN
+F 1 "2.2µF" H 6900 3550 50  0000 L CNN
+F 2 "POxiM-uncategorised:C_0805_2012Metric_0603_1608Metric" H 6800 3600 50  0001 C CNN
+F 3 "~" H 6800 3600 50  0001 C CNN
+F 4 "Mouser" H 2100 950 50  0001 C CNN "Supplier"
+F 5 "5V bulk decoupling capacitance. Value non-critical. X7R, >6.3V, AEC-Q200" H 2100 950 50  0001 C CNN "Notes"
+	1    6800 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F0B6FB6
+P 6800 5200
+AR Path="/5EBC558F/5F0B6FB6" Ref="C?"  Part="1" 
+AR Path="/5EBC342A/5F0B6FB6" Ref="C12"  Part="1" 
+F 0 "C12" H 6900 5250 50  0000 L CNN
+F 1 "2.2µF" H 6900 5150 50  0000 L CNN
+F 2 "POxiM-uncategorised:C_0805_2012Metric_0603_1608Metric" H 6800 5200 50  0001 C CNN
+F 3 "~" H 6800 5200 50  0001 C CNN
+F 4 "Mouser" H 2100 2550 50  0001 C CNN "Supplier"
+F 5 "5V bulk decoupling capacitance. Value non-critical. X7R, >6.3V, AEC-Q200" H 2100 2550 50  0001 C CNN "Notes"
+	1    6800 5200
+	-1   0    0    -1  
+$EndComp
+Text HLabel 6200 1950 0    50   Input ~ 0
+GND
 $EndSCHEMATC

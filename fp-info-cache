@@ -1,4 +1,4 @@
-15748591532107005
+15754967871452005
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -62377,6 +62377,27 @@ capacitor
 2
 2
 POxiM-uncategorised
+D_SOD-123
+SOD-123
+SOD-123
+0
+2
+2
+POxiM-uncategorised
+D_SOD-323
+SOD-323
+SOD-323
+0
+2
+2
+POxiM-uncategorised
+Fiducial_1mm_Mask2mm
+Circular Fiducial, 1mm bare copper, 2mm soldermask opening (Level A)
+fiducial
+0
+1
+0
+POxiM-uncategorised
 Finger-CableConnection
 
 
@@ -62502,6 +62523,13 @@ Tab_MouseBites_2.5mm
 0
 0
 0
+POxiM-uncategorised
+TestPoint_THTPad_D1.0mm_Drill0.5mm
+THT pad as test Point, diameter 1.0mm, hole diameter 0.5mm
+test point THT pad
+0
+1
+1
 POxiM-uncategorised
 USBA_87583-2010RLF
 

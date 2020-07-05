@@ -81,9 +81,9 @@ Text Label 7150 3550 2    50   ~ 0
 SWIM
 Text Label 7150 4050 2    50   ~ 0
 ADC_in
-Text Label 4900 3850 0    50   ~ 0
-LED_R
 Text Label 4900 3950 0    50   ~ 0
+LED_R
+Text Label 4900 3850 0    50   ~ 0
 LED_IR
 Text Notes 7200 4050 0    50   ~ 0
 AIN6
@@ -106,23 +106,21 @@ Entry Wire Line
 	4700 3650 4800 3550
 Text HLabel 4450 4400 0    50   Output ~ 0
 Segment[0..6]
-Text Label 4900 4250 0    50   ~ 0
-Segment0
 Text Label 7150 3650 2    50   ~ 0
+Segment0
+Text Label 4900 4250 0    50   ~ 0
 Segment1
 Text Label 7150 3750 2    50   ~ 0
 Segment2
-Text Label 4900 3550 0    50   ~ 0
-Segment3
-Text Label 4900 3650 0    50   ~ 0
-Segment4
-Text Label 4900 4050 0    50   ~ 0
-Segment5
 Text Label 4900 4150 0    50   ~ 0
+Segment3
+Text Label 4900 3550 0    50   ~ 0
+Segment5
+Text Label 4900 3650 0    50   ~ 0
 Segment6
-Text Label 4900 3150 0    50   ~ 0
-Common0
 Text Label 4900 3250 0    50   ~ 0
+Common0
+Text Label 4900 3150 0    50   ~ 0
 Common1
 Text HLabel 9100 3450 2    50   Output ~ 0
 Common[0..2]
@@ -136,9 +134,9 @@ Wire Wire Line
 	6600 3950 7600 3950
 Text HLabel 7600 3550 2    50   BiDi ~ 0
 SWIM
-Text HLabel 4250 3850 0    50   Output ~ 0
-LED.Red
 Text HLabel 4250 3950 0    50   Output ~ 0
+LED.Red
+Text HLabel 4250 3850 0    50   Output ~ 0
 LED.IR
 Text HLabel 7600 3950 2    50   Output ~ 0
 UART1.TX
@@ -332,4 +330,6 @@ Wire Bus Line
 	8950 3500 8950 3750
 Wire Bus Line
 	4700 3650 4700 4350
+Text Label 4900 4050 0    50   ~ 0
+Segment4
 $EndSCHEMATC

@@ -277,25 +277,25 @@ Segment[0..6]
 $Comp
 L Device:Q_NPN_BEC Q2
 U 1 1 5EF8FFAC
-P 6050 6050
-F 0 "Q2" H 6241 6096 50  0000 L CNN
-F 1 "MMBT3904,215" H 6241 6005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6250 6150 50  0001 C CNN
-F 3 "${KIPRJMOD}/Datasheets/MMBT3904-1599187.pdf" H 6050 6050 50  0001 C CNN
-F 4 "https://nl.mouser.com/ProductDetail/Nexperia/MMBT3904215?qs=LOCUfHb8d9s%2FW6hzAJGDbw%3D%3D" H 0   100 50  0001 C CNN "Link"
-F 5 "Any general purpose NPN transistor will do, but check gain at 100mA" H 0   100 50  0001 C CNN "Notes"
-F 6 "771-MMBT3904T/R" H 0   100 50  0001 C CNN "Order number"
-F 7 "MMBT3904,215" H 0   100 50  0001 C CNN "Part number"
-F 8 "Mouser" H 0   100 50  0001 C CNN "Supplier"
-	1    6050 6050
+P 8600 6050
+F 0 "Q2" H 8791 6096 50  0000 L CNN
+F 1 "MMBT3904,215" H 8791 6005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8800 6150 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/MMBT3904-1599187.pdf" H 8600 6050 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Nexperia/MMBT3904215?qs=LOCUfHb8d9s%2FW6hzAJGDbw%3D%3D" H 2550 100 50  0001 C CNN "Link"
+F 5 "Any general purpose NPN transistor will do, but check gain at 100mA" H 2550 100 50  0001 C CNN "Notes"
+F 6 "771-MMBT3904T/R" H 2550 100 50  0001 C CNN "Order number"
+F 7 "MMBT3904,215" H 2550 100 50  0001 C CNN "Part number"
+F 8 "Mouser" H 2550 100 50  0001 C CNN "Supplier"
+	1    8600 6050
 	1    0    0    -1  
 $EndComp
-Text HLabel 6100 6300 0    50   Input ~ 0
+Text HLabel 8650 6300 0    50   Input ~ 0
 GND
 Wire Wire Line
-	6100 6300 6150 6300
+	8650 6300 8700 6300
 Wire Wire Line
-	6150 6300 6150 6250
+	8700 6300 8700 6250
 Text HLabel 3550 6300 0    50   Input ~ 0
 GND
 Wire Wire Line
@@ -842,17 +842,17 @@ Wire Bus Line
 $Comp
 L Device:R_US R15
 U 1 1 5EE7F89C
-P 5650 6050
+P 8200 6050
 AR Path="/5EBC562E/5EE7F89C" Ref="R15"  Part="1" 
 AR Path="/5EBC558F/5EE7F89C" Ref="R?"  Part="1" 
 AR Path="/5EBC342A/5EE7F89C" Ref="R?"  Part="1" 
-F 0 "R15" V 5450 6050 50  0000 C CNN
-F 1 "3.3kΩ" V 5550 6050 50  0000 C CNN
-F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 5650 6050 50  0001 C CNN
-F 3 "~" H 5650 6050 50  0001 C CNN
-F 4 "Sets transistor base current. Value critical. <5%, AEC-Q200" H 0   100 50  0001 C CNN "Notes"
-F 5 "Mouser" H 0   100 50  0001 C CNN "Supplier"
-	1    5650 6050
+F 0 "R15" V 8000 6050 50  0000 C CNN
+F 1 "3.3kΩ" V 8100 6050 50  0000 C CNN
+F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 8200 6050 50  0001 C CNN
+F 3 "~" H 8200 6050 50  0001 C CNN
+F 4 "Sets transistor base current. Value critical. <5%, AEC-Q200" H 2550 100 50  0001 C CNN "Notes"
+F 5 "Mouser" H 2550 100 50  0001 C CNN "Supplier"
+	1    8200 6050
 	0    1    1    0   
 $EndComp
 $Comp
@@ -891,7 +891,7 @@ Common1
 Wire Wire Line
 	5150 6050 5500 6050
 Wire Notes Line
-	600  3700 1450 3850
+	600  3700 1600 3750
 Wire Bus Line
 	4150 3300 600  3300
 Wire Bus Line
@@ -913,45 +913,45 @@ Wire Wire Line
 Text Label 7700 6050 0    50   ~ 0
 Common2
 Wire Wire Line
-	8350 6050 8400 6050
+	5800 6050 5850 6050
 $Comp
 L Device:R_US R16
 U 1 1 5EE83BE3
-P 8200 6050
+P 5650 6050
 AR Path="/5EBC562E/5EE83BE3" Ref="R16"  Part="1" 
 AR Path="/5EBC558F/5EE83BE3" Ref="R?"  Part="1" 
 AR Path="/5EBC342A/5EE83BE3" Ref="R?"  Part="1" 
-F 0 "R16" V 8000 6050 50  0000 C CNN
-F 1 "3.3kΩ" V 8100 6050 50  0000 C CNN
-F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 8200 6050 50  0001 C CNN
-F 3 "~" H 8200 6050 50  0001 C CNN
-F 4 "Sets transistor base current. Value critical. <5%, AEC-Q200" H 0   100 50  0001 C CNN "Notes"
-F 5 "Mouser" H 0   100 50  0001 C CNN "Supplier"
-	1    8200 6050
+F 0 "R16" V 5450 6050 50  0000 C CNN
+F 1 "3.3kΩ" V 5550 6050 50  0000 C CNN
+F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 5650 6050 50  0001 C CNN
+F 3 "~" H 5650 6050 50  0001 C CNN
+F 4 "Sets transistor base current. Value critical. <5%, AEC-Q200" H -2550 100 50  0001 C CNN "Notes"
+F 5 "Mouser" H -2550 100 50  0001 C CNN "Supplier"
+	1    5650 6050
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:Q_NPN_BEC Q3
 U 1 1 5EF9091D
-P 8600 6050
-F 0 "Q3" H 8791 6096 50  0000 L CNN
-F 1 "MMBT3904,215" H 8791 6005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8800 6150 50  0001 C CNN
-F 3 "${KIPRJMOD}/Datasheets/MMBT3904-1599187.pdf" H 8600 6050 50  0001 C CNN
-F 4 "https://nl.mouser.com/ProductDetail/Nexperia/MMBT3904215?qs=LOCUfHb8d9s%2FW6hzAJGDbw%3D%3D" H 0   100 50  0001 C CNN "Link"
-F 5 "Any general purpose NPN transistor will do, but check gain at 100mA" H 0   100 50  0001 C CNN "Notes"
-F 6 "771-MMBT3904T/R" H 0   100 50  0001 C CNN "Order number"
-F 7 "MMBT3904,215" H 0   100 50  0001 C CNN "Part number"
-F 8 "Mouser" H 0   100 50  0001 C CNN "Supplier"
-	1    8600 6050
+P 6050 6050
+F 0 "Q3" H 6241 6096 50  0000 L CNN
+F 1 "MMBT3904,215" H 6241 6005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6250 6150 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/MMBT3904-1599187.pdf" H 6050 6050 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Nexperia/MMBT3904215?qs=LOCUfHb8d9s%2FW6hzAJGDbw%3D%3D" H -2550 100 50  0001 C CNN "Link"
+F 5 "Any general purpose NPN transistor will do, but check gain at 100mA" H -2550 100 50  0001 C CNN "Notes"
+F 6 "771-MMBT3904T/R" H -2550 100 50  0001 C CNN "Order number"
+F 7 "MMBT3904,215" H -2550 100 50  0001 C CNN "Part number"
+F 8 "Mouser" H -2550 100 50  0001 C CNN "Supplier"
+	1    6050 6050
 	1    0    0    -1  
 $EndComp
-Text HLabel 8650 6300 0    50   Input ~ 0
+Text HLabel 6100 6300 0    50   Input ~ 0
 GND
 Wire Wire Line
-	8650 6300 8700 6300
+	6100 6300 6150 6300
 Wire Wire Line
-	8700 6300 8700 6250
+	6150 6300 6150 6250
 Wire Wire Line
 	9900 1950 9850 1950
 Wire Wire Line
@@ -1018,12 +1018,8 @@ Text Label 9150 1950 0    50   ~ 0
 Common2
 Wire Wire Line
 	9500 1950 9150 1950
-Text Label 9150 1500 0    50   ~ 0
-Common1
 Wire Wire Line
 	9500 1500 9150 1500
-Text Label 9150 1050 0    50   ~ 0
-Common0
 Wire Wire Line
 	9500 1050 9150 1050
 Wire Notes Line
@@ -1668,7 +1664,7 @@ $EndComp
 Wire Wire Line
 	3250 6050 3300 6050
 Wire Wire Line
-	5800 6050 5850 6050
+	8350 6050 8400 6050
 $Comp
 L Device:R_US R5
 U 1 1 5F1C28E6
@@ -1939,8 +1935,8 @@ L Device:C_Small C?
 U 1 1 5EFEFDD8
 P 1850 4000
 AR Path="/5EBC558F/5EFEFDD8" Ref="C?"  Part="1" 
-AR Path="/5EBC562E/5EFEFDD8" Ref="C?"  Part="1" 
-F 0 "C?" H 1950 4050 50  0000 L CNN
+AR Path="/5EBC562E/5EFEFDD8" Ref="C11"  Part="1" 
+F 0 "C11" H 1950 4050 50  0000 L CNN
 F 1 "100nF" H 1950 3950 50  0000 L CNN
 F 2 "POxiM-uncategorised:C_0805_2012Metric_0603_1608Metric" H 1850 4000 50  0001 C CNN
 F 3 "~" H 1850 4000 50  0001 C CNN
@@ -1964,6 +1960,14 @@ Wire Wire Line
 	1800 4200 1850 4200
 Wire Wire Line
 	1850 4200 1850 4100
+Wire Notes Line
+	1900 3850 1900 3750
+Wire Notes Line
+	1900 3750 1600 3750
+Wire Notes Line
+	1600 3750 1600 3850
+Wire Notes Line
+	1600 3850 1900 3850
 Wire Bus Line
 	9050 800  9050 1850
 Wire Bus Line
@@ -1974,4 +1978,8 @@ Wire Bus Line
 	1300 4250 1300 5100
 Wire Bus Line
 	3250 4200 10850 4200
+Text Label 9150 1050 0    50   ~ 0
+Common1
+Text Label 9150 1500 0    50   ~ 0
+Common0
 $EndSCHEMATC
