@@ -23,9 +23,12 @@ AR Path="/5EB36E07/5EB6EB96" Ref="R1"  Part="1"
 F 0 "R1" V 5800 4150 50  0000 C CNN
 F 1 "4.7MΩ" V 6000 4150 50  0000 C CNN
 F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" V 5940 4140 50  0001 C CNN
-F 3 "~" H 5900 4150 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/AOA0000C301-1488782.pdf" H 5900 4150 50  0001 C CNN
 F 4 "Sets sensitivity. Value critical. <5%, AEC-Q200" H 850 400 50  0001 C CNN "Notes"
 F 5 "Mouser" H 850 400 50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ475V?qs=JjxTDIFmKPRhEE1zbsvtmQ%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "667-ERJ-3GEYJ475V" H 0   0   50  0001 C CNN "Order number"
+F 8 "ERJ-3GEYJ475V" H 0   0   50  0001 C CNN "Part number"
 	1    5900 4150
 	0    1    1    0   
 $EndComp
@@ -42,9 +45,12 @@ AR Path="/5EB36E07/5EB8EBED" Ref="C2"  Part="1"
 F 0 "C2" V 6300 4150 50  0000 C CNN
 F 1 "39pF" V 6600 4150 50  0000 C CNN
 F 2 "POxiM-uncategorised:C_0805_2012Metric_0603_1608Metric" H 6488 4000 50  0001 C CNN
-F 3 "~" H 6450 4150 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/murata_03122018_GCM_Series-1310150.pdf" H 6450 4150 50  0001 C CNN
 F 4 "Σδ integrator capacitance. Value should be >39pF and <180pF. C0G, 10%, >6.3V, AEC-Q200." H 0   0   50  0001 C CNN "Notes"
 F 5 "Mouser" H 0   0   50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Murata-Electronics/GCM1885C2A390JA16D?qs=Er06SXQpt%252B7xNLr3RkIiOw%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "81-GCM1885C2A390JA6D" H 0   0   50  0001 C CNN "Order number"
+F 8 "GCM1885C2A390JA16D" H 0   0   50  0001 C CNN "Part number"
 	1    6450 4150
 	0    1    1    0   
 $EndComp
@@ -131,9 +137,12 @@ AR Path="/5EB36E07/5EC1EC8F" Ref="C1"  Part="1"
 F 0 "C1" H 6250 3150 50  0000 L CNN
 F 1 "100nF" H 6250 3050 50  0000 L CNN
 F 2 "POxiM-uncategorised:C_0805_2012Metric_0603_1608Metric" H 6150 3100 50  0001 C CNN
-F 3 "~" H 6150 3100 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/murata_03122018_GCM_Series-1310150.pdf" H 6150 3100 50  0001 C CNN
 F 4 "Decoupling capacitance. Value non-critical. X7R, >10V, AEC-Q200." H 0   0   50  0001 C CNN "Notes"
 F 5 "Mouser" H 0   0   50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Murata-Electronics/GCM188R91E104KA37D?qs=fYnTpiIxukKBCa2bT2%252Bflw%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "81-GCM188R91E104KA7D" H 0   0   50  0001 C CNN "Order number"
+F 8 "GCM188R91E104KA37D" H 0   0   50  0001 C CNN "Part number"
 	1    6150 3100
 	-1   0    0    -1  
 $EndComp
@@ -166,9 +175,12 @@ AR Path="/5EB36E07/5F743D52" Ref="R3"  Part="1"
 F 0 "R3" V 4654 4500 50  0000 C CNN
 F 1 "100kΩ" V 4745 4500 50  0000 C CNN
 F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 4850 4500 50  0001 C CNN
-F 3 "~" H 4850 4500 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/AOA0000C304-1149620.pdf" H 4850 4500 50  0001 C CNN
 F 4 "DAC buffer bias control resistor. Value critical. <5%, AEC-Q200" H 0   0   50  0001 C CNN "Notes"
 F 5 "Mouser" H 0   0   50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF1003V?qs=H7k1u0Mp9JSqh2R2gj46DA%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "667-ERJ-3EKF1003V" H 0   0   50  0001 C CNN "Order number"
+F 8 "ERJ-3EKF1003V" H 0   0   50  0001 C CNN "Part number"
 	1    4850 4500
 	0    -1   1    0   
 $EndComp
@@ -189,9 +201,12 @@ AR Path="/5EB36E07/5F74C543" Ref="R4"  Part="1"
 F 0 "R4" H 5450 4450 50  0000 L CNN
 F 1 "100kΩ" H 5450 4350 50  0000 L CNN
 F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 5400 4400 50  0001 C CNN
-F 3 "~" H 5400 4400 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/AOA0000C304-1149620.pdf" H 5400 4400 50  0001 C CNN
 F 4 "DAC buffer bias control resistor. Value critical. <5%, AEC-Q200" H 0   0   50  0001 C CNN "Notes"
 F 5 "Mouser" H 0   0   50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF1003V?qs=H7k1u0Mp9JSqh2R2gj46DA%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "667-ERJ-3EKF1003V" H 0   0   50  0001 C CNN "Order number"
+F 8 "ERJ-3EKF1003V" H 0   0   50  0001 C CNN "Part number"
 	1    5400 4400
 	1    0    0    -1  
 $EndComp

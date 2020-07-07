@@ -1892,9 +1892,12 @@ AR Path="/5EBC562E/5F57B3EA" Ref="C3"  Part="1"
 F 0 "C3" H 9950 2200 50  0000 L CNN
 F 1 "100nF" H 9950 2100 50  0000 L CNN
 F 2 "POxiM-uncategorised:C_0805_2012Metric_0603_1608Metric" H 9850 2150 50  0001 C CNN
-F 3 "~" H 9850 2150 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/murata_03122018_GCM_Series-1310150.pdf" H 9850 2150 50  0001 C CNN
 F 4 "Decoupling capacitance. Value non-critical. X7R, >10V, AEC-Q200." H 4700 -500 50  0001 C CNN "Notes"
 F 5 "Mouser" H 4700 -500 50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Murata-Electronics/GCM188R91E104KA37D?qs=fYnTpiIxukKBCa2bT2%252Bflw%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "81-GCM188R91E104KA7D" H 0   0   50  0001 C CNN "Order number"
+F 8 "GCM188R91E104KA37D" H 0   0   50  0001 C CNN "Part number"
 	1    9850 2150
 	-1   0    0    -1  
 $EndComp
@@ -1939,9 +1942,12 @@ AR Path="/5EBC562E/5EFEFDD8" Ref="C11"  Part="1"
 F 0 "C11" H 1950 4050 50  0000 L CNN
 F 1 "100nF" H 1950 3950 50  0000 L CNN
 F 2 "POxiM-uncategorised:C_0805_2012Metric_0603_1608Metric" H 1850 4000 50  0001 C CNN
-F 3 "~" H 1850 4000 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/murata_03122018_GCM_Series-1310150.pdf" H 1850 4000 50  0001 C CNN
 F 4 "Decoupling capacitance. Value non-critical. X7R, >10V, AEC-Q200." H -3300 1350 50  0001 C CNN "Notes"
 F 5 "Mouser" H -3300 1350 50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Murata-Electronics/GCM188R91E104KA37D?qs=fYnTpiIxukKBCa2bT2%252Bflw%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "81-GCM188R91E104KA7D" H 0   0   50  0001 C CNN "Order number"
+F 8 "GCM188R91E104KA37D" H 0   0   50  0001 C CNN "Part number"
 	1    1850 4000
 	-1   0    0    -1  
 $EndComp
@@ -1968,6 +1974,10 @@ Wire Notes Line
 	1600 3750 1600 3850
 Wire Notes Line
 	1600 3850 1900 3850
+Text Label 9150 1050 0    50   ~ 0
+Common1
+Text Label 9150 1500 0    50   ~ 0
+Common0
 Wire Bus Line
 	9050 800  9050 1850
 Wire Bus Line
@@ -1978,8 +1988,4 @@ Wire Bus Line
 	1300 4250 1300 5100
 Wire Bus Line
 	3250 4200 10850 4200
-Text Label 9150 1050 0    50   ~ 0
-Common1
-Text Label 9150 1500 0    50   ~ 0
-Common0
 $EndSCHEMATC

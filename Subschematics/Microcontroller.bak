@@ -45,9 +45,12 @@ P 5550 2650
 F 0 "C9" H 5650 2700 50  0000 L CNN
 F 1 "100nF" H 5650 2600 50  0000 L CNN
 F 2 "POxiM-uncategorised:C_0805_2012Metric_0603_1608Metric" H 5550 2650 50  0001 C CNN
-F 3 "~" H 5550 2650 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/murata_03122018_GCM_Series-1310150.pdf" H 5550 2650 50  0001 C CNN
 F 4 "Decoupling capacitance. Value non-critical. X7R, >10V, AEC-Q200." H 400 0   50  0001 C CNN "Notes"
 F 5 "Mouser" H 400 0   50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Murata-Electronics/GCM188R91E104KA37D?qs=fYnTpiIxukKBCa2bT2%252Bflw%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "81-GCM188R91E104KA7D" H 0   0   50  0001 C CNN "Order number"
+F 8 "GCM188R91E104KA37D" H 0   0   50  0001 C CNN "Part number"
 	1    5550 2650
 	1    0    0    -1  
 $EndComp
@@ -58,9 +61,12 @@ P 5100 2650
 F 0 "C8" H 5200 2700 50  0000 L CNN
 F 1 "2.2µF" H 5200 2600 50  0000 L CNN
 F 2 "POxiM-uncategorised:C_0805_2012Metric_0603_1608Metric" H 5100 2650 50  0001 C CNN
-F 3 "~" H 5100 2650 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/murata_03122018_GCM_Series-1310150.pdf" H 5100 2650 50  0001 C CNN
 F 4 "Mouser" H 400 0   50  0001 C CNN "Supplier"
-F 5 "5V bulk decoupling capacitance. Value non-critical. X7R, >6.3V, AEC-Q200" H 400 0   50  0001 C CNN "Notes"
+F 5 "5V bulk decoupling capacitance. Value non-critical. X7R, >10V, AEC-Q200" H 400 0   50  0001 C CNN "Notes"
+F 6 "https://nl.mouser.com/ProductDetail/Murata-Electronics/GCM21BR71E225KA73L?qs=aEuGZpxfbxXYW28lkhxT3w%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "81-GCM21BR71E225KA3L" H 0   0   50  0001 C CNN "Order number"
+F 8 "GCM21BR71E225KA73L " H 0   0   50  0001 C CNN "Part number"
 	1    5100 2650
 	1    0    0    -1  
 $EndComp
@@ -71,9 +77,12 @@ P 5150 4700
 F 0 "C10" H 5050 4750 50  0000 R CNN
 F 1 "470nF" H 5050 4650 50  0000 R CNN
 F 2 "POxiM-uncategorised:C_0805_2012Metric_0603_1608Metric" H 5150 4700 50  0001 C CNN
-F 3 "~" H 5150 4700 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/murata_03122018_GCM_Series-1310150.pdf" H 5150 4700 50  0001 C CNN
 F 4 "Microcontroller regulator stabilisation capacitance. Value critical. X7R, >6.3V, AEC-Q200, series inductance <15nH" H 0   0   50  0001 C CNN "Notes"
 F 5 "Mouser" H 0   0   50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Murata-Electronics/GCM188R71C474KA55D?qs=aEuGZpxfbxW0AmMVvQDj8A%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "81-GCM188R71C474KA5D" H 0   0   50  0001 C CNN "Order number"
+F 8 "GCM188R71C474KA55D" H 0   0   50  0001 C CNN "Part number"
 	1    5150 4700
 	1    0    0    -1  
 $EndComp
@@ -181,9 +190,12 @@ P 4650 4700
 F 0 "C7" H 4550 4750 50  0000 R CNN
 F 1 "100nF" H 4550 4650 50  0000 R CNN
 F 2 "POxiM-uncategorised:C_0805_2012Metric_0603_1608Metric" H 4650 4700 50  0001 C CNN
-F 3 "~" H 4650 4700 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/murata_03122018_GCM_Series-1310150.pdf" H 4650 4700 50  0001 C CNN
 F 4 "Decoupling capacitance. Value non-critical. X7R, >10V, AEC-Q200." H 0   0   50  0001 C CNN "Notes"
 F 5 "Mouser" H 0   0   50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Murata-Electronics/GCM188R91E104KA37D?qs=fYnTpiIxukKBCa2bT2%252Bflw%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "81-GCM188R91E104KA7D" H 0   0   50  0001 C CNN "Order number"
+F 8 "GCM188R91E104KA37D" H 0   0   50  0001 C CNN "Part number"
 	1    4650 4700
 	1    0    0    -1  
 $EndComp

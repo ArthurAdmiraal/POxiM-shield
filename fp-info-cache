@@ -1,4 +1,4 @@
-15754967871452005
+15759750328130005
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -62468,6 +62468,13 @@ mounting hole 2.2mm no annular m2
 1
 0
 POxiM-uncategorised
+PogoPin_MillMax_0900-1-15-20-75-14-11-0
+
+
+0
+9
+1
+POxiM-uncategorised
 Potentiometer_Bourns_PTV09A-1_Single_Vertical
 Potentiometer, vertical, Bourns PTV09A-1 Single, http://www.bourns.com/docs/Product-Datasheets/ptv09.pdf
 Potentiometer vertical Bourns PTV09A-1 Single
@@ -62502,6 +62509,20 @@ solder jumper open
 0
 2
 2
+POxiM-uncategorised
+Standoff_Wurth_9774040243R
+
+
+0
+2
+1
+POxiM-uncategorised
+Standoff_Wurth_9774050243R
+
+
+0
+2
+1
 POxiM-uncategorised
 SW_C&K_A12405RNCQ
 

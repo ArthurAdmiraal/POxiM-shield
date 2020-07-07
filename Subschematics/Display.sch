@@ -849,9 +849,12 @@ AR Path="/5EBC342A/5EE7F89C" Ref="R?"  Part="1"
 F 0 "R15" V 8000 6050 50  0000 C CNN
 F 1 "3.3kΩ" V 8100 6050 50  0000 C CNN
 F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 8200 6050 50  0001 C CNN
-F 3 "~" H 8200 6050 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/AOA0000C304-1149620.pdf" H 8200 6050 50  0001 C CNN
 F 4 "Sets transistor base current. Value critical. <5%, AEC-Q200" H 2550 100 50  0001 C CNN "Notes"
 F 5 "Mouser" H 2550 100 50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF3301V?qs=MVjVSMjNRMr0RS%2FvmZkflA%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "667-ERJ-3EKF3301V" H 0   0   50  0001 C CNN "Order number"
+F 8 "ERJ-3EKF3301V" H 0   0   50  0001 C CNN "Part number"
 	1    8200 6050
 	0    1    1    0   
 $EndComp
@@ -924,9 +927,12 @@ AR Path="/5EBC342A/5EE83BE3" Ref="R?"  Part="1"
 F 0 "R16" V 5450 6050 50  0000 C CNN
 F 1 "3.3kΩ" V 5550 6050 50  0000 C CNN
 F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 5650 6050 50  0001 C CNN
-F 3 "~" H 5650 6050 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/AOA0000C304-1149620.pdf" H 5650 6050 50  0001 C CNN
 F 4 "Sets transistor base current. Value critical. <5%, AEC-Q200" H -2550 100 50  0001 C CNN "Notes"
 F 5 "Mouser" H -2550 100 50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF3301V?qs=MVjVSMjNRMr0RS%2FvmZkflA%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "667-ERJ-3EKF3301V" H 0   0   50  0001 C CNN "Order number"
+F 8 "ERJ-3EKF3301V" H 0   0   50  0001 C CNN "Part number"
 	1    5650 6050
 	0    1    1    0   
 $EndComp
@@ -1039,9 +1045,12 @@ AR Path="/5EBC342A/5F0B0B45" Ref="R?"  Part="1"
 F 0 "R17" V 9450 1050 50  0000 C CNN
 F 1 "3.3kΩ" V 9550 1050 50  0000 C CNN
 F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 9650 1050 50  0001 C CNN
-F 3 "~" H 9650 1050 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/AOA0000C304-1149620.pdf" H 9650 1050 50  0001 C CNN
 F 4 "Sets transistor base current. Value critical. <5%, AEC-Q200" H -50 -100 50  0001 C CNN "Notes"
 F 5 "Mouser" H -50 -100 50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF3301V?qs=MVjVSMjNRMr0RS%2FvmZkflA%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "667-ERJ-3EKF3301V" H 0   0   50  0001 C CNN "Order number"
+F 8 "ERJ-3EKF3301V" H 0   0   50  0001 C CNN "Part number"
 	1    9650 1050
 	0    1    1    0   
 $EndComp
@@ -1055,9 +1064,12 @@ AR Path="/5EBC342A/5F0B15A7" Ref="R?"  Part="1"
 F 0 "R18" V 9450 1500 50  0000 C CNN
 F 1 "3.3kΩ" V 9550 1500 50  0000 C CNN
 F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 9650 1500 50  0001 C CNN
-F 3 "~" H 9650 1500 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/AOA0000C304-1149620.pdf" H 9650 1500 50  0001 C CNN
 F 4 "Sets transistor base current. Value critical. <5%, AEC-Q200" H -50 -100 50  0001 C CNN "Notes"
 F 5 "Mouser" H -50 -100 50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF3301V?qs=MVjVSMjNRMr0RS%2FvmZkflA%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "667-ERJ-3EKF3301V" H 0   0   50  0001 C CNN "Order number"
+F 8 "ERJ-3EKF3301V" H 0   0   50  0001 C CNN "Part number"
 	1    9650 1500
 	0    1    1    0   
 $EndComp
@@ -1071,9 +1083,12 @@ AR Path="/5EBC342A/5F0B19B2" Ref="R?"  Part="1"
 F 0 "R19" V 9450 1950 50  0000 C CNN
 F 1 "3.3kΩ" V 9550 1950 50  0000 C CNN
 F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 9650 1950 50  0001 C CNN
-F 3 "~" H 9650 1950 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/AOA0000C304-1149620.pdf" H 9650 1950 50  0001 C CNN
 F 4 "Sets transistor base current. Value critical. <5%, AEC-Q200" H -50 -100 50  0001 C CNN "Notes"
 F 5 "Mouser" H -50 -100 50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF3301V?qs=MVjVSMjNRMr0RS%2FvmZkflA%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "667-ERJ-3EKF3301V" H 0   0   50  0001 C CNN "Order number"
+F 8 "ERJ-3EKF3301V" H 0   0   50  0001 C CNN "Part number"
 	1    9650 1950
 	0    1    1    0   
 $EndComp
@@ -1655,9 +1670,12 @@ AR Path="/5EBC342A/5F06B015" Ref="R?"  Part="1"
 F 0 "R14" V 2900 6050 50  0000 C CNN
 F 1 "3.3kΩ" V 3000 6050 50  0000 C CNN
 F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 3100 6050 50  0001 C CNN
-F 3 "~" H 3100 6050 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/AOA0000C304-1149620.pdf" H 3100 6050 50  0001 C CNN
 F 4 "Sets transistor base current. Value critical. <5%, AEC-Q200" H 0   100 50  0001 C CNN "Notes"
 F 5 "Mouser" H 0   100 50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF3301V?qs=MVjVSMjNRMr0RS%2FvmZkflA%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "667-ERJ-3EKF3301V" H 0   0   50  0001 C CNN "Order number"
+F 8 "ERJ-3EKF3301V" H 0   0   50  0001 C CNN "Part number"
 	1    3100 6050
 	0    1    1    0   
 $EndComp
@@ -1892,9 +1910,12 @@ AR Path="/5EBC562E/5F57B3EA" Ref="C3"  Part="1"
 F 0 "C3" H 9950 2200 50  0000 L CNN
 F 1 "100nF" H 9950 2100 50  0000 L CNN
 F 2 "POxiM-uncategorised:C_0805_2012Metric_0603_1608Metric" H 9850 2150 50  0001 C CNN
-F 3 "~" H 9850 2150 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/murata_03122018_GCM_Series-1310150.pdf" H 9850 2150 50  0001 C CNN
 F 4 "Decoupling capacitance. Value non-critical. X7R, >10V, AEC-Q200." H 4700 -500 50  0001 C CNN "Notes"
 F 5 "Mouser" H 4700 -500 50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Murata-Electronics/GCM188R91E104KA37D?qs=fYnTpiIxukKBCa2bT2%252Bflw%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "81-GCM188R91E104KA7D" H 0   0   50  0001 C CNN "Order number"
+F 8 "GCM188R91E104KA37D" H 0   0   50  0001 C CNN "Part number"
 	1    9850 2150
 	-1   0    0    -1  
 $EndComp
@@ -1939,9 +1960,12 @@ AR Path="/5EBC562E/5EFEFDD8" Ref="C11"  Part="1"
 F 0 "C11" H 1950 4050 50  0000 L CNN
 F 1 "100nF" H 1950 3950 50  0000 L CNN
 F 2 "POxiM-uncategorised:C_0805_2012Metric_0603_1608Metric" H 1850 4000 50  0001 C CNN
-F 3 "~" H 1850 4000 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/murata_03122018_GCM_Series-1310150.pdf" H 1850 4000 50  0001 C CNN
 F 4 "Decoupling capacitance. Value non-critical. X7R, >10V, AEC-Q200." H -3300 1350 50  0001 C CNN "Notes"
 F 5 "Mouser" H -3300 1350 50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Murata-Electronics/GCM188R91E104KA37D?qs=fYnTpiIxukKBCa2bT2%252Bflw%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "81-GCM188R91E104KA7D" H 0   0   50  0001 C CNN "Order number"
+F 8 "GCM188R91E104KA37D" H 0   0   50  0001 C CNN "Part number"
 	1    1850 4000
 	-1   0    0    -1  
 $EndComp

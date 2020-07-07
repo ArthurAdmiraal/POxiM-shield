@@ -25,9 +25,12 @@ P 6900 1550
 F 0 "R2" V 6704 1550 50  0000 C CNN
 F 1 "33kΩ" V 6795 1550 50  0000 C CNN
 F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 6900 1550 50  0001 C CNN
-F 3 "~" H 6900 1550 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/AOA0000C304-1149620.pdf" H 6900 1550 50  0001 C CNN
 F 4 "Sets LED bias current. Value critical. <5%, AEC-Q200" H 1150 -1650 50  0001 C CNN "Notes"
 F 5 "Mouser" H 1150 -1650 50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF3302V?qs=MVjVSMjNRMqM4yP733%252B1XQ%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "667-ERJ-3EKF3302V" H 0   0   50  0001 C CNN "Order number"
+F 8 "ERJ-3EKF3302V" H 0   0   50  0001 C CNN "Part number"
 	1    6900 1550
 	0    -1   1    0   
 $EndComp
@@ -171,9 +174,12 @@ AR Path="/5EBC342A/5EF9D901" Ref="R22"  Part="1"
 F 0 "R22" H 6100 2650 50  0000 L CNN
 F 1 "68Ω" H 6100 2750 50  0000 L CNN
 F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 6000 2700 50  0001 C CNN
-F 3 "~" H 6000 2700 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/AOA0000C331-1141874.pdf" H 6000 2700 50  0001 C CNN
 F 4 "Sets output LED current. Value critical. <5%, AEC-Q200" H 0   0   50  0001 C CNN "Notes"
 F 5 "Mouser" H 0   0   50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-PA3F68R0V?qs=BzJM0faLVqVXNSFK7Qq1fg%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "667-ERJ-PA3F68R0V" H 0   0   50  0001 C CNN "Order number"
+F 8 "ERJ-PA3F68R0V" H 0   0   50  0001 C CNN "Part number"
 	1    6000 2700
 	1    0    0    1   
 $EndComp
@@ -226,9 +232,12 @@ P 6800 3150
 F 0 "R24" H 6850 3100 50  0000 L CNN
 F 1 "33kΩ" H 6850 3200 50  0000 L CNN
 F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 6800 3150 50  0001 C CNN
-F 3 "~" H 6800 3150 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/AOA0000C304-1149620.pdf" H 6800 3150 50  0001 C CNN
 F 4 "Sets LED bias current. Value critical. <5%, AEC-Q200" H 650 -1500 50  0001 C CNN "Notes"
 F 5 "Mouser" H 650 -1500 50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF3302V?qs=MVjVSMjNRMqM4yP733%252B1XQ%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "667-ERJ-3EKF3302V" H 0   0   50  0001 C CNN "Order number"
+F 8 "ERJ-3EKF3302V" H 0   0   50  0001 C CNN "Part number"
 	1    6800 3150
 	1    0    0    1   
 $EndComp
@@ -409,9 +418,12 @@ AR Path="/5EBC342A/5F8AB20F" Ref="R13"  Part="1"
 F 0 "R13" H 5600 3250 50  0000 R CNN
 F 1 "3.3kΩ" H 5600 3350 50  0000 R CNN
 F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 5650 3300 50  0001 C CNN
-F 3 "~" H 5650 3300 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/AOA0000C304-1149620.pdf" H 5650 3300 50  0001 C CNN
 F 4 "Sets transistor base current. Value critical. <5%, AEC-Q200" H 0   -2650 50  0001 C CNN "Notes"
 F 5 "Mouser" H 0   -2650 50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF3301V?qs=MVjVSMjNRMr0RS%2FvmZkflA%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "667-ERJ-3EKF3301V" H 0   0   50  0001 C CNN "Order number"
+F 8 "ERJ-3EKF3301V" H 0   0   50  0001 C CNN "Part number"
 	1    5650 3300
 	1    0    0    1   
 $EndComp
@@ -433,9 +445,12 @@ AR Path="/5EBC342A/5F8BD89F" Ref="R11"  Part="1"
 F 0 "R11" H 5600 2850 50  0000 R CNN
 F 1 "2.2kΩ" H 5600 2950 50  0000 R CNN
 F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 5650 2900 50  0001 C CNN
-F 3 "~" H 5650 2900 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/AOA0000C304-1149620.pdf" H 5650 2900 50  0001 C CNN
 F 4 "Sets output LED current. Value critical. <5%, AEC-Q200" H 0   0   50  0001 C CNN "Notes"
 F 5 "Mouser" H 0   0   50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF2201V?qs=iBwFsHVUAOcSom3i15f%252BIQ%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "667-ERJ-3EKF2201V" H 0   0   50  0001 C CNN "Order number"
+F 8 "ERJ-3EKF2201V" H 0   0   50  0001 C CNN "Part number"
 	1    5650 2900
 	1    0    0    1   
 $EndComp
@@ -488,9 +503,12 @@ AR Path="/5EBC342A/5F95DC77" Ref="R23"  Part="1"
 F 0 "R23" H 6100 4200 50  0000 L CNN
 F 1 "68Ω" H 6100 4300 50  0000 L CNN
 F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 6000 4250 50  0001 C CNN
-F 3 "~" H 6000 4250 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/AOA0000C331-1141874.pdf" H 6000 4250 50  0001 C CNN
 F 4 "Sets output LED current. Value critical. <5%, AEC-Q200" H 0   0   50  0001 C CNN "Notes"
 F 5 "Mouser" H 0   0   50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-PA3F68R0V?qs=BzJM0faLVqVXNSFK7Qq1fg%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "667-ERJ-PA3F68R0V" H 0   0   50  0001 C CNN "Order number"
+F 8 "ERJ-PA3F68R0V" H 0   0   50  0001 C CNN "Part number"
 	1    6000 4250
 	1    0    0    1   
 $EndComp
@@ -541,9 +559,12 @@ P 6800 4700
 F 0 "R25" H 6850 4650 50  0000 L CNN
 F 1 "33kΩ" H 6850 4750 50  0000 L CNN
 F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 6800 4700 50  0001 C CNN
-F 3 "~" H 6800 4700 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/AOA0000C304-1149620.pdf" H 6800 4700 50  0001 C CNN
 F 4 "Sets LED bias current. Value critical. <5%, AEC-Q200" H 650 50  50  0001 C CNN "Notes"
 F 5 "Mouser" H 650 50  50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF3302V?qs=MVjVSMjNRMqM4yP733%252B1XQ%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "667-ERJ-3EKF3302V" H 0   0   50  0001 C CNN "Order number"
+F 8 "ERJ-3EKF3302V" H 0   0   50  0001 C CNN "Part number"
 	1    6800 4700
 	1    0    0    1   
 $EndComp
@@ -609,9 +630,12 @@ AR Path="/5EBC342A/5F95DCD5" Ref="R21"  Part="1"
 F 0 "R21" H 5600 4800 50  0000 R CNN
 F 1 "3.3kΩ" H 5600 4900 50  0000 R CNN
 F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 5650 4850 50  0001 C CNN
-F 3 "~" H 5650 4850 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/AOA0000C304-1149620.pdf" H 5650 4850 50  0001 C CNN
 F 4 "Sets transistor base current. Value critical. <5%, AEC-Q200" H 0   -1100 50  0001 C CNN "Notes"
 F 5 "Mouser" H 0   -1100 50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF3301V?qs=MVjVSMjNRMr0RS%2FvmZkflA%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "667-ERJ-3EKF3301V" H 0   0   50  0001 C CNN "Order number"
+F 8 "ERJ-3EKF3301V" H 0   0   50  0001 C CNN "Part number"
 	1    5650 4850
 	1    0    0    1   
 $EndComp
@@ -625,9 +649,12 @@ AR Path="/5EBC342A/5F95DCE0" Ref="R20"  Part="1"
 F 0 "R20" H 5600 4400 50  0000 R CNN
 F 1 "2.2kΩ" H 5600 4500 50  0000 R CNN
 F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 5650 4450 50  0001 C CNN
-F 3 "~" H 5650 4450 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/AOA0000C304-1149620.pdf" H 5650 4450 50  0001 C CNN
 F 4 "Sets output LED current. Value critical. <5%, AEC-Q200" H 0   0   50  0001 C CNN "Notes"
 F 5 "Mouser" H 0   0   50  0001 C CNN "Supplier"
+F 6 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3EKF2201V?qs=iBwFsHVUAOcSom3i15f%252BIQ%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "667-ERJ-3EKF2201V" H 0   0   50  0001 C CNN "Order number"
+F 8 "ERJ-3EKF2201V" H 0   0   50  0001 C CNN "Part number"
 	1    5650 4450
 	1    0    0    1   
 $EndComp
@@ -798,9 +825,12 @@ AR Path="/5EBC342A/5F0B45F4" Ref="C6"  Part="1"
 F 0 "C6" H 6900 3650 50  0000 L CNN
 F 1 "2.2µF" H 6900 3550 50  0000 L CNN
 F 2 "POxiM-uncategorised:C_0805_2012Metric_0603_1608Metric" H 6800 3600 50  0001 C CNN
-F 3 "~" H 6800 3600 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/murata_03122018_GCM_Series-1310150.pdf" H 6800 3600 50  0001 C CNN
 F 4 "Mouser" H 2100 950 50  0001 C CNN "Supplier"
-F 5 "5V bulk decoupling capacitance. Value non-critical. X7R, >6.3V, AEC-Q200" H 2100 950 50  0001 C CNN "Notes"
+F 5 "5V bulk decoupling capacitance. Value non-critical. X7R, >10V, AEC-Q200" H 2100 950 50  0001 C CNN "Notes"
+F 6 "https://nl.mouser.com/ProductDetail/Murata-Electronics/GCM21BR71E225KA73L?qs=aEuGZpxfbxXYW28lkhxT3w%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "81-GCM21BR71E225KA3L" H 0   0   50  0001 C CNN "Order number"
+F 8 "GCM21BR71E225KA73L " H 0   0   50  0001 C CNN "Part number"
 	1    6800 3600
 	-1   0    0    -1  
 $EndComp
@@ -813,9 +843,12 @@ AR Path="/5EBC342A/5F0B6FB6" Ref="C12"  Part="1"
 F 0 "C12" H 6900 5250 50  0000 L CNN
 F 1 "2.2µF" H 6900 5150 50  0000 L CNN
 F 2 "POxiM-uncategorised:C_0805_2012Metric_0603_1608Metric" H 6800 5200 50  0001 C CNN
-F 3 "~" H 6800 5200 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/murata_03122018_GCM_Series-1310150.pdf" H 6800 5200 50  0001 C CNN
 F 4 "Mouser" H 2100 2550 50  0001 C CNN "Supplier"
-F 5 "5V bulk decoupling capacitance. Value non-critical. X7R, >6.3V, AEC-Q200" H 2100 2550 50  0001 C CNN "Notes"
+F 5 "5V bulk decoupling capacitance. Value non-critical. X7R, >10V, AEC-Q200" H 2100 2550 50  0001 C CNN "Notes"
+F 6 "https://nl.mouser.com/ProductDetail/Murata-Electronics/GCM21BR71E225KA73L?qs=aEuGZpxfbxXYW28lkhxT3w%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "81-GCM21BR71E225KA3L" H 0   0   50  0001 C CNN "Order number"
+F 8 "GCM21BR71E225KA73L " H 0   0   50  0001 C CNN "Part number"
 	1    6800 5200
 	-1   0    0    -1  
 $EndComp

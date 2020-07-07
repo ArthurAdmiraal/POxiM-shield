@@ -302,9 +302,12 @@ AR Path="/5EBC5C8E/5F70BC67" Ref="C5"  Part="1"
 F 0 "C5" H 7100 3400 50  0000 L CNN
 F 1 "2.2µF" H 7100 3300 50  0000 L CNN
 F 2 "POxiM-uncategorised:C_0805_2012Metric_0603_1608Metric" H 7000 3350 50  0001 C CNN
-F 3 "~" H 7000 3350 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/murata_03122018_GCM_Series-1310150.pdf" H 7000 3350 50  0001 C CNN
 F 4 "Mouser" H 2300 700 50  0001 C CNN "Supplier"
-F 5 "5V bulk decoupling capacitance. Value non-critical. X7R, >6.3V, AEC-Q200" H 2300 700 50  0001 C CNN "Notes"
+F 5 "5V bulk decoupling capacitance. Value non-critical. X7R, >10V, AEC-Q200" H 2300 700 50  0001 C CNN "Notes"
+F 6 "https://nl.mouser.com/ProductDetail/Murata-Electronics/GCM21BR71E225KA73L?qs=aEuGZpxfbxXYW28lkhxT3w%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "81-GCM21BR71E225KA3L" H 0   0   50  0001 C CNN "Order number"
+F 8 "GCM21BR71E225KA73L " H 0   0   50  0001 C CNN "Part number"
 	1    7000 3350
 	1    0    0    -1  
 $EndComp
@@ -317,9 +320,12 @@ AR Path="/5EBC5C8E/5F70C49A" Ref="C4"  Part="1"
 F 0 "C4" H 6000 3400 50  0000 L CNN
 F 1 "2.2µF" H 6000 3300 50  0000 L CNN
 F 2 "POxiM-uncategorised:C_0805_2012Metric_0603_1608Metric" H 5900 3350 50  0001 C CNN
-F 3 "~" H 5900 3350 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/murata_03122018_GCM_Series-1310150.pdf" H 5900 3350 50  0001 C CNN
 F 4 "Mouser" H 1200 700 50  0001 C CNN "Supplier"
-F 5 "5V bulk decoupling capacitance. Value non-critical. X7R, >6.3V, AEC-Q200" H 1200 700 50  0001 C CNN "Notes"
+F 5 "5V bulk decoupling capacitance. Value non-critical. X7R, >10V, AEC-Q200" H 1200 700 50  0001 C CNN "Notes"
+F 6 "https://nl.mouser.com/ProductDetail/Murata-Electronics/GCM21BR71E225KA73L?qs=aEuGZpxfbxXYW28lkhxT3w%3D%3D" H 0   0   50  0001 C CNN "Link"
+F 7 "81-GCM21BR71E225KA3L" H 0   0   50  0001 C CNN "Order number"
+F 8 "GCM21BR71E225KA73L " H 0   0   50  0001 C CNN "Part number"
 	1    5900 3350
 	-1   0    0    -1  
 $EndComp
