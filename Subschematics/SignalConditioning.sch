@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 6
 Title "Audio jack signal conditioning"
-Date "2020-05-29"
-Rev "A"
+Date "2020-07-16"
+Rev "A.1"
 Comp "POxiM"
 Comment1 "By Arthur Admiraal & Daan de Groot"
 Comment2 "Performs filtering, prevents ESD damage"
@@ -54,16 +54,16 @@ F 8 "https://nl.mouser.com/ProductDetail/Infineon-Technologies/BAS3010A03WE6327X
 $EndComp
 Text Notes 5350 3825 2    50   ~ 0
 Configure as open collector
-Text Notes 5300 6250 0    50   ~ 0
-Filter LED PWM harmonics above:\nf = 1 / (2π · R · C) =\n  = 1 / (2π · 390Ω · 100nF) = 4.1kHz\nPrevents sourcing significant power\nat frequencies where the cable is a\ngood antenna.
+Text Notes 5300 6350 0    50   ~ 0
+Filter LED PWM harmonics above:\nf = 1 / (2π · R · C) =\n  = 1 / (2π · 2.5Ω · 2.2µF) = 29kHz\nPrevents sourcing significant power\nat frequencies where the cable is a\ngood antenna. Resistance is\nsmall-signal resistance of LED.
 Wire Bus Line
 	5250 5750 6950 5750
 Wire Bus Line
-	6950 5750 6950 6300
+	6950 5750 6950 6400
 Wire Bus Line
-	6950 6300 5250 6300
+	6950 6400 5250 6400
 Wire Bus Line
-	5250 6300 5250 5750
+	5250 6400 5250 5750
 Wire Notes Line
 	5250 5750 6450 5350
 Text Notes 7100 6250 0    50   ~ 0
@@ -197,8 +197,8 @@ U 1 1 5EFB4A00
 P 5900 3100
 AR Path="/5EBC562E/5EFB4A00" Ref="Q?"  Part="1" 
 AR Path="/5EBC342A/5EFB4A00" Ref="Q8"  Part="1" 
-F 0 "Q8" H 6090 3146 50  0000 L CNN
-F 1 "PMBT3906,215" H 6090 3055 50  0000 L CNN
+F 0 "Q8" H 6100 3050 50  0000 L CNN
+F 1 "PMBT3906,215" H 6100 3150 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6100 3200 50  0001 C CNN
 F 3 "${KIPRJMOD}/Datasheets/PMBT3906-1320436.pdf" H 5900 3100 50  0001 C CNN
 F 4 "https://nl.mouser.com/ProductDetail/Nexperia/PMBT3906215?qs=LOCUfHb8d9s%252BlCdaN%2FFG0g%3D%3D" H -4200 1050 50  0001 C CNN "Link"
@@ -207,7 +207,7 @@ F 6 "771-PMBT3906-T/R" H -4200 1050 50  0001 C CNN "Order number"
 F 7 "PMBT3906,215" H -4200 1050 50  0001 C CNN "Part number"
 F 8 "Mouser" H -4200 1050 50  0001 C CNN "Supplier"
 	1    5900 3100
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Text HLabel 5600 3500 0    50   Input ~ 0
 GND
@@ -526,8 +526,8 @@ U 1 1 5F95DC87
 P 5900 4650
 AR Path="/5EBC562E/5F95DC87" Ref="Q?"  Part="1" 
 AR Path="/5EBC342A/5F95DC87" Ref="Q9"  Part="1" 
-F 0 "Q9" H 6090 4696 50  0000 L CNN
-F 1 "PMBT3906,215" H 6090 4605 50  0000 L CNN
+F 0 "Q9" H 6100 4600 50  0000 L CNN
+F 1 "PMBT3906,215" H 6100 4700 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6100 4750 50  0001 C CNN
 F 3 "${KIPRJMOD}/Datasheets/PMBT3906-1320436.pdf" H 5900 4650 50  0001 C CNN
 F 4 "https://nl.mouser.com/ProductDetail/Nexperia/PMBT3906215?qs=LOCUfHb8d9s%252BlCdaN%2FFG0g%3D%3D" H -4200 2600 50  0001 C CNN "Link"
@@ -536,7 +536,7 @@ F 6 "771-PMBT3906-T/R" H -4200 2600 50  0001 C CNN "Order number"
 F 7 "PMBT3906,215" H -4200 2600 50  0001 C CNN "Part number"
 F 8 "Mouser" H -4200 2600 50  0001 C CNN "Supplier"
 	1    5900 4650
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Text HLabel 5600 5050 0    50   Input ~ 0
 GND
@@ -723,12 +723,6 @@ Wire Notes Line
 	6700 1850 6700 1650
 Wire Bus Line
 	4050 1650 5700 1650
-Wire Bus Line
-	5700 1650 5700 2050
-Wire Bus Line
-	5700 2050 4050 2050
-Wire Bus Line
-	4050 2050 4050 1650
 Wire Notes Line
 	5700 1650 6700 1650
 Wire Notes Line
@@ -854,4 +848,30 @@ F 8 "GCM21BR71E225KA73L " H 0   0   50  0001 C CNN "Part number"
 $EndComp
 Text HLabel 6200 1950 0    50   Input ~ 0
 GND
+Wire Bus Line
+	4050 2050 4050 1650
+Wire Bus Line
+	5700 1650 5700 2050
+Wire Bus Line
+	5700 2050 4050 2050
+Text Notes 6850 2000 0    50   ~ 0
+Connect to noise shaper ground,\nwill leak in ~~30nA of LED return\ncurrent ground noise otherwise.
+Wire Notes Line
+	5950 1900 6500 1900
+Wire Notes Line
+	6500 1900 6500 2000
+Wire Notes Line
+	6500 2000 5950 2000
+Wire Notes Line
+	5950 2000 5950 1900
+Wire Bus Line
+	6800 1700 8150 1700
+Wire Bus Line
+	8150 1700 8150 2050
+Wire Bus Line
+	8150 2050 6800 2050
+Wire Bus Line
+	6800 2050 6800 1700
+Wire Notes Line
+	6800 2050 6500 2000
 $EndSCHEMATC

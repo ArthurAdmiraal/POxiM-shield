@@ -1,4 +1,4 @@
-update=2020 July 05, Sunday 12:30:43
+update=2020 July 17, Friday 00:26:35
 version=1
 last_client=kicad
 [general]
@@ -12,16 +12,6 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
-[schematic_editor]
-version=1
-PageLayoutDescrFile=Libraries/Sheets/POxiM_PageLayout_schematic.kicad_wks
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=Libraries/Sheets/POxiM_PageLayout_PCB.kicad_wks
@@ -87,3 +77,13 @@ Type=2
 [pcbnew/Layer.B.Cu]
 Name=B.Cu
 Type=2
+[schematic_editor]
+version=1
+PageLayoutDescrFile=Libraries/Sheets/POxiM_PageLayout_schematic.kicad_wks
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1

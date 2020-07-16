@@ -6,185 +6,169 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 6
 Title "USB interfacing"
-Date "2020-06-10"
-Rev "A"
+Date "2020-07-16"
+Rev "A.1"
 Comp "POxiM"
 Comment1 "By Arthur Admiraal & Daan de Groot"
 Comment2 "Prevents excessive voltages and currents"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1850 3100 0    50   Input ~ 0
+Text HLabel 1500 3100 0    50   Input ~ 0
 5V_input
-Text HLabel 1850 4400 0    50   Output ~ 0
+Text HLabel 1500 4400 0    50   Output ~ 0
 Data-
-Text HLabel 1850 4800 0    50   Input ~ 0
+Text HLabel 1500 4800 0    50   Input ~ 0
 GND
 Text HLabel 6750 4000 2    50   BiDi ~ 0
 SWIM
 $Comp
 L Device:Polyfuse F1
 U 1 1 5EBC8921
-P 3000 3100
-F 0 "F1" V 2775 3100 50  0000 C CNN
-F 1 "500mA" V 2866 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_1812_4532Metric" H 3050 2900 50  0001 L CNN
-F 3 "${KIPRJMOD}/Datasheets/0ZCG_Nov2016-1132141.pdf" H 3000 3100 50  0001 C CNN
-F 4 "530-0ZCG0050FF2C" H -2000 -150 50  0001 C CNN "Order number"
-F 5 "0ZCG0050FF2C " H -2000 -150 50  0001 C CNN "Part number"
-F 6 "Mouser" H -2000 -150 50  0001 C CNN "Supplier"
-F 7 "https://nl.mouser.com/ProductDetail/Bel-Fuse/0ZCG0050FF2C?qs=sGAEpiMZZMsgjL4JkW1EEcd%252Bb5fzYQwTN3%252BBvCLJLX%252B5PWZvY0sqIg%3D%3D" H -2000 -150 50  0001 C CNN "Link"
-F 8 "Used for under- and overvoltage protection and overcurrent protection." H -900 0   50  0001 C CNN "Notes"
-	1    3000 3100
+P 2650 3100
+F 0 "F1" V 2425 3100 50  0000 C CNN
+F 1 "500mA" V 2516 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1812_4532Metric" H 2700 2900 50  0001 L CNN
+F 3 "${KIPRJMOD}/Datasheets/0ZCG_Nov2016-1132141.pdf" H 2650 3100 50  0001 C CNN
+F 4 "530-0ZCG0050FF2C" H -2350 -150 50  0001 C CNN "Order number"
+F 5 "0ZCG0050FF2C " H -2350 -150 50  0001 C CNN "Part number"
+F 6 "Mouser" H -2350 -150 50  0001 C CNN "Supplier"
+F 7 "https://nl.mouser.com/ProductDetail/Bel-Fuse/0ZCG0050FF2C?qs=sGAEpiMZZMsgjL4JkW1EEcd%252Bb5fzYQwTN3%252BBvCLJLX%252B5PWZvY0sqIg%3D%3D" H -2350 -150 50  0001 C CNN "Link"
+F 8 "Used for under- and overvoltage protection and overcurrent protection." H -1250 0   50  0001 C CNN "Notes"
+	1    2650 3100
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:D_Zener D34
 U 1 1 5EBC8E0D
-P 3400 3600
-F 0 "D34" V 3354 3680 50  0000 L CNN
-F 1 "6.8V" V 3445 3680 50  0000 L CNN
-F 2 "POxiM-uncategorised:D_SOD-123" H 3400 3600 50  0001 C CNN
-F 3 "${KIPRJMOD}/Datasheets/vishay_mmsz52251-1211520.pdf" H 3400 3600 50  0001 C CNN
-F 4 "78-MMSZ5235C-E3-08" H -2300 -150 50  0001 C CNN "Order number"
-F 5 "MMSZ5235C-E3-08" H -2300 -150 50  0001 C CNN "Part number"
-F 6 "Mouser" H -2300 -150 50  0001 C CNN "Supplier"
-F 7 "https://nl.mouser.com/ProductDetail/Vishay-Semiconductors/MMSZ5235C-E3-08?qs=%2Fha2pyFadujV4RO4S1waElb5dV%252B%252B64uy%252BMxGR3Uu3OLRSQj%252BNF3A9w6RObocYX7m" H -2300 -150 50  0001 C CNN "Link"
-F 8 "Used for overvoltage protection. Ensure leakage current is <0.1mA at 5.5V." H -2300 -150 50  0001 C CNN "Notes"
-	1    3400 3600
+P 3050 3600
+F 0 "D34" V 3004 3680 50  0000 L CNN
+F 1 "6.8V" V 3095 3680 50  0000 L CNN
+F 2 "POxiM-uncategorised:D_SOD-123" H 3050 3600 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/vishay_mmsz52251-1211520.pdf" H 3050 3600 50  0001 C CNN
+F 4 "78-MMSZ5235C-E3-08" H -2650 -150 50  0001 C CNN "Order number"
+F 5 "MMSZ5235C-E3-08" H -2650 -150 50  0001 C CNN "Part number"
+F 6 "Mouser" H -2650 -150 50  0001 C CNN "Supplier"
+F 7 "https://nl.mouser.com/ProductDetail/Vishay-Semiconductors/MMSZ5235C-E3-08?qs=%2Fha2pyFadujV4RO4S1waElb5dV%252B%252B64uy%252BMxGR3Uu3OLRSQj%252BNF3A9w6RObocYX7m" H -2650 -150 50  0001 C CNN "Link"
+F 8 "Used for overvoltage protection. Ensure leakage current is <0.1mA at 5.5V." H -2650 -150 50  0001 C CNN "Notes"
+	1    3050 3600
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3150 3100 3400 3100
+	2800 3100 3050 3100
 Wire Wire Line
-	3400 3100 3400 3450
+	3050 3100 3050 3450
 Wire Wire Line
-	3400 3750 3400 4800
+	3050 3750 3050 4800
 Text HLabel 7100 2750 2    50   Output ~ 0
 5V_protected
 Wire Wire Line
-	1850 3100 2000 3100
-Text HLabel 1850 4000 0    50   Output ~ 0
+	1500 3100 1650 3100
+Text HLabel 1500 4000 0    50   Output ~ 0
 Data+
-$Comp
-L Jumper:Jumper_2_Open JP1
-U 1 1 5EBDE477
-P 2650 4000
-F 0 "JP1" H 2650 4235 50  0000 C CNN
-F 1 "SWIM jumper" H 2650 4144 50  0000 C CNN
-F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 2650 4000 50  0001 C CNN
-F 3 "${KIPRJMOD}/Datasheets/AOA0000C301-1488782.pdf" H 2650 4000 50  0001 C CNN
-F 4 "ERJ-3GEYJ561V" H 2650 4000 50  0001 C CNN "Part number"
-F 5 "667-ERJ-3GEYJ561V" H 2650 4000 50  0001 C CNN "Order number"
-F 6 "Mouser" H 2650 4000 50  0001 C CNN "Supplier"
-F 7 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ561V?qs=sGAEpiMZZMtlubZbdhIBIDkNbKahCB4%252B6KNOdheeNIE%3D" H 2650 4000 50  0001 C CNN "Link"
-F 8 "DNP, used only for debugging" H -2000 -150 50  0001 C CNN "Notes"
-	1    2650 4000
-	1    0    0    -1  
-$EndComp
 Text HLabel 6750 4400 2    50   Input ~ 0
 DataTX
 Wire Wire Line
-	3750 3750 3750 4800
+	3400 3750 3400 4800
 Wire Wire Line
-	3750 3450 3750 3100
+	3400 3450 3400 3100
 Wire Wire Line
-	1850 4000 2450 4000
+	1500 4000 2100 4000
 Wire Wire Line
-	1850 4400 2450 4400
+	1500 4400 2100 4400
 $Comp
 L Device:D_Schottky D35
 U 1 1 5EC1DBE1
-P 3750 3600
+P 3400 3600
 AR Path="/5EBC5C8E/5EC1DBE1" Ref="D35"  Part="1" 
 AR Path="/5EBC342A/5EC1DBE1" Ref="D?"  Part="1" 
-F 0 "D35" V 3750 3680 50  0000 L CNN
-F 1 "Schottky" V 3795 3680 50  0001 L CNN
-F 2 "POxiM-uncategorised:D_SOD-323" H 3750 3600 50  0001 C CNN
-F 3 "${KIPRJMOD}/Datasheets/Infineon-BAS3010ASERIES-DS-v01_01-en-1226012.pdf" H 3750 3600 50  0001 C CNN
-F 4 "726-BAS3010A03WE632" H -2450 -150 50  0001 C CNN "Order number"
-F 5 "BAS3010A03WE6327XT" H -2450 -150 50  0001 C CNN "Part number"
-F 6 "Mouser" H -2450 -150 50  0001 C CNN "Supplier"
-F 7 "Used for reverse polarity protection, forward voltage should be lower than µC ESD protection Vf." H -2450 -150 50  0001 C CNN "Notes"
-F 8 "https://nl.mouser.com/ProductDetail/Infineon-Technologies/BAS3010A03WE6327XT?qs=6QXTaorEuHthvzrroBEBiQ%3D%3D" H -2450 -150 50  0001 C CNN "Link"
-	1    3750 3600
+F 0 "D35" V 3400 3680 50  0000 L CNN
+F 1 "Schottky" V 3445 3680 50  0001 L CNN
+F 2 "POxiM-uncategorised:D_SOD-323" H 3400 3600 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/Infineon-BAS3010ASERIES-DS-v01_01-en-1226012.pdf" H 3400 3600 50  0001 C CNN
+F 4 "726-BAS3010A03WE632" H -2800 -150 50  0001 C CNN "Order number"
+F 5 "BAS3010A03WE6327XT" H -2800 -150 50  0001 C CNN "Part number"
+F 6 "Mouser" H -2800 -150 50  0001 C CNN "Supplier"
+F 7 "Used for reverse polarity protection, forward voltage should be lower than µC ESD protection Vf." H -2800 -150 50  0001 C CNN "Notes"
+F 8 "https://nl.mouser.com/ProductDetail/Infineon-Technologies/BAS3010A03WE6327XT?qs=6QXTaorEuHthvzrroBEBiQ%3D%3D" H -2800 -150 50  0001 C CNN "Link"
+	1    3400 3600
 	0    1    1    0   
 $EndComp
 Wire Notes Line
-	2300 3700 3050 3700
+	1950 3700 2700 3700
 Wire Notes Line
-	3050 3700 3050 4750
+	2700 3700 2700 4750
 Wire Notes Line
-	3050 4750 2300 4750
+	2700 4750 1950 4750
 Wire Notes Line
-	2300 4750 2300 3700
+	1950 4750 1950 3700
 $Comp
 L Jumper:Jumper_2_Open JP2
 U 1 1 5EC5B0EB
-P 2650 4400
-F 0 "JP2" H 2650 4650 50  0000 C CNN
-F 1 "UART out jumper" H 2650 4550 50  0000 C CNN
-F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 2650 4400 50  0001 C CNN
-F 3 "${KIPRJMOD}/Datasheets/AOA0000C301-1488782.pdf" H 2650 4400 50  0001 C CNN
-F 4 "ERJ-3GEYJ561V" H 2650 4400 50  0001 C CNN "Part number"
-F 5 "667-ERJ-3GEYJ561V" H 2650 4400 50  0001 C CNN "Order number"
-F 6 "Mouser" H 2650 4400 50  0001 C CNN "Supplier"
-F 7 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ561V?qs=sGAEpiMZZMtlubZbdhIBIDkNbKahCB4%252B6KNOdheeNIE%3D" H 2650 4400 50  0001 C CNN "Link"
-F 8 "DNP, used only for debugging" H -2000 -100 50  0001 C CNN "Notes"
-	1    2650 4400
+P 2300 4400
+F 0 "JP2" H 2300 4650 50  0000 C CNN
+F 1 "UART out jumper" H 2300 4550 50  0000 C CNN
+F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 2300 4400 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/AOA0000C301-1488782.pdf" H 2300 4400 50  0001 C CNN
+F 4 "ERJ-3GEYJ561V" H 2300 4400 50  0001 C CNN "Part number"
+F 5 "667-ERJ-3GEYJ561V" H 2300 4400 50  0001 C CNN "Order number"
+F 6 "Mouser" H 2300 4400 50  0001 C CNN "Supplier"
+F 7 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ561V?qs=sGAEpiMZZMtlubZbdhIBIDkNbKahCB4%252B6KNOdheeNIE%3D" H 2300 4400 50  0001 C CNN "Link"
+F 8 "DNP, used only for debugging" H -2350 -100 50  0001 C CNN "Notes"
+	1    2300 4400
 	1    0    0    1   
 $EndComp
-Text Notes 1800 3550 0    50   ~ 0
+Text Notes 1450 3550 0    50   ~ 0
 Can be shorted for debugging\nan enclosed development unit.
 Wire Notes Line
-	3250 3400 4050 3400
+	2900 3400 3700 3400
 Wire Notes Line
-	4050 3400 4050 3800
+	3700 3400 3700 3800
 Wire Notes Line
-	4050 3800 3250 3800
+	3700 3800 2900 3800
 Wire Notes Line
-	3250 3800 3250 3400
+	2900 3800 2900 3400
 Wire Notes Line
-	2750 2800 2750 3250
+	2400 2800 2400 3250
 Wire Notes Line
-	2750 3250 3250 3250
+	2400 3250 2900 3250
 Wire Notes Line
-	3250 3250 3250 2800
+	2900 3250 2900 2800
 Wire Notes Line
-	3250 2800 2750 2800
+	2900 2800 2400 2800
 Wire Notes Line
-	1750 2650 2750 2800
+	1400 2650 2400 2800
 Wire Bus Line
-	5800 2650 1750 2650
+	5450 2650 1400 2650
 Wire Bus Line
-	1750 3350 1750 3600
+	1400 3350 1400 3600
 Wire Bus Line
-	1750 3600 3000 3600
+	1400 3600 2650 3600
 Wire Bus Line
-	3000 3350 1750 3350
+	2650 3350 1400 3350
 Wire Bus Line
-	3000 3350 3000 3600
+	2650 3350 2650 3600
 Wire Notes Line
-	1750 3600 2300 3700
-Text Notes 3200 5100 0    50   ~ 0
+	1400 3600 1950 3700
+Text Notes 2850 5100 0    50   ~ 0
 Overvoltage & reverse\npolarity protection
 Wire Bus Line
-	3150 4900 3150 5150
+	2800 4900 2800 5150
 Wire Bus Line
-	3150 5150 4100 5150
+	2800 5150 3750 5150
 Wire Bus Line
-	4100 5150 4100 4900
+	3750 5150 3750 4900
 Wire Bus Line
-	4100 4900 3150 4900
+	3750 4900 2800 4900
 Wire Notes Line
-	3150 4900 3250 3800
+	2800 4900 2900 3800
 Wire Bus Line
-	1750 2650 1750 2350
+	1400 2650 1400 2350
 Wire Bus Line
 	5800 2350 5800 2650
 Wire Bus Line
-	1750 2350 5800 2350
-Text Notes 1800 2600 0    50   ~ 0
+	1400 2350 5450 2350
+Text Notes 1450 2600 0    50   ~ 0
 Current cutoff at one unit load is 100mA (maxium power without negotiation). 500mA is much \nbetter available, and won’t damage most chargers, which easily supply 500mA.\nSee USB full spec, usb_20.pdf, page 171 (/https://usb.org/sites/default/files/usb_20_20190524.zip)
 $Comp
 L Connector:TestPoint TP?
@@ -253,26 +237,26 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint TP?
 U 1 1 5F6B9264
-P 2000 3050
+P 1650 3050
 AR Path="/5EBC558F/5F6B9264" Ref="TP?"  Part="1" 
 AR Path="/5EBC5C8E/5F6B9264" Ref="TP1"  Part="1" 
-F 0 "TP1" H 2058 3168 50  0000 L CNN
-F 1 "5V in" H 2058 3077 50  0000 L CNN
-F 2 "POxiM-uncategorised:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2200 3050 50  0001 C CNN
-F 3 "~" H 2200 3050 50  0001 C CNN
-F 4 "~" H -900 0   50  0001 C CNN "Link"
-F 5 "SHOULD NOT BE ON BOM" H -900 0   50  0001 C CNN "Notes"
-F 6 "~" H -900 0   50  0001 C CNN "Order number"
-F 7 "~" H -900 0   50  0001 C CNN "Part number"
-F 8 "~" H -900 0   50  0001 C CNN "Supplier"
-	1    2000 3050
+F 0 "TP1" H 1708 3168 50  0000 L CNN
+F 1 "5V in" H 1708 3077 50  0000 L CNN
+F 2 "POxiM-uncategorised:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 1850 3050 50  0001 C CNN
+F 3 "~" H 1850 3050 50  0001 C CNN
+F 4 "~" H -1250 0   50  0001 C CNN "Link"
+F 5 "SHOULD NOT BE ON BOM" H -1250 0   50  0001 C CNN "Notes"
+F 6 "~" H -1250 0   50  0001 C CNN "Order number"
+F 7 "~" H -1250 0   50  0001 C CNN "Part number"
+F 8 "~" H -1250 0   50  0001 C CNN "Supplier"
+	1    1650 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 3050 2000 3100
-Connection ~ 2000 3100
+	1650 3050 1650 3100
+Connection ~ 1650 3100
 Wire Wire Line
-	2000 3100 2850 3100
+	1650 3100 2500 3100
 $Comp
 L Regulator_Linear:MIC5504-3.3YM5 U3
 U 1 1 5F709229
@@ -341,7 +325,7 @@ Connection ~ 7000 3100
 Wire Wire Line
 	7000 3100 6900 3100
 Wire Wire Line
-	6100 3100 5900 3100
+	6100 3100 6050 3100
 Wire Wire Line
 	5900 3100 5900 3250
 Wire Wire Line
@@ -349,7 +333,6 @@ Wire Wire Line
 Wire Wire Line
 	5900 3600 6500 3600
 Connection ~ 6500 3600
-NoConn ~ 6100 3300
 Wire Wire Line
 	7100 2750 5900 2750
 Wire Wire Line
@@ -378,18 +361,18 @@ Wire Bus Line
 	7850 5550 7850 2800
 Wire Notes Line
 	7850 2800 7700 2700
+Connection ~ 3050 3100
+Connection ~ 3050 4800
+Wire Wire Line
+	3050 4800 1500 4800
 Connection ~ 3400 3100
 Connection ~ 3400 4800
 Wire Wire Line
-	3400 4800 1850 4800
-Connection ~ 3750 3100
-Connection ~ 3750 4800
+	3050 4800 3400 4800
 Wire Wire Line
-	3400 4800 3750 4800
+	3050 3100 3400 3100
 Wire Wire Line
-	3400 3100 3750 3100
-Wire Wire Line
-	3750 3100 5900 3100
+	3400 3100 5550 3100
 $Comp
 L Device:D_Schottky D37
 U 1 1 5F0C07B4
@@ -445,17 +428,16 @@ Connection ~ 4700 4800
 Wire Wire Line
 	4700 4800 5050 4800
 Wire Wire Line
-	2850 4400 4700 4400
+	2500 4400 4700 4400
 Connection ~ 4300 4000
 Wire Wire Line
 	4300 4000 6250 4000
-Connection ~ 4300 4800
 Wire Wire Line
 	4300 4800 4700 4800
 Wire Wire Line
-	2850 4000 4300 4000
+	2500 4000 4050 4000
 Wire Wire Line
-	3750 4800 4300 4800
+	3400 4800 4300 4800
 $Comp
 L Device:D_Schottky D36
 U 1 1 5F0D0956
@@ -568,4 +550,102 @@ Wire Wire Line
 Connection ~ 7300 3100
 Wire Wire Line
 	7300 3100 7000 3100
+Wire Wire Line
+	6100 3300 6050 3300
+Wire Wire Line
+	6050 3300 6050 3100
+Connection ~ 6050 3100
+Wire Wire Line
+	6050 3100 5900 3100
+Text Notes 6100 2450 0    50   ~ 0
+No internal pullup
+Wire Notes Line
+	6000 3050 6100 3050
+Wire Notes Line
+	6100 3050 6100 3350
+Wire Notes Line
+	6100 3350 6000 3350
+Wire Notes Line
+	6000 3350 6000 3050
+Wire Bus Line
+	6050 2350 6850 2350
+Wire Bus Line
+	6850 2350 6850 2500
+Wire Bus Line
+	6850 2500 6050 2500
+Wire Bus Line
+	6050 2500 6050 2350
+Wire Notes Line
+	6000 3050 6050 2500
+$Comp
+L Jumper:Jumper_2_Open JP1
+U 1 1 5EBDE477
+P 2300 4000
+F 0 "JP1" H 2300 4235 50  0000 C CNN
+F 1 "SWIM jumper" H 2300 4144 50  0000 C CNN
+F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 2300 4000 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/AOA0000C301-1488782.pdf" H 2300 4000 50  0001 C CNN
+F 4 "ERJ-3GEYJ561V" H 2300 4000 50  0001 C CNN "Part number"
+F 5 "667-ERJ-3GEYJ561V" H 2300 4000 50  0001 C CNN "Order number"
+F 6 "Mouser" H 2300 4000 50  0001 C CNN "Supplier"
+F 7 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ561V?qs=sGAEpiMZZMtlubZbdhIBIDkNbKahCB4%252B6KNOdheeNIE%3D" H 2300 4000 50  0001 C CNN "Link"
+F 8 "DNP, used only for debugging" H -2350 -150 50  0001 C CNN "Notes"
+	1    2300 4000
+	1    0    0    -1  
+$EndComp
+Text Notes 2200 4050 0    50   ~ 10
+DNP
+Text Notes 2200 4450 0    50   ~ 10
+DNP
+Connection ~ 4300 4800
+$Comp
+L Device:R_US R?
+U 1 1 5F15D270
+P 4050 3800
+AR Path="/5EBC562E/5F15D270" Ref="R?"  Part="1" 
+AR Path="/5EBC558F/5F15D270" Ref="R?"  Part="1" 
+AR Path="/5EBC342A/5F15D270" Ref="R?"  Part="1" 
+AR Path="/5EBC5C8E/5F15D270" Ref="R?"  Part="1" 
+F 0 "R?" H 3975 3850 50  0000 R CNN
+F 1 "560Ω" H 3975 3750 50  0000 R CNN
+F 2 "POxiM-uncategorised:R_0805_2012Metric_0603_1608Metric" H 4050 3800 50  0001 C CNN
+F 3 "${KIPRJMOD}/Datasheets/AOA0000C301-1488782.pdf" H 4050 3800 50  0001 C CNN
+F 4 "https://nl.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ561V?qs=sGAEpiMZZMtlubZbdhIBIDkNbKahCB4%252B6KNOdheeNIE%3D" H 1800 -300 50  0001 C CNN "Link"
+F 5 "Sets display LED current. Value critical. <5%, AEC-Q200" H 1800 -300 50  0001 C CNN "Notes"
+F 6 "667-ERJ-3GEYJ561V" H 1800 -300 50  0001 C CNN "Order number"
+F 7 "ERJ-3GEYJ561V" H 1800 -300 50  0001 C CNN "Part number"
+F 8 "Mouser" H 1800 -300 50  0001 C CNN "Supplier"
+	1    4050 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3550 4050 3550
+Wire Wire Line
+	4050 3550 4050 3650
+Connection ~ 4300 3550
+Wire Wire Line
+	4050 3950 4050 4000
+Connection ~ 4050 4000
+Wire Wire Line
+	4050 4000 4300 4000
+Wire Notes Line
+	3750 3600 4150 3600
+Wire Notes Line
+	4150 3600 4150 4050
+Wire Notes Line
+	4150 4050 3750 4050
+Wire Notes Line
+	3750 4050 3750 3600
+Text Notes 4000 5150 0    50   ~ 0
+Adapted from STM8S-Discovery board,\nenables programming with STLink/V2 in\ncombination with 220Ω JP1.
+Wire Bus Line
+	3950 4900 5600 4900
+Wire Bus Line
+	5600 4900 5600 5200
+Wire Bus Line
+	5600 5200 3950 5200
+Wire Bus Line
+	3950 5200 3950 4900
+Wire Notes Line
+	3950 4900 3750 4050
 $EndSCHEMATC

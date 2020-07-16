@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 6
 Title "Discrete LED display"
-Date "2020-06-13"
-Rev "A"
+Date "2020-07-16"
+Rev "A.1"
 Comp "POxiM"
 Comment1 "By Arthur Admiraal & Daan de Groot"
 Comment2 "3 7-segment digits and indicator LEDs"
@@ -880,7 +880,7 @@ $EndComp
 Text HLabel 1800 3800 0    50   Input ~ 0
 5V
 Text Notes 650  3650 0    50   ~ 0
-Pullups are used to decrease the current ripple through the power supply of the\nmicrocontroller. Segment 3 and 4 are open-drain only, so pullups are used. Play close\nattention to the supply path. It is a potential source of EMI issues, since high-frequency\ncurrents flow through here. This costs a factor 2 in brightness, but saves buffering.
+Pullups are used to decrease the current ripple through the power supply of the\nmicrocontroller. Segment 5 and 6 are open-drain only, so pullups are used. Play close\nattention to the supply path. It is a potential source of EMI issues, since high-frequency\ncurrents flow through here. This costs a factor 2 in brightness, but saves buffering.
 Wire Bus Line
 	1200 4200 1250 4200
 Wire Bus Line
@@ -1434,18 +1434,16 @@ Wire Bus Line
 	7750 1400 7700 1350
 Wire Bus Line
 	7300 1350 7700 1350
-Text Notes 5500 1050 0    50   ~ 0
-Segment 2
 Text Notes 6400 1050 0    50   ~ 0
 Segment 0
 Text Notes 7300 1050 0    50   ~ 0
-Segment 1
+Segment 2
 Text Notes 5450 3000 0    50   ~ 0
-Segment 5
+Segment 4
 Text Notes 6350 3000 0    50   ~ 0
 Segment 6
 Text Notes 7250 3000 0    50   ~ 0
-Segment 4
+Segment 5
 Wire Bus Line
 	7250 950  7250 1100
 Wire Bus Line
@@ -1996,6 +1994,20 @@ Text Label 9150 1050 0    50   ~ 0
 Common1
 Text Label 9150 1500 0    50   ~ 0
 Common0
+Text Notes 5500 1050 0    50   ~ 0
+Segment 1
+Text Notes 650  7050 0    100  ~ 20
+Warning! This sheet contains bugs.
+Text Notes 650  7600 0    50   ~ 0
+This sheet contains major design oversights related to driving the auxiliary segments:\n - Because the microcontroller runs from 3.3V, but the PNP transistors from 5V, they cannot shut off. Current is injected into the microcontroller pins.\n - Because the outputs are open drain with pullup resistors, the auxiliary LEDs are driven without current limiting resistors, which will damage the\nmicrocontroller and the LEDs.\n - The microcontroller relies on the LEDs for clamping the voltage on its pins to below the supply. However, the auxiliary digit doesn’t provide this \nfunctionality, so that too much current is injected into the pins.
+Wire Bus Line
+	600  6850 6600 6850
+Wire Bus Line
+	6600 6850 6600 7650
+Wire Bus Line
+	6600 7650 600  7650
+Wire Bus Line
+	600  7650 600  6850
 Wire Bus Line
 	9050 800  9050 1850
 Wire Bus Line

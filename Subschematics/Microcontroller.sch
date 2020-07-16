@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 6
 Title "Microcontroller"
-Date "2020-06-10"
-Rev "A"
+Date "2020-07-16"
+Rev "A.1"
 Comp "POxiM"
 Comment1 "By Arthur Admiraal & Daan de Groot"
 Comment2 "Performs signal processing and control"
@@ -113,7 +113,7 @@ Entry Wire Line
 	4700 3750 4800 3650
 Entry Wire Line
 	4700 3650 4800 3550
-Text HLabel 4450 4400 0    50   Output ~ 0
+Text HLabel 8650 3400 2    50   Output ~ 0
 Segment[0..6]
 Text Label 7150 3650 2    50   ~ 0
 Segment0
@@ -131,7 +131,7 @@ Text Label 4900 3250 0    50   ~ 0
 Common0
 Text Label 4900 3150 0    50   ~ 0
 Common1
-Text HLabel 9100 3450 2    50   Output ~ 0
+Text HLabel 4650 2950 0    50   Output ~ 0
 Common[0..2]
 Text Label 7150 3950 2    50   ~ 0
 UART1_TX
@@ -169,9 +169,9 @@ F 7 "https://nl.mouser.com/ProductDetail/STMicroelectronics/STM8S003F3P6?qs=vV0p
 	1    0    0    -1  
 $EndComp
 Entry Wire Line
-	8850 3750 8950 3650
+	4900 3250 4800 3150
 Entry Wire Line
-	8850 3650 8950 3550
+	4900 3150 4800 3050
 Text HLabel 5050 2850 0    50   Input ~ 0
 GND
 Connection ~ 5100 2850
@@ -204,7 +204,7 @@ Wire Wire Line
 Wire Wire Line
 	5150 4550 5400 4550
 Wire Bus Line
-	4650 4400 4450 4400
+	8450 3400 8650 3400
 Wire Wire Line
 	4800 4050 5400 4050
 Wire Wire Line
@@ -220,57 +220,39 @@ Common2
 Wire Wire Line
 	4800 4250 5400 4250
 Wire Wire Line
-	7150 3750 6600 3750
-Wire Wire Line
-	6600 3650 7150 3650
-Wire Wire Line
 	6600 4050 7600 4050
 Wire Wire Line
 	6600 3850 7600 3850
-Text Label 8400 3650 0    50   ~ 0
-Common0
-Text Label 8400 3750 0    50   ~ 0
-Common1
-Wire Wire Line
-	8400 3750 8850 3750
-Wire Wire Line
-	8850 3650 8400 3650
-Text Label 8400 3850 0    50   ~ 0
-Common2
 Entry Wire Line
-	8850 3850 8950 3750
-Wire Wire Line
-	8400 3850 8850 3850
+	4900 3350 4800 3250
 Wire Bus Line
-	9000 3450 9100 3450
+	4750 2950 4650 2950
 Wire Bus Line
-	8950 3500 9000 3450
+	4800 3000 4750 2950
 Wire Wire Line
 	4250 3850 5400 3850
 Wire Wire Line
 	4250 3950 5400 3950
-Text Notes 900  3600 0    50   ~ 0
-Two-level 6.4KHz PWM modulated by 16-level sine with 166 levels of brightness\nscaling. The frequencies are chosen such that the harmonics lay outside the\nband of interest. The 16-levels ensure harmonics are 60dB down for reduced\nEMI concerns. The red LED has the highest modulation frequency to reduce \nthe perception of flicker, since it is at a visible wavelength.
 Text Notes 3300 3900 2    50   ~ 0
-80Hz
+80Hz, I
 Text Notes 3300 4000 2    50   ~ 0
-128Hz
+80Hz, Q
 Wire Notes Line
-	3000 4050 3000 3750
+	2950 4050 2950 3750
 Wire Notes Line
-	3000 3750 4300 3750
+	2950 3750 4300 3750
 Wire Notes Line
-	4300 4050 3000 4050
+	4300 4050 2950 4050
 Wire Notes Line
 	4300 3750 4300 4050
 Wire Bus Line
-	850  3150 4100 3150
+	750  3150 4100 3150
 Wire Bus Line
 	4100 3150 4100 3650
 Wire Bus Line
-	4100 3650 850  3650
+	4100 3650 750  3650
 Wire Bus Line
-	850  3650 850  3150
+	750  3650 750  3150
 Wire Notes Line
 	4100 3650 4300 3750
 Wire Bus Line
@@ -293,7 +275,7 @@ Wire Notes Line
 	4600 5200 4800 4800
 Wire Bus Line
 	4600 5700 4600 5200
-Text Notes 2700 2900 0    50   ~ 0
+Text Notes 2500 2900 0    50   ~ 0
 PB4 and PB5 are open-drain only.\nThis is taken into account in the\nLED display sheet.
 Wire Notes Line
 	4650 3450 5300 3450
@@ -304,15 +286,13 @@ Wire Notes Line
 Wire Notes Line
 	4650 3700 4650 3450
 Wire Notes Line
-	4100 2950 4650 3450
+	3900 2950 4650 3450
 Wire Bus Line
-	2650 2950 2650 2600
+	2450 2950 2450 2600
 Wire Bus Line
-	2650 2600 4100 2600
+	2450 2600 3900 2600
 Wire Bus Line
-	4100 2600 4100 2950
-Wire Bus Line
-	4100 2950 2650 2950
+	3900 2600 3900 2950
 Text Notes 550  7700 0    50   ~ 0
 High speed internal RC oscillator (HSI) should be user-trimmed with CLK_HSITRIMR register at given TA and VDD conditions to attain 1.0% accuracy.
 Text Notes 550  7600 0    100  ~ 0
@@ -338,10 +318,58 @@ Entry Wire Line
 	4700 4150 4800 4050
 Entry Wire Line
 	4700 4350 4800 4250
-Wire Bus Line
-	8950 3500 8950 3750
-Wire Bus Line
-	4700 3650 4700 4350
 Text Label 4900 4050 0    50   ~ 0
 Segment4
+Wire Bus Line
+	4650 4400 4250 4400
+Wire Bus Line
+	4250 4400 4150 4500
+Wire Bus Line
+	4150 4500 4150 5000
+Wire Bus Line
+	4150 5000 4250 5100
+Wire Bus Line
+	4250 5100 8200 5100
+Wire Bus Line
+	8200 5100 8350 4950
+Wire Bus Line
+	8350 3500 8450 3400
+Entry Wire Line
+	8250 3750 8350 3650
+Entry Wire Line
+	8250 3650 8350 3550
+Wire Wire Line
+	6600 3650 8250 3650
+Wire Wire Line
+	6600 3750 8250 3750
+Wire Bus Line
+	2450 2950 3900 2950
+Text Notes 800  3600 0    50   ~ 0
+Two-level 80Hz PWM of thresholded sine and cosine. The modulation frequency\nwas chosen to provide sufficient channel separation to 50Hz - 60Hz line voltages\nand harmonics thereof and to provide sufficient channel separation to the DC\ncomponent and subharmonics. Furthermore, it was verified that there would be no\nperceptable flicker on the red LED at this frequency, since it is visible to the user.
+Text Notes 6700 2550 0    50   ~ 0
+STM8 microcontrollers are commonly seen as a pretty poor. However,\nit has some advantages which made it the perfect choice for this design:\n - It is one of the most widely available microcontrollers (Dutch Farnell data),\nwith >1M units available in Europe alone accross distributors. This is of \nparamount importance, since it is the most integrated part in the design, and \nthus the hardest to replace.\n - Its limited specifications ensure the firmware can be adapted to most \nother microcontrollers, which offer better performance.
+Wire Bus Line
+	6650 1850 9850 1850
+Wire Bus Line
+	9850 1850 9850 2600
+Wire Bus Line
+	9850 2600 6650 2600
+Wire Bus Line
+	6650 2600 6650 1850
+Wire Notes Line
+	6050 2850 6600 2850
+Wire Notes Line
+	6600 2850 6600 2950
+Wire Notes Line
+	6600 2950 6050 2950
+Wire Notes Line
+	6050 2950 6050 2850
+Wire Notes Line
+	6650 2600 6600 2850
+Wire Bus Line
+	4800 3000 4800 3250
+Wire Bus Line
+	8350 3500 8350 4950
+Wire Bus Line
+	4700 3650 4700 4350
 $EndSCHEMATC
